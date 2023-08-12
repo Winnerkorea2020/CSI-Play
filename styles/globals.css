@@ -1,5 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Noto+Sans+KR:wght@400;500;700&display=swap");
+
 @import "tailwindcss/base";
 
 @import "tailwindcss/components";
 
 @import "tailwindcss/utilities";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans KR", sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* #toggle Class Styles */
+
+.toggleable > label:after {
+  content: "\25BC";
+  font-size: 10px;
+  padding-left: 6px;
+  position: relative;
+  top: -1px;
+}
+
+.toggle-input {
+  display: none;
+}
+.toggle-input:not(checked) ~ .mega-menu {
+  display: none;
+}
+
+.toggle-input:checked ~ .mega-menu {
+  display: block;
+}
+
+.toggle-input:checked + label {
+  color: white;
+  background: rgb(3, 102, 114); /*@apply bg-teal-700 */
+}
+
+.toggle-input:checked ~ label:after {
+  content: "\25B2";
+  font-size: 10px;
+  padding-left: 6px;
+  position: relative;
+  top: -1px;
+}
+
+.active {
+  background-color: #dd8c40;
+  color: white;
+}
+
+body {
+  @apply h-screen bg-gray-100 pt-16 overflow-auto overscroll-auto text-sm text-primary-black;
+}
