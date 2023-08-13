@@ -2,9 +2,10 @@ import Link from "next/link";
 import Image from "next/image";
 
 import Ticker from "@/components/Ticker";
-import BestCoin from "@/components/BestCoin";
+import CoinList from "@/components/CoinList";
 import SignUpSignIn from "@/components/SignUpSignIn";
 import Banner from "@/components/Banner";
+import TopCoins from "@/components/TopCoins";
 
 export default function Home() {
   return (
@@ -18,10 +19,11 @@ export default function Home() {
           <div className="col-span-2">
             {/* Sign In and Best Coin List */}
             <div className="bg-white rounded-lg hidden xl:block">
-              <BestCoin />
+              <CoinList />
               <SignUpSignIn />
-              <Banner />
             </div>
+            <Banner />
+            <TopCoins />
           </div>
         </div>
       </section>
