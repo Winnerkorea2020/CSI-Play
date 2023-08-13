@@ -5,8 +5,8 @@ import { navLinks } from "@/constant";
 const Nav = () => {
   return (
     <>
-      <header className="bg-white fixed top-0 left-0 w-full pr-2 pl-8 z-50 h-16">
-        <div className="flex justify-between items-center gap-2 h-16 w-full">
+      <header className="bg-white fixed top-0 left-0 w-full mx-auto px-2 xl:px-4 z-50 h-20">
+        <div className="flex justify-between items-center gap-2 w-full h-20">
           {/* Navigation Link And Menu Bar */}
           {/* Logo Icons */}
           <div className=" flex justify-between items-center basis-1/2 xl:justify-start">
@@ -20,7 +20,7 @@ const Nav = () => {
               </span>
             </Link>
 
-            <ul className="absolute hidden top-0 left-0 px-5 py-6 bg-white z-50 w-full h-screen xl:static xl:bg-none xl:flex  xl:h-auto xl:px-0">
+            <ul className="absolute hidden top-0 left-0 px-5 py-6 bg-white z-50 w-full h-screen xl:static xl:bg-inherit xl:flex  xl:h-auto xl:px-0">
               {navLinks.map((category, index) => (
                 <li
                   key={index}
@@ -65,9 +65,9 @@ const Nav = () => {
             </div>
           </div>
 
-          <div className="hidden absolute top-0 left-0 w-full h-44 flex justify-center items-center xl:h-fit bg-gray-800 shadow shadow-gray-100 xl:bg-inherit p-6 xl:flex xl:justify-end xl:items-center">
+          <div className="absolute hidden z-50 top-0 left-0 w-full h-44 flex justify-center items-center xl:h-auto bg-gray-800 shadow shadow-gray-100 xl:bg-inherit p-6 xl:flex xl:justify-end xl:items-center">
             <form className=" flex items-center">
-              <label for="simple-search" className="sr-only">
+              <label htmlFor="simple-search" className="sr-only">
                 Search
               </label>
               <div className="relative w-full">
@@ -118,7 +118,7 @@ const Nav = () => {
                 <span className="sr-only">Search</span>
               </button>
             </form>
-            <div className="absolute top-3 right-4 cursor-pointer p-4 z-50">
+            <div className="hidden xl:static absolute top-3 right-4 cursor-pointer p-4 z-50">
               <button type="submit" className="text-sm font-bold text-white ">
                 Close
               </button>
