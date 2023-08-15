@@ -11,7 +11,7 @@
 
 @keyframes tickerAnimation {
   0% {
-    transform: translateX(20%);
+    transform: translateX(5%);
   }
   100% {
     transform: translateX(-50%);

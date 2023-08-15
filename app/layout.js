@@ -1,12 +1,9 @@
 import "../styles/globals.css";
-import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
-
-import { Inter } from "next/font/google";
-
+import Header from "@/components/Header";
 import Script from "next/script";
 
-const inter = Inter({ subsets: ["latin"] });
+import { Inter } from "next/font/google";
 
 export const metadata = {
   title: "Create Next App",
@@ -16,13 +13,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="pt-20 bg-gray-200/70">
-        <Nav />
+      <body className="pt-16 bg-gray-200/70">
+        <Header></Header>
+
         {children}
         <Footer />
-
-        <Script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></Script>
       </body>
+      <Script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></Script>
     </html>
   );
 }

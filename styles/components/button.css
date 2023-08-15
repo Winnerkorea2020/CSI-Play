@@ -1,0 +1,41 @@
+.btn-area {
+  @apply mt-5;
+}
+
+.btn {
+  @apply w-fit p-3 cursor-pointer;
+}
+
+.btn-outline-primary {
+  @apply ring-2 ring-gray-700 rounded-xl border-gray-500 hover:ring-gray-200;
+}
+
+.btn-rounded {
+  @apply ring-2 ring-gray-600 border-none outline-none;
+}
+
+.btn-yellow {
+  @apply bg-yellow-600;
+}
+
+.btn-blue {
+  @apply bg-blue-600;
+}
+.btn-red {
+  @apply bg-red-600;
+}
+.btn-pink {
+  @apply bg-pink-600;
+}
+.btn-green {
+  @apply bg-green-600;
+}
+.btn-emerald {
+  @apply bg-emerald-600;
+}
+.btn-fuchsia {
+  @apply bg-fuchsia-600;
+}
+.btn-lime {
+  @apply bg-lime-600;
+}

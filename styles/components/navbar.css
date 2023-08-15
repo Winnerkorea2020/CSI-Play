@@ -1,0 +1,69 @@
+/* Header CSS */
+/* Nav */
+.header {
+  @apply fixed top-0 left-0 w-full;
+  z-index: 100;
+}
+.nav {
+  @apply flex justify-between items-center h-16 px-2 bg-white;
+}
+
+.nav__logo {
+  @apply tracking-tighter inline-flex items-center gap-2;
+  transition: 0.3s;
+}
+
+.nav__logo--title {
+  @apply font-medium;
+}
+
+.nav__menu {
+  @apply fixed bg-white w-[80%] h-full top-0 -right-full shadow-xl rounded-l z-50 pt-16 px-12 duration-300 transition-all;
+}
+
+.nav__close {
+  @apply absolute top-4 right-5 cursor-pointer;
+}
+
+.nav__list {
+  @apply flex flex-col gap-y-6;
+}
+
+.nav__item {
+  @apply text-slate-800 font-medium hover:text-slate-500 duration-300 transition-all;
+}
+.nav__link-button {
+  @apply w-full inline-flex justify-between items-center duration-300 transition-all;
+}
+
+.nav__list--submenu {
+  @apply xl:absolute hidden w-full text-gray-700 pt-1 
+  group-hover:block xl:group-hover:border 
+  xl:group-hover:shadow-gray-200 xl:group-hover:shadow xl:group-hover:rounded-xl xl:w-40;
+}
+
+.nav__item--submenu {
+  @apply text-slate-800 font-medium hover:text-slate-500 duration-300 transition-all;
+}
+
+.nav__link--submenu {
+  @apply flex justify-start py-2 items-center hover:text-gray-400;
+}
+
+.nav__link-icon {
+  @apply mr-1 border-2 border-gray-300 inline-flex items-center justify-center 
+   text-white rounded-full;
+}
+/* Show menu */
+.show-menu {
+  right: 0;
+}
+
+.nav__close {
+  display: none;
+  cursor: pointer;
+}
+
+.nav__close.show {
+  display: block;
+}

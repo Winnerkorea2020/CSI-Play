@@ -6,6 +6,15 @@
 
 @import "tailwindcss/utilities";
 
+@import "./components/navbar.css";
+
+@import "./components/button.css";
+
 * {
   font-family: "Noto Sans KR", sans-serif;
+  color: "#1A232E";
+}
+
+* {
+  @apply text-sm;
 }

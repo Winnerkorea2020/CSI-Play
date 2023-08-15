@@ -2,32 +2,128 @@ export const navLinks = [
   {
     category: "코인",
     items: [
-      "코인시세/김프",
-      "코인뉴스",
-      "공시&이벤트",
-      "코인분석",
-      "자유게시판",
+      {
+        title: "코인시세/김프",
+        color: "yellow",
+      },
+      {
+        title: "코인뉴스",
+        color: "blue",
+      },
+      {
+        title: "공시&이벤트",
+        color: "red",
+      },
+      {
+        title: "코인분석",
+        color: "green",
+      },
+      {
+        title: "자유게시판",
+        color: "fuchsia",
+      },
     ],
   },
   {
     category: "주식",
-    items: ["국내/해외증시", "주식뉴스", "공시&일정", "분석", "자유게시판"],
+    items: [
+      {
+        title: "국내/해외증시",
+        color: "yellow",
+      },
+      {
+        title: "주식뉴스",
+        color: "blue",
+      },
+      {
+        title: "공시&일정",
+        color: "red",
+      },
+      {
+        title: "분석",
+        color: "green",
+      },
+      {
+        title: "자유게시판",
+        color: "fuchsia",
+      },
+    ],
   },
   {
     category: "선물/마진",
-    items: ["롱&숏비율", "청산비율", "현물/선물 계산기", "자유게시판"],
+    items: [
+      {
+        title: "롱&숏비율",
+        color: "yellow",
+      },
+      {
+        title: "청산비율",
+        color: "blue",
+      },
+      {
+        title: "현물/선물 계산기",
+        color: "red",
+      },
+      {
+        title: "자유게시판",
+        color: "green",
+      },
+    ],
   },
   {
     category: "부동산",
-    items: ["부동산거래", "부동산뉴스", "청약정보", "자유게시판"],
+    items: [
+      {
+        title: "부동산거래",
+        color: "yellow",
+      },
+      {
+        title: "부동산뉴스",
+        color: "blue",
+      },
+      {
+        title: "청약정보",
+        color: "green",
+      },
+      {
+        title: "자유게시판",
+        color: "red",
+      },
+    ],
   },
   {
     category: "뉴스",
-    items: ["국내&해외뉴스", "트위터"],
+    items: [
+      {
+        title: "국내&해외뉴스",
+        color: "yellow",
+      },
+      {
+        title: "트위터",
+        color: "blue",
+      },
+    ],
   },
   {
     category: "마이페이지",
-    items: ["개인정보", "알림설정", "알림메세지", "공지사항"],
+    items: [
+      {
+        title: "개인정보",
+        color: "yellow",
+      },
+      {
+        title: "알림설정",
+        color: "blue",
+      },
+      {
+        title: "알림메세지",
+        color: "green",
+      },
+      {
+        title: "공지사항",
+        color: "red",
+      },
+    ],
   },
 ];
 
@@ -218,5 +314,340 @@ export const coinNamesImg = [
     id: "12",
     title: "huobi",
     img: "/ico-bethumb-lg.svg",
+  },
+];
+
+export const CoinWeekendTop = [
+  {
+    id: "1",
+    coinTitle: "마이크로체인",
+    coinName: "MCG",
+    coinValue: "+15.54%",
+    status: "plus",
+    img: "ico-mcg.svg",
+  },
+  {
+    id: "2",
+    coinTitle: "슈퍼팜",
+    coinName: "SUPER",
+    coinValue: "+15.54%",
+    status: "minus",
+    img: "ico-super.svg",
+  },
+  {
+    id: "3",
+    coinTitle: "파렉스",
+    coinName: "PRX",
+    coinValue: "+15.54%",
+    status: "minus",
+    img: "ico-prx.svg",
+  },
+  {
+    id: "4",
+    coinTitle: "알라바바코인",
+    coinName: "ABBC",
+    coinValue: "+15.54%",
+    status: "minus",
+    img: "ico-abbc.svg",
+  },
+  {
+    id: "5",
+    coinTitle: "테라코인",
+    coinName: "TRR",
+    coinValue: "+15.54%",
+    status: "minus",
+    img: "ico-trr.svg",
+  },
+  {
+    id: "6",
+    coinTitle: "밴드 프로토콜",
+    coinName: "BAND",
+    coinValue: "+15.54%",
+    status: "minus",
+    img: "ico-band.svg",
+  },
+  {
+    id: "7",
+    coinTitle: "슈퍼팜",
+    coinName: "MCG",
+    coinValue: "+15.54%",
+    status: "minus",
+    img: "ico-super.svg",
+  },
+  {
+    id: "8",
+    coinTitle: "슈퍼팜",
+    coinName: "MCG",
+    coinValue: "+15.54%",
+    status: "minus",
+    img: "ico-super.svg",
+  },
+  {
+    id: "9",
+    coinTitle: "슈퍼팜",
+    coinName: "MCG",
+    coinValue: "+15.54%",
+    status: "minus",
+    img: "ico-super.svg",
+  },
+  {
+    id: "10",
+    coinTitle: "슈퍼팜",
+    coinName: "MCG",
+    coinValue: "+15.54%",
+    status: "minus",
+    img: "ico-super.svg",
+  },
+];
+
+export const CoinMonthTop = [
+  {
+    id: "1",
+    coinTitle: "파렉스",
+    coinName: "PRX",
+    coinValue: "+15.54%",
+    status: "minus",
+    img: "ico-prx.svg",
+  },
+  {
+    id: "2",
+    coinTitle: "슈퍼팜",
+    coinName: "SUPER",
+    coinValue: "+15.54%",
+    status: "minus",
+    img: "ico-super.svg",
+  },
+  {
+    id: "3",
+    coinTitle: "마이크로체인",
+    coinName: "MCG",
+    coinValue: "+15.54%",
+    status: "plus",
+    img: "ico-mcg.svg",
+  },
+
+  {
+    id: "4",
+    coinTitle: "알라바바코인",
+    coinName: "ABBC",
+    coinValue: "+15.54%",
+    status: "minus",
+    img: "ico-abbc.svg",
+  },
+  {
+    id: "5",
+    coinTitle: "테라코인",
+    coinName: "TRR",
+    coinValue: "+15.54%",
+    status: "minus",
+    img: "ico-trr.svg",
+  },
+  {
+    id: "6",
+    coinTitle: "밴드 프로토콜",
+    coinName: "BAND",
+    coinValue: "+15.54%",
+    status: "minus",
+    img: "ico-band.svg",
+  },
+  {
+    id: "7",
+    coinTitle: "슈퍼팜",
+    coinName: "MCG",
+    coinValue: "+15.54%",
+    status: "minus",
+    img: "ico-super.svg",
+  },
+  {
+    id: "8",
+    coinTitle: "슈퍼팜",
+    coinName: "MCG",
+    coinValue: "+15.54%",
+    status: "minus",
+    img: "ico-super.svg",
+  },
+  {
+    id: "9",
+    coinTitle: "슈퍼팜",
+    coinName: "MCG",
+    coinValue: "+15.54%",
+    status: "minus",
+    img: "ico-super.svg",
+  },
+  {
+    id: "10",
+    coinTitle: "슈퍼팜",
+    coinName: "MCG",
+    coinValue: "+15.54%",
+    status: "minus",
+    img: "ico-super.svg",
+  },
+];
+
+export const CoinSixMonthTop = [
+  {
+    id: "1",
+
+    coinTitle: "슈퍼팜",
+    coinName: "SUPER",
+    coinValue: "+15.54%",
+    status: "minus",
+    img: "ico-super.svg",
+  },
+  {
+    id: "2",
+    coinTitle: "마이크로체인",
+    coinName: "MCG",
+    coinValue: "+15.54%",
+    status: "plus",
+    img: "ico-mcg.svg",
+  },
+  {
+    id: "3",
+    coinTitle: "파렉스",
+    coinName: "PRX",
+    coinValue: "+15.54%",
+    status: "minus",
+    img: "ico-prx.svg",
+  },
+  {
+    id: "4",
+    coinTitle: "알라바바코인",
+    coinName: "ABBC",
+    coinValue: "+15.54%",
+    status: "minus",
+    img: "ico-abbc.svg",
+  },
+  {
+    id: "5",
+    coinTitle: "테라코인",
+    coinName: "TRR",
+    coinValue: "+15.54%",
+    status: "minus",
+    img: "ico-trr.svg",
+  },
+  {
+    id: "6",
+    coinTitle: "밴드 프로토콜",
+    coinName: "BAND",
+    coinValue: "+15.54%",
+    status: "minus",
+    img: "ico-band.svg",
+  },
+  {
+    id: "7",
+    coinTitle: "슈퍼팜",
+    coinName: "MCG",
+    coinValue: "+15.54%",
+    status: "minus",
+    img: "ico-super.svg",
+  },
+  {
+    id: "8",
+    coinTitle: "슈퍼팜",
+    coinName: "MCG",
+    coinValue: "+15.54%",
+    status: "minus",
+    img: "ico-super.svg",
+  },
+  {
+    id: "9",
+    coinTitle: "슈퍼팜",
+    coinName: "MCG",
+    coinValue: "+15.54%",
+    status: "minus",
+    img: "ico-super.svg",
+  },
+  {
+    id: "10",
+    coinTitle: "슈퍼팜",
+    coinName: "MCG",
+    coinValue: "+15.54%",
+    status: "minus",
+    img: "ico-super.svg",
+  },
+];
+
+export const CoinYearTop = [
+  {
+    id: "1",
+
+    coinTitle: "테라코인",
+    coinName: "TRR",
+    coinValue: "+15.54%",
+    status: "minus",
+    img: "ico-trr.svg",
+  },
+  {
+    id: "2",
+    coinTitle: "슈퍼팜",
+    coinName: "SUPER",
+    coinValue: "+15.54%",
+    status: "minus",
+    img: "ico-super.svg",
+  },
+  {
+    id: "3",
+    coinTitle: "파렉스",
+    coinName: "PRX",
+    coinValue: "+15.54%",
+    status: "minus",
+    img: "ico-prx.svg",
+  },
+  {
+    id: "4",
+    coinTitle: "알라바바코인",
+    coinName: "ABBC",
+    coinValue: "+15.54%",
+    status: "minus",
+    img: "ico-abbc.svg",
+  },
+  {
+    id: "5",
+    coinTitle: "마이크로체인",
+    coinName: "MCG",
+    coinValue: "+15.54%",
+    status: "plus",
+    img: "ico-mcg.svg",
+  },
+  {
+    id: "6",
+    coinTitle: "밴드 프로토콜",
+    coinName: "BAND",
+    coinValue: "+15.54%",
+    status: "minus",
+    img: "ico-band.svg",
+  },
+  {
+    id: "7",
+    coinTitle: "슈퍼팜",
+    coinName: "MCG",
+    coinValue: "+15.54%",
+    status: "minus",
+    img: "ico-super.svg",
+  },
+  {
+    id: "8",
+    coinTitle: "슈퍼팜",
+    coinName: "MCG",
+    coinValue: "+15.54%",
+    status: "minus",
+    img: "ico-super.svg",
+  },
+  {
+    id: "9",
+    coinTitle: "슈퍼팜",
+    coinName: "MCG",
+    coinValue: "+15.54%",
+    status: "minus",
+    img: "ico-super.svg",
+  },
+  {
+    id: "10",
+    coinTitle: "슈퍼팜",
+    coinName: "MCG",
+    coinValue: "+15.54%",
+    status: "minus",
+    img: "ico-super.svg",
   },
 ];

@@ -9,7 +9,7 @@ const CoinList = () => {
         {coinNamesImg.map((coin, index) => (
           <Link href="">
             <Image src={coin.img} alt="" width={100} height={100} />
-            <div className="w-full text-center">{coin.title}</div>
+            <div className="w-full text-center text-xs">{coin.title}</div>
           </Link>
         ))}
       </div>
