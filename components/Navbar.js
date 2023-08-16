@@ -55,14 +55,14 @@ const Navbar = () => {
           ))}
         </ul>
         {/* Search Bar */}
-        <div className=" absolute top-2 left-0 w-full px-20 xl:static xl:max-w-lg xl:px-4">
+        <div className="search__bar">
           <div className="relative xl:max-w-lg mx-auto">
             <input
-              className="w-full py-2 px-4 border border-gray-300 rounded-md shadow-sm  "
+              className="search__bar--input"
               type="search"
               placeholder="Search"
             />
-            <button className="absolute inset-y-0 right-0 flex items-center px-4 text-gray-700 bg-gray-100 border border-gray-300 rounded-r-md hover:bg-gray-200 ">
+            <button className="search__bar--button">
               <svg
                 className="h-5 w-5"
                 fill="currentColor"
@@ -86,38 +86,29 @@ const Navbar = () => {
         )}
       </div>
 
-      {/* Toggle Button */}
+      {/* National Flag Setting & Toggle Button */}
       <div className="flex items-center">
         {/* User Profile and Sign UP Button & National Setting*/}
         {/* National Setting */}
-        <div className="">
-          <div className="dropdown inline-block relative">
-            <button className="font-medium py-2 px-4 w-max rounded inline-flex items-center">
+        <div className="national">
+          <div className="dropdown national__dropdown">
+            <button className="national__dropdwon--buuton">
               <box-icon name="world"></box-icon>
               <span className="ml-2">언어설정</span>
             </button>
-            <ul className="dropdown-menu absolute hidden text-gray-700  w-full">
+            <ul className="dropdown-menu national__dropdown--menu">
               <li className="w-full">
-                <a
-                  className="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
-                  href="#"
-                >
+                <a className="national__dropdown--item rounded-t" href="#">
                   KOR
                 </a>
               </li>
               <li className="">
-                <a
-                  className="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
-                  href="#"
-                >
+                <a className="national__dropdown--item" href="#">
                   KOR
                 </a>
               </li>
               <li className="">
-                <a
-                  className="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
-                  href="#"
-                >
+                <a className="national__dropdown--item rounded-b " href="#">
                   KOR
                 </a>
               </li>
@@ -126,10 +117,7 @@ const Navbar = () => {
         </div>
         {/* Togglem Button */}
         <div className="w-full text-end xl:hidden">
-          <div
-            className="px-2 inline-block xl:hidden cursor-pointer"
-            onClick={toggleMenu}
-          >
+          <div className="nav__toggle" onClick={toggleMenu}>
             <box-icon name="menu"></box-icon>
           </div>
         </div>

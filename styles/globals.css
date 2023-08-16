@@ -10,6 +10,10 @@
 
 @import "./components/button.css";
 
+@import "./components/card.css";
+
+@import "./components/tab.css";
+
 * {
   font-family: "Noto Sans KR", sans-serif;
   color: "#1A232E";
@@ -17,4 +21,8 @@
 
 * {
   @apply text-sm;
+}
+
+.section {
+  @apply mt-2 xl:px-6 w-full mx-auto;
 }

@@ -3,7 +3,7 @@
 }
 
 .btn {
-  @apply w-fit p-3 cursor-pointer;
+  @apply p-3 cursor-pointer block;
 }
 
 .btn-outline-primary {
@@ -15,27 +15,29 @@
 }
 
 .btn-yellow {
-  @apply bg-yellow-600;
+  @apply bg-yellow-600 text-white;
 }
-
 .btn-blue {
-  @apply bg-blue-600;
+  @apply bg-blue-600 text-white;
 }
 .btn-red {
-  @apply bg-red-600;
+  @apply bg-red-600 text-white;
 }
 .btn-pink {
-  @apply bg-pink-600;
+  @apply bg-pink-600 text-white;
 }
 .btn-green {
-  @apply bg-green-600;
+  @apply bg-green-600 text-white;
 }
 .btn-emerald {
-  @apply bg-emerald-600;
+  @apply bg-emerald-600 text-white;
 }
 .btn-fuchsia {
-  @apply bg-fuchsia-600;
+  @apply bg-fuchsia-600 text-white;
 }
 .btn-lime {
-  @apply bg-lime-600;
+  @apply bg-lime-600 text-white;
+}
+.btn-gray__light {
+  @apply bg-gray-200 text-gray-900;
 }

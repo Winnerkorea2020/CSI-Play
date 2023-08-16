@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <main className="mt-2">
       <Ticker />
-      <section className="mt-2 xl:px-6 w-full mx-auto">
+      <section className="section">
         <div className="grid grid-cols-12 gap-2 w-full">
           {/* Left Side Section */}
           <div className="col-span-12 xl:col-span-10">
