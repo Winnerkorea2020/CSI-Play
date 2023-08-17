@@ -1,79 +1,178 @@
-import React from "react";
-
 const FutureStockLiquidation = () => {
   return (
-    <div className="mt-3">
-      <div className="grid grid-cols-2 gap-3 ">
-        <div className="px-3 py-6 rounded-lg shadow-sm border bg-gray-50">
-          <div className="w-full">
-            <div className="grid grid-cols-3 gap-2">
-              <select className="inline-block w-full px-3 py-2.5 rounded">
-                <option>단방향</option>
-              </select>
-              <div className="inline-block w-full px-3 py-2.5 rounded bg-blue-500 text-white text-center">Long</div>
-              <div className="inline-block w-full px-3 py-2.5 rounded bg-gray-200 text-center">Short</div>
-            </div>
-          </div>
+    <div className="card tab-card mt-4 border">
+      <div>
+        <div className="flex justify-start items-center gap-2">
+          <div className="flex flex-col w-full gap-2 xl:flex-row items-center justify-between">
+            <select className="tab ">
+              <option>단방향</option>
+            </select>
 
-          <div className="mt-9"></div>
-
-          <div className="mt-3">
-            <form action="">
-              <div className="grid grid-cols-1 gap-3 text-base">
-                <div className="flex justify-start items-center border rounded-lg">
-                  <div className="w-32 py-2.5 px-2">진입 가격</div>
-                  <input
-                    type="number"
-                    value=""
-                    placeholder="0"
-                    className="text-end py-2.5 px-2 w-full focus:border-none outline-none"
-                  />
-                  <div className="py-2.5 px-2 w-20">USDT</div>
-                </div>
-                <div className="flex justify-start items-center border rounded-lg">
-                  <div className="w-32 py-2.5 px-2">청산 가격</div>
-                  <input
-                    type="number"
-                    value=""
-                    placeholder="0"
-                    className="text-end py-2.5 px-2 w-full focus:border-none outline-none"
-                  />
-                  <div className="py-2.5 px-2 w-20">USDT</div>
-                </div>
-                <div className="flex justify-start items-center border rounded-lg">
-                  <div className="w-32 py-2.5 px-2">수량</div>
-                  <input
-                    type="number"
-                    value=""
-                    placeholder="0"
-                    className="text-end py-2.5 px-2 w-full focus:border-none outline-none"
-                  />
-                  <div className="py-2.5 px-2 w-20">BTC</div>
-                </div>
-              </div>
-              <button className="w-full text-base py-2.5 px-2 border mt-3 bg-blue-500 text-white rounded-lg">
-                계산
-              </button>
-            </form>
+            <button className="tab tab__gray--light focus:bg-red-600 focus:text-white focus:outline-none">
+              Long
+            </button>
+            <button className="tab tab__gray--light focus:bg-red-600 focus:text-white focus:outline-none">
+              Short
+            </button>
           </div>
         </div>
-
-        <div className="px-3 py-6 rounded-lg shadow-sm border bg-gray-50">
-          <div className="px-5 py-3">
-            <h3 className="text-xl font-semibold">결과</h3>
-            <div className="mt-8">
-              <div className="grid grid-cols-1 gap-3 text-base">
-                <div className="flex justify-start items-center">
-                  <div className="w-52 text-center py-2.5 px-2">예상 청산가(USD)</div>
-                  <div className="border inline-flex rounded border-orange-400">
-                    <input
-                      type="number"
-                      value=""
-                      disabled
-                      placeholder="0"
-                      className="text-end py-2.5 px-2 w-full focus:border-none outline-none bg-none"
-                    />
-                    <div className="py-2.5 px-2 w-20">USDT</div>
+        <div className="grid grid-cols-1 gap-2 2xl:grid-cols-2 mt-3">
+          <div className="">
+            <div>
+              <div className="mt-3 overflow-x-auto overscroll-y-auto">
+                <div className="grid grid-cols-1  text-base">
+                  <div className="grid grid-cols-12  ">
+                    <div className="col-span-1 py-1.5 text-center divide-x divide-x-reverse divide-y divide-y-reverse divide-gray-700">
+                      <div className=" py-1.5 px-1 w-full bg-gray-500 text-white whitespace-nowrap ">
+                        No
+                      </div>
+                      <div className=" py-1.5 px-1 w-full whitespace-nowrap bg-gray-500 text-white">
+                        1
+                      </div>
+                    </div>
+                    <div className="col-span-3 py-1.5 text-center divide-x divide-x-reverse divide-y divide-y-reverse divide-gray-700">
+                      <div className=" py-1.5 px-1 w-full bg-gray-500 text-white whitespace-nowrap ">
+                        진입가격(USDT)
+                      </div>
+                      <div className=" py-1.5 px-1 w-full whitespace-nowrap  ">
+                        6,120,000
+                      </div>
+                    </div>
+                    <div className="col-span-3 py-1.5 text-center divide-x divide-x-reverse divide-y divide-y-reverse divide-gray-700">
+                      <div className=" py-1.5 px-1 w-full bg-gray-500 text-white whitespace-nowrap ">
+                        수량(BTC)
+                      </div>
+                      <div className=" py-1.5 px-1 w-full whitespace-nowrap  ">
+                        6,120,000
+                      </div>
+                    </div>
+                    <div className="col-span-3 py-1.5 text-center divide-x divide-x-reverse divide-y divide-y-reverse divide-gray-700">
+                      <div className=" py-1.5 px-1 w-full bg-gray-500 text-white whitespace-nowrap ">
+                        선물잔고(USDT)
+                      </div>
+                      <div className=" py-1.5 px-1 w-full whitespace-nowrap  ">
+                        6,120,000
+                      </div>
+                    </div>
+                    <div className="col-span-2 py-1.5 text-center divide-x divide-x-reverse divide-y divide-y-reverse divide-gray-700">
+                      <div className=" py-1.5 px-1 w-full bg-gray-500 text-white whitespace-nowrap ">
+                        Action
+                      </div>
+                      <div className=" py-1.5 px-1 w-full whitespace-nowrap  ">
+                        1
+                      </div>
+                    </div>
+                  </div>
+                  <div className="grid grid-cols-12 ">
+                    <div className="col-span-1 py-1.5 text-center divide-x divide-x-reverse divide-y divide-y-reverse divide-gray-700">
+                      <div className=" py-1.5 px-1 w-full bg-gray-500 text-white whitespace-nowrap">
+                        No
+                      </div>
+                      <div className=" py-1.5 px-1 w-full whitespace-nowrap bg-gray-500 text-white">
+                        1
+                      </div>
+                    </div>
+                    <div className="col-span-3 py-1.5 text-center divide-x divide-x-reverse divide-y divide-y-reverse divide-gray-700">
+                      <div className=" py-1.5 px-1 w-full bg-gray-500 text-white whitespace-nowrap ">
+                        진입가격(USDT)
+                      </div>
+                      <div className=" py-1.5 px-1 w-full whitespace-nowrap  ">
+                        6,120,000
+                      </div>
+                    </div>
+                    <div className="col-span-3 py-1.5 text-center divide-x divide-x-reverse divide-y divide-y-reverse divide-gray-700">
+                      <div className=" py-1.5 px-1 w-full bg-gray-500 text-white whitespace-nowrap ">
+                        수량(BTC)
+                      </div>
+                      <div className=" py-1.5 px-1 w-full whitespace-nowrap  ">
+                        6,120,000
+                      </div>
+                    </div>
+                    <div className="col-span-3 py-1.5 text-center divide-x divide-x-reverse divide-y divide-y-reverse divide-gray-700">
+                      <div className=" py-1.5 px-1 w-full bg-gray-500 text-white whitespace-nowrap ">
+                        선물잔고(USDT)
+                      </div>
+                      <div className=" py-1.5 px-1 w-full whitespace-nowrap  ">
+                        6,120,000
+                      </div>
+                    </div>
+                    <div className="col-span-2 py-1.5 text-center divide-x divide-x-reverse divide-y divide-y-reverse divide-gray-700">
+                      <div className=" py-1.5 px-1 w-full bg-gray-500 text-white whitespace-nowrap ">
+                        Action
+                      </div>
+                      <div className=" py-1.5 px-1 w-full whitespace-nowrap  ">
+                        1
+                      </div>
+                    </div>
+                  </div>
+                  <div className="grid grid-cols-12 ">
+                    <div className="col-span-1 py-1.5 text-center divide-x divide-x-reverse divide-y divide-y-reverse divide-gray-700">
+                      <div className=" py-1.5 px-1 w-full bg-gray-500 text-white whitespace-nowrap">
+                        No
+                      </div>
+                      <div className=" py-1.5 px-1 w-full whitespace-nowrap bg-gray-500 text-white">
+                        1
+                      </div>
+                    </div>
+                    <div className="col-span-3 py-1.5 text-center divide-x divide-x-reverse divide-y divide-y-reverse divide-gray-700">
+                      <div className=" py-1.5 px-1 w-full bg-gray-500 text-white whitespace-nowrap ">
+                        진입가격(USDT)
+                      </div>
+                      <div className=" py-1.5 px-1 w-full whitespace-nowrap  ">
+                        6,120,000
+                      </div>
+                    </div>
+                    <div className="col-span-3 py-1.5 text-center divide-x divide-x-reverse divide-y divide-y-reverse divide-gray-700">
+                      <div className=" py-1.5 px-1 w-full bg-gray-500 text-white whitespace-nowrap ">
+                        수량(BTC)
+                      </div>
+                      <div className=" py-1.5 px-1 w-full whitespace-nowrap  ">
+                        6,120,000
+                      </div>
+                    </div>
+                    <div className="col-span-3 py-1.5 text-center divide-x divide-x-reverse divide-y divide-y-reverse divide-gray-700">
+                      <div className=" py-1.5 px-1 w-full bg-gray-500 text-white whitespace-nowrap ">
+                        선물잔고(USDT)
+                      </div>
+                      <div className=" py-1.5 px-1 w-full whitespace-nowrap  ">
+                        6,120,000
+                      </div>
+                    </div>
+                    <div className="col-span-2 py-1.5 text-center divide-x divide-x-reverse divide-y divide-y-reverse divide-gray-700">
+                      <div className=" py-1.5 px-1 w-full bg-gray-500 text-white whitespace-nowrap ">
+                        Action
+                      </div>
+                      <div className=" py-1.5 px-1 w-full whitespace-nowrap  ">
+                        1
+                      </div>
+                    </div>
+                  </div>{" "}
+                </div>
+                <div className="mt-3">
+                  <button class="btn btn-blue w-full outline-none rounded-lg">
+                    계산
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="">
+            <div class="rounded-lg shadow-sm border bg-gray-200 h-full">
+              <div class="px-5 py-3">
+                <h3 class="text-xl font-semibold">결과</h3>
+                <div class="mt-8">
+                  <div class="grid grid-cols-1 gap-3 text-base">
+                    <div class="flex justify-start items-center">
+                      <div class="w-40 py-2.5 px-2">목표가(USD)</div>
+                      <input
+                        type="text"
+                        value=""
+                        disabled=""
+                        placeholder="0"
+                        class="text-end py-1.5 px-2 w-full focus:border-none outline-none bg-none"
+                      />
+                      <div class="py-2.5 px-2 w-20">USDT</div>
+                    </div>
                   </div>
                 </div>
               </div>

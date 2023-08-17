@@ -7,21 +7,29 @@ import SpotStock from "./SpotStock";
 
 const StockfuturesSpot = () => {
   return (
-    <div className="card">
-      <div className="">
+    <div className="card relative">
+      <div className=" h-[657px] xl:h-[680px] 2xl:h-[450px]  relative">
         <Tab.Group>
           <Tab.List className="grid grid-cols-2 gap-2">
             <Tab as={Fragment}>
               {({ selected }) => (
                 /* Use the `selected` state to conditionally style the selected tab. */
-                <button className={selected ? "tab tab__black " : "tab tab__white"}>선물 계산기</button>
+                <button
+                  className={selected ? "tab tab__black " : "tab tab__white"}
+                >
+                  선물 계산기
+                </button>
               )}
             </Tab>
 
             <Tab as={Fragment}>
               {({ selected }) => (
                 /* Use the `selected` state to conditionally style the selected tab. */
-                <button className={selected ? "tab tab__black" : "tab tab__white"}>현물계산기</button>
+                <button
+                  className={selected ? "tab tab__black" : "tab tab__white"}
+                >
+                  현물계산기
+                </button>
               )}
             </Tab>
           </Tab.List>

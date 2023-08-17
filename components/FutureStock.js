@@ -14,31 +14,41 @@ const FutureStock = () => {
         <Tab as={Fragment}>
           {({ selected }) => (
             /* Use the `selected` state to conditionally style the selected tab. */
-            <button className={selected ? "tab tab__red" : "tab__outline"}>PNL(수익)</button>
+            <button className={selected ? "tab tab__red" : "tab__outline"}>
+              PNL(수익)
+            </button>
           )}
         </Tab>
         <Tab as={Fragment}>
           {({ selected }) => (
             /* Use the `selected` state to conditionally style the selected tab. */
-            <button className={selected ? "tab tab__red" : "tab__outline"}>목표가격</button>
+            <button className={selected ? "tab tab__red" : "tab__outline"}>
+              목표가격
+            </button>
           )}
         </Tab>
         <Tab as={Fragment}>
           {({ selected }) => (
             /* Use the `selected` state to conditionally style the selected tab. */
-            <button className={selected ? "tab tab__red" : "tab__outline"}>청산가격</button>
+            <button className={selected ? "tab tab__red" : "tab__outline"}>
+              청산가격
+            </button>
           )}
         </Tab>
         <Tab as={Fragment}>
           {({ selected }) => (
             /* Use the `selected` state to conditionally style the selected tab. */
-            <button className={selected ? "tab tab__red" : "tab__outline"}>Max Open</button>
+            <button className={selected ? "tab tab__red" : "tab__outline"}>
+              Max Open
+            </button>
           )}
         </Tab>
         <Tab as={Fragment}>
           {({ selected }) => (
             /* Use the `selected` state to conditionally style the selected tab. */
-            <button className={selected ? "tab tab__red" : "tab__outline"}>Open Price</button>
+            <button className={selected ? "tab tab__red" : "tab__outline"}>
+              Open Price
+            </button>
           )}
         </Tab>
       </Tab.List>
