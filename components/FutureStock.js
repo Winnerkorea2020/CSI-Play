@@ -14,7 +14,7 @@ const FutureStock = () => {
         <Tab as={Fragment}>
           {({ selected }) => (
             /* Use the `selected` state to conditionally style the selected tab. */
-            <button className={selected ? "tab tab__red" : "tab__outline"}>
+            <button className={selected ? "tab tab__black" : "tab__outline"}>
               PNL(수익)
             </button>
           )}
@@ -22,7 +22,7 @@ const FutureStock = () => {
         <Tab as={Fragment}>
           {({ selected }) => (
             /* Use the `selected` state to conditionally style the selected tab. */
-            <button className={selected ? "tab tab__red" : "tab__outline"}>
+            <button className={selected ? "tab tab__black" : "tab__outline"}>
               목표가격
             </button>
           )}
@@ -30,7 +30,7 @@ const FutureStock = () => {
         <Tab as={Fragment}>
           {({ selected }) => (
             /* Use the `selected` state to conditionally style the selected tab. */
-            <button className={selected ? "tab tab__red" : "tab__outline"}>
+            <button className={selected ? "tab tab__black" : "tab__outline"}>
               청산가격
             </button>
           )}
@@ -38,7 +38,7 @@ const FutureStock = () => {
         <Tab as={Fragment}>
           {({ selected }) => (
             /* Use the `selected` state to conditionally style the selected tab. */
-            <button className={selected ? "tab tab__red" : "tab__outline"}>
+            <button className={selected ? "tab tab__black" : "tab__outline"}>
               Max Open
             </button>
           )}
@@ -46,7 +46,7 @@ const FutureStock = () => {
         <Tab as={Fragment}>
           {({ selected }) => (
             /* Use the `selected` state to conditionally style the selected tab. */
-            <button className={selected ? "tab tab__red" : "tab__outline"}>
+            <button className={selected ? "tab tab__black" : "tab__outline"}>
               Open Price
             </button>
           )}

@@ -1,0 +1,3 @@
+.content {
+  @apply px-1 xl:px-2;
+}

@@ -10,10 +10,7 @@ const CurrencyLiquidation = () => {
           </div>
           <div className="basis-1/2">
             <div className="flex justify-end items-center gap-3">
-              <label
-                for="currencylist_1"
-                className="block font-medium py-2.5 text-base text-end"
-              >
+              <label for="currencylist_1" className="block font-medium py-2.5 text-base text-end">
                 기간
               </label>
               <select
@@ -38,16 +35,10 @@ const CurrencyLiquidation = () => {
         </div>
       </div>
       <div className="mb-5">
-        <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-5 gap-y-3">
+        <div className="grid grid-cols-3 xl:grid-cols-4 gap-x-5 gap-y-3">
           <div className="text-center border border-gray-300 rounded-lg px-2 py-4 shadow-sm">
             <div className="inline-flex">
-              <img
-                src="./ico-bethumb-lg.svg"
-                width="40"
-                height="40"
-                className="rounded-full"
-                alt=""
-              />
+              <img src="./ico-bethumb-lg.svg" width="40" height="40" className="rounded-full" alt="" />
             </div>
             <div>
               <span>$</span>
@@ -60,13 +51,7 @@ const CurrencyLiquidation = () => {
           </div>
           <div className="text-center border border-gray-300 rounded-lg px-2 py-4 shadow-sm">
             <div className="inline-flex">
-              <img
-                src="./ico-bethumb-lg.svg"
-                width="40"
-                height="40"
-                className="rounded-full"
-                alt=""
-              />
+              <img src="./ico-bethumb-lg.svg" width="40" height="40" className="rounded-full" alt="" />
             </div>
             <div>
               <span>$</span>
@@ -79,13 +64,7 @@ const CurrencyLiquidation = () => {
           </div>
           <div className="text-center border border-gray-300 rounded-lg px-2 py-4 shadow-sm">
             <div className="inline-flex">
-              <img
-                src="./ico-bethumb-lg.svg"
-                width="40"
-                height="40"
-                className="rounded-full"
-                alt=""
-              />
+              <img src="./ico-bethumb-lg.svg" width="40" height="40" className="rounded-full" alt="" />
             </div>
             <div>
               <span>$</span>
@@ -98,13 +77,7 @@ const CurrencyLiquidation = () => {
           </div>
           <div className="text-center border border-gray-300 rounded-lg px-2 py-4 shadow-sm">
             <div className="inline-flex">
-              <img
-                src="./ico-bethumb-lg.svg"
-                width="40"
-                height="40"
-                className="rounded-full"
-                alt=""
-              />
+              <img src="./ico-bethumb-lg.svg" width="40" height="40" className="rounded-full" alt="" />
             </div>
             <div>
               <span>$</span>
@@ -117,13 +90,7 @@ const CurrencyLiquidation = () => {
           </div>
           <div className="text-center border border-gray-300 rounded-lg px-2 py-4 shadow-sm">
             <div className="inline-flex">
-              <img
-                src="./ico-bethumb-lg.svg"
-                width="40"
-                height="40"
-                className="rounded-full"
-                alt=""
-              />
+              <img src="./ico-bethumb-lg.svg" width="40" height="40" className="rounded-full" alt="" />
             </div>
             <div>
               <span>$</span>
@@ -136,13 +103,7 @@ const CurrencyLiquidation = () => {
           </div>
           <div className="text-center border border-gray-300 rounded-lg px-2 py-4 shadow-sm">
             <div className="inline-flex">
-              <img
-                src="./ico-bethumb-lg.svg"
-                width="40"
-                height="40"
-                className="rounded-full"
-                alt=""
-              />
+              <img src="./ico-bethumb-lg.svg" width="40" height="40" className="rounded-full" alt="" />
             </div>
             <div>
               <span>$</span>
@@ -155,13 +116,7 @@ const CurrencyLiquidation = () => {
           </div>
           <div className="text-center border border-gray-300 rounded-lg px-2 py-4 shadow-sm">
             <div className="inline-flex">
-              <img
-                src="./ico-bethumb-lg.svg"
-                width="40"
-                height="40"
-                className="rounded-full"
-                alt=""
-              />
+              <img src="./ico-bethumb-lg.svg" width="40" height="40" className="rounded-full" alt="" />
             </div>
             <div>
               <span>$</span>
@@ -174,13 +129,7 @@ const CurrencyLiquidation = () => {
           </div>
           <div className="text-center border border-gray-300 rounded-lg px-2 py-4 shadow-sm">
             <div className="inline-flex">
-              <img
-                src="./ico-bethumb-lg.svg"
-                width="40"
-                height="40"
-                className="rounded-full"
-                alt=""
-              />
+              <img src="./ico-bethumb-lg.svg" width="40" height="40" className="rounded-full" alt="" />
             </div>
             <div>
               <span>$</span>
@@ -193,13 +142,7 @@ const CurrencyLiquidation = () => {
           </div>
           <div className="text-center border border-gray-300 rounded-lg px-2 py-4 shadow-sm">
             <div className="inline-flex">
-              <img
-                src="./ico-bethumb-lg.svg"
-                width="40"
-                height="40"
-                className="rounded-full"
-                alt=""
-              />
+              <img src="./ico-bethumb-lg.svg" width="40" height="40" className="rounded-full" alt="" />
             </div>
             <div>
               <span>$</span>
@@ -212,13 +155,7 @@ const CurrencyLiquidation = () => {
           </div>
           <div className="text-center border border-gray-300 rounded-lg px-2 py-4 shadow-sm">
             <div className="inline-flex">
-              <img
-                src="./ico-bethumb-lg.svg"
-                width="40"
-                height="40"
-                className="rounded-full"
-                alt=""
-              />
+              <img src="./ico-bethumb-lg.svg" width="40" height="40" className="rounded-full" alt="" />
             </div>
             <div>
               <span>$</span>
@@ -231,13 +168,7 @@ const CurrencyLiquidation = () => {
           </div>
           <div className="text-center border border-gray-300 rounded-lg px-2 py-4 shadow-sm">
             <div className="inline-flex">
-              <img
-                src="./ico-bethumb-lg.svg"
-                width="40"
-                height="40"
-                className="rounded-full"
-                alt=""
-              />
+              <img src="./ico-bethumb-lg.svg" width="40" height="40" className="rounded-full" alt="" />
             </div>
             <div>
               <span>$</span>
@@ -250,13 +181,7 @@ const CurrencyLiquidation = () => {
           </div>
           <div className="text-center border border-gray-300 rounded-lg px-2 py-4 shadow-sm">
             <div className="inline-flex">
-              <img
-                src="./ico-bethumb-lg.svg"
-                width="40"
-                height="40"
-                className="rounded-full"
-                alt=""
-              />
+              <img src="./ico-bethumb-lg.svg" width="40" height="40" className="rounded-full" alt="" />
             </div>
             <div>
               <span>$</span>

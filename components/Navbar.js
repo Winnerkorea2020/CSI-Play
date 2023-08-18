@@ -3,6 +3,14 @@ import Link from "next/link";
 import Image from "next/image";
 import { navLinks } from "@/constant";
 import { useState } from "react";
+import NotificationBadge from "./NotificationBadge";
+import DropdownMenu from "./DropdownMenu";
+
+import {
+  LiaAlignJustifySolid,
+  LiaGlobeAmericasSolid,
+  LiaSearchSolid,
+} from "react-icons/lia";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -10,14 +18,16 @@ const Navbar = () => {
     setIsMenuOpen(!isMenuOpen);
     console.log(isMenuOpen);
   };
+  const [notifications, setNotifications] = useState([
+    { id: 1, text: "New message received" },
+    { id: 2, text: "Friend request" },
+    { id: 3, text: "Friend request" },
+    { id: 4, text: "Friend request" },
+    { id: 4, text: "Friend request" },
+    { id: 4, text: "Friend request" },
+  ]);
 
-  const closeMenu = () => {
-    setIsMenuOpen(false);
-    console.log(isMenuOpen);
-  };
-  // Determine whether to show the close button
-  const showCloseButton = isMenuOpen && window.innerWidth < 1280;
-
+  const dropdownOptions = [{ label: "KOR", value: "option1" }];
   return (
     <nav className="nav">
       {/* Logo Icons */}
@@ -63,62 +73,31 @@ const Navbar = () => {
               placeholder="Search"
             />
             <button className="search__bar--button">
-              <svg
-                className="h-5 w-5"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M14.795 13.408l5.204 5.204a1 1 0 01-1.414 1.414l-5.204-5.204a7.5 7.5 0 111.414-1.414zM8.5 14A5.5 5.5 0 103 8.5 5.506 5.506 0 008.5 14z"
-                />
-              </svg>
+              <LiaSearchSolid size={20} />
             </button>
           </div>
         </div>
-        {/* Nav-Close Button */}
-        {showCloseButton && (
-          <button className="nav__close" onClick={closeMenu}>
-            <box-icon type="solid" name="chevron-right" size="sm"></box-icon>
-          </button>
-        )}
       </div>
 
       {/* National Flag Setting & Toggle Button */}
-      <div className="flex items-center">
+      <div className="flex justify-end items-center">
+        {/* 알람 기능 추가 */}
+        <div className="w-full text-end xl:hidden">
+          <NotificationBadge notifications={notifications} />
+        </div>
         {/* User Profile and Sign UP Button & National Setting*/}
         {/* National Setting */}
-        <div className="national">
-          <div className="dropdown national__dropdown">
-            <button className="national__dropdwon--buuton">
-              <box-icon name="world"></box-icon>
-              <span className="ml-2">언어설정</span>
-            </button>
-            <ul className="dropdown-menu national__dropdown--menu">
-              <li className="w-full">
-                <a className="national__dropdown--item rounded-t" href="#">
-                  KOR
-                </a>
-              </li>
-              <li className="">
-                <a className="national__dropdown--item" href="#">
-                  KOR
-                </a>
-              </li>
-              <li className="">
-                <a className="national__dropdown--item rounded-b " href="#">
-                  KOR
-                </a>
-              </li>
-            </ul>
-          </div>
+
+        <div className="w-full text-end xl:hidden">
+          <button className="">
+            <DropdownMenu options={dropdownOptions} />
+          </button>
         </div>
+
         {/* Togglem Button */}
         <div className="w-full text-end xl:hidden">
           <div className="nav__toggle" onClick={toggleMenu}>
-            <box-icon name="menu"></box-icon>
+            <LiaAlignJustifySolid size={20} />
           </div>
         </div>
       </div>

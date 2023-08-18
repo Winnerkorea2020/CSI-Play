@@ -7,10 +7,10 @@ import SpotStock from "./SpotStock";
 
 const StockfuturesSpot = () => {
   return (
-    <div className="card relative">
+    <div className="card card-shadow  relative">
       <div className=" h-[657px] xl:h-[680px] 2xl:h-[450px]  relative">
         <Tab.Group>
-          <Tab.List className="grid grid-cols-2 gap-2">
+          <Tab.List className="grid grid-cols-2 gap-1">
             <Tab as={Fragment}>
               {({ selected }) => (
                 /* Use the `selected` state to conditionally style the selected tab. */
@@ -34,7 +34,7 @@ const StockfuturesSpot = () => {
             </Tab>
           </Tab.List>
 
-          <Tab.Panels className={`mt-3`}>
+          <Tab.Panels className={`mt-2`}>
             <Tab.Panel>
               <FutureStock />
             </Tab.Panel>

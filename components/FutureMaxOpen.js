@@ -3,11 +3,11 @@ const FutureMaxOpen = () => {
   return (
     <div className="card tab-card mt-4 border">
       <div>
-        <div className="flex justify-start items-center gap-2 w-44">
-          <button className="tab tab__gray--light focus:bg-red-600 focus:text-white focus:outline-none">
+        <div className="flex justify-between xl:justify-start items-center gap-2 w-full xl:w-44">
+          <button className="tab tab__gray--light focus:bg-blue-600 focus:text-white focus:outline-none">
             Long
           </button>
-          <button className="tab tab__gray--light focus:bg-red-600 focus:text-white focus:outline-none">
+          <button className="tab tab__gray--light focus:bg-blue-600 focus:text-white focus:outline-none">
             Short
           </button>
         </div>
@@ -42,7 +42,7 @@ const FutureMaxOpen = () => {
                   </div>
                 </div>
                 <div className="mt-3">
-                  <button class="btn btn-blue w-full outline-none rounded-lg">
+                  <button className="btn btn-blue w-full outline-none rounded-lg">
                     계산
                   </button>
                 </div>
@@ -50,32 +50,32 @@ const FutureMaxOpen = () => {
             </div>
           </div>
           <div className="">
-            <div class="rounded-lg shadow-sm border bg-gray-200 h-full">
-              <div class="px-5 py-3">
-                <h3 class="text-xl font-semibold">결과</h3>
-                <div class="mt-8">
-                  <div class="grid grid-cols-1 gap-3 text-base">
-                    <div class="flex justify-start items-center">
-                      <div class="w-40 py-2.5 px-2">최대오픈(BTC)</div>
+            <div className="rounded-lg shadow-sm border bg-gray-200 h-full">
+              <div className="px-5 py-3">
+                <h3 className="text-xl font-semibold">결과</h3>
+                <div className="mt-8">
+                  <div className="grid grid-cols-1 gap-3 text-base">
+                    <div className="flex justify-start items-center">
+                      <div className="w-40 py-2.5 px-2">최대오픈(BTC)</div>
                       <input
                         type="text"
                         value=""
                         disabled=""
                         placeholder="0"
-                        class="text-end py-1.5 px-2 w-full focus:border-none outline-none bg-none"
+                        className="text-end py-1.5 px-2 w-full focus:border-none outline-none bg-none"
                       />
-                      <div class="py-2.5 px-2 w-20">USDT</div>
+                      <div className="py-2.5 px-2 w-20">USDT</div>
                     </div>
-                    <div class="flex justify-start items-center">
-                      <div class="w-40 py-2.5 px-2">최대오픈(BTC)</div>
+                    <div className="flex justify-start items-center">
+                      <div className="w-40 py-2.5 px-2">최대오픈(BTC)</div>
                       <input
                         type="text"
                         value=""
                         disabled=""
                         placeholder="0"
-                        class="text-end py-1.5 px-2 w-full focus:border-none outline-none bg-none"
+                        className="text-end py-1.5 px-2 w-full focus:border-none outline-none bg-none"
                       />
-                      <div class="py-2.5 px-2 w-20">USDT</div>
+                      <div className="py-2.5 px-2 w-20">USDT</div>
                     </div>
                   </div>
                 </div>

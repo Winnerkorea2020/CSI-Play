@@ -1,0 +1,34 @@
+"use client";
+import React, { useState } from "react";
+import NotificationDropdown from "./NotificationDropdown";
+
+import { LiaBellSolid } from "react-icons/lia";
+
+const NotificationBadge = ({ notifications }) => {
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
+  const handleClick = () => {
+    setIsDropdownOpen(!isDropdownOpen);
+  };
+  return (
+    <div className="notification-badge">
+      <button
+        type="button"
+        className="relative inline-flex items-center p-2 text-center focus:outline-none focus:ring-blue-300 "
+        onClick={handleClick}
+      >
+        <LiaBellSolid size={20} />
+        <div className="absolute inline-flex items-center justify-center w-6 h-6 text-xs font-bold text-white bg-red-500 border-2 border-white rounded-full -top-1 -right-1 dark:border-gray-900">
+          {notifications.length}
+        </div>
+      </button>
+      <div className="absolute w-60 top-16 right-1 ">
+        {isDropdownOpen && (
+          <NotificationDropdown notifications={notifications} />
+        )}
+      </div>
+    </div>
+  );
+};
+
+export default NotificationBadge;

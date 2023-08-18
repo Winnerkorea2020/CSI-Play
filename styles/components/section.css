@@ -1,5 +1,5 @@
 .section {
-  @apply container mx-auto px-3;
+  @apply px-1 xl:px-2;
 }
 
 .section-1 {

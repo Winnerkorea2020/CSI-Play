@@ -1,7 +1,11 @@
 .card {
-  @apply bg-white p-2 xl:p-4 w-full;
+  @apply bg-white px-4 py-4 rounded-lg;
 }
 
 .tab-card {
   @apply bg-white w-full;
+}
+
+.card-shadow {
+  @apply shadow shadow-gray-300;
 }

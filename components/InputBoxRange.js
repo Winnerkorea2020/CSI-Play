@@ -87,22 +87,31 @@ function InputBoxRange({ min, max, value, step }) {
               className="slider-thumb"
               style={{ left: `calc(${sliderRange}% - 0.5em)` }}
             ></div>
-            <div className="progress" style={{ width: `${sliderRange}%` }}>
-              {" "}
-            </div>
+            <div
+              className="progress"
+              style={{ width: `${sliderRange}%` }}
+            ></div>
           </div>
           <div className="slider-values">
             <div className=" w-full">
-              <div class=" w-full left-0">
-                <div class="flex justify-between items-center">
-                  <div class="font-semibold text-gray-500 text-base">
-                    {`${min + 1}x`}
+              <div className=" w-full left-0">
+                <div className="flex justify-between items-center">
+                  <div className="font-semibold text-gray-500 text-base">{`${
+                    min + 1
+                  }x`}</div>
+                  <div className="font-semibold text-gray-500 text-base">
+                    25x
                   </div>
-                  <div class="font-semibold text-gray-500 text-base">25x</div>
-                  <div class="font-semibold text-gray-500 text-base">50x</div>
-                  <div class="font-semibold text-gray-500 text-base">75x</div>
-                  <div class="font-semibold text-gray-500 text-base">100x</div>
-                  <div class="font-semibold text-gray-500 text-base">{max}</div>
+                  <div className="font-semibold text-gray-500 text-base">
+                    50x
+                  </div>
+                  <div className="font-semibold text-gray-500 text-base">
+                    75x
+                  </div>
+                  <div className="font-semibold text-gray-500 text-base">
+                    100x
+                  </div>
+                  <div className="font-semibold text-gray-500 text-base">{`${max}x`}</div>
                 </div>
               </div>
             </div>
