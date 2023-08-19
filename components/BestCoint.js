@@ -4,7 +4,7 @@ import Link from "next/link";
 const BestCoint = () => {
   return (
     <div className="overflow-auto">
-      <div className="main__trading__table">
+      <div className="main__bestcoin__table">
         {/* Table Header */}
         <div className="main__bestcoin__table--thread">
           <div className="main__bestcoin__table--thread--cell">

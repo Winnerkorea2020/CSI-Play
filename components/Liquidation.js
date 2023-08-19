@@ -5,7 +5,7 @@ import { LiaAngleRightSolid } from "react-icons/lia";
 const Liquidation = () => {
   return (
     <div className="card h-full">
-      <div className="flex flex-col items-start xl:flex-row xl:justify-between xl:items-center w-full">
+      <div className="flex flex-col items-start 2xl:flex-row 2xl:justify-between 2xl:items-center w-full">
         <div className="basis-1/2">
           <div className="main__box--title ">
             <h2 className="main__title">거래소 청산</h2>

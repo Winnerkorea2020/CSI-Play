@@ -107,3 +107,33 @@
 .main__bestcoin__table--tbody--cell:first-child {
   @apply text-left;
 }
+
+/* Best  Coin  선물*/
+.main__bestcoinfuture__table {
+  @apply table w-full xl:table-fixed truncate text-center;
+}
+
+.main__bestcoinfuture__table--thread {
+  @apply table-row bg-gray-800 text-white text-center;
+}
+
+.main__bestcoinfuture__table--thread--cell {
+  @apply table-cell px-2 py-2.5 truncate whitespace-nowrap;
+}
+
+.main__bestcoinfuture__table--tbody--cell {
+  @apply table-cell px-2 py-2.5 truncate whitespace-nowrap border-b border-gray-300;
+}
+
+.main__bestcoinfuture__table--tbody--cell:first-child {
+  @apply text-center;
+}
+
+.main__bestcoinfuture__table--thread--cell:first-child,
+.main__bestcoinfuture__table--tbody--cell:first-child {
+  @apply w-48;
+}
+
+.main__bestcoinfuture__table--thread--cell--item {
+  @apply flex items-center justify-center w-full gap-2;
+}

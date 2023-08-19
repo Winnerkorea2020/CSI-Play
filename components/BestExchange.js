@@ -4,7 +4,7 @@ import { FaCaretUp, FaCaretDown } from "react-icons/fa";
 const BestExchange = () => {
   return (
     <div className="overflow-auto">
-      <div className="main__trading__table">
+      <div className="main__bestcoin__table">
         {/* Table Header */}
         <div className="main__bestcoin__table--thread">
           <div className="main__bestcoin__table--thread--cell">거래소</div>

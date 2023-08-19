@@ -1,244 +1,294 @@
-import React from "react";
+import Image from "next/image";
+import Link from "next/link";
+import { FaCaretUp, FaCaretDown } from "react-icons/fa";
+import { BiExpandVertical } from "react-icons/bi";
 
 const BestFutures = () => {
   return (
-    <div className="relative overflow-x-auto">
-      <table className="w-full text-sm text-left text-gray-500">
-        <thead className="text-xs text-gray-700 uppercase bg-gray-100">
-          <tr>
-            <th scope="col" className="px-6 py-3">
-              코인/거래금액
-            </th>
-            <th scope="col" className="px-6 py-3">
-              거래금액
-            </th>
-            <th scope="col" className="px-6 py-3">
-              시세(KRW)
-            </th>
-            <th scope="col" className="px-6 py-3">
-              24시간 변동율
-            </th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr className="bg-white border-">
-            <th className="px-6 py-4 whitespace-nowrap">
-              <div className="inline-flex items-center">
-                <img
-                  src="./ico-bitcoin.svg"
-                  alt=""
-                  width="20px"
-                  height="20px"
-                />
-                <span className="ml-1 text-sm">BitCoin</span>
-                <span className="ml-1 text-sm font-thin">BTC/KRW</span>
-              </div>
-            </th>
-            <td className="px-6 py-4 whitespace-nowrap">
-              <span>8조 3,686억</span>
-            </td>
-            <td className="px-6 py-4 whitespace-nowrap">
-              <span className="text-red-500">38,452,000</span>
-            </td>
-            <td className="px-6 py-4 whitespace-nowrap">
-              <div className="">
-                <button className="text-center px-2 py-0.5 bg-blue-500 text-white rounded w-16">
-                  -0.03%
-                </button>
-              </div>
-            </td>
-          </tr>
-          <tr className="bg-white border-">
-            <th className="px-6 py-4 whitespace-nowrap">
-              <div className="inline-flex items-center">
-                <img
-                  src="./ico-bitcoin.svg"
-                  alt=""
-                  width="20px"
-                  height="20px"
-                />
-                <span className="ml-1 text-sm">BitCoin</span>
-                <span className="ml-1 text-sm font-thin">BTC/KRW</span>
-              </div>
-            </th>
-            <td className="px-6 py-4 whitespace-nowrap">
-              <span>8조 3,686억</span>
-            </td>
-            <td className="px-6 py-4 whitespace-nowrap">
-              <span className="text-red-500">38,452,000</span>
-            </td>
-            <td className="px-6 py-4 whitespace-nowrap">
-              <div className="">
-                <button className="text-center px-2 py-0.5 bg-blue-500 text-white rounded w-16">
-                  -0.03%
-                </button>
-              </div>
-            </td>
-          </tr>
-          <tr className="bg-white border-">
-            <th className="px-6 py-4 whitespace-nowrap">
-              <div className="inline-flex items-center">
-                <img
-                  src="./ico-bitcoin.svg"
-                  alt=""
-                  width="20px"
-                  height="20px"
-                />
-                <span className="ml-1 text-sm">BitCoin</span>
-                <span className="ml-1 text-sm font-thin">BTC/KRW</span>
-              </div>
-            </th>
-            <td className="px-6 py-4 whitespace-nowrap">
-              <span>8조 3,686억</span>
-            </td>
-            <td className="px-6 py-4 whitespace-nowrap">
-              <span className="text-red-500">38,452,000</span>
-            </td>
-            <td className="px-6 py-4 whitespace-nowrap">
-              <div className="">
-                <button className="text-center px-2 py-0.5 bg-blue-500 text-white rounded w-16">
-                  -0.03%
-                </button>
-              </div>
-            </td>
-          </tr>
-          <tr className="bg-white border-">
-            <th className="px-6 py-4 whitespace-nowrap">
-              <div className="inline-flex items-center">
-                <img
-                  src="./ico-bitcoin.svg"
-                  alt=""
-                  width="20px"
-                  height="20px"
-                />
-                <span className="ml-1 text-sm">BitCoin</span>
-                <span className="ml-1 text-sm font-thin">BTC/KRW</span>
-              </div>
-            </th>
-            <td className="px-6 py-4 whitespace-nowrap">
-              <span>8조 3,686억</span>
-            </td>
-            <td className="px-6 py-4 whitespace-nowrap">
-              <span className="text-red-500">38,452,000</span>
-            </td>
-            <td className="px-6 py-4 whitespace-nowrap">
-              <div className="">
-                <button className="text-center px-2 py-0.5 bg-blue-500 text-white rounded w-16">
-                  -0.03%
-                </button>
-              </div>
-            </td>
-          </tr>
-          <tr className="bg-white border-">
-            <th className="px-6 py-4 whitespace-nowrap">
-              <div className="inline-flex items-center">
-                <img
-                  src="./ico-bitcoin.svg"
-                  alt=""
-                  width="20px"
-                  height="20px"
-                />
-                <span className="ml-1 text-sm">BitCoin</span>
-                <span className="ml-1 text-sm font-thin">BTC/KRW</span>
-              </div>
-            </th>
-            <td className="px-6 py-4 whitespace-nowrap">
-              <span>8조 3,686억</span>
-            </td>
-            <td className="px-6 py-4 whitespace-nowrap">
-              <span className="text-red-500">38,452,000</span>
-            </td>
-            <td className="px-6 py-4 whitespace-nowrap">
-              <div className="">
-                <button className="text-center px-2 py-0.5 bg-red-500 text-white rounded w-16">
-                  1.5%
-                </button>
-              </div>
-            </td>
-          </tr>
-          <tr className="bg-white border-">
-            <th className="px-6 py-4 whitespace-nowrap">
-              <div className="inline-flex items-center">
-                <img
-                  src="./ico-bitcoin.svg"
-                  alt=""
-                  width="20px"
-                  height="20px"
-                />
-                <span className="ml-1 text-sm">BitCoin</span>
-                <span className="ml-1 text-sm font-thin">BTC/KRW</span>
-              </div>
-            </th>
-            <td className="px-6 py-4 whitespace-nowrap">
-              <span>8조 3,686억</span>
-            </td>
-            <td className="px-6 py-4 whitespace-nowrap">
-              <span className="text-red-500">38,452,000</span>
-            </td>
-            <td className="px-6 py-4 whitespace-nowrap">
-              <div className="">
-                <button className="text-center px-2 py-0.5 bg-red-500 text-white rounded w-16">
-                  1.5%
-                </button>
-              </div>
-            </td>
-          </tr>
-          <tr className="bg-white border-">
-            <th className="px-6 py-4 whitespace-nowrap">
-              <div className="inline-flex items-center">
-                <img
-                  src="./ico-bitcoin.svg"
-                  alt=""
-                  width="20px"
-                  height="20px"
-                />
-                <span className="ml-1 text-sm">BitCoin</span>
-                <span className="ml-1 text-sm font-thin">BTC/KRW</span>
-              </div>
-            </th>
-            <td className="px-6 py-4 whitespace-nowrap">
-              <span>8조 3,686억</span>
-            </td>
-            <td className="px-6 py-4 whitespace-nowrap">
-              <span className="text-red-500">38,452,000</span>
-            </td>
-            <td className="px-6 py-4 whitespace-nowrap">
-              <div className="">
-                <button className="text-center px-2 py-0.5 bg-red-500 text-white rounded w-16">
-                  1.5%
-                </button>
-              </div>
-            </td>
-          </tr>
-          <tr className="bg-white border-">
-            <th className="px-6 py-4 whitespace-nowrap">
-              <div className="inline-flex items-center">
-                <img
-                  src="./ico-bitcoin.svg"
-                  alt=""
-                  width="20px"
-                  height="20px"
-                />
-                <span className="ml-1 text-sm">BitCoin</span>
-                <span className="ml-1 text-sm font-thin">BTC/KRW</span>
-              </div>
-            </th>
-            <td className="px-6 py-4 whitespace-nowrap">
-              <span>8조 3,686억</span>
-            </td>
-            <td className="px-6 py-4 whitespace-nowrap">
-              <span className="text-red-500">38,452,000</span>
-            </td>
-            <td className="px-6 py-4 whitespace-nowrap">
-              <div className="">
-                <button className="text-center px-2 py-0.5 bg-red-500 text-white rounded w-16">
-                  1.5%
-                </button>
-              </div>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+    <div className="overflow-auto">
+      <div className="main__bestcoinfuture__table">
+        {/* Table Header */}
+        <div className="main__bestcoinfuture__table--thread">
+          <div className="main__bestcoinfuture__table--thread--cell">
+            <div className="main__bestcoinfuture__table--thread--cell--item">
+              거래소/심볼 <BiExpandVertical size={10} className="ml-2" />
+            </div>
+          </div>
+          <div className="main__bestcoinfuture__table--thread--cell">
+            <div className="main__bestcoinfuture__table--thread--cell--item">
+              심볼 <BiExpandVertical size={10} className="ml-2" />
+            </div>
+          </div>
+          <div className="main__bestcoinfuture__table--thread--cell">
+            <div className="main__bestcoinfuture__table--thread--cell--item">
+              현재가격 <BiExpandVertical size={10} className="ml-2" />
+            </div>
+          </div>
+          <div className="main__bestcoinfuture__table--thread--cell">
+            <div className="main__bestcoinfuture__table--thread--cell--item">
+              미체결약정 <BiExpandVertical size={10} className="ml-2" />
+            </div>
+          </div>
+          <div className="main__bestcoinfuture__table--thread--cell">
+            <div className="main__bestcoinfuture__table--thread--cell--item">
+              24H 거래량 <BiExpandVertical size={10} className="ml-2" />
+            </div>
+          </div>
+        </div>
+
+        {/* 코인정보 */}
+        <div className="table-row">
+          <div className="main__bestcoinfuture__table--tbody--cell ">
+            <Image
+              className=" inline-block"
+              src="./ico-binance-lg.svg"
+              width={30}
+              height={30}
+            />
+            <span className="ml-1 text-base font-medium">바이낸스</span>
+          </div>
+          <div className="main__bestcoinfuture__table--tbody--cell">
+            BTC-USD-PERPETUAL
+          </div>
+          <div className="main__bestcoinfuture__table--tbody--cell">
+            <div className="inline-flex justify-start items-center gap-2">
+              <span className="inline-block">26,600</span>
+              <FaCaretDown size={25} className="text-blue-500" />
+              <span>-11%</span>
+            </div>
+          </div>
+          <div className="main__bestcoinfuture__table--tbody--cell">
+            0.24백만
+          </div>
+          <div className="main__bestcoinfuture__table--tbody--cell">
+            0.76백만
+          </div>
+        </div>
+        {/* 코인정보 */}
+        <div className="table-row">
+          <div className="main__bestcoinfuture__table--tbody--cell ">
+            <Image
+              className=" inline-block"
+              src="./ico-binance-lg.svg"
+              width={30}
+              height={30}
+            />
+            <span className="ml-1 text-base font-medium">바이낸스</span>
+          </div>
+          <div className="main__bestcoinfuture__table--tbody--cell">
+            BTC-USD-PERPETUAL
+          </div>
+          <div className="main__bestcoinfuture__table--tbody--cell">
+            <div className="inline-flex justify-start items-center gap-2">
+              <span className="inline-block">26,600</span>
+              <FaCaretDown size={25} className="text-blue-500" />
+              <span>-11%</span>
+            </div>
+          </div>
+          <div className="main__bestcoinfuture__table--tbody--cell">
+            0.24백만
+          </div>
+          <div className="main__bestcoinfuture__table--tbody--cell">
+            0.76백만
+          </div>
+        </div>
+        {/* 코인정보 */}
+        <div className="table-row">
+          <div className="main__bestcoinfuture__table--tbody--cell ">
+            <Image
+              className=" inline-block"
+              src="./ico-binance-lg.svg"
+              width={30}
+              height={30}
+            />
+            <span className="ml-1 text-base font-medium">바이낸스</span>
+          </div>
+          <div className="main__bestcoinfuture__table--tbody--cell">
+            BTC-USD-PERPETUAL
+          </div>
+          <div className="main__bestcoinfuture__table--tbody--cell">
+            <div className="inline-flex justify-start items-center gap-2">
+              <span className="inline-block">26,600</span>
+              <FaCaretDown size={25} className="text-blue-500" />
+              <span>-11%</span>
+            </div>
+          </div>
+          <div className="main__bestcoinfuture__table--tbody--cell">
+            0.24백만
+          </div>
+          <div className="main__bestcoinfuture__table--tbody--cell">
+            0.76백만
+          </div>
+        </div>
+        {/* 코인정보 */}
+        <div className="table-row">
+          <div className="main__bestcoinfuture__table--tbody--cell ">
+            <Image
+              className=" inline-block"
+              src="./ico-binance-lg.svg"
+              width={30}
+              height={30}
+            />
+            <span className="ml-1 text-base font-medium">바이낸스</span>
+          </div>
+          <div className="main__bestcoinfuture__table--tbody--cell">
+            BTC-USD-PERPETUAL
+          </div>
+          <div className="main__bestcoinfuture__table--tbody--cell">
+            <div className="inline-flex justify-start items-center gap-2">
+              <span className="inline-block">26,600</span>
+              <FaCaretDown size={25} className="text-blue-500" />
+              <span>-11%</span>
+            </div>
+          </div>
+          <div className="main__bestcoinfuture__table--tbody--cell">
+            0.24백만
+          </div>
+          <div className="main__bestcoinfuture__table--tbody--cell">
+            0.76백만
+          </div>
+        </div>
+        {/* 코인정보 */}
+        <div className="table-row">
+          <div className="main__bestcoinfuture__table--tbody--cell ">
+            <Image
+              className=" inline-block"
+              src="./ico-binance-lg.svg"
+              width={30}
+              height={30}
+            />
+            <span className="ml-1 text-base font-medium">바이낸스</span>
+          </div>
+          <div className="main__bestcoinfuture__table--tbody--cell">
+            BTC-USD-PERPETUAL
+          </div>
+          <div className="main__bestcoinfuture__table--tbody--cell">
+            <div className="inline-flex justify-start items-center gap-2">
+              <span className="inline-block">26,600</span>
+              <FaCaretDown size={25} className="text-blue-500" />
+              <span>-11%</span>
+            </div>
+          </div>
+          <div className="main__bestcoinfuture__table--tbody--cell">
+            0.24백만
+          </div>
+          <div className="main__bestcoinfuture__table--tbody--cell">
+            0.76백만
+          </div>
+        </div>
+        {/* 코인정보 */}
+        <div className="table-row">
+          <div className="main__bestcoinfuture__table--tbody--cell ">
+            <Image
+              className=" inline-block"
+              src="./ico-binance-lg.svg"
+              width={30}
+              height={30}
+            />
+            <span className="ml-1 text-base font-medium">바이낸스</span>
+          </div>
+          <div className="main__bestcoinfuture__table--tbody--cell">
+            BTC-USD-PERPETUAL
+          </div>
+          <div className="main__bestcoinfuture__table--tbody--cell">
+            <div className="inline-flex justify-start items-center gap-2">
+              <span className="inline-block">26,600</span>
+              <FaCaretDown size={25} className="text-blue-500" />
+              <span>-11%</span>
+            </div>
+          </div>
+          <div className="main__bestcoinfuture__table--tbody--cell">
+            0.24백만
+          </div>
+          <div className="main__bestcoinfuture__table--tbody--cell">
+            0.76백만
+          </div>
+        </div>
+        {/* 코인정보 */}
+        <div className="table-row">
+          <div className="main__bestcoinfuture__table--tbody--cell ">
+            <Image
+              className=" inline-block"
+              src="./ico-binance-lg.svg"
+              width={30}
+              height={30}
+            />
+            <span className="ml-1 text-base font-medium">바이낸스</span>
+          </div>
+          <div className="main__bestcoinfuture__table--tbody--cell">
+            BTC-USD-PERPETUAL
+          </div>
+          <div className="main__bestcoinfuture__table--tbody--cell">
+            <div className="inline-flex justify-start items-center gap-2">
+              <span className="inline-block">26,600</span>
+              <FaCaretDown size={25} className="text-blue-500" />
+              <span>-11%</span>
+            </div>
+          </div>
+          <div className="main__bestcoinfuture__table--tbody--cell">
+            0.24백만
+          </div>
+          <div className="main__bestcoinfuture__table--tbody--cell">
+            0.76백만
+          </div>
+        </div>
+        {/* 코인정보 */}
+        <div className="table-row">
+          <div className="main__bestcoinfuture__table--tbody--cell ">
+            <Image
+              className=" inline-block"
+              src="./ico-binance-lg.svg"
+              width={30}
+              height={30}
+            />
+            <span className="ml-1 text-base font-medium">바이낸스</span>
+          </div>
+          <div className="main__bestcoinfuture__table--tbody--cell">
+            BTC-USD-PERPETUAL
+          </div>
+          <div className="main__bestcoinfuture__table--tbody--cell">
+            <div className="inline-flex justify-start items-center gap-2">
+              <span className="inline-block">26,600</span>
+              <FaCaretDown size={25} className="text-blue-500" />
+              <span>-11%</span>
+            </div>
+          </div>
+          <div className="main__bestcoinfuture__table--tbody--cell">
+            0.24백만
+          </div>
+          <div className="main__bestcoinfuture__table--tbody--cell">
+            0.76백만
+          </div>
+        </div>
+        {/* 코인정보 */}
+        <div className="table-row">
+          <div className="main__bestcoinfuture__table--tbody--cell ">
+            <Image
+              className=" inline-block"
+              src="./ico-binance-lg.svg"
+              width={30}
+              height={30}
+            />
+            <span className="ml-1 text-base font-medium">바이낸스</span>
+          </div>
+          <div className="main__bestcoinfuture__table--tbody--cell">
+            BTC-USD-PERPETUAL
+          </div>
+          <div className="main__bestcoinfuture__table--tbody--cell">
+            <div className="inline-flex justify-start items-center gap-2">
+              <span className="inline-block">26,600</span>
+              <FaCaretDown size={25} className="text-blue-500" />
+              <span>-11%</span>
+            </div>
+          </div>
+          <div className="main__bestcoinfuture__table--tbody--cell">
+            0.24백만
+          </div>
+          <div className="main__bestcoinfuture__table--tbody--cell">
+            0.76백만
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
