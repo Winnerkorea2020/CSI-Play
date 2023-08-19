@@ -1,0 +1,20 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  appearance: none;
+}
+
+input {
+  @apply focus:border-none outline-none focus:outline-none;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.input__default {
+  @apply py-2.5 px-2 w-full focus:border-none outline-none focus:outline-none;
+}
+
+.input__title--box {
+  @apply w-40 py-2.5 px-2 bg-gray-300 text-center;
+}

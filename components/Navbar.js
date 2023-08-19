@@ -6,19 +6,19 @@ import { useState } from "react";
 import NotificationBadge from "./NotificationBadge";
 import DropdownMenu from "./DropdownMenu";
 
-import {
-  LiaAlignJustifySolid,
-  LiaGlobeAmericasSolid,
-  LiaSearchSolid,
-} from "react-icons/lia";
+import { LiaAlignJustifySolid, LiaSearchSolid } from "react-icons/lia";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const lastCategory = navLinks[navLinks.length - 1];
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
     console.log(isMenuOpen);
   };
-  const [notifications, setNotifications] = useState([
+
+  const isAuthenticated = true;
+
+  const [notifications] = useState([
     { id: 1, text: "New message received" },
     { id: 2, text: "Friend request" },
     { id: 3, text: "Friend request" },
@@ -27,7 +27,14 @@ const Navbar = () => {
     { id: 4, text: "Friend request" },
   ]);
 
-  const dropdownOptions = [{ label: "KOR", value: "option1" }];
+  const dropdownOptions = [
+    { label: "KR", value: "option1", img: "/KR.png" },
+    { label: "US", value: "option1", img: "/US.png" },
+    { label: "CH", value: "option1", img: "/CH.png" },
+    { label: "JP", value: "option1", img: "/JP.png" },
+    { label: "IT", value: "option1", img: "/IT.png" },
+    { label: "DE", value: "option1", img: "/DE.png" },
+  ];
   return (
     <nav className="nav">
       {/* Logo Icons */}
@@ -41,7 +48,7 @@ const Navbar = () => {
 
       <div className={`nav__menu show-menu ${isMenuOpen ? "nav__open" : ""} `}>
         <ul className="nav__list">
-          {navLinks.map((category, index) => (
+          {navLinks.slice(0, navLinks.length - 1).map((category, index) => (
             <li key={index} className="group nav__item">
               <button className="nav__link-button ">
                 <span className="mr-1">{category.category}</span>
@@ -63,6 +70,29 @@ const Navbar = () => {
               </ul>
             </li>
           ))}
+
+          {isAuthenticated && lastCategory && (
+            <li className="group nav__item">
+              <button className="nav__link-button ">
+                <span className="mr-1">{lastCategory.category}</span>
+                <box-icon name="chevron-down" size="sm"></box-icon>
+              </button>
+              <ul className="nav__list--submenu">
+                {lastCategory.items.map((item, subindex) => (
+                  <li key={subindex} className="nav__item--submenu">
+                    <Link className="nav__link--submenu" href="/">
+                      <div
+                        className={`nav__link-icon btn-rounded btn-${item.color}`}
+                      >
+                        <box-icon name="shield-plus" size="sm"></box-icon>
+                      </div>
+                      <div>{item.title}</div>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </li>
+          )}
         </ul>
         {/* Search Bar */}
         <div className="search__bar">
@@ -82,16 +112,16 @@ const Navbar = () => {
       {/* National Flag Setting & Toggle Button */}
       <div className="flex justify-end items-center">
         {/* 알람 기능 추가 */}
-        <div className="w-full text-end xl:hidden">
-          <NotificationBadge notifications={notifications} />
-        </div>
+        {isAuthenticated ? (
+          <div className="w-full text-end xl:hidden">
+            <NotificationBadge notifications={notifications} />
+          </div>
+        ) : null}
         {/* User Profile and Sign UP Button & National Setting*/}
         {/* National Setting */}
 
         <div className="w-full text-end xl:hidden">
-          <button className="">
-            <DropdownMenu options={dropdownOptions} />
-          </button>
+          <DropdownMenu options={dropdownOptions} />
         </div>
 
         {/* Togglem Button */}
