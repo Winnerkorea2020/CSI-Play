@@ -17,7 +17,7 @@ const FutureStockLiquidation = () => {
         </div>
       </div>
       <div className="futureSpotStock__card">
-        <div className="col-span-3">
+        <div className="col-span-2 hufll">
           <div className="futureSpotStock__table--wrap">
             {/* Table */}
             <div className="futureSpotStock__table">
@@ -159,7 +159,7 @@ const FutureStockLiquidation = () => {
           </div>
         </div>
         {/* 결과 */}
-        <div className="cols-span-2 h-full">
+        <div className="cols-span-1 h-full">
           <div className="futureSpotStock__result--card">
             <h3 className="futureSpotStock__result-title">결과</h3>
             <div className="futureSpotStock__result--card">

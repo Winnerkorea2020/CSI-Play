@@ -1,27 +1,33 @@
-import React from "react";
+import { LiaAngleRightSolid } from "react-icons/lia";
+import Link from "next/link";
+import Image from "next/image";
 
 const KpremiumStockQuotesRealTime = () => {
   return (
-    <div className="px-2 py-6 xl:px-4 bg-white rounded-lg">
-      <h2 className="mb-6 font-semibold text-xl">
-        김치프리미엄 실시간 시세조회
-      </h2>
+    <div className="card h-full">
+      <div className="main__box--title ">
+        <h2 className="main__title">김치프리미엄 실시간 시세조회</h2>
 
-      <div className="mt-3">
-        <div className="grid grid-cols-1 gap-4 xl:grid-cols-2 items-center xl:gap-10">
-          <div className="inline-flex items-center gap-3">
-            <img src="./ico-bitcoin.svg" alt="" width="30px" height="30px" />
+        <Link className="" href={`/`}>
+          <LiaAngleRightSolid size={20} />
+        </Link>
+      </div>
+
+      <div className="main__calc--card">
+        <div className="main__calc--top--wrap">
+          <div className="main__calc--top--value">
+            <Image src="./ico-bitcoin.svg" alt="" width={30} height={30} />
             <select id="select0" className="border px-2 py-1.5 rounded-lg">
               <option value="">비트코인(BTC)</option>
             </select>
           </div>
-          <div className="">
-            <dl className="flex justify-start xl:justify-end items-center gap-3">
-              <dt className="font-medium text-sm tracking-tighter">등락</dt>
+          <div>
+            <dl className="main__calc--top--list">
+              <dt className="main__calc--top--list--title">등락</dt>
               <dd className="ml-4 font-semibold">
                 <span className="text-red-500">-2.33%</span>
               </dd>
-              <dt className="font-medium text-sm tracking-tighter">거래대금</dt>
+              <dt className="main__calc--top--list--title">거래대금</dt>
               <dd className="ml-4 font-semibold">
                 <span className="text-blue-500">2,333억</span>
               </dd>
@@ -34,12 +40,7 @@ const KpremiumStockQuotesRealTime = () => {
             <div className="">
               <div className="flex justify-between items-center">
                 <div className="flex justify-start items-center gap-2">
-                  <img
-                    src="./ico-upbit.svg"
-                    alt=""
-                    width="25px"
-                    height="25px"
-                  />
+                  <Image src="./ico-upbit.svg" alt="" width={25} height={25} />
                   <span className="font-medium text-base">업비트</span>
                 </div>
                 <span className="block text-sm font-medium">22,389,123 원</span>
@@ -204,6 +205,32 @@ const KpremiumStockQuotesRealTime = () => {
                     XLM
                   </span>
                   <span className="text-gray-600">Stellar</span>
+                </div>
+              </th>
+              <td className="px-6 py-4 whitespace-nowrap">99,999,999</td>
+              <td className="px-6 py-4 whitespace-nowrap">99,999,999</td>
+              <td className="px-6 py-4 whitespace-nowrap">99,999,999</td>
+              <td className="px-6 py-4">
+                <span className="text-blue-500">-0.003%</span>
+              </td>
+              <td className="px-6 py-4">
+                99,999,999 <span>억</span>
+              </td>
+              <td className="px-6 py-4">
+                99,999,999 <span>억</span>
+              </td>
+            </tr>
+            <tr className="">
+              <th
+                scope="row"
+                className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
+              >
+                <div className="flex justify-start items-center gap-1 tracking-tighter">
+                  <img src="./ico-ether.svg" alt="" width="20" />
+                  <span className="w-11 text-center px-1 py-0.5 bg-orange-300 text-white rounded-sm">
+                    ETH
+                  </span>
+                  <span className="text-gray-600">Ethereum</span>
                 </div>
               </th>
               <td className="px-6 py-4 whitespace-nowrap">99,999,999</td>

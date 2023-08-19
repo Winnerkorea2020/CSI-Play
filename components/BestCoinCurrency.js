@@ -1,5 +1,6 @@
 "use client";
-
+import { LiaAngleRightSolid } from "react-icons/lia";
+import Link from "next/link";
 import { Fragment } from "react";
 import { Tab } from "@headlessui/react";
 import BestCoint from "./BestCoint";
@@ -8,243 +9,67 @@ import BestFutures from "./BestFutures";
 
 const BestCoinCurrency = () => {
   return (
-    <div class="relative overflow-x-auto">
-      <table class="w-full text-sm text-left text-gray-500">
-        <thead class="text-xs text-gray-700 uppercase bg-gray-100">
-          <tr>
-            <th scope="col" class="px-6 py-3">
-              코인/거래금액
-            </th>
-            <th scope="col" class="px-6 py-3">
-              거래금액
-            </th>
-            <th scope="col" class="px-6 py-3">
-              시세(KRW)
-            </th>
-            <th scope="col" class="px-6 py-3">
-              24시간 변동율
-            </th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr class="bg-white border-">
-            <th class="px-6 py-4 whitespace-nowrap">
-              <div class="inline-flex items-center">
-                <img
-                  src="./ico-bitcoin.svg"
-                  alt=""
-                  width="20px"
-                  height="20px"
-                />
-                <span class="ml-1 text-sm">BitCoin</span>
-                <span class="ml-1 text-sm font-thin">BTC/KRW</span>
-              </div>
-            </th>
-            <td class="px-6 py-4 whitespace-nowrap">
-              <span>8조 3,686억</span>
-            </td>
-            <td class="px-6 py-4 whitespace-nowrap">
-              <span class="text-red-500">38,452,000</span>
-            </td>
-            <td class="px-6 py-4 whitespace-nowrap">
-              <div class="">
-                <button class="text-center px-2 py-0.5 bg-blue-500 text-white rounded w-16">
-                  -0.03%
-                </button>
-              </div>
-            </td>
-          </tr>
-          <tr class="bg-white border-">
-            <th class="px-6 py-4 whitespace-nowrap">
-              <div class="inline-flex items-center">
-                <img
-                  src="./ico-bitcoin.svg"
-                  alt=""
-                  width="20px"
-                  height="20px"
-                />
-                <span class="ml-1 text-sm">BitCoin</span>
-                <span class="ml-1 text-sm font-thin">BTC/KRW</span>
-              </div>
-            </th>
-            <td class="px-6 py-4 whitespace-nowrap">
-              <span>8조 3,686억</span>
-            </td>
-            <td class="px-6 py-4 whitespace-nowrap">
-              <span class="text-red-500">38,452,000</span>
-            </td>
-            <td class="px-6 py-4 whitespace-nowrap">
-              <div class="">
-                <button class="text-center px-2 py-0.5 bg-blue-500 text-white rounded w-16">
-                  -0.03%
-                </button>
-              </div>
-            </td>
-          </tr>
-          <tr class="bg-white border-">
-            <th class="px-6 py-4 whitespace-nowrap">
-              <div class="inline-flex items-center">
-                <img
-                  src="./ico-bitcoin.svg"
-                  alt=""
-                  width="20px"
-                  height="20px"
-                />
-                <span class="ml-1 text-sm">BitCoin</span>
-                <span class="ml-1 text-sm font-thin">BTC/KRW</span>
-              </div>
-            </th>
-            <td class="px-6 py-4 whitespace-nowrap">
-              <span>8조 3,686억</span>
-            </td>
-            <td class="px-6 py-4 whitespace-nowrap">
-              <span class="text-red-500">38,452,000</span>
-            </td>
-            <td class="px-6 py-4 whitespace-nowrap">
-              <div class="">
-                <button class="text-center px-2 py-0.5 bg-blue-500 text-white rounded w-16">
-                  -0.03%
-                </button>
-              </div>
-            </td>
-          </tr>
-          <tr class="bg-white border-">
-            <th class="px-6 py-4 whitespace-nowrap">
-              <div class="inline-flex items-center">
-                <img
-                  src="./ico-bitcoin.svg"
-                  alt=""
-                  width="20px"
-                  height="20px"
-                />
-                <span class="ml-1 text-sm">BitCoin</span>
-                <span class="ml-1 text-sm font-thin">BTC/KRW</span>
-              </div>
-            </th>
-            <td class="px-6 py-4 whitespace-nowrap">
-              <span>8조 3,686억</span>
-            </td>
-            <td class="px-6 py-4 whitespace-nowrap">
-              <span class="text-red-500">38,452,000</span>
-            </td>
-            <td class="px-6 py-4 whitespace-nowrap">
-              <div class="">
-                <button class="text-center px-2 py-0.5 bg-blue-500 text-white rounded w-16">
-                  -0.03%
-                </button>
-              </div>
-            </td>
-          </tr>
-          <tr class="bg-white border-">
-            <th class="px-6 py-4 whitespace-nowrap">
-              <div class="inline-flex items-center">
-                <img
-                  src="./ico-bitcoin.svg"
-                  alt=""
-                  width="20px"
-                  height="20px"
-                />
-                <span class="ml-1 text-sm">BitCoin</span>
-                <span class="ml-1 text-sm font-thin">BTC/KRW</span>
-              </div>
-            </th>
-            <td class="px-6 py-4 whitespace-nowrap">
-              <span>8조 3,686억</span>
-            </td>
-            <td class="px-6 py-4 whitespace-nowrap">
-              <span class="text-red-500">38,452,000</span>
-            </td>
-            <td class="px-6 py-4 whitespace-nowrap">
-              <div class="">
-                <button class="text-center px-2 py-0.5 bg-red-500 text-white rounded w-16">
-                  1.5%
-                </button>
-              </div>
-            </td>
-          </tr>
-          <tr class="bg-white border-">
-            <th class="px-6 py-4 whitespace-nowrap">
-              <div class="inline-flex items-center">
-                <img
-                  src="./ico-bitcoin.svg"
-                  alt=""
-                  width="20px"
-                  height="20px"
-                />
-                <span class="ml-1 text-sm">BitCoin</span>
-                <span class="ml-1 text-sm font-thin">BTC/KRW</span>
-              </div>
-            </th>
-            <td class="px-6 py-4 whitespace-nowrap">
-              <span>8조 3,686억</span>
-            </td>
-            <td class="px-6 py-4 whitespace-nowrap">
-              <span class="text-red-500">38,452,000</span>
-            </td>
-            <td class="px-6 py-4 whitespace-nowrap">
-              <div class="">
-                <button class="text-center px-2 py-0.5 bg-red-500 text-white rounded w-16">
-                  1.5%
-                </button>
-              </div>
-            </td>
-          </tr>
-          <tr class="bg-white border-">
-            <th class="px-6 py-4 whitespace-nowrap">
-              <div class="inline-flex items-center">
-                <img
-                  src="./ico-bitcoin.svg"
-                  alt=""
-                  width="20px"
-                  height="20px"
-                />
-                <span class="ml-1 text-sm">BitCoin</span>
-                <span class="ml-1 text-sm font-thin">BTC/KRW</span>
-              </div>
-            </th>
-            <td class="px-6 py-4 whitespace-nowrap">
-              <span>8조 3,686억</span>
-            </td>
-            <td class="px-6 py-4 whitespace-nowrap">
-              <span class="text-red-500">38,452,000</span>
-            </td>
-            <td class="px-6 py-4 whitespace-nowrap">
-              <div class="">
-                <button class="text-center px-2 py-0.5 bg-red-500 text-white rounded w-16">
-                  1.5%
-                </button>
-              </div>
-            </td>
-          </tr>
-          <tr class="bg-white border-">
-            <th class="px-6 py-4 whitespace-nowrap">
-              <div class="inline-flex items-center">
-                <img
-                  src="./ico-bitcoin.svg"
-                  alt=""
-                  width="20px"
-                  height="20px"
-                />
-                <span class="ml-1 text-sm">BitCoin</span>
-                <span class="ml-1 text-sm font-thin">BTC/KRW</span>
-              </div>
-            </th>
-            <td class="px-6 py-4 whitespace-nowrap">
-              <span>8조 3,686억</span>
-            </td>
-            <td class="px-6 py-4 whitespace-nowrap">
-              <span class="text-red-500">38,452,000</span>
-            </td>
-            <td class="px-6 py-4 whitespace-nowrap">
-              <div class="">
-                <button class="text-center px-2 py-0.5 bg-red-500 text-white rounded w-16">
-                  1.5%
-                </button>
-              </div>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+    <div className="card h-full">
+      <div className="main__box--title ">
+        <h2 className="main__title">Best Coin 시세 정보</h2>
+
+        <Link className="" href={`/`}>
+          <LiaAngleRightSolid size={20} />
+        </Link>
+      </div>
+
+      <div className="main__board--card">
+        <div className="w-full truncate">
+          <Tab.Group>
+            <Tab.List className="grid grid-cols-3 gap-1">
+              <Tab as={Fragment}>
+                {({ selected }) => (
+                  /* Use the `selected` state to conditionally style the selected tab. */
+                  <button
+                    className={selected ? "tab tab__black " : "tab tab__white"}
+                  >
+                    코인
+                  </button>
+                )}
+              </Tab>
+
+              <Tab as={Fragment}>
+                {({ selected }) => (
+                  /* Use the `selected` state to conditionally style the selected tab. */
+                  <button
+                    className={selected ? "tab tab__black" : "tab tab__white"}
+                  >
+                    거래소
+                  </button>
+                )}
+              </Tab>
+
+              <Tab as={Fragment}>
+                {({ selected }) => (
+                  /* Use the `selected` state to conditionally style the selected tab. */
+                  <button
+                    className={selected ? "tab tab__black" : "tab tab__white"}
+                  >
+                    선물
+                  </button>
+                )}
+              </Tab>
+            </Tab.List>
+
+            <Tab.Panels className={`mt-2`}>
+              <Tab.Panel>
+                <BestCoint />
+              </Tab.Panel>
+              <Tab.Panel>
+                <BestExchange />
+              </Tab.Panel>
+              <Tab.Panel>
+                <BestFutures />
+              </Tab.Panel>
+            </Tab.Panels>
+          </Tab.Group>
+        </div>
+      </div>
     </div>
   );
 };

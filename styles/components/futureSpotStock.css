@@ -1,9 +1,23 @@
 .futureSpotStock {
-  @apply mt-4 border;
+  @apply mt-4 border w-full;
 }
 
 .futureSpotStock__card {
-  @apply grid grid-cols-1 gap-2 2xl:grid-cols-5;
+  @apply grid grid-cols-1 gap-2 2xl:grid-cols-2;
+}
+
+.futureSpotStock__card--content {
+  @apply col-span-1 h-full w-full;
+}
+
+/* button */
+
+.futureSpotStock__button--wrap {
+  @apply flex justify-between xl:justify-start items-center gap-2 w-full xl:w-44;
+}
+
+.futureSpotStock__button {
+  @apply focus:bg-blue-600 focus:text-white focus:outline-none text-center;
 }
 
 .futureSpotStock--range {
@@ -14,19 +28,11 @@
 }
 
 .futureSpotStock__select--wrap {
-  @apply flex flex-col w-full gap-2 xl:flex-row items-center justify-between mb-2;
+  @apply w-full gap-2 flex flex-col items-center justify-between xl:flex-row xl:justify-start mb-2;
 }
 
 .futureSpotStock__select--item {
-  @apply border bg-gray-500 text-white;
-}
-
-.futureSpotStock__button--wrap {
-  @apply flex justify-between xl:justify-start items-center gap-2 w-full xl:w-44;
-}
-
-.futureSpotStock__button {
-  @apply focus:bg-blue-600 focus:text-white focus:outline-none;
+  @apply border bg-gray-500 text-white xl:w-fit xl:px-5;
 }
 
 /* Input Item */
