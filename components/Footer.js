@@ -57,7 +57,7 @@ const Footer = () => {
               </Link>
             </div>
             <div>
-              <Link href="">
+              <Link href="/">
                 <Image src="/appstore.png" alt="" width={150} height={120} />
               </Link>
             </div>

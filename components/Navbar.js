@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { navLinks } from "@/constant";
 import { useState } from "react";
+
 import NotificationBadge from "./NotificationBadge";
 import DropdownMenu from "./DropdownMenu";
 
@@ -11,6 +12,7 @@ import { LiaAlignJustifySolid, LiaSearchSolid } from "react-icons/lia";
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const lastCategory = navLinks[navLinks.length - 1];
+
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
     console.log(isMenuOpen);
@@ -45,7 +47,6 @@ const Navbar = () => {
       </Link>
 
       {/* Navigation Link And Menu Bar */}
-
       <div className={`nav__menu show-menu ${isMenuOpen ? "nav__open" : ""} `}>
         <ul className="nav__list">
           {navLinks.slice(0, navLinks.length - 1).map((category, index) => (
