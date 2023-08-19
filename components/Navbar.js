@@ -113,7 +113,7 @@ const Navbar = () => {
       <div className="flex justify-end items-center">
         {/* 알람 기능 추가 */}
         {isAuthenticated ? (
-          <div className="w-full text-end xl:hidden">
+          <div className="w-full text-end">
             <NotificationBadge notifications={notifications} />
           </div>
         ) : null}
