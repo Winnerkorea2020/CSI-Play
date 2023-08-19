@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const SignUpSignIn = () => {
   return (
-    <div className="py-5">
+    <div className="card">
       <div className="flex flex-col items-center justify-center px-6 mx-auto">
         <div className="w-full">
           <button

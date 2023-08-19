@@ -1,6 +1,6 @@
 import Ticker from "@/components/Ticker";
 import CoinList from "@/components/CoinList";
-import SignUpSignIn from "@/components/SignUpSignIn";
+
 import Banner from "@/components/Banner";
 import TopCoins from "@/components/TopCoins";
 import StockfuturesSpot from "@/components/StockfuturesSpot ";
@@ -15,8 +15,8 @@ export default function Home() {
   return (
     <main className="mt-2">
       <Ticker />
-      <section className="section bg-red-500">
-        <div className="grid grid-cols-1 xl:grid-cols-12 w-full gap-2">
+      <section className="section">
+        <div className="grid grid-cols-1 xl:grid-cols-12 w-full xl:gap-2">
           {/* Left Side Section Level 1*/}
           <div className="xl:col-span-10">
             <div className="grid grid-cols-1 xl:grid-cols-12 gap-2 w-full">
@@ -61,9 +61,8 @@ export default function Home() {
           {/* Right Side Section */}
           <div className="xl:col-span-2">
             {/* Sign In and Best Coin List */}
-            <div className="bg-white rounded-lg hidden xl:block">
+            <div className="hidden xl:block">
               <CoinList />
-              <SignUpSignIn />
             </div>
             <Banner />
             <TopCoins />

@@ -17,43 +17,47 @@ const Liquidation = () => {
         </div>
         <div className="basis-1/2">
           <div className="flex justify-between xl:justify-end items-center gap-3">
-            <label
-              htmlFor="currencylist_2"
-              className="block font-medium py-2.5 text-base text-end"
-            >
-              코인
-            </label>
-            <select
-              id="currencylist_2"
-              className="w-32 bg-gray-50 border border-gray-300 text-gray-900 rounded-lg block p-2.5"
-            >
-              <option className="" selected>
-                All
-              </option>
-            </select>
-            <label
-              htmlFor="currencylist_1"
-              className="block font-medium py-2.5 text-base text-end"
-            >
-              기간
-            </label>
-            <select
-              id="currencylist_1"
-              className="w-32 bg-gray-50 border border-gray-300 text-gray-900 rounded-lg block p-2.5"
-            >
-              <option className="" selected>
-                Choose Times
-              </option>
-              <option className="" value="ThirtyMINUTE">
-                30 Minute
-              </option>
-              <option className="" value="HOUR">
-                1 Hour
-              </option>
-              <option className="" value="TwoHOUR">
-                2 Hours
-              </option>
-            </select>
+            <div className="flex flex-col items-start justify-between sm:flex-row gap-2 sm:items-center">
+              <label
+                htmlFor="currencylist_2"
+                className="block font-medium py-2.5 text-base text-end"
+              >
+                코인
+              </label>
+              <select
+                id="currencylist_2"
+                className="w-32 bg-gray-50 border border-gray-300 text-gray-900 rounded-lg block p-2.5"
+              >
+                <option className="" selected>
+                  All
+                </option>
+              </select>
+            </div>
+            <div className="flex flex-col items-start justify-between sm:flex-row gap-2 sm:items-center">
+              <label
+                htmlFor="currencylist_1"
+                className="block font-medium py-2.5 text-base text-end"
+              >
+                기간
+              </label>
+              <select
+                id="currencylist_1"
+                className="w-32 bg-gray-50 border border-gray-300 text-gray-900 rounded-lg block p-2.5"
+              >
+                <option className="" selected>
+                  Choose Times
+                </option>
+                <option className="" value="ThirtyMINUTE">
+                  30 Minute
+                </option>
+                <option className="" value="HOUR">
+                  1 Hour
+                </option>
+                <option className="" value="TwoHOUR">
+                  2 Hours
+                </option>
+              </select>
+            </div>
           </div>
         </div>
       </div>
