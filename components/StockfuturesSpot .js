@@ -39,9 +39,7 @@ const StockfuturesSpot = () => {
               <FutureStock />
             </Tab.Panel>
             <Tab.Panel>
-              {/* 
               <SpotStock />
-               */}
             </Tab.Panel>
           </Tab.Panels>
         </Tab.Group>

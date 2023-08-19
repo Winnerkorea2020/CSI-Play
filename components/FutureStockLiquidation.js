@@ -1,178 +1,168 @@
 const FutureStockLiquidation = () => {
   return (
-    <div className="card tab-card mt-4 border">
-      <div className="flex justify-start items-center gap-2">
-        <div className="flex flex-col w-full gap-2 xl:flex-row items-center justify-between">
-          <select className="tab border bg-gray-500 text-white ">
+    <div className="card futureSpotStock">
+      <div className="futureSpotStock__select">
+        <div className="futureSpotStock__select--wrap">
+          <select className="tab futureSpotStock__select--item">
             <option>단방향</option>
           </select>
-          <div className="flex justify-between xl:justify-start items-center gap-2 w-full xl:w-44">
-            <button className="tab tab__gray--light focus:bg-blue-600 focus:text-white focus:outline-none">
+          <div className="futureSpotStock__button--wrap">
+            <button className="tab tab__gray--light futureSpotStock__button">
               Long
             </button>
-            <button className="tab tab__gray--light focus:bg-blue-600 focus:text-white focus:outline-none">
+            <button className="tab tab__gray--light futureSpotStock__button">
               Short
             </button>
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-1 gap-2 2xl:grid-cols-5 mt-3">
+      <div className="futureSpotStock__card">
         <div className="col-span-3">
-          <div>
-            <div className="mt-3">
-              <div className="overflow-x-auto overscroll-y-auto overscroll-x-contain">
-                {/* Table */}
-                <div className="table w-full min-w-max border border-gray-400 my-2">
-                  <div className="table-row bg-gray-500 text-white divide-x divide-gray-400 text-center">
-                    <div className="table-cell py-1.5 px-1 text-center">
-                      Open
-                    </div>
-                    <div className="table-cell py-1.5 px-1">진입가(USDT)</div>
-                    <div className="table-cell py-1.5 px-1">수량(BTC)</div>
-                    <div className="table-cell py-1.5 px-1">선물잔고</div>
-                    <div className="table-cell py-1.5 px-1">ACTION</div>
-                  </div>
-                  <div className="table-row  divide-x divide-gray-400 text-center">
-                    <div className="table-cell py-1.5 px-1 text-center">1</div>
-                    <div className="table-cell py-1.5 px-1">
-                      <div className="flex justify-end items-center">
-                        <input
-                          type="number"
-                          placeholder="6,100,000"
-                          className="text-end w-full mr-3 "
-                        />
-                        <span className="mr-1">USDT</span>
-                      </div>
-                    </div>
-                    <div className="table-cell py-1.5 px-1 ">
-                      <div className="flex justify-end items-center">
-                        <input
-                          type="number"
-                          placeholder="6,100,000"
-                          className="text-end w-full mr-3 "
-                        />
-                        <span className="mr-1">BTC</span>
-                      </div>
-                    </div>
-                    <div className="table-cell py-1.5 px-1 ">
-                      <div className="flex justify-end items-center">
-                        <input
-                          type="number"
-                          placeholder="6,100,000"
-                          className="text-end w-full mr-3 "
-                        />
-                        <span className="mr-1">USDT</span>
-                      </div>
-                    </div>
-                    <div className="table-cell py-1.5 px-1"></div>
-                  </div>
-                </div>
-                {/* Table */}
-                <div className="table w-full min-w-max border border-gray-400 my-2">
-                  <div className="table-row bg-gray-500 text-white divide-x divide-gray-400 text-center">
-                    <div className="table-cell py-1.5 px-1 text-center">
-                      Open
-                    </div>
-                    <div className="table-cell py-1.5 px-1">진입가(USDT)</div>
-                    <div className="table-cell py-1.5 px-1">수량(BTC)</div>
-                    <div className="table-cell py-1.5 px-1">선물잔고</div>
-                    <div className="table-cell py-1.5 px-1">ACTION</div>
-                  </div>
-                  <div className="table-row  divide-x divide-gray-400 text-center">
-                    <div className="table-cell py-1.5 px-1 text-center">1</div>
-                    <div className="table-cell py-1.5 px-1">
-                      <div className="flex justify-end items-center">
-                        <input
-                          type="number"
-                          placeholder="6,100,000"
-                          className="text-end w-full mr-3 "
-                        />
-                        <span className="mr-1">USDT</span>
-                      </div>
-                    </div>
-                    <div className="table-cell py-1.5 px-1 ">
-                      <div className="flex justify-end items-center">
-                        <input
-                          type="number"
-                          placeholder="6,100,000"
-                          className="text-end w-full mr-3 "
-                        />
-                        <span className="mr-1">BTC</span>
-                      </div>
-                    </div>
-                    <div className="table-cell py-1.5 px-1 ">
-                      <div className="flex justify-end items-center">
-                        <input
-                          type="number"
-                          placeholder="6,100,000"
-                          className="text-end w-full mr-3 "
-                        />
-                        <span className="mr-1">USDT</span>
-                      </div>
-                    </div>
-                    <div className="table-cell py-1.5 px-1"></div>
-                  </div>
-                </div>
-                {/* Table */}
-                <div className="table w-full min-w-max border border-gray-400 my-2">
-                  <div className="table-row bg-gray-500 text-white divide-x divide-gray-400 text-center">
-                    <div className="table-cell py-1.5 px-1 text-center">
-                      Open
-                    </div>
-                    <div className="table-cell py-1.5 px-1">진입가(USDT)</div>
-                    <div className="table-cell py-1.5 px-1">수량(BTC)</div>
-                    <div className="table-cell py-1.5 px-1">선물잔고</div>
-                    <div className="table-cell py-1.5 px-1">ACTION</div>
-                  </div>
-                  <div className="table-row  divide-x divide-gray-400 text-center">
-                    <div className="table-cell py-1.5 px-1 text-center">1</div>
-                    <div className="table-cell py-1.5 px-1">
-                      <div className="flex justify-end items-center">
-                        <input
-                          type="number"
-                          placeholder="6,100,000"
-                          className="text-end w-full mr-3 "
-                        />
-                        <span className="mr-1">USDT</span>
-                      </div>
-                    </div>
-                    <div className="table-cell py-1.5 px-1 ">
-                      <div className="flex justify-end items-center">
-                        <input
-                          type="number"
-                          placeholder="6,100,000"
-                          className="text-end w-full mr-3 "
-                        />
-                        <span className="mr-1">BTC</span>
-                      </div>
-                    </div>
-                    <div className="table-cell py-1.5 px-1 ">
-                      <div className="flex justify-end items-center">
-                        <input
-                          type="number"
-                          placeholder="6,100,000"
-                          className="text-end w-full mr-3 "
-                        />
-                        <span className="mr-1">USDT</span>
-                      </div>
-                    </div>
-                    <div className="table-cell py-1.5 px-1"></div>
-                  </div>
-                </div>
+          <div className="futureSpotStock__table--wrap">
+            {/* Table */}
+            <div className="futureSpotStock__table">
+              <div className="futureSpotStock__table--row">
+                <div className="futureSpotStock__table--cell">Open</div>
+                <div className="futureSpotStock__table--cell">진입가(USDT)</div>
+                <div className="futureSpotStock__table--cell">수량(BTC)</div>
+                <div className="futureSpotStock__table--cell">선물잔고</div>
+                <div className="futureSpotStock__table--cell">ACTION</div>
               </div>
-              <div className="mt-3">
-                <button className="btn btn-blue w-full outline-none rounded-lg">
-                  계산
-                </button>
+              <div className="table-row  divide-x divide-gray-400 text-center">
+                <div className="table-cell py-1.5 px-1 text-center">1</div>
+                <div className="table-cell py-1.5 px-1">
+                  <div className="flex justify-end items-center">
+                    <input
+                      type="number"
+                      placeholder="6,100,000"
+                      className="text-end w-full mr-3 "
+                    />
+                    <span className="mr-1">USDT</span>
+                  </div>
+                </div>
+                <div className="table-cell py-1.5 px-1 ">
+                  <div className="flex justify-end items-center">
+                    <input
+                      type="number"
+                      placeholder="6,100,000"
+                      className="text-end w-full mr-3 "
+                    />
+                    <span className="mr-1">BTC</span>
+                  </div>
+                </div>
+                <div className="table-cell py-1.5 px-1 ">
+                  <div className="flex justify-end items-center">
+                    <input
+                      type="number"
+                      placeholder="6,100,000"
+                      className="text-end w-full mr-3 "
+                    />
+                    <span className="mr-1">USDT</span>
+                  </div>
+                </div>
+                <div className="table-cell py-1.5 px-1"></div>
+              </div>
+            </div>
+            {/* Table */}
+            <div className="futureSpotStock__table">
+              <div className="futureSpotStock__table--row">
+                <div className="futureSpotStock__table--cell">Open</div>
+                <div className="futureSpotStock__table--cell">진입가(USDT)</div>
+                <div className="futureSpotStock__table--cell">수량(BTC)</div>
+                <div className="futureSpotStock__table--cell">선물잔고</div>
+                <div className="futureSpotStock__table--cell">ACTION</div>
+              </div>
+              <div className="table-row  divide-x divide-gray-400 text-center">
+                <div className="table-cell py-1.5 px-1 text-center">1</div>
+                <div className="table-cell py-1.5 px-1">
+                  <div className="flex justify-end items-center">
+                    <input
+                      type="number"
+                      placeholder="6,100,000"
+                      className="text-end w-full mr-3 "
+                    />
+                    <span className="mr-1">USDT</span>
+                  </div>
+                </div>
+                <div className="table-cell py-1.5 px-1 ">
+                  <div className="flex justify-end items-center">
+                    <input
+                      type="number"
+                      placeholder="6,100,000"
+                      className="text-end w-full mr-3 "
+                    />
+                    <span className="mr-1">BTC</span>
+                  </div>
+                </div>
+                <div className="table-cell py-1.5 px-1 ">
+                  <div className="flex justify-end items-center">
+                    <input
+                      type="number"
+                      placeholder="6,100,000"
+                      className="text-end w-full mr-3 "
+                    />
+                    <span className="mr-1">USDT</span>
+                  </div>
+                </div>
+                <div className="table-cell py-1.5 px-1"></div>
+              </div>
+            </div>
+            {/* Table */}
+            <div className="futureSpotStock__table">
+              <div className="futureSpotStock__table--row">
+                <div className="futureSpotStock__table--cell">Open</div>
+                <div className="futureSpotStock__table--cell">진입가(USDT)</div>
+                <div className="futureSpotStock__table--cell">수량(BTC)</div>
+                <div className="futureSpotStock__table--cell">선물잔고</div>
+                <div className="futureSpotStock__table--cell">ACTION</div>
+              </div>
+              <div className="table-row  divide-x divide-gray-400 text-center">
+                <div className="table-cell py-1.5 px-1 text-center">1</div>
+                <div className="table-cell py-1.5 px-1">
+                  <div className="flex justify-end items-center">
+                    <input
+                      type="number"
+                      placeholder="6,100,000"
+                      className="text-end w-full mr-3 "
+                    />
+                    <span className="mr-1">USDT</span>
+                  </div>
+                </div>
+                <div className="table-cell py-1.5 px-1 ">
+                  <div className="flex justify-end items-center">
+                    <input
+                      type="number"
+                      placeholder="6,100,000"
+                      className="text-end w-full mr-3 "
+                    />
+                    <span className="mr-1">BTC</span>
+                  </div>
+                </div>
+                <div className="table-cell py-1.5 px-1 ">
+                  <div className="flex justify-end items-center">
+                    <input
+                      type="number"
+                      placeholder="6,100,000"
+                      className="text-end w-full mr-3 "
+                    />
+                    <span className="mr-1">USDT</span>
+                  </div>
+                </div>
+                <div className="table-cell py-1.5 px-1"></div>
               </div>
             </div>
           </div>
+          <div className="futureSpotStock__button--card ">
+            <button className="btn btn-blue futureSpotStock__button">
+              계산
+            </button>
+          </div>
         </div>
         {/* 결과 */}
-        <div className="h-full">
-          <div className="mt-3">
-            <h3 className="text-xl font-semibold">결과</h3>
-            <div className="mt-3">
+        <div className="cols-span-2 h-full">
+          <div className="futureSpotStock__result--card">
+            <h3 className="futureSpotStock__result-title">결과</h3>
+            <div className="futureSpotStock__result--card">
               <div className="grid grid-cols-1 gap-3">
                 <div className="flex justify-between items-center border rounded-lg">
                   <div className="input__title--box">예상 청산가(USDT)</div>
@@ -183,7 +173,9 @@ const FutureStockLiquidation = () => {
                     disabled
                     className="input__default text-end"
                   />
-                  <div className="py-2.5 px-2 w-20">USDT</div>
+                  <div className="futureSpotStock__result--item--unit">
+                    USDT
+                  </div>
                 </div>
               </div>
             </div>

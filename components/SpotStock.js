@@ -13,19 +13,25 @@ const SpotStock = () => {
           <Tab as={Fragment}>
             {({ selected }) => (
               /* Use the `selected` state to conditionally style the selected tab. */
-              <button className={selected ? "tab tab__black" : "tab__outline"}>평단가</button>
+              <button className={selected ? "tab tab__black" : "tab__outline"}>
+                평단가
+              </button>
             )}
           </Tab>
           <Tab as={Fragment}>
             {({ selected }) => (
               /* Use the `selected` state to conditionally style the selected tab. */
-              <button className={selected ? "tab tab__black" : "tab__outline"}>목표가격</button>
+              <button className={selected ? "tab tab__black" : "tab__outline"}>
+                목표가격
+              </button>
             )}
           </Tab>
           <Tab as={Fragment}>
             {({ selected }) => (
               /* Use the `selected` state to conditionally style the selected tab. */
-              <button className={selected ? "tab tab__black" : "tab__outline"}>수익률</button>
+              <button className={selected ? "tab tab__black" : "tab__outline"}>
+                수익률
+              </button>
             )}
           </Tab>
         </Tab.List>

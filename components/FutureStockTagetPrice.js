@@ -12,17 +12,17 @@ const FutureStockTagetPrice = () => {
             Short
           </button>
         </div>
-        <div className="grid grid-cols-1 gap-2 2xl:grid-cols-2 mt-3">
-          <div className="">
+        <div className="futureSpotStock__card">
+          <div className="futureSpotStock--range">
             <InputBoxRange min={0} max={125} value={75} step={5} />
             <div>
-              <h3 className="font-medium tracking-tighter mt-3">
+              <h3 className="futureSpotStock__input--title">
                 {`현재 래버리지에서 최대 포시션:`}{" "}
                 <span className="ml-2">{`${2500} USDT`}</span>
               </h3>
-              <div className="mt-3">
-                <div className="grid grid-cols-1 gap-3 text-base">
-                  <div className="flex justify-between items-center border rounded-lg">
+              <div className="futureSpotStock__input--card">
+                <div className="futureSpotStock__input--item--wrap">
+                  <div className="futureSpotStock__input--item">
                     <div className="input__title--box">진입 가격</div>
                     <input
                       type="number"
@@ -30,9 +30,11 @@ const FutureStockTagetPrice = () => {
                       min="0"
                       className="input__default text-end"
                     />
-                    <div className="py-2.5 px-2 w-20">USDT</div>
+                    <div className="futureSpotStock__result--item--unit">
+                      USDT
+                    </div>
                   </div>
-                  <div className="flex justify-between items-center border rounded-lg">
+                  <div className="futureSpotStock__input--item">
                     <div className="input__title--box">목표 수익률</div>
                     <input
                       type="number"
@@ -41,11 +43,11 @@ const FutureStockTagetPrice = () => {
                       maxLength={3}
                       className="input__default text-end"
                     />
-                    <div className="py-2.5 px-2 w-20">%</div>
+                    <div className="futureSpotStock__result--item--unit">%</div>
                   </div>
                 </div>
-                <div className="mt-3">
-                  <button className="btn btn-blue w-full outline-none rounded-lg">
+                <div className="futureSpotStock__button--card ">
+                  <button className="btn btn-blue futureSpotStock__button">
                     계산
                   </button>
                 </div>
@@ -53,12 +55,12 @@ const FutureStockTagetPrice = () => {
             </div>
           </div>
           {/* 결과 */}
-          <div className="h-full">
-            <div className="mt-3">
-              <h3 className="text-xl font-semibold">결과</h3>
-              <div className="mt-3">
-                <div className="grid grid-cols-1 gap-3">
-                  <div className="flex justify-between items-center border rounded-lg">
+          <div className="cols-span-2 h-full">
+            <div className="futureSpotStock__result--card">
+              <h3 className="futureSpotStock__result-title">결과</h3>
+              <div className="futureSpotStock__result--card">
+                <div className="futureSpotStock__result--list">
+                  <div className="futureSpotStock__result--item">
                     <div className="input__title--box">목표가</div>
                     <input
                       type="number"
@@ -67,7 +69,9 @@ const FutureStockTagetPrice = () => {
                       disabled
                       className="input__default text-end"
                     />
-                    <div className="py-2.5 px-2 w-20">USDT</div>
+                    <div className="futureSpotStock__result--item--unit">
+                      USDT
+                    </div>
                   </div>
                 </div>
               </div>
