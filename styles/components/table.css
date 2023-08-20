@@ -1,0 +1,3 @@
+.table__activity {
+  @apply bg-gray-500 text-white border-gray-600;
+}

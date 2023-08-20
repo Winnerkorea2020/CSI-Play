@@ -36,7 +36,7 @@
 .nav__list--submenu {
   @apply xl:absolute hidden w-full text-gray-700 pt-1 tracking-tighter
   group-hover:block 
-  xl:bg-white xl:group-hover:border xl:group-hover:shadow-gray-600 
+  xl:bg-white xl:group-hover:border xl:group-hover:shadow-gray-300 
   xl:group-hover:shadow-sm xl:group-hover:rounded-xl xl:w-40
   xl:px-3 py-2;
 }
@@ -50,7 +50,7 @@
 }
 
 .nav__link-icon {
-  @apply mr-1 border-2 border-gray-300 inline-flex items-center justify-center text-white rounded-full
+  @apply mr-1 border border-gray-300 inline-flex items-center justify-center text-white rounded-full
   xl:mr-3;
 }
 

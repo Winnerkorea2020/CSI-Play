@@ -7,7 +7,12 @@ import { useState } from "react";
 import NotificationBadge from "./NotificationBadge";
 import DropdownMenu from "./DropdownMenu";
 
-import { LiaAlignJustifySolid, LiaSearchSolid } from "react-icons/lia";
+import {
+  LiaAlignJustifySolid,
+  LiaSearchSolid,
+  LiaDotCircle,
+  LiaAngleDownSolid,
+} from "react-icons/lia";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -53,7 +58,7 @@ const Navbar = () => {
             <li key={index} className="group nav__item">
               <button className="nav__link-button ">
                 <span className="mr-1">{category.category}</span>
-                <box-icon name="chevron-down" size="sm"></box-icon>
+                <LiaAngleDownSolid size={10} />
               </button>
               <ul className="nav__list--submenu">
                 {category.items.map((item, subindex) => (
@@ -62,7 +67,7 @@ const Navbar = () => {
                       <div
                         className={`nav__link-icon btn-rounded btn-${item.color}`}
                       >
-                        <box-icon name="shield-plus" size="sm"></box-icon>
+                        <LiaDotCircle size={10} />
                       </div>
                       <div>{item.title}</div>
                     </Link>
@@ -76,7 +81,7 @@ const Navbar = () => {
             <li className="group nav__item">
               <button className="nav__link-button ">
                 <span className="mr-1">{lastCategory.category}</span>
-                <box-icon name="chevron-down" size="sm"></box-icon>
+                <LiaAngleDownSolid size={15} />
               </button>
               <ul className="nav__list--submenu">
                 {lastCategory.items.map((item, subindex) => (
@@ -85,7 +90,7 @@ const Navbar = () => {
                       <div
                         className={`nav__link-icon btn-rounded btn-${item.color}`}
                       >
-                        <box-icon name="shield-plus" size="sm"></box-icon>
+                        <LiaDotCircle size={15} />
                       </div>
                       <div>{item.title}</div>
                     </Link>

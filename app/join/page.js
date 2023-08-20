@@ -5,7 +5,7 @@ const JoinPage = () => {
     <div>
       {/* Step */}
       <div className="mt-8 mb-16">
-        <ol className="flex items-center w-full text-sm font-medium text-center text-gray-500 dark:text-gray-400 sm:text-base">
+        <ol className="flex items-center w-full text-sm font-medium text-center text-gray-800 sm:text-base">
           <li className="flex md:w-full items-center text-blue-600  sm:after:content-[''] after:w-full after:h-1 after:border-b after:border-gray-200 after:border-1 after:hidden sm:after:inline-block after:mx-6 ">
             <span className="flex items-center w-32">1. 약관동의</span>
           </li>
@@ -27,11 +27,11 @@ const JoinPage = () => {
               checked
               id="checkbox-1"
               type="checkbox"
-              className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+              className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500  focus:ring-2 "
             />
             <label
               htmlFor="checkbox-1"
-              className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+              className="ml-2 text-sm font-medium text-gray-900 "
             >
               이용약관, 개인정보 수집 및 이용, 마케팅 및 프로모션, 맞춤형 서비스
               제공위한 정보 수신(SMS/이메일)에 모두 동의 합니다.
@@ -43,11 +43,11 @@ const JoinPage = () => {
               checked
               id="checkbox-1"
               type="checkbox"
-              className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+              className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500  focus:ring-2 "
             />
             <label
               htmlFor="checkbox-1"
-              className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+              className="ml-2 text-sm font-medium text-gray-900 "
             >
               14세 이상(필수)
             </label>
@@ -57,11 +57,11 @@ const JoinPage = () => {
               checked
               id="checkbox-1"
               type="checkbox"
-              className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+              className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500  focus:ring-2 "
             />
             <label
               htmlFor="checkbox-1"
-              className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+              className="ml-2 text-sm font-medium text-gray-900 "
             >
               이용약관 동의(필수)
             </label>
@@ -599,11 +599,11 @@ const JoinPage = () => {
               checked
               id="checkbox-1"
               type="checkbox"
-              className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+              className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500  focus:ring-2 "
             />
             <label
               htmlFor="checkbox-1"
-              className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+              className="ml-2 text-sm font-medium text-gray-900 "
             >
               개인정보 수집 및 이용에 대한 동의(필수)
             </label>
@@ -819,11 +819,11 @@ const JoinPage = () => {
               checked
               id="checkbox-1"
               type="checkbox"
-              className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+              className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500  focus:ring-2 "
             />
             <label
               htmlFor="checkbox-1"
-              className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+              className="ml-2 text-sm font-medium text-gray-900 "
             >
               마케팅 및 프로모션 맟춤형 서비스 제공 위한 정보 수신 동의
             </label>
@@ -876,11 +876,11 @@ const JoinPage = () => {
               checked
               id="checkbox-1"
               type="checkbox"
-              className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+              className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500  focus:ring-2 "
             />
             <label
               htmlFor="checkbox-1"
-              className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+              className="ml-2 text-sm font-medium text-gray-900 "
             >
               전체동의하기
             </label>

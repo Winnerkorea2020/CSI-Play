@@ -14,7 +14,7 @@ import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <>
+    <div className="flex flex-col items-stretch ">
       <Header />
       <main className="mt-2">
         <Ticker />
@@ -74,6 +74,6 @@ export default function Home() {
         </section>
       </main>
       <Footer />
-    </>
+    </div>
   );
 }
