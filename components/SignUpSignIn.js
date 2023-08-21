@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Image from "next/image";
+import SnsLogin from "./SnsLogin";
 
 const SignUpSignIn = () => {
   return (
@@ -37,27 +37,16 @@ const SignUpSignIn = () => {
         </div>
 
         <div className="mt-6">
-          <div className="relative">
-            <div className="divide-x-2 border"></div>
-            <div className="text-center tracking-tighter font-medium absolute w-full left-0 -top-2 flex justify-center">
-              <div className="bg-white w-fit px-2 text-gray-500">
-                간편 로그인
+          <div>
+            <div className="relative">
+              <div className="divide-x-2 border"></div>
+              <div className="text-center tracking-tighter font-medium absolute w-full left-0 -top-2 flex justify-center">
+                <div className="bg-white w-fit px-2 text-gray-500">
+                  간편 로그인
+                </div>
               </div>
             </div>
-          </div>
-          <div className="flex justify-center items-center gap-6 mt-10">
-            <Link href="/">
-              <Image src="/ico-kakao.svg" width={60} height={60} />
-            </Link>
-            <Link href="/">
-              <Image src="/ico-naver.svg" width={60} height={60} />
-            </Link>
-            <Link href="/">
-              <Image src="/ico-google.svg" width={60} height={60} />
-            </Link>
-            <Link href="/">
-              <Image src="/ico-facebook-symbol.svg" width={60} height={60} />
-            </Link>
+            <SnsLogin />
           </div>
         </div>
       </div>

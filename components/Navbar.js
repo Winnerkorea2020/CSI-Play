@@ -101,7 +101,7 @@ const Navbar = () => {
             </li>
           )}
           {isAuthenticated ? null : (
-            <li className="nav__item mt-24 border-t pt-10">
+            <li className="nav__item mt-24 border-t pt-10 xl:hidden">
               <div>
                 <SignUpSignIn />
               </div>
