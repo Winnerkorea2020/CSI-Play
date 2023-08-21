@@ -1,8 +1,10 @@
 import Image from "next/image";
+import Link from "next/link";
+import { LiaEditSolid } from "react-icons/lia";
 
 const DashBoardRead = () => {
   return (
-    <div className="card__board h-full mt-2">
+    <div className="card__board flex-1 mt-2">
       <div className="container mt-12 mx-auto md:px-6">
         <section className="mb-32">
           <h1 className="mb-4 text-3xl font-bold">
@@ -14,6 +16,15 @@ const DashBoardRead = () => {
             <span className="font-medium rounded-lg border bg-gray-400 text-white px-4 py-1">
               공지사항
             </span>
+            <div className="flex justify-start items-center">
+              <Link
+                href="/dashboard/1/modify"
+                className="flex justify-start items-center gap-2 font-medium rounded-lg border bg-blue-400 hover:bg-blue-500 text-white  px-4 py-1"
+              >
+                <LiaEditSolid size={15} />
+                수정하기
+              </Link>
+            </div>
           </div>
           <div className="text-lg">
             <p className="mb-6 text-lg leading-7 ">
