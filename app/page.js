@@ -14,9 +14,9 @@ import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-stretch ">
+    <div className="flex flex-col justify-between h-full ">
       <Header />
-      <main className="mt-2">
+      <main className="mt-2 flex-1">
         <Ticker />
         <section className="section">
           <div className="grid grid-cols-1 xl:grid-cols-12 w-full xl:gap-2">

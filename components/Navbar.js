@@ -6,6 +6,7 @@ import { useState } from "react";
 
 import NotificationBadge from "./NotificationBadge";
 import DropdownMenu from "./DropdownMenu";
+import SignUpSignIn from "./SignUpSignIn";
 
 import {
   LiaAlignJustifySolid,
@@ -23,7 +24,7 @@ const Navbar = () => {
     console.log(isMenuOpen);
   };
 
-  const isAuthenticated = true;
+  const isAuthenticated = null;
 
   const [notifications] = useState([
     { id: 1, text: "New message received" },
@@ -99,6 +100,13 @@ const Navbar = () => {
               </ul>
             </li>
           )}
+          {isAuthenticated ? null : (
+            <li className="nav__item mt-24 border-t pt-10">
+              <div>
+                <SignUpSignIn />
+              </div>
+            </li>
+          )}
         </ul>
         {/* Search Bar */}
         <div className="search__bar">
@@ -124,9 +132,9 @@ const Navbar = () => {
           </div>
         ) : null}
         {/* User Profile and Sign UP Button & National Setting*/}
-        {/* National Setting */}
 
-        <div className="w-full text-end xl:hidden">
+        {/* National Setting */}
+        <div className="w-full text-end">
           <DropdownMenu options={dropdownOptions} />
         </div>
 

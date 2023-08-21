@@ -11,7 +11,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="pt-16 bg-gray-300/70">{children}</body>
+      <body className="pt-16 bg-gray-300/70 h-full">{children}</body>
       <Script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></Script>
     </html>
   );
