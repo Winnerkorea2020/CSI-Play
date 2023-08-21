@@ -64,7 +64,7 @@ const Navbar = () => {
               <ul className="nav__list--submenu">
                 {category.items.map((item, subindex) => (
                   <li key={subindex} className="nav__item--submenu">
-                    <Link className="nav__link--submenu" href="/">
+                    <Link className="nav__link--submenu" href={`${item.url}`}>
                       <div
                         className={`nav__link-icon btn-rounded btn-${item.color}`}
                       >

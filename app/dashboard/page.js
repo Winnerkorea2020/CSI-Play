@@ -41,7 +41,7 @@ const Dashboard = () => {
               </div>
             </div>
             {/* Table */}
-            {/* <div className="overflow-x-auto">
+            <div className="overflow-x-auto">
               <table className="w-full text-sm text-left text-gray-500 ">
                 <thead className="text-xs text-gray-700 uppercase bg-gray-50  ">
                   <tr>
@@ -984,7 +984,7 @@ const Dashboard = () => {
                   </tr>
                 </tbody>
               </table>
-            </div> */}
+            </div>
             {/* Pagination */}
             <nav className="flex flex-col md:flex-row justify-between items-start md:items-center space-y-3 md:space-y-0 p-4">
               <ul className="inline-flex items-stretch">

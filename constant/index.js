@@ -5,22 +5,27 @@ export const navLinks = [
       {
         title: "코인시세/김프",
         color: "yellow",
+        url: "/",
       },
       {
         title: "코인뉴스",
         color: "blue",
+        url: "/",
       },
       {
         title: "공시&이벤트",
         color: "red",
+        url: "/",
       },
       {
         title: "코인분석",
         color: "green",
+        url: "/",
       },
       {
         title: "자유게시판",
         color: "fuchsia",
+        url: "/dashboard",
       },
     ],
   },
@@ -31,22 +36,27 @@ export const navLinks = [
       {
         title: "국내/해외증시",
         color: "yellow",
+        url: "/",
       },
       {
         title: "주식뉴스",
         color: "blue",
+        url: "/",
       },
       {
         title: "공시&일정",
         color: "red",
+        url: "/",
       },
       {
         title: "분석",
         color: "green",
+        url: "/",
       },
       {
         title: "자유게시판",
         color: "fuchsia",
+        url: "/dashboard",
       },
     ],
   },
@@ -68,6 +78,7 @@ export const navLinks = [
       {
         title: "자유게시판",
         color: "green",
+        url: "/dashboard",
       },
     ],
   },
@@ -77,18 +88,22 @@ export const navLinks = [
       {
         title: "부동산거래",
         color: "yellow",
+        url: "/",
       },
       {
         title: "부동산뉴스",
         color: "blue",
+        url: "/",
       },
       {
         title: "청약정보",
         color: "green",
+        url: "/",
       },
       {
         title: "자유게시판",
         color: "red",
+        url: "/dashboard",
       },
     ],
   },
@@ -98,10 +113,12 @@ export const navLinks = [
       {
         title: "국내&해외뉴스",
         color: "yellow",
+        url: "/",
       },
       {
         title: "트위터",
         color: "blue",
+        url: "/",
       },
     ],
   },
@@ -111,18 +128,22 @@ export const navLinks = [
       {
         title: "개인정보",
         color: "yellow",
+        url: "/",
       },
       {
         title: "알림설정",
         color: "blue",
+        url: "/",
       },
       {
         title: "알림메세지",
         color: "green",
+        url: "/",
       },
       {
         title: "공지사항",
         color: "red",
+        url: "/dashboard",
       },
     ],
   },

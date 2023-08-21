@@ -29,7 +29,7 @@ export default function Home() {
                 </div>
                 {/* 배너 및 위젯 */}
                 <div className="hidden xl:block xl:col-span-4">
-                  <div className="card w-full h-full">AI API</div>
+                  <div className="card w-full h-full"></div>
                 </div>
                 {/* 김치프라임 */}
                 <div className="xl:col-span-8">
