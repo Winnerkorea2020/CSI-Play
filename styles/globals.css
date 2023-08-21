@@ -38,6 +38,7 @@
 .section {
   @apply mt-2 xl:px-6 w-full mx-auto;
 }
-html {
+html,
+body {
   height: 100%;
 }

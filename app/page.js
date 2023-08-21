@@ -11,6 +11,8 @@ import Liquidation from "@/components/Liquidation";
 import BestCoinCurrency from "@/components/BestCoinCurrency";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Weather from "@/components/Weather";
+import ExchangeRate from "@/components/ExchangeRate";
 
 export default function Home() {
   return (
@@ -29,7 +31,14 @@ export default function Home() {
                 </div>
                 {/* 배너 및 위젯 */}
                 <div className="hidden xl:block xl:col-span-4">
-                  <div className="card w-full h-full"></div>
+                  <div className="card w-full h-full">
+                    <div className="w-full">
+                      <Weather />
+                    </div>
+                    <div>
+                      <ExchangeRate />
+                    </div>
+                  </div>
                 </div>
                 {/* 김치프라임 */}
                 <div className="xl:col-span-8">

@@ -1,5 +1,4 @@
-import React from "react";
-
+import Link from "next/link";
 const DashBoardCreate = () => {
   return (
     <section className="bg-white h-full mt-2">
@@ -76,18 +75,18 @@ const DashBoardCreate = () => {
             </div>
           </div>
           <div className="flex justify-start items-center gap-1">
-            <button
-              type="submit"
+            <Link
+              href="/dashboard"
               className="inline-flex items-center px-5 py-2.5 mt-4 sm:mt-6 text-sm font-medium text-center text-white bg-blue-700 rounded-lg focus:ring-4 focus:ring-blue-200  hover:bg-blue-800"
             >
               취소
-            </button>
-            <button
-              type="submit"
+            </Link>
+            <Link
+              href="/dashboard"
               className="inline-flex items-center px-5 py-2.5 mt-4 sm:mt-6 text-sm font-medium text-center text-white bg-red-700 rounded-lg focus:ring-4 focus:ring-blue-200  hover:bg-red-800"
             >
               등록
-            </button>
+            </Link>
           </div>
         </form>
       </div>
