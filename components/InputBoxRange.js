@@ -59,15 +59,27 @@ function InputBoxRange({ min, max, value, step }) {
         <div className="text-sm tracking-tighter font-medium mr-2">
           현재 레버리지:
         </div>
-        <input
-          type="number"
-          onInput={handleNumberInput}
-          value={inputValue}
-          className="number-input"
-          min={min}
-          max={max}
-          step={step}
-        />
+        {inputValue == "0" ? (
+          <input
+            type="number"
+            onInput={handleNumberInput}
+            value="1"
+            className="number-input"
+            min={min}
+            max={max}
+            step={step}
+          />
+        ) : (
+          <input
+            type="number"
+            onInput={handleNumberInput}
+            value={inputValue}
+            className="number-input"
+            min={min}
+            max={max}
+            step={step}
+          />
+        )}
       </div>
       <div className="range-slider__body ">
         <div className="range-slider">
@@ -99,6 +111,7 @@ function InputBoxRange({ min, max, value, step }) {
                   <div className="font-semibold text-gray-500 text-base">{`${
                     min + 1
                   }x`}</div>
+
                   <div className="font-semibold text-gray-500 text-base">
                     25x
                   </div>
