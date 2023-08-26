@@ -25,10 +25,11 @@ const Liquidation = () => {
                 코인
               </label>
               <select
+                defaultValue="0"
                 id="currencylist_2"
                 className="w-32 bg-gray-50 border border-gray-300 text-gray-900 rounded-lg block p-2.5"
               >
-                <option className="" selected>
+                <option className="" value="0">
                   All
                 </option>
               </select>
@@ -41,10 +42,11 @@ const Liquidation = () => {
                 기간
               </label>
               <select
+                defaultValue="0"
                 id="currencylist_1"
                 className="w-32 bg-gray-50 border border-gray-300 text-gray-900 rounded-lg block p-2.5"
               >
-                <option className="" selected>
+                <option className="" value="0">
                   Choose Times
                 </option>
                 <option className="" value="ThirtyMINUTE">

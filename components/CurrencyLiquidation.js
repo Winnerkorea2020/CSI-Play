@@ -18,10 +18,11 @@ const CurrencyLiquidation = () => {
         <div className="basis-1/2">
           <div className="flex justify-end items-center gap-3">
             <select
+              defaultValue="1"
               id="currencylist_1"
               className="w-32 bg-gray-50 border border-gray-300 text-gray-900 rounded-lg block p-2.5"
             >
-              <option className="text-center" selected>
+              <option className="text-center" value="1">
                 기간
               </option>
               <option className="" value="ThirtyMINUTE">

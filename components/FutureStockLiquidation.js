@@ -3,8 +3,13 @@ const FutureStockLiquidation = () => {
     <div className="card futureSpotStock">
       <div className="futureSpotStock__select">
         <div className="futureSpotStock__select--wrap">
-          <select className="tab futureSpotStock__select--item">
-            <option>단방향</option>
+          <select
+            defaultValue="0"
+            className="tab futureSpotStock__select--item"
+          >
+            <option value="0">항목을 선택하세요.</option>
+            <option value="1">단방향</option>
+            <option value="2">양방향</option>
           </select>
           <div className="futureSpotStock__button--wrap">
             <button className="tab tab__gray--light futureSpotStock__button">

@@ -48,7 +48,7 @@
   transform: translateY(-50%);
   z-index: 20;
 
-  @apply absolute w-[1em] h-[1em] bg-gray-500 rounded-full top-[50%] -left-[0.5em] pointer-events-none;
+  @apply absolute w-[1.2em] h-[1.2em] bg-gray-500 rounded-full top-[50%] -left-[0.5em] pointer-events-none;
 }
 
 .number-input {

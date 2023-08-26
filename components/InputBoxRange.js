@@ -84,16 +84,29 @@ function InputBoxRange({ min, max, value, step }) {
       <div className="range-slider__body ">
         <div className="range-slider">
           <div className="slider-container">
-            <input
-              type="range"
-              onInput={handleSliderInput}
-              value={inputValue}
-              className="slider"
-              min={min}
-              max={max}
-              ref={sliderRef}
-              step={step}
-            />
+            {inputValue == "0" ? (
+              <input
+                type="range"
+                onInput={handleSliderInput}
+                value="1"
+                className="slider"
+                min={min}
+                max={max}
+                ref={sliderRef}
+                step={step}
+              />
+            ) : (
+              <input
+                type="range"
+                onInput={handleSliderInput}
+                value={inputValue}
+                className="slider"
+                min={min}
+                max={max}
+                ref={sliderRef}
+                step={step}
+              />
+            )}
 
             <div
               className="slider-thumb"
