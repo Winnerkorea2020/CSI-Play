@@ -16,7 +16,7 @@ input[type="number"] {
 }
 
 .input__title--box {
-  @apply w-60 py-2.5 px-2 bg-gray-300 text-center;
+  @apply w-60 py-2.5 px-2 bg-gray-300 text-center rounded-l-lg;
 }
 
 select {

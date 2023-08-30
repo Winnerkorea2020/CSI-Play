@@ -1,7 +1,4 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  basePath: "/{templatenextjs }",
-  output: "export",
-};
+const nextConfig = {};
 
 module.exports = nextConfig;
