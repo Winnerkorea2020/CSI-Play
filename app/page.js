@@ -6,8 +6,9 @@ import Announcement from "@/components/Announcement";
 import Liquidation from "@/components/Liquidation";
 import BestCoinCurrency from "@/components/BestCoinCurrency";
 
-import Weather from "@/components/Weather";
+import BannerYoutube from "@/components/BannerYoutube ";
 import ExchangeRate from "@/components/ExchangeRate";
+import Banner from "@/components/Banner";
 
 export default function Home() {
   return (
@@ -20,10 +21,7 @@ export default function Home() {
       <div className="hidden xl:block xl:col-span-4">
         <div className="card w-full h-full">
           <div className="w-full">
-            <Weather />
-          </div>
-          <div>
-            <ExchangeRate />
+            <BannerYoutube />
           </div>
         </div>
       </div>

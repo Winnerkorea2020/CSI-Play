@@ -98,7 +98,7 @@ const Liquidation = () => {
                 </div>
               </div>
               <div className="main__trading__table--tbody--cell">
-                <span className="hidden xl:inline-block">99.13</span>{" "}
+                <span className="hidden xl:inline-block">99.13</span>
                 <span>Long</span>
               </div>
             </div>
