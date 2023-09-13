@@ -5,27 +5,27 @@ export const navLinks = [
       {
         title: "코인시세/김프",
         color: "yellow",
-        url: "/",
+        url: "/coin/marketPriceCoinView",
       },
       {
         title: "코인뉴스",
         color: "blue",
-        url: "/",
+        url: "/coin/coinNews",
       },
       {
         title: "공시&이벤트",
         color: "red",
-        url: "/",
+        url: "/coin/coinEvent",
       },
       {
         title: "코인분석",
         color: "green",
-        url: "/",
+        url: "/coin/coinAnalyze",
       },
       {
         title: "자유게시판",
         color: "fuchsia",
-        url: "/dashboard",
+        url: "/coin/coinFreeBoard",
       },
     ],
   },

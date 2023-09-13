@@ -1,5 +1,4 @@
 "use client";
-import { useState } from "react";
 import { Fragment } from "react";
 import { Tab } from "@headlessui/react";
 import Image from "next/image";
@@ -12,7 +11,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-export default function Example() {
+export default function TopCoins() {
   return (
     <div className="mt-2">
       <div className="bg-white px-4 py-3 rounded-lg">

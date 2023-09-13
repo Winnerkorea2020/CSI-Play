@@ -1,7 +1,10 @@
 import "../styles/globals.css";
-import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import Script from "next/script";
+import Footer from "@/components/Footer";
+import Ticker from "@/components/Ticker";
+import CoinList from "@/components/CoinList";
+import Banner from "@/components/Banner";
+import TopCoins from "@/components/TopCoins";
 
 export const metadata = {
   title: `CSI-Play `,
@@ -11,8 +14,28 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="pt-16 bg-gray-300/70 h-full">{children}</body>
-      <Script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></Script>
+      <body className="flex flex-col justify-between min-h-screen pt-16 bg-gray-300/70 ">
+        <Header />
+        <main className="flex-1 mt-2">
+          <Ticker />
+          <section className="section">
+            <div className="grid grid-cols-1 xl:grid-cols-12 w-full xl:gap-2">
+              {/* Left Side Section Level 1*/}
+              <div className="xl:col-span-10">{children}</div>
+              {/* Right Side Section */}
+              <div className="xl:col-span-2">
+                {/* Sign In and Best Coin List */}
+                <div className="hidden xl:block">
+                  <CoinList />
+                </div>
+                <Banner />
+                <TopCoins />
+              </div>
+            </div>
+          </section>
+        </main>
+        <Footer />
+      </body>
     </html>
   );
 }

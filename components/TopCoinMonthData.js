@@ -11,7 +11,7 @@ const TopCoinMonthData = () => {
             <Link href="#none" className="w-full">
               <div className="flex justify-start items-start">
                 <div className="w-fit">
-                  <Image src={tenCoins.img} alt="" width={50} height={50} />
+                  <Image src={`/${tenCoins.img}`} alt="" width={50} height={50} />
                 </div>
 
                 <div className="w-full ml-3">
