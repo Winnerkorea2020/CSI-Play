@@ -4,7 +4,7 @@ import { coinNamesImg } from "@/constant";
 import SignUpSignIn from "./SignUpSignIn";
 
 const CoinList = () => {
-  const isAuthenticated = false;
+  const isAuthenticated = true;
   return (
     <div className="card">
       <div>
