@@ -4,7 +4,6 @@ import { coinNamesImg } from "@/constant";
 import SignUpSignIn from "./SignUpSignIn";
 
 const CoinList = () => {
-  const isAuthenticated = true;
   return (
     <div className="card">
       <div>
@@ -17,7 +16,7 @@ const CoinList = () => {
           ))}
         </div>
       </div>
-      {isAuthenticated ? null : <SignUpSignIn />}
+      <SignUpSignIn />
     </div>
   );
 };
