@@ -11,9 +11,7 @@ const SnsLogin = () => {
       <Link href="/">
         <Image src="/ico-naver.svg" width={60} height={60} />
       </Link>
-      <Link href="/">
-        <Image src="/ico-google.svg" width={60} height={60} />
-      </Link>
+
       <Link href="/">
         <Image src="/ico-facebook-symbol.svg" width={60} height={60} />
       </Link>

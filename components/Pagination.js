@@ -1,7 +1,7 @@
 import { LiaAngleLeftSolid, LiaAngleRightSolid } from "react-icons/lia";
 import Link from "next/link";
 
-const Pagination = () => {
+const Pagination = ({}) => {
   return (
     <div>
       <nav className="flex flex-col md:flex-row justify-between items-start md:items-center space-y-3 md:space-y-0 p-4">

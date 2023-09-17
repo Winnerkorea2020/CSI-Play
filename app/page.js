@@ -7,8 +7,6 @@ import Liquidation from "@/components/Liquidation";
 import BestCoinCurrency from "@/components/BestCoinCurrency";
 
 import BannerYoutube from "@/components/BannerYoutube ";
-import ExchangeRate from "@/components/ExchangeRate";
-import Banner from "@/components/Banner";
 
 export default function Home() {
   return (
@@ -20,8 +18,13 @@ export default function Home() {
       {/* 배너 및 위젯 */}
       <div className="hidden xl:block xl:col-span-4">
         <div className="card w-full h-full">
-          <div className="w-full">
-            <BannerYoutube />
+          <div className="grid grid-cols-1 gap-2 h-full">
+            <div className="w-full h-full">
+              <BannerYoutube />
+            </div>
+            <div className="w-full h-full">
+              <BannerYoutube />
+            </div>
           </div>
         </div>
       </div>
