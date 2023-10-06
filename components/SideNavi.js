@@ -11,7 +11,7 @@ const SideNavi = ({ index }) => {
       <ul className="flex flex-col gap-3 list-none px-2">
         {SideLink.items.map((title, index) => (
           <li key={index} className="text-sm">
-            <Link href={`/${title.url}`}>{title.title}</Link>
+            <Link href={`../${title.url}`}>{title.title}</Link>
           </li>
         ))}
       </ul>

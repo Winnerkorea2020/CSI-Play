@@ -1,14 +1,19 @@
 import SideNavi from "@/components/SideNavi";
+import React from "react";
 
-const CoinLayout = ({ children }) => {
+const layout = ({ children }) => {
   return (
-    <div className="grid grid-cols-1 xl:grid-cols-12 w-full gap-2">
-      <div className="xl:col-span-10">{children}</div>
-      <div className="hidden xl:block xl:col-span-2">
-        <SideNavi index={0} />
+    <div className="h-full pb-2">
+      <div className="container mx-auto max-w-9xl h-full ">
+        <div className="grid grid-cols-1 xl:grid-cols-12 gap-2 h-full ">
+          <div className="col-span-10 h-full">{children}</div>
+          <div className="col-span-2">
+            <SideNavi index={0} />
+          </div>
+        </div>
       </div>
     </div>
   );
 };
 
-export default CoinLayout;
+export default layout;
