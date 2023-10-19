@@ -2,9 +2,6 @@ import "../styles/globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Ticker from "@/components/Ticker";
-import CoinList from "@/components/CoinList";
-import Banner from "@/components/Banner";
-import TopCoins from "@/components/TopCoins";
 
 export const metadata = {
   title: `CSI-Play `,

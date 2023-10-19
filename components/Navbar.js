@@ -24,7 +24,7 @@ const Navbar = () => {
     console.log(isMenuOpen);
   };
 
-  const isAuthenticated = null;
+  const isAuthenticated = true;
 
   const [notifications] = useState([
     { id: 1, text: "New message received" },
