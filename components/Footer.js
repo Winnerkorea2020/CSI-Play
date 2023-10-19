@@ -13,22 +13,15 @@ const Footer = () => {
               <span className="self-center  xl:text-2xl font-semibold whitespace-nowrap">CSI-PLAY</span>
             </Link>
             <div className="ml-5">
-              <div className="text-sm xl:text-base text-gray-700 font-medium tracking-tighter">
-                서울특별시 강서구 등촌로53길 7, 2층(등촌동) 주식회사
-              </div>
-              <div className="text-sm xl:text-base text-gray-700 font-medium tracking-tighter">
-                프라임플레이대표 : 김태윤사업자등록번호 : 357-86-00725
-              </div>
+              <div className="text-sm xl:text-base text-gray-700 font-medium tracking-tighter">서울특별시 강서구 등촌로53길 7, 2층(등촌동) 주식회사</div>
+              <div className="text-sm xl:text-base text-gray-700 font-medium tracking-tighter">프라임플레이대표 : 김태윤사업자등록번호 : 357-86-00725</div>
             </div>
           </div>
           <div className="basis-1/2 ">
             <ul className="flex flex-col xl:flex-row xl:justify-between xl:items-start px-4 py-5 xl:px-0 xl:pt-0 gap-2 ">
               {footerLinks.map((foot, index) => (
                 <li key={index}>
-                  <Link
-                    href="#"
-                    className=" text-sm xl:text-base text-gray-700 font-medium tracking-tighter xl:mr-4 hover:underline xl:md:mr-6"
-                  >
+                  <Link href={foot.link} className=" text-sm xl:text-base text-gray-700 font-medium tracking-tighter xl:mr-4 hover:underline xl:md:mr-6">
                     {foot.title}
                   </Link>
                 </li>

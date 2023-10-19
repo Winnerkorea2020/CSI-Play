@@ -156,7 +156,7 @@ export const footerLinks = [
   },
   {
     title: "회원이용약관",
-    link: "/",
+    link: "/terms",
   },
   {
     title: "개인정보취급방침",
@@ -182,8 +182,7 @@ export const footerLinks = [
 export const tickerItems = [
   {
     url: "/coin",
-    title:
-      "커뮤니티 기반 빌더 육성 프로그램 릴레이어 인큐베이터 2023(Relayers Incubator 2023) 진행  ",
+    title: "커뮤니티 기반 빌더 육성 프로그램 릴레이어 인큐베이터 2023(Relayers Incubator 2023) 진행  ",
     contenst: "",
     tag: "BIT",
   },
@@ -213,8 +212,7 @@ export const tickerItems = [
   },
   {
     url: "/",
-    title:
-      "Bitwise와 ProShares, 비트코인 및 이더리움 선물 ETF 신청서 추가 제출 ",
+    title: "Bitwise와 ProShares, 비트코인 및 이더리움 선물 ETF 신청서 추가 제출 ",
     contenst: "",
     tag: "BIT",
   },
@@ -238,8 +236,7 @@ export const tickerItems = [
   },
   {
     url: "/",
-    title:
-      "Bitwise와 ProShares, 비트코인 및 이더리움 선물 ETF 신청서 추가 제출 ",
+    title: "Bitwise와 ProShares, 비트코인 및 이더리움 선물 ETF 신청서 추가 제출 ",
     contenst: "",
     tag: "BIT",
   },
@@ -263,8 +260,7 @@ export const tickerItems = [
   },
   {
     url: "/",
-    title:
-      "Bitwise와 ProShares, 비트코인 및 이더리움 선물 ETF 신청서 추가 제출 ",
+    title: "Bitwise와 ProShares, 비트코인 및 이더리움 선물 ETF 신청서 추가 제출 ",
     contenst: "",
     tag: "BIT",
   },
