@@ -24,8 +24,11 @@ export default function Home() {
           <div className="hidden xl:block xl:col-span-4">
             <div className="card w-full h-full">
               <div className="grid grid-cols-1 gap-2 h-full">
-                <div className="w-full h-full">{/* <BannerYoutube /> */}</div>
-                <div className="w-full h-full">{/* <BannerYoutube /> */}</div>
+                <div>
+                  <img src="https://img.freepik.com/free-psd/real-estate-house-property-web-banner-template_120329-1947.jpg?w=1380&t=st=1697721596~exp=1697722196~hmac=5884d4868196b8bdad8815c40e11760075c4ab85c978358124a3b44273fa3e2b"></img>
+                </div>
+                {/* <div className="w-full h-full"><BannerYoutube /></div>
+                <div className="w-full h-full"><BannerYoutube /></div> */}
               </div>
             </div>
           </div>
