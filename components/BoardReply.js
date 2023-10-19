@@ -2,7 +2,7 @@
 import { IoPersonCircleSharp } from "react-icons/io5";
 import { RiDeleteBin5Line, RiErrorWarningLine } from "react-icons/ri";
 
-const isAuthority = true;
+const isAuthority = false;
 const BoardReply = () => {
   return (
     <div className="">
@@ -44,24 +44,20 @@ const BoardReply = () => {
           </div>
 
           <div>
-            <p>
-              "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
-              consectetur, adipisci velit..."
-            </p>
+            <p>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</p>
           </div>
 
           <div className="flex justify-end items-center gap-1 mt-5 ">
             {isAuthority ? (
-              <button className="inline-flex justify-center w-24 text-center py-1 hover:bg-red-700 tracking-tighter text-white items-center justify-self-start gap-1 text-xs cursor-pointer bg-red-500 rounded-full">
+              <button className="inline-flex justify-center w-24 text-center py-1 hover:bg-blue-700 tracking-tighter text-white items-center justify-self-start gap-1 text-xs cursor-pointer bg-blue-500 rounded-full">
                 <RiDeleteBin5Line size={15} />
                 <span>삭제하기</span>
               </button>
-            ) : (
-              <button className="inline-flex justify-center w-24 text-center py-1 hover:bg-red-700 tracking-tighter text-white items-center justify-self-start gap-1 text-xs cursor-pointer bg-red-500 rounded-full">
-                <RiErrorWarningLine size={15} />
-                <span>신고하기</span>
-              </button>
-            )}
+            ) : null}
+            <button className="inline-flex justify-center w-24 text-center py-1 hover:bg-red-700 tracking-tighter text-white items-center justify-self-start gap-1 text-xs cursor-pointer bg-red-500 rounded-full">
+              <RiErrorWarningLine size={15} />
+              <span>신고하기</span>
+            </button>
           </div>
         </div>
       </div>
