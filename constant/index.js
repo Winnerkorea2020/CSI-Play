@@ -160,7 +160,7 @@ export const footerLinks = [
   },
   {
     title: "개인정보처리방침",
-    link: "/terms",
+    link: "/privacy",
   },
   {
     title: "자주 묻는 질문",
