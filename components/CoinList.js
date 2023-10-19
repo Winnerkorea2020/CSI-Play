@@ -18,7 +18,11 @@ const CoinList = () => {
           ))}
         </div>
       </div>
+<<<<<<< HEAD
       {isAuthenticated ? <Logined /> : <SignUpSignIn />}
+=======
+      {isAuthenticated ? null : <SignUpSignIn />}
+>>>>>>> parent of 02ab90c (Update CoinList.js)
     </div>
   );
 };
