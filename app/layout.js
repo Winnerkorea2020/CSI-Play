@@ -16,10 +16,11 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className="flex flex-col justify-between min-h-screen pt-16 bg-gray-300/70 ">
         <Header />
-        <div className="mt-2">
-          <Ticker />
-        </div>
+
         <main className="flex-1 mb-2">
+          <div className="mt-2">
+            <Ticker />
+          </div>
           <section className="section h-full">
             {/* Left Side Section Level 1*/}
             {children}

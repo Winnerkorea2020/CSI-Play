@@ -19,8 +19,8 @@ const JoinPage = () => {
       </div>
       {/* Form */}
       <div>
-        <div class="mb-3">
-          <label for="email" class="text-sm text-navy-700  font-bold">
+        <div className="mb-3">
+          <label for="email" className="text-sm text-navy-700  font-bold">
             ID
           </label>
           <div className="flex justify-between items-center gap-2 mt-2">
@@ -28,15 +28,15 @@ const JoinPage = () => {
               type="text"
               id="email"
               placeholder="@horizon.ui"
-              class="flex h-12 w-full items-center justify-center rounded-xl border bg-white/0 p-3 text-sm outline-none border-gray-400"
+              className="flex h-12 w-full items-center justify-center rounded-xl border bg-white/0 p-3 text-sm outline-none border-gray-400"
             />
-            <button class="flex h-12 w-24 items-center justify-center rounded-xl border bg-red-500 text-white p-3 text-sm outline-none border-gray-400 ">
+            <button className="flex h-12 w-24 items-center justify-center rounded-xl border bg-red-500 text-white p-3 text-sm outline-none border-gray-400 ">
               중복확인
             </button>
           </div>
         </div>
-        <div class="mb-3">
-          <label for="email2" class="text-sm text-navy-700  font-bold">
+        <div className="mb-3">
+          <label for="email2" className="text-sm text-navy-700  font-bold">
             패스워드
           </label>
           <div className="mt-2">
@@ -44,12 +44,12 @@ const JoinPage = () => {
               type="password"
               id="email2"
               placeholder="Password"
-              class="flex h-12 w-full items-center justify-center rounded-xl border bg-white/0 p-3 text-sm outline-none border-gray-400"
+              className="flex h-12 w-full items-center justify-center rounded-xl border bg-white/0 p-3 text-sm outline-none border-gray-400"
             />
           </div>
         </div>
-        <div class="mb-3">
-          <label for="email2" class="text-sm text-navy-700  font-bold">
+        <div className="mb-3">
+          <label for="email2" className="text-sm text-navy-700  font-bold">
             패스워드 확인
           </label>
           <div className="mt-2">
@@ -57,12 +57,12 @@ const JoinPage = () => {
               type="password"
               id="email2"
               placeholder="Comfirm Password"
-              class="flex h-12 w-full items-center justify-center rounded-xl border bg-white/0 p-3 text-sm outline-none border-gray-400"
+              className="flex h-12 w-full items-center justify-center rounded-xl border bg-white/0 p-3 text-sm outline-none border-gray-400"
             />
           </div>
         </div>
-        <div class="mb-3">
-          <label for="email2" class="text-sm text-navy-700  font-bold">
+        <div className="mb-3">
+          <label for="email2" className="text-sm text-navy-700  font-bold">
             이름
           </label>
           <div className="mt-2">
@@ -70,12 +70,12 @@ const JoinPage = () => {
               type="text"
               id="email2"
               placeholder="Name"
-              class="flex h-12 w-full items-center justify-center rounded-xl border bg-white/0 p-3 text-sm outline-none border-gray-400"
+              className="flex h-12 w-full items-center justify-center rounded-xl border bg-white/0 p-3 text-sm outline-none border-gray-400"
             />
           </div>
         </div>
-        <div class="mb-3">
-          <label for="email2" class="text-sm text-navy-700  font-bold">
+        <div className="mb-3">
+          <label for="email2" className="text-sm text-navy-700  font-bold">
             이메일 주소
           </label>
           <div className="mt-2">
@@ -83,12 +83,12 @@ const JoinPage = () => {
               type="email"
               id="email2"
               placeholder="email address"
-              class="flex h-12 w-full items-center justify-center rounded-xl border bg-white/0 p-3 text-sm outline-none border-gray-400"
+              className="flex h-12 w-full items-center justify-center rounded-xl border bg-white/0 p-3 text-sm outline-none border-gray-400"
             />
           </div>
         </div>
-        <div class="mb-3">
-          <label for="email2" class="text-sm text-navy-700  font-bold">
+        <div className="mb-3">
+          <label for="email2" className="text-sm text-navy-700  font-bold">
             전화번호
           </label>
           <div className="mt-2">
@@ -96,7 +96,7 @@ const JoinPage = () => {
               type="tel"
               id="email2"
               placeholder="전화번호"
-              class="flex h-12 w-full items-center justify-center rounded-xl border bg-white/0 p-3 text-sm outline-none border-gray-400"
+              className="flex h-12 w-full items-center justify-center rounded-xl border bg-white/0 p-3 text-sm outline-none border-gray-400"
             />
           </div>
         </div>

@@ -67,7 +67,7 @@ const JoinPage = () => {
             </label>
           </div>
           <div className="overscroll-none mb-4">
-            <div class=" text-sm border px-5 py-6 h-72 overflow-y-auto ">
+            <div className=" text-sm border px-5 py-6 h-72 overflow-y-auto ">
               프라임 플레이(이하 “회사”라 합니다)는 『약관의 규제에 관한 법률』
               상 의무를 이행하기 위하여 별도로 회원에게 고지합니다.
               웹사이트(https://www.csi-play.com/, 이하 “웹사이트”) 및 웹사이트의
@@ -609,7 +609,7 @@ const JoinPage = () => {
             </label>
           </div>
           <div className="overscroll-none mb-4">
-            <div class=" text-sm border px-5 py-6 h-72 overflow-y-auto ">
+            <div className=" text-sm border px-5 py-6 h-72 overflow-y-auto ">
               프라임 플레이는 (이하 "회사"는) 고객님의 개인정보를 중요시하며,
               "정보통신망 이용촉진 및 정보보호"에 관한 법률을 준수하고 있습니다.
               <br />
@@ -829,7 +829,7 @@ const JoinPage = () => {
             </label>
           </div>
           <div className="overscroll-none mb-4">
-            <div class=" text-sm border px-5 py-6 h-72 overflow-y-auto ">
+            <div className=" text-sm border px-5 py-6 h-72 overflow-y-auto ">
               {" "}
               CSI PLAY는 개인정보 보호법 제22조 제4항과 제39조의 3에 따라
               사용자의 광고성 정보 수신과 이에 따른 개인정보 처리에 대한 동의를
