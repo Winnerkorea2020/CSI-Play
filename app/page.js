@@ -24,12 +24,8 @@ export default function Home() {
           <div className="hidden xl:block xl:col-span-4">
             <div className="card w-full h-full">
               <div className="grid grid-cols-1 gap-2 h-full">
-                <div className="w-full h-full">
-                  <BannerYoutube />
-                </div>
-                <div className="w-full h-full">
-                  <BannerYoutube />
-                </div>
+                <div className="w-full h-full">{/* <BannerYoutube /> */}</div>
+                <div className="w-full h-full">{/* <BannerYoutube /> */}</div>
               </div>
             </div>
           </div>
