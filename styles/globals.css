@@ -28,6 +28,8 @@
 
 @import "./components/title.css";
 
+@import "./components/sns.css";
+
 * {
   font-family: "Noto Sans KR", sans-serif;
   color: "#1A232E";

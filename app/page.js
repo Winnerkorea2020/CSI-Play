@@ -13,7 +13,7 @@ import TopCoins from "@/components/TopCoins";
 
 export default function Home() {
   return (
-    <div className="grid grid-cols-1 xl:grid-cols-12 w-full xl:gap-2">
+    <div className="grid grid-cols-1 xl:grid-cols-12 w-full xl:gap-2 h-full">
       <div className="xl:col-span-10">
         <div className="grid grid-cols-1 xl:grid-cols-12 gap-2 w-full">
           {/* 선물계산기&현물계산기 */}

@@ -11,7 +11,7 @@ const CoinList = () => {
       <div>
         <div className="grid grid-cols-4 gap-3 tracking-tighter text-gray-600 font-medium">
           {coinNamesImg.map((coin, index) => (
-            <Link href="">
+            <Link href="" key={index}>
               <Image src={coin.img} alt="" width={100} height={100} />
               <div className="w-full text-center text-xs">{coin.title}</div>
             </Link>
