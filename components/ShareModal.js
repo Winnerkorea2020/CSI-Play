@@ -1,36 +1,24 @@
 import Image from "next/image";
-import { useState } from "react";
 import { BiLinkAlt } from "react-icons/bi";
 import { FaFacebookF } from "react-icons/fa";
-import {
-  SiFacebook,
-  SiNaver,
-  SiInstagram,
-  SiKakaotalk,
-  SiTwitter,
-} from "react-icons/si";
+import { SiNaver, SiInstagram, SiTwitter } from "react-icons/si";
 
-const ShareModal = ({ isOpen }) => {
-  function closeModal() {
-    isOpen = false;
-    return;
-  }
-
+const ShareModal = ({ isOpen, closeModal }) => {
   return (
     <div className="">
       <div className={`${isOpen === true ? "block" : "hidden"}`}>
         <div
-          className="fixed bg-gray-800/60  top-0 left-0 w-full mx-auto  min-h-screen flex items-center justify-center"
+          className="fixed bg-gray-800/60 top-0 left-0 w-full mx-auto  min-h-screen flex items-center justify-center"
           style={{ zIndex: "100000" }}
         >
-          <div className="bg-white border shadow-lg w-full mx-4 p-4 rounded-xl md:w-1/2 lg:w-1/3">
+          <div className="bg-white border shadow-lg w-full mx-4 p-4 rounded-xl md:w-96">
             <div className="flex justify-between items center border-b border-gray-200 py-3">
               <div className="flex items-center justify-center">
                 <p className="text-xl font-bold text-gray-800">공유하기</p>
               </div>
 
               <button
-                onClick={closeModal()}
+                onClick={closeModal}
                 className="text-xl font-medium  cursor-pointer hover:text-gray-300 font-sans text-gray-500 w-8 h-8"
               >
                 x
@@ -66,7 +54,7 @@ const ShareModal = ({ isOpen }) => {
                   className="w-full outline-none bg-transparent"
                   type="text"
                   placeholder="link"
-                  value="https://boxicons.com/?query=link"
+                  defaultValue="https://boxicons.com/?query=link"
                 />
                 <button className="bg-indigo-500 text-white rounded text-sm py-2 px-5 mr-2 hover:bg-indigo-600">
                   Copy

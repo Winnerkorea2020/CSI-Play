@@ -2,7 +2,7 @@
 import { IoPersonCircleSharp } from "react-icons/io5";
 import { RiDeleteBin5Line, RiErrorWarningLine } from "react-icons/ri";
 
-const isAuthority = false;
+const isAuthority = true;
 const BoardReply = () => {
   return (
     <div className="">
@@ -12,24 +12,24 @@ const BoardReply = () => {
         </div>
         <div>ID:</div>
       </div>
-      <form className="w-full mt-5" method="POST">
-        <textarea
-          name="reply"
-          rows={`3`}
-          className="border w-full resize-none px-2 py-2.5 rounded-lg"
-          placeholder="댓글을 입력하세요."
-        ></textarea>
-        <div className="mt-3 flex justify-end items-center gap-1 w-full">
-          {isAuthority ? (
+      {isAuthority ? (
+        <form className="w-full mt-5" method="POST">
+          <textarea
+            name="reply"
+            rows={`3`}
+            className="border w-full resize-none px-2 py-2.5 rounded-lg"
+            placeholder="댓글을 입력하세요."
+          ></textarea>
+          <div className="mt-3 flex justify-end items-center gap-1 w-full">
             <input
               type="submit"
               name="button"
               className="py-1.5 px-2.5 border bg-yellow-500 hover:bg-yellow-600 rounded-xl  tracking-tighter text-xs w-20 cursor-pointer shadow text-white"
               value="등록하기"
             />
-          ) : null}
-        </div>
-      </form>
+          </div>
+        </form>
+      ) : null}
 
       <div>
         <div className="w-full mt-2 bg-orange-100 p-5">
@@ -44,7 +44,10 @@ const BoardReply = () => {
           </div>
 
           <div>
-            <p>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</p>
+            <p>
+              "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
+              consectetur, adipisci velit..."
+            </p>
           </div>
 
           <div className="flex justify-end items-center gap-1 mt-5 ">

@@ -5,6 +5,10 @@ import { BiChevronLeft, BiChevronRight, BiLike, BiShare } from "react-icons/bi";
 import ShareModal from "./ShareModal";
 
 const BoardDetail = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => setIsModalOpen(true);
+  const closeModal = () => setIsModalOpen(false);
   return (
     <div>
       <div>
@@ -51,6 +55,7 @@ const BoardDetail = () => {
                   </div>
                 </button>
                 <button
+                  onClick={openModal}
                   type="button"
                   className="px-2 rounded-full xl:px-5 hover:text-white hover:bg-yellow-500"
                 >
@@ -58,7 +63,7 @@ const BoardDetail = () => {
                     <BiShare size={15} /> <div>공유하기</div>
                   </div>
                 </button>
-                <ShareModal isOpen={true} />
+                <ShareModal isOpen={isModalOpen} closeModal={closeModal} />
               </div>
             </div>
           </div>
