@@ -1,4 +1,4 @@
-import BoardGrid from "@/components/BoardGrid";
+import BoardGrid from "@/components/board/BoardGrid";
 
 const CoinAnalyzePage = () => {
   const title = "title";

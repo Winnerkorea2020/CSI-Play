@@ -2,7 +2,8 @@
 import { useState } from "react";
 import BoardReply from "./BoardReply";
 import { BiChevronLeft, BiChevronRight, BiLike, BiShare } from "react-icons/bi";
-import ShareModal from "./ShareModal";
+import ShareModal from "../ShareModal";
+import BoardReplayWrite from "./BoardReplayWrite";
 
 const BoardDetail = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -94,33 +95,48 @@ const BoardDetail = () => {
           </div>
         </div>
         <div className="py-5">
-          <div className="grid grid-cols-3 sm:grid-cols-5 xl:grid-cols-10 gap-2 items-center">
-            <button
-              type="button"
-              className="text-center py-1.5 px-2 border bg-gray-600 hover:bg-yellow-600 rounded-xl  tracking-tighter text-xs w-full  cursor-pointer  text-white"
-            >
-              <div className="flex justify-center items-center gap-1">
-                <BiChevronLeft size={15} /> <div className="pr-2">이전글</div>
-              </div>
-            </button>
-            <button
-              type="button"
-              className=" py-1.5 px-2 border bg-gray-600 hover:bg-yellow-600 rounded-xl  tracking-tighter text-xs w-full  cursor-pointer  text-white"
-            >
-              <div className="flex justify-center items-center gap-1">
-                <div className="pl-2">다음글</div>
-                <BiChevronRight size={15} />
-              </div>
-            </button>
-            <button
-              type="button"
-              className=" py-1.5 px-2 border bg-gray-600 hover:bg-yellow-600 rounded-xl  tracking-tighter text-xs w-full  cursor-pointer  text-white"
-            >
-              <div>목록</div>
-            </button>
+          <div className="flex justify-start xl:justify-between items-center gap-2">
+            <div className="flex justify-start items-center gap-2">
+              <button
+                type="button"
+                className=" w-24 text-center py-1.5 px-2 border bg-gray-600 hover:bg-yellow-600 rounded-xl  tracking-tighter text-xs  cursor-pointer  text-white"
+              >
+                <div className="flex justify-center items-center gap-1">
+                  <BiChevronLeft size={15} /> <div className="pr-2">이전글</div>
+                </div>
+              </button>
+              <button
+                type="button"
+                className="  w-24 py-1.5 px-2 border bg-gray-600 hover:bg-yellow-600 rounded-xl  tracking-tighter text-xs  cursor-pointer  text-white"
+              >
+                <div className="flex justify-center items-center gap-1">
+                  <div className="pl-2">다음글</div>
+                  <BiChevronRight size={15} />
+                </div>
+              </button>
+            </div>
+            <div>
+              <button
+                type="button"
+                className=" w-24  py-1.5 px-2 border bg-gray-600 hover:bg-yellow-600 rounded-xl  tracking-tighter text-xs  cursor-pointer  text-white"
+              >
+                <div>목록</div>
+              </button>
+            </div>
           </div>
         </div>
         <div className="mt-3 border-t pt-3">
+          <BoardReplayWrite />
+          <BoardReply />
+          <BoardReply />
+          <BoardReply />
+          <BoardReply />
+          <BoardReply />
+          <BoardReply />
+          <BoardReply />
+          <BoardReply />
+          <BoardReply />
+          <BoardReply />
           <BoardReply />
         </div>
       </div>

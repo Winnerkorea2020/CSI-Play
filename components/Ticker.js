@@ -37,16 +37,24 @@ const Ticker = ({}) => {
         <span className="hidden xl:inline-block text-xs xl:text-sm font-semibold w-max pr-2 text-amber-500">
           CSI-Play
         </span>
-        <span className="inline-block text-xs xl:text-sm font-semibold w-max pr-2">Ticker!</span>
+        <span className="inline-block text-xs xl:text-sm font-semibold w-max pr-2">
+          Ticker!
+        </span>
       </div>
       <div className={`flex items-center overflow-hidden w-full `}>
         <div className={`flex ${styles.tickerContainer}`} ref={tickerRef}>
           <ul className="flex items-center justify-start gap-8 w-full">
             {tickerItems.map((item, index) => (
-              <li key={index} className="font-medium text-xs w-max">
+              <li key={index} className="font-medium text-sm w-max">
                 <Link href={item.url}>
-                  <span className="bg-gray-200 rounded mr-1 px-2">{item.tag}</span>
-                  <span onMouseEnter={handleHover} onMouseLeave={handleHover} className=" text-xs">
+                  <span className="bg-gray-200 rounded mr-1 px-2">
+                    {item.tag}
+                  </span>
+                  <span
+                    onMouseEnter={handleHover}
+                    onMouseLeave={handleHover}
+                    className=" text-xs"
+                  >
                     {item.title}
                   </span>
                 </Link>

@@ -9,7 +9,7 @@ import BestCoinCurrency from "@/components/BestCoinCurrency";
 import BannerYoutube from "@/components/BannerYoutube ";
 import CoinList from "@/components/CoinList";
 import Banner from "@/components/Banner";
-import TopCoins from "@/components/TopCoins";
+import TopCoins from "@/components/topcoin/TopCoins";
 
 export default function Home() {
   return (

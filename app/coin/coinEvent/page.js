@@ -1,4 +1,4 @@
-import Board from "@/components/BoardTable";
+import Board from "@/components/board/BoardTable";
 
 const CoinFreeBoard = () => {
   const title = "코인뉴스";

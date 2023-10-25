@@ -17,7 +17,9 @@ export default function TopCoins() {
       <div className="bg-white px-4 py-3 rounded-lg">
         <div className="flex flex-col items-center justify-center">
           <Image src="/ico-upbit.svg" width={50} height={50} />
-          <h2 className=" tracking-tighter font-medium text-xl mt-2">급상승 10 코인</h2>
+          <h2 className=" tracking-tighter font-medium text-xl mt-2">
+            급상승 10 코인
+          </h2>
         </div>
         <div className="mt-5">
           <Tab.Group>

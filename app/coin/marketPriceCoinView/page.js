@@ -2,7 +2,7 @@
 import { Fragment } from "react";
 import { Tab } from "@headlessui/react";
 import Image from "next/image";
-import Table from "@/components/Table";
+import Table from "@/components/board/Table";
 import CoinSearchBar from "@/components/CoinSearchBar";
 import Pagination from "@/components/Pagination";
 
