@@ -8,12 +8,7 @@ import NotificationBadge from "./NotificationBadge";
 import DropdownMenu from "./DropdownMenu";
 import SignUpSignIn from "./SignUpSignIn";
 
-import {
-  LiaAlignJustifySolid,
-  LiaSearchSolid,
-  LiaDotCircle,
-  LiaAngleDownSolid,
-} from "react-icons/lia";
+import { LiaAlignJustifySolid, LiaSearchSolid, LiaDotCircle, LiaAngleDownSolid } from "react-icons/lia";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -31,8 +26,8 @@ const Navbar = () => {
     { id: 2, text: "Friend request" },
     { id: 3, text: "Friend request" },
     { id: 4, text: "Friend request" },
-    { id: 4, text: "Friend request" },
-    { id: 4, text: "Friend request" },
+    { id: 5, text: "Friend request" },
+    { id: 6, text: "Friend request" },
   ]);
 
   const dropdownOptions = [
@@ -65,9 +60,7 @@ const Navbar = () => {
                 {category.items.map((item, subindex) => (
                   <li key={subindex} className="nav__item--submenu">
                     <Link className="nav__link--submenu" href={`${item.url}`}>
-                      <div
-                        className={`nav__link-icon btn-rounded btn-${item.color}`}
-                      >
+                      <div className={`nav__link-icon btn-rounded btn-${item.color}`}>
                         <LiaDotCircle size={10} />
                       </div>
                       <div>{item.title}</div>
@@ -87,10 +80,8 @@ const Navbar = () => {
               <ul className="nav__list--submenu">
                 {lastCategory.items.map((item, subindex) => (
                   <li key={subindex} className="nav__item--submenu">
-                    <Link className="nav__link--submenu" href="/">
-                      <div
-                        className={`nav__link-icon btn-rounded btn-${item.color}`}
-                      >
+                    <Link className="nav__link--submenu" href={`${item.url}`}>
+                      <div className={`nav__link-icon btn-rounded btn-${item.color}`}>
                         <LiaDotCircle size={15} />
                       </div>
                       <div>{item.title}</div>
@@ -111,11 +102,7 @@ const Navbar = () => {
         {/* Search Bar */}
         <div className="search__bar">
           <div className="relative xl:max-w-lg mx-auto">
-            <input
-              className="search__bar--input"
-              type="search"
-              placeholder="Search"
-            />
+            <input className="search__bar--input" type="search" placeholder="Search" />
             <button className="search__bar--button">
               <LiaSearchSolid size={20} />
             </button>

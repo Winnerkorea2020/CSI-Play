@@ -36,27 +36,27 @@ export const navLinks = [
       {
         title: "국내/해외증시",
         color: "yellow",
-        url: "/",
+        url: "/stock/stockView",
       },
       {
         title: "주식뉴스",
         color: "blue",
-        url: "/",
+        url: "/stock/stockNews",
       },
       {
         title: "공시&일정",
         color: "red",
-        url: "/",
+        url: "/stock/stockEvent",
       },
       {
         title: "분석",
         color: "green",
-        url: "/",
+        url: "/stock/stockAnalyze",
       },
       {
         title: "자유게시판",
         color: "fuchsia",
-        url: "/dashboard",
+        url: "/stock/stockFreeBoard",
       },
     ],
   },
@@ -66,19 +66,22 @@ export const navLinks = [
       {
         title: "롱&숏비율",
         color: "yellow",
+        url: "/furtures/furtureLongShortMargin",
       },
       {
         title: "청산비율",
         color: "blue",
+        url: "/furtures/furtureLiquidation",
       },
       {
         title: "현물/선물 계산기",
         color: "red",
+        url: "/furtures/furtureCalculator",
       },
       {
         title: "자유게시판",
         color: "green",
-        url: "/dashboard",
+        url: "/furtures/furtureFreeBoard",
       },
     ],
   },
@@ -88,22 +91,22 @@ export const navLinks = [
       {
         title: "부동산거래",
         color: "yellow",
-        url: "/",
+        url: "/realEstate/realEstateTrading",
       },
       {
         title: "부동산뉴스",
         color: "blue",
-        url: "/",
+        url: "/realEstate/realEstateNews",
       },
       {
         title: "청약정보",
         color: "green",
-        url: "/",
+        url: "/realEstate/realEstateSubscription",
       },
       {
         title: "자유게시판",
         color: "red",
-        url: "/dashboard",
+        url: "/realEstate/realEstateFreeBoard",
       },
     ],
   },
@@ -113,12 +116,12 @@ export const navLinks = [
       {
         title: "국내&해외뉴스",
         color: "yellow",
-        url: "/",
+        url: "/news/worldNews",
       },
       {
         title: "트위터",
         color: "blue",
-        url: "/",
+        url: "/news/twitter",
       },
     ],
   },
@@ -128,22 +131,22 @@ export const navLinks = [
       {
         title: "개인정보",
         color: "yellow",
-        url: "/",
+        url: "/mypage/information",
       },
       {
         title: "알림설정",
         color: "blue",
-        url: "/",
+        url: "/mypage/alaram",
       },
       {
         title: "알림메세지",
         color: "green",
-        url: "/",
+        url: "/mypage/message",
       },
       {
         title: "공지사항",
         color: "red",
-        url: "/dashboard",
+        url: "/mypage/notice",
       },
     ],
   },
@@ -182,8 +185,7 @@ export const footerLinks = [
 export const tickerItems = [
   {
     url: "/coin",
-    title:
-      "커뮤니티 기반 빌더 육성 프로그램 릴레이어 인큐베이터 2023(Relayers Incubator 2023) 진행  ",
+    title: "커뮤니티 기반 빌더 육성 프로그램 릴레이어 인큐베이터 2023(Relayers Incubator 2023) 진행  ",
     contenst: "",
     tag: "BIT",
   },
@@ -213,8 +215,7 @@ export const tickerItems = [
   },
   {
     url: "/",
-    title:
-      "Bitwise와 ProShares, 비트코인 및 이더리움 선물 ETF 신청서 추가 제출 ",
+    title: "Bitwise와 ProShares, 비트코인 및 이더리움 선물 ETF 신청서 추가 제출 ",
     contenst: "",
     tag: "BIT",
   },
@@ -238,8 +239,7 @@ export const tickerItems = [
   },
   {
     url: "/",
-    title:
-      "Bitwise와 ProShares, 비트코인 및 이더리움 선물 ETF 신청서 추가 제출 ",
+    title: "Bitwise와 ProShares, 비트코인 및 이더리움 선물 ETF 신청서 추가 제출 ",
     contenst: "",
     tag: "BIT",
   },
@@ -263,8 +263,7 @@ export const tickerItems = [
   },
   {
     url: "/",
-    title:
-      "Bitwise와 ProShares, 비트코인 및 이더리움 선물 ETF 신청서 추가 제출 ",
+    title: "Bitwise와 ProShares, 비트코인 및 이더리움 선물 ETF 신청서 추가 제출 ",
     contenst: "",
     tag: "BIT",
   },
@@ -346,7 +345,7 @@ export const CoinWeekendTop = [
     coinName: "MCG",
     coinValue: "+15.54%",
     status: "plus",
-    img: "ico-mcg.svg",
+    img: "/ico-mcg.svg",
   },
   {
     id: "2",
@@ -354,7 +353,7 @@ export const CoinWeekendTop = [
     coinName: "SUPER",
     coinValue: "+15.54%",
     status: "minus",
-    img: "ico-super.svg",
+    img: "/ico-super.svg",
   },
   {
     id: "3",
@@ -362,7 +361,7 @@ export const CoinWeekendTop = [
     coinName: "PRX",
     coinValue: "+15.54%",
     status: "minus",
-    img: "ico-prx.svg",
+    img: "/ico-prx.svg",
   },
   {
     id: "4",
@@ -370,7 +369,7 @@ export const CoinWeekendTop = [
     coinName: "ABBC",
     coinValue: "+15.54%",
     status: "minus",
-    img: "ico-abbc.svg",
+    img: "/ico-abbc.svg",
   },
   {
     id: "5",
@@ -378,7 +377,7 @@ export const CoinWeekendTop = [
     coinName: "TRR",
     coinValue: "+15.54%",
     status: "minus",
-    img: "ico-trr.svg",
+    img: "/ico-trr.svg",
   },
   {
     id: "6",
@@ -386,7 +385,7 @@ export const CoinWeekendTop = [
     coinName: "BAND",
     coinValue: "+15.54%",
     status: "minus",
-    img: "ico-band.svg",
+    img: "/ico-band.svg",
   },
   {
     id: "7",
@@ -394,7 +393,7 @@ export const CoinWeekendTop = [
     coinName: "MCG",
     coinValue: "+15.54%",
     status: "minus",
-    img: "ico-super.svg",
+    img: "/ico-super.svg",
   },
   {
     id: "8",
@@ -402,7 +401,7 @@ export const CoinWeekendTop = [
     coinName: "MCG",
     coinValue: "+15.54%",
     status: "minus",
-    img: "ico-super.svg",
+    img: "/ico-super.svg",
   },
   {
     id: "9",
@@ -410,7 +409,7 @@ export const CoinWeekendTop = [
     coinName: "MCG",
     coinValue: "+15.54%",
     status: "minus",
-    img: "ico-super.svg",
+    img: "/ico-super.svg",
   },
   {
     id: "10",
@@ -418,7 +417,7 @@ export const CoinWeekendTop = [
     coinName: "MCG",
     coinValue: "+15.54%",
     status: "minus",
-    img: "ico-super.svg",
+    img: "/ico-super.svg",
   },
 ];
 
@@ -429,7 +428,7 @@ export const CoinMonthTop = [
     coinName: "PRX",
     coinValue: "+15.54%",
     status: "minus",
-    img: "ico-prx.svg",
+    img: "/ico-prx.svg",
   },
   {
     id: "2",
@@ -437,7 +436,7 @@ export const CoinMonthTop = [
     coinName: "SUPER",
     coinValue: "+15.54%",
     status: "minus",
-    img: "ico-super.svg",
+    img: "/ico-super.svg",
   },
   {
     id: "3",
@@ -445,7 +444,7 @@ export const CoinMonthTop = [
     coinName: "MCG",
     coinValue: "+15.54%",
     status: "plus",
-    img: "ico-mcg.svg",
+    img: "/ico-mcg.svg",
   },
 
   {
@@ -454,7 +453,7 @@ export const CoinMonthTop = [
     coinName: "ABBC",
     coinValue: "+15.54%",
     status: "minus",
-    img: "ico-abbc.svg",
+    img: "/ico-abbc.svg",
   },
   {
     id: "5",
@@ -462,7 +461,7 @@ export const CoinMonthTop = [
     coinName: "TRR",
     coinValue: "+15.54%",
     status: "minus",
-    img: "ico-trr.svg",
+    img: "/ico-trr.svg",
   },
   {
     id: "6",
@@ -470,7 +469,7 @@ export const CoinMonthTop = [
     coinName: "BAND",
     coinValue: "+15.54%",
     status: "minus",
-    img: "ico-band.svg",
+    img: "/ico-band.svg",
   },
   {
     id: "7",
@@ -478,7 +477,7 @@ export const CoinMonthTop = [
     coinName: "MCG",
     coinValue: "+15.54%",
     status: "minus",
-    img: "ico-super.svg",
+    img: "/ico-super.svg",
   },
   {
     id: "8",
@@ -486,7 +485,7 @@ export const CoinMonthTop = [
     coinName: "MCG",
     coinValue: "+15.54%",
     status: "minus",
-    img: "ico-super.svg",
+    img: "/ico-super.svg",
   },
   {
     id: "9",
@@ -494,7 +493,7 @@ export const CoinMonthTop = [
     coinName: "MCG",
     coinValue: "+15.54%",
     status: "minus",
-    img: "ico-super.svg",
+    img: "/ico-super.svg",
   },
   {
     id: "10",
@@ -502,7 +501,7 @@ export const CoinMonthTop = [
     coinName: "MCG",
     coinValue: "+15.54%",
     status: "minus",
-    img: "ico-super.svg",
+    img: "/ico-super.svg",
   },
 ];
 
@@ -514,7 +513,7 @@ export const CoinSixMonthTop = [
     coinName: "SUPER",
     coinValue: "+15.54%",
     status: "minus",
-    img: "ico-super.svg",
+    img: "/ico-super.svg",
   },
   {
     id: "2",
@@ -522,7 +521,7 @@ export const CoinSixMonthTop = [
     coinName: "MCG",
     coinValue: "+15.54%",
     status: "plus",
-    img: "ico-mcg.svg",
+    img: "/ico-mcg.svg",
   },
   {
     id: "3",
@@ -530,7 +529,7 @@ export const CoinSixMonthTop = [
     coinName: "PRX",
     coinValue: "+15.54%",
     status: "minus",
-    img: "ico-prx.svg",
+    img: "/ico-prx.svg",
   },
   {
     id: "4",
@@ -538,7 +537,7 @@ export const CoinSixMonthTop = [
     coinName: "ABBC",
     coinValue: "+15.54%",
     status: "minus",
-    img: "ico-abbc.svg",
+    img: "/ico-abbc.svg",
   },
   {
     id: "5",
@@ -546,7 +545,7 @@ export const CoinSixMonthTop = [
     coinName: "TRR",
     coinValue: "+15.54%",
     status: "minus",
-    img: "ico-trr.svg",
+    img: "/ico-trr.svg",
   },
   {
     id: "6",
@@ -554,7 +553,7 @@ export const CoinSixMonthTop = [
     coinName: "BAND",
     coinValue: "+15.54%",
     status: "minus",
-    img: "ico-band.svg",
+    img: "/ico-band.svg",
   },
   {
     id: "7",
@@ -562,7 +561,7 @@ export const CoinSixMonthTop = [
     coinName: "MCG",
     coinValue: "+15.54%",
     status: "minus",
-    img: "ico-super.svg",
+    img: "/ico-super.svg",
   },
   {
     id: "8",
@@ -570,7 +569,7 @@ export const CoinSixMonthTop = [
     coinName: "MCG",
     coinValue: "+15.54%",
     status: "minus",
-    img: "ico-super.svg",
+    img: "/ico-super.svg",
   },
   {
     id: "9",
@@ -578,7 +577,7 @@ export const CoinSixMonthTop = [
     coinName: "MCG",
     coinValue: "+15.54%",
     status: "minus",
-    img: "ico-super.svg",
+    img: "/ico-super.svg",
   },
   {
     id: "10",
@@ -586,7 +585,7 @@ export const CoinSixMonthTop = [
     coinName: "MCG",
     coinValue: "+15.54%",
     status: "minus",
-    img: "ico-super.svg",
+    img: "/ico-super.svg",
   },
 ];
 
@@ -598,7 +597,7 @@ export const CoinYearTop = [
     coinName: "TRR",
     coinValue: "+15.54%",
     status: "minus",
-    img: "ico-trr.svg",
+    img: "/ico-trr.svg",
   },
   {
     id: "2",
@@ -606,7 +605,7 @@ export const CoinYearTop = [
     coinName: "SUPER",
     coinValue: "+15.54%",
     status: "minus",
-    img: "ico-super.svg",
+    img: "/ico-super.svg",
   },
   {
     id: "3",
@@ -614,7 +613,7 @@ export const CoinYearTop = [
     coinName: "PRX",
     coinValue: "+15.54%",
     status: "minus",
-    img: "ico-prx.svg",
+    img: "/ico-prx.svg",
   },
   {
     id: "4",
@@ -622,7 +621,7 @@ export const CoinYearTop = [
     coinName: "ABBC",
     coinValue: "+15.54%",
     status: "minus",
-    img: "ico-abbc.svg",
+    img: "/ico-abbc.svg",
   },
   {
     id: "5",
@@ -630,7 +629,7 @@ export const CoinYearTop = [
     coinName: "MCG",
     coinValue: "+15.54%",
     status: "plus",
-    img: "ico-mcg.svg",
+    img: "/ico-mcg.svg",
   },
   {
     id: "6",
@@ -638,7 +637,7 @@ export const CoinYearTop = [
     coinName: "BAND",
     coinValue: "+15.54%",
     status: "minus",
-    img: "ico-band.svg",
+    img: "/ico-band.svg",
   },
   {
     id: "7",
@@ -646,7 +645,7 @@ export const CoinYearTop = [
     coinName: "MCG",
     coinValue: "+15.54%",
     status: "minus",
-    img: "ico-super.svg",
+    img: "/ico-super.svg",
   },
   {
     id: "8",
@@ -654,7 +653,7 @@ export const CoinYearTop = [
     coinName: "MCG",
     coinValue: "+15.54%",
     status: "minus",
-    img: "ico-super.svg",
+    img: "/ico-super.svg",
   },
   {
     id: "9",
@@ -662,7 +661,7 @@ export const CoinYearTop = [
     coinName: "MCG",
     coinValue: "+15.54%",
     status: "minus",
-    img: "ico-super.svg",
+    img: "/ico-super.svg",
   },
   {
     id: "10",
@@ -670,6 +669,6 @@ export const CoinYearTop = [
     coinName: "MCG",
     coinValue: "+15.54%",
     status: "minus",
-    img: "ico-super.svg",
+    img: "/ico-super.svg",
   },
 ];
