@@ -141,7 +141,7 @@ export const navLinks = [
       {
         title: "질문답변",
         color: "red",
-        url: "/communicate/QA",
+        url: "/communicate/FQA",
       },
       {
         title: "유머/감동",
@@ -704,5 +704,44 @@ export const CoinYearTop = [
     coinValue: "+15.54%",
     status: "minus",
     img: "/ico-super.svg",
+  },
+];
+
+export const TwitterList = [
+  {
+    id: "1",
+    twitter: "Changpeng Zhao (바이낸스CEO)",
+  },
+  {
+    id: "2",
+    twitter: "Micro Strategy (임원)",
+  },
+  {
+    id: "3",
+    twitter: "Elon Reeve Musk (일론머스크)",
+  },
+  {
+    id: "4",
+    twitter: "Jack (전 트위터CEO)",
+  },
+  {
+    id: "5",
+    twitter: "Gavin Wood (전 이더리움 CTO)",
+  },
+  {
+    id: "6",
+    twitter: "Anatoly Yakovenko (솔라나 공동설립자)",
+  },
+  {
+    id: "7",
+    twitter: "Federal Reserve (연방준비제도 이사회)",
+  },
+  {
+    id: "8",
+    twitter: "Cathie Wood (ARK Invest CEO)",
+  },
+  {
+    id: "9",
+    twitter: "Bill Ackman (헤지 펀드 관리 회사 CEO)",
   },
 ];
