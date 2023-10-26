@@ -1,7 +1,7 @@
 import BoardTable from "@/components/board/BoardTable";
 import React from "react";
 
-const page = () => {
+const StockAnalzePage = () => {
   const title = "증시분석";
   return (
     <div>
@@ -12,4 +12,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default StockAnalzePage;
