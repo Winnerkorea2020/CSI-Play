@@ -20,7 +20,7 @@ export const navLinks = [
       {
         title: "코인분석",
         color: "green",
-        url: "/coin/coinAnalyze",
+        url: "/coin/coinAnalyze/coin",
       },
       {
         title: "자유게시판",
@@ -126,6 +126,36 @@ export const navLinks = [
     ],
   },
   {
+    category: "커뮤니티",
+    items: [
+      {
+        title: "출석체크",
+        color: "yellow",
+        url: "/communicate/daycheck",
+      },
+      {
+        title: "가입인사",
+        color: "blue",
+        url: "/communicate/welcome",
+      },
+      {
+        title: "질문답변",
+        color: "red",
+        url: "/communicate/QA",
+      },
+      {
+        title: "유머/감동",
+        color: "green",
+        url: "/communicate/humor",
+      },
+      {
+        title: "자유게시판",
+        color: "fuchsia",
+        url: "/communicate/communicateFreeBoard",
+      },
+    ],
+  },
+  {
     category: "마이페이지",
     items: [
       {
@@ -185,7 +215,8 @@ export const footerLinks = [
 export const tickerItems = [
   {
     url: "/coin",
-    title: "커뮤니티 기반 빌더 육성 프로그램 릴레이어 인큐베이터 2023(Relayers Incubator 2023) 진행  ",
+    title:
+      "커뮤니티 기반 빌더 육성 프로그램 릴레이어 인큐베이터 2023(Relayers Incubator 2023) 진행  ",
     contenst: "",
     tag: "BIT",
   },
@@ -215,7 +246,8 @@ export const tickerItems = [
   },
   {
     url: "/",
-    title: "Bitwise와 ProShares, 비트코인 및 이더리움 선물 ETF 신청서 추가 제출 ",
+    title:
+      "Bitwise와 ProShares, 비트코인 및 이더리움 선물 ETF 신청서 추가 제출 ",
     contenst: "",
     tag: "BIT",
   },
@@ -239,7 +271,8 @@ export const tickerItems = [
   },
   {
     url: "/",
-    title: "Bitwise와 ProShares, 비트코인 및 이더리움 선물 ETF 신청서 추가 제출 ",
+    title:
+      "Bitwise와 ProShares, 비트코인 및 이더리움 선물 ETF 신청서 추가 제출 ",
     contenst: "",
     tag: "BIT",
   },
@@ -263,7 +296,8 @@ export const tickerItems = [
   },
   {
     url: "/",
-    title: "Bitwise와 ProShares, 비트코인 및 이더리움 선물 ETF 신청서 추가 제출 ",
+    title:
+      "Bitwise와 ProShares, 비트코인 및 이더리움 선물 ETF 신청서 추가 제출 ",
     contenst: "",
     tag: "BIT",
   },
