@@ -297,6 +297,28 @@ const CalandarTypeA = () => {
               </table>
             </div>
           </div>
+          <div className="p-5 text-white bg-red-500">
+            <h3>※ 출석체크 유의사항 </h3>
+            <ul className="flex flex-col gap-2">
+              <li> ● 본행사는 1일 1회 로그인 후 참여 가능합니다.</li>
+              <li>
+                ● 매일 00:00~23:59 출석 시에만 당일 출석으로 인정되며, 마감시간
+                임박 전 시스템 오류 등의 이슈로 출석 체크가 불가능할 수
+                있습니다. (당사 서버기준 마감시간 이후 응모시 당일 출석 인정
+                불가)
+              </li>
+              <li>
+                ● 응모와 동시에 본 이벤트 관련 마케팅 정보 수신 등의로 처리되며
+                응모, 당첨, 경품 처리 목적으로 회원님의 고객정보
+                (성명,휴대폰번호)가 활용될 수 있습니다.
+              </li>
+              <li>
+                ● 혜택 제공 시점에 회원이 아니거나 정확한 휴대전화번호가 글쓰기
+                되 있지 않을 경우 혜택제공이 불가능 합니다. ● 당첨된 경품은
+                교환/환불 및 타인에게 양도/판매 불가합니다.
+              </li>
+            </ul>
+          </div>
           <div className="md:py-8 py-5 md:px-16 px-5  bg-gray-100 rounded-b">
             <div className="px-4">
               <div className="border-b pb-4 border-gray-400 border-dashed">

@@ -1,4 +1,4 @@
-import FreeBoardSearchBar from "@/components/FreeBoardSearchBar";
+import FreeBoardSearchBar from "@/components/searchbox/FreeBoardSearchBar";
 import CardHorizonalTypeD from "@/components/card/CardHorizonalTypeD";
 import React from "react";
 

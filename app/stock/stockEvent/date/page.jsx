@@ -1,5 +1,5 @@
 import CardHorizonalTypeE from "@/components/card/CardHorizonalTypeE";
-import FreeBoardSearchBar from "@/components/FreeBoardSearchBar";
+import FreeBoardSearchBar from "@/components/searchbox/FreeBoardSearchBar";
 import React from "react";
 
 const StockEventPage = () => {

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import React from "react";
 
 const layout = ({ children }) => {
   return (
@@ -7,27 +8,15 @@ const layout = ({ children }) => {
         <div className="flex justify-start items-center gap-0.5 border-b-2 ">
           <Link
             className="border border-gray-200 px-5 py-2.5 rounded-t bg-gray-100  text-sm font-medium hover:bg-yellow-500"
-            href={`/coin/coinAnalyze/coin`}
+            href={`/stock/stockEvent/date`}
           >
-            코인분석
+            공시일정
           </Link>
           <Link
             className="border border-gray-200 px-5 py-2.5 rounded-t bg-gray-100  text-sm font-medium hover:bg-yellow-500"
-            href={`/coin/coinAnalyze/investReport`}
+            href={`/stock/stockEvent/calandar`}
           >
-            시황분석
-          </Link>
-          <Link
-            className="border border-gray-200 px-5 py-2.5 rounded-t bg-gray-100  text-sm font-medium hover:bg-yellow-500"
-            href={`/coin/coinAnalyze/chart`}
-          >
-            차트 관점
-          </Link>
-          <Link
-            className="border border-gray-200 px-5 py-2.5 rounded-t bg-gray-100  text-sm font-medium hover:bg-yellow-500"
-            href={`/coin/coinAnalyze/market`}
-          >
-            암호화폐 투자리포트
+            증시캘린더
           </Link>
         </div>
       </div>

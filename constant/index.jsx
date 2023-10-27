@@ -46,7 +46,7 @@ export const navLinks = [
       {
         title: "공시&일정",
         color: "red",
-        url: "/stock/stockEvent",
+        url: "/stock/stockEvent/date",
       },
       {
         title: "분석",

@@ -1,5 +1,6 @@
 import CardHorizonalTypeD from "@/components/card/CardHorizonalTypeD";
-import FreeBoardSearchBar from "@/components/FreeBoardSearchBar";
+
+import SearchBar from "@/components/searchbox/SearchBar";
 import React from "react";
 
 const page = () => {
@@ -10,7 +11,7 @@ const page = () => {
           <h3 className="ml-2 py-4 font-semibold text-lg">시황분석</h3>
         </div>
         <div className="mb-4">
-          <FreeBoardSearchBar />
+          <SearchBar />
         </div>
         <div className="grid grid-cols-1 gap-3">
           <CardHorizonalTypeD title={"분석"} />

@@ -1,10 +1,11 @@
 import BoardGrid from "@/components/board/BoardGrid";
+import BoardTable from "@/components/board/BoardTable";
 
 const CoinNewsPage = () => {
-  const title = "title";
+  const title = "코인뉴스";
   return (
-    <div>
-      <BoardGrid titie={title} />
+    <div className="h-full bg-white">
+      <BoardTable title={title} />
     </div>
   );
 };

@@ -5,7 +5,7 @@ import Link from "next/link";
 import { alaramSetting } from "@/mockupDB";
 
 import Pagination from "../Pagination";
-import FreeBoardSearchBar from "../FreeBoardSearchBar";
+import SearchBar from "../searchbox/SearchBar";
 
 const BoardTable = ({ title }) => {
   const pathnamne = usePathname();
@@ -13,7 +13,7 @@ const BoardTable = ({ title }) => {
   console.log(pathnamne);
   return (
     <div>
-      <FreeBoardSearchBar />
+      <SearchBar />
       <h3 className="py-4 font-semibold underline text-lg">{title}</h3>
       <div className="overflow-hidden  border border-gray-200  md:rounded-lg w-full">
         <table className="w-full text-sm  text-gray-500  table-fixed">

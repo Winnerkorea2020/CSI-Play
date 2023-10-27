@@ -57,6 +57,526 @@ const Table = () => {
               2023-08-04 17:26:50
             </td>
           </tr>
+          <tr>
+            <td
+              scope="row"
+              className="px-4 py-3 truncate whitespace-nowrap w-full "
+            >
+              214
+            </td>
+            <td
+              scope="row"
+              className="px-4 py-3 truncate whitespace-nowrap text-center"
+            >
+              [코인 시황]다시 주춤하는 비트코인…3800만원대 횡보
+            </td>
+            <td
+              scope="row"
+              className="px-4 py-3 truncate whitespace-nowrap text-center"
+            >
+              신호철
+            </td>
+            <td
+              scope="row"
+              className="px-4 py-3 truncate whitespace-nowrap text-center"
+            >
+              2023-08-04 17:26:50
+            </td>
+          </tr>
+          <tr>
+            <td
+              scope="row"
+              className="px-4 py-3 truncate whitespace-nowrap w-full "
+            >
+              214
+            </td>
+            <td
+              scope="row"
+              className="px-4 py-3 truncate whitespace-nowrap text-center"
+            >
+              [코인 시황]다시 주춤하는 비트코인…3800만원대 횡보
+            </td>
+            <td
+              scope="row"
+              className="px-4 py-3 truncate whitespace-nowrap text-center"
+            >
+              신호철
+            </td>
+            <td
+              scope="row"
+              className="px-4 py-3 truncate whitespace-nowrap text-center"
+            >
+              2023-08-04 17:26:50
+            </td>
+          </tr>
+          <tr>
+            <td
+              scope="row"
+              className="px-4 py-3 truncate whitespace-nowrap w-full "
+            >
+              214
+            </td>
+            <td
+              scope="row"
+              className="px-4 py-3 truncate whitespace-nowrap text-center"
+            >
+              [코인 시황]다시 주춤하는 비트코인…3800만원대 횡보
+            </td>
+            <td
+              scope="row"
+              className="px-4 py-3 truncate whitespace-nowrap text-center"
+            >
+              신호철
+            </td>
+            <td
+              scope="row"
+              className="px-4 py-3 truncate whitespace-nowrap text-center"
+            >
+              2023-08-04 17:26:50
+            </td>
+          </tr>
+          <tr>
+            <td
+              scope="row"
+              className="px-4 py-3 truncate whitespace-nowrap w-full "
+            >
+              214
+            </td>
+            <td
+              scope="row"
+              className="px-4 py-3 truncate whitespace-nowrap text-center"
+            >
+              [코인 시황]다시 주춤하는 비트코인…3800만원대 횡보
+            </td>
+            <td
+              scope="row"
+              className="px-4 py-3 truncate whitespace-nowrap text-center"
+            >
+              신호철
+            </td>
+            <td
+              scope="row"
+              className="px-4 py-3 truncate whitespace-nowrap text-center"
+            >
+              2023-08-04 17:26:50
+            </td>
+          </tr>
+          <tr>
+            <td
+              scope="row"
+              className="px-4 py-3 truncate whitespace-nowrap w-full "
+            >
+              214
+            </td>
+            <td
+              scope="row"
+              className="px-4 py-3 truncate whitespace-nowrap text-center"
+            >
+              [코인 시황]다시 주춤하는 비트코인…3800만원대 횡보
+            </td>
+            <td
+              scope="row"
+              className="px-4 py-3 truncate whitespace-nowrap text-center"
+            >
+              신호철
+            </td>
+            <td
+              scope="row"
+              className="px-4 py-3 truncate whitespace-nowrap text-center"
+            >
+              2023-08-04 17:26:50
+            </td>
+          </tr>
+          <tr>
+            <td
+              scope="row"
+              className="px-4 py-3 truncate whitespace-nowrap w-full "
+            >
+              214
+            </td>
+            <td
+              scope="row"
+              className="px-4 py-3 truncate whitespace-nowrap text-center"
+            >
+              [코인 시황]다시 주춤하는 비트코인…3800만원대 횡보
+            </td>
+            <td
+              scope="row"
+              className="px-4 py-3 truncate whitespace-nowrap text-center"
+            >
+              신호철
+            </td>
+            <td
+              scope="row"
+              className="px-4 py-3 truncate whitespace-nowrap text-center"
+            >
+              2023-08-04 17:26:50
+            </td>
+          </tr>
+          <tr>
+            <td
+              scope="row"
+              className="px-4 py-3 truncate whitespace-nowrap w-full "
+            >
+              214
+            </td>
+            <td
+              scope="row"
+              className="px-4 py-3 truncate whitespace-nowrap text-center"
+            >
+              [코인 시황]다시 주춤하는 비트코인…3800만원대 횡보
+            </td>
+            <td
+              scope="row"
+              className="px-4 py-3 truncate whitespace-nowrap text-center"
+            >
+              신호철
+            </td>
+            <td
+              scope="row"
+              className="px-4 py-3 truncate whitespace-nowrap text-center"
+            >
+              2023-08-04 17:26:50
+            </td>
+          </tr>
+          <tr>
+            <td
+              scope="row"
+              className="px-4 py-3 truncate whitespace-nowrap w-full "
+            >
+              214
+            </td>
+            <td
+              scope="row"
+              className="px-4 py-3 truncate whitespace-nowrap text-center"
+            >
+              [코인 시황]다시 주춤하는 비트코인…3800만원대 횡보
+            </td>
+            <td
+              scope="row"
+              className="px-4 py-3 truncate whitespace-nowrap text-center"
+            >
+              신호철
+            </td>
+            <td
+              scope="row"
+              className="px-4 py-3 truncate whitespace-nowrap text-center"
+            >
+              2023-08-04 17:26:50
+            </td>
+          </tr>
+          <tr>
+            <td
+              scope="row"
+              className="px-4 py-3 truncate whitespace-nowrap w-full "
+            >
+              214
+            </td>
+            <td
+              scope="row"
+              className="px-4 py-3 truncate whitespace-nowrap text-center"
+            >
+              [코인 시황]다시 주춤하는 비트코인…3800만원대 횡보
+            </td>
+            <td
+              scope="row"
+              className="px-4 py-3 truncate whitespace-nowrap text-center"
+            >
+              신호철
+            </td>
+            <td
+              scope="row"
+              className="px-4 py-3 truncate whitespace-nowrap text-center"
+            >
+              2023-08-04 17:26:50
+            </td>
+          </tr>
+          <tr>
+            <td
+              scope="row"
+              className="px-4 py-3 truncate whitespace-nowrap w-full "
+            >
+              214
+            </td>
+            <td
+              scope="row"
+              className="px-4 py-3 truncate whitespace-nowrap text-center"
+            >
+              [코인 시황]다시 주춤하는 비트코인…3800만원대 횡보
+            </td>
+            <td
+              scope="row"
+              className="px-4 py-3 truncate whitespace-nowrap text-center"
+            >
+              신호철
+            </td>
+            <td
+              scope="row"
+              className="px-4 py-3 truncate whitespace-nowrap text-center"
+            >
+              2023-08-04 17:26:50
+            </td>
+          </tr>
+          <tr>
+            <td
+              scope="row"
+              className="px-4 py-3 truncate whitespace-nowrap w-full "
+            >
+              214
+            </td>
+            <td
+              scope="row"
+              className="px-4 py-3 truncate whitespace-nowrap text-center"
+            >
+              [코인 시황]다시 주춤하는 비트코인…3800만원대 횡보
+            </td>
+            <td
+              scope="row"
+              className="px-4 py-3 truncate whitespace-nowrap text-center"
+            >
+              신호철
+            </td>
+            <td
+              scope="row"
+              className="px-4 py-3 truncate whitespace-nowrap text-center"
+            >
+              2023-08-04 17:26:50
+            </td>
+          </tr>
+          <tr>
+            <td
+              scope="row"
+              className="px-4 py-3 truncate whitespace-nowrap w-full "
+            >
+              214
+            </td>
+            <td
+              scope="row"
+              className="px-4 py-3 truncate whitespace-nowrap text-center"
+            >
+              [코인 시황]다시 주춤하는 비트코인…3800만원대 횡보
+            </td>
+            <td
+              scope="row"
+              className="px-4 py-3 truncate whitespace-nowrap text-center"
+            >
+              신호철
+            </td>
+            <td
+              scope="row"
+              className="px-4 py-3 truncate whitespace-nowrap text-center"
+            >
+              2023-08-04 17:26:50
+            </td>
+          </tr>
+          <tr>
+            <td
+              scope="row"
+              className="px-4 py-3 truncate whitespace-nowrap w-full "
+            >
+              214
+            </td>
+            <td
+              scope="row"
+              className="px-4 py-3 truncate whitespace-nowrap text-center"
+            >
+              [코인 시황]다시 주춤하는 비트코인…3800만원대 횡보
+            </td>
+            <td
+              scope="row"
+              className="px-4 py-3 truncate whitespace-nowrap text-center"
+            >
+              신호철
+            </td>
+            <td
+              scope="row"
+              className="px-4 py-3 truncate whitespace-nowrap text-center"
+            >
+              2023-08-04 17:26:50
+            </td>
+          </tr>
+          <tr>
+            <td
+              scope="row"
+              className="px-4 py-3 truncate whitespace-nowrap w-full "
+            >
+              214
+            </td>
+            <td
+              scope="row"
+              className="px-4 py-3 truncate whitespace-nowrap text-center"
+            >
+              [코인 시황]다시 주춤하는 비트코인…3800만원대 횡보
+            </td>
+            <td
+              scope="row"
+              className="px-4 py-3 truncate whitespace-nowrap text-center"
+            >
+              신호철
+            </td>
+            <td
+              scope="row"
+              className="px-4 py-3 truncate whitespace-nowrap text-center"
+            >
+              2023-08-04 17:26:50
+            </td>
+          </tr>
+          <tr>
+            <td
+              scope="row"
+              className="px-4 py-3 truncate whitespace-nowrap w-full "
+            >
+              214
+            </td>
+            <td
+              scope="row"
+              className="px-4 py-3 truncate whitespace-nowrap text-center"
+            >
+              [코인 시황]다시 주춤하는 비트코인…3800만원대 횡보
+            </td>
+            <td
+              scope="row"
+              className="px-4 py-3 truncate whitespace-nowrap text-center"
+            >
+              신호철
+            </td>
+            <td
+              scope="row"
+              className="px-4 py-3 truncate whitespace-nowrap text-center"
+            >
+              2023-08-04 17:26:50
+            </td>
+          </tr>
+          <tr>
+            <td
+              scope="row"
+              className="px-4 py-3 truncate whitespace-nowrap w-full "
+            >
+              214
+            </td>
+            <td
+              scope="row"
+              className="px-4 py-3 truncate whitespace-nowrap text-center"
+            >
+              [코인 시황]다시 주춤하는 비트코인…3800만원대 횡보
+            </td>
+            <td
+              scope="row"
+              className="px-4 py-3 truncate whitespace-nowrap text-center"
+            >
+              신호철
+            </td>
+            <td
+              scope="row"
+              className="px-4 py-3 truncate whitespace-nowrap text-center"
+            >
+              2023-08-04 17:26:50
+            </td>
+          </tr>
+          <tr>
+            <td
+              scope="row"
+              className="px-4 py-3 truncate whitespace-nowrap w-full "
+            >
+              214
+            </td>
+            <td
+              scope="row"
+              className="px-4 py-3 truncate whitespace-nowrap text-center"
+            >
+              [코인 시황]다시 주춤하는 비트코인…3800만원대 횡보
+            </td>
+            <td
+              scope="row"
+              className="px-4 py-3 truncate whitespace-nowrap text-center"
+            >
+              신호철
+            </td>
+            <td
+              scope="row"
+              className="px-4 py-3 truncate whitespace-nowrap text-center"
+            >
+              2023-08-04 17:26:50
+            </td>
+          </tr>
+          <tr>
+            <td
+              scope="row"
+              className="px-4 py-3 truncate whitespace-nowrap w-full "
+            >
+              214
+            </td>
+            <td
+              scope="row"
+              className="px-4 py-3 truncate whitespace-nowrap text-center"
+            >
+              [코인 시황]다시 주춤하는 비트코인…3800만원대 횡보
+            </td>
+            <td
+              scope="row"
+              className="px-4 py-3 truncate whitespace-nowrap text-center"
+            >
+              신호철
+            </td>
+            <td
+              scope="row"
+              className="px-4 py-3 truncate whitespace-nowrap text-center"
+            >
+              2023-08-04 17:26:50
+            </td>
+          </tr>
+          <tr>
+            <td
+              scope="row"
+              className="px-4 py-3 truncate whitespace-nowrap w-full "
+            >
+              214
+            </td>
+            <td
+              scope="row"
+              className="px-4 py-3 truncate whitespace-nowrap text-center"
+            >
+              [코인 시황]다시 주춤하는 비트코인…3800만원대 횡보
+            </td>
+            <td
+              scope="row"
+              className="px-4 py-3 truncate whitespace-nowrap text-center"
+            >
+              신호철
+            </td>
+            <td
+              scope="row"
+              className="px-4 py-3 truncate whitespace-nowrap text-center"
+            >
+              2023-08-04 17:26:50
+            </td>
+          </tr>
+          <tr>
+            <td
+              scope="row"
+              className="px-4 py-3 truncate whitespace-nowrap w-full "
+            >
+              214
+            </td>
+            <td
+              scope="row"
+              className="px-4 py-3 truncate whitespace-nowrap text-center"
+            >
+              [코인 시황]다시 주춤하는 비트코인…3800만원대 횡보
+            </td>
+            <td
+              scope="row"
+              className="px-4 py-3 truncate whitespace-nowrap text-center"
+            >
+              신호철
+            </td>
+            <td
+              scope="row"
+              className="px-4 py-3 truncate whitespace-nowrap text-center"
+            >
+              2023-08-04 17:26:50
+            </td>
+          </tr>
         </tbody>
       </table>
     </div>
