@@ -745,3 +745,106 @@ export const TwitterList = [
     twitter: "Bill Ackman (헤지 펀드 관리 회사 CEO)",
   },
 ];
+
+export const alaramSetting = [
+  {
+    category: "코인",
+    items: [
+      {
+        title: "코인뉴스",
+        color: "blue",
+        url: "/coin/coinNews",
+      },
+      {
+        title: "공시&이벤트",
+        color: "red",
+        url: "/coin/coinEvent",
+      },
+    ],
+  },
+  {
+    category: "주식",
+    items: [
+      {
+        title: "주식뉴스",
+        color: "blue",
+        url: "/coin/coinNews",
+      },
+      {
+        title: "공시&일정",
+        color: "red",
+        url: "/coin/coinEvent",
+      },
+    ],
+  },
+  {
+    category: "선물/마진",
+    items: [
+      {
+        title: "현물/선물 계산기 설정값알림",
+        color: "blue",
+        url: "/coin/coinNews",
+      },
+      {
+        title: "선물지정가 알림",
+        color: "red",
+        url: "/coin/coinEvent",
+      },
+    ],
+  },
+  {
+    category: "부동산",
+    items: [
+      {
+        title: "부동산뉴스",
+        color: "blue",
+        url: "/coin/coinNews",
+      },
+      {
+        title: "청약정보",
+        color: "red",
+        url: "/coin/coinEvent",
+      },
+    ],
+  },
+  {
+    category: "뉴스",
+    items: [
+      {
+        title: "국내&해외뉴스",
+        color: "blue",
+        url: "/coin/coinNews",
+      },
+    ],
+  },
+  {
+    category: "커뮤니티",
+    items: [
+      {
+        title: "출석체크",
+        color: "blue",
+        url: "/coin/coinNews",
+      },
+      {
+        title: "질문답변",
+        color: "blue",
+        url: "/coin/coinNews",
+      },
+    ],
+  },
+  {
+    category: "마이페이지",
+    items: [
+      {
+        title: "공지사항",
+        color: "blue",
+        url: "/coin/coinNews",
+      },
+      {
+        title: "키워드알림",
+        color: "blue",
+        url: "/coin/coinNews",
+      },
+    ],
+  },
+];
