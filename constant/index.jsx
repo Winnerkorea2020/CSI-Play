@@ -807,16 +807,7 @@ export const alaramSetting = [
       },
     ],
   },
-  {
-    category: "뉴스",
-    items: [
-      {
-        title: "국내&해외뉴스",
-        color: "blue",
-        url: "/coin/coinNews",
-      },
-    ],
-  },
+
   {
     category: "커뮤니티",
     items: [
@@ -842,6 +833,16 @@ export const alaramSetting = [
       },
       {
         title: "키워드알림",
+        color: "blue",
+        url: "/coin/coinNews",
+      },
+    ],
+  },
+  {
+    category: "뉴스",
+    items: [
+      {
+        title: "국내&해외뉴스",
         color: "blue",
         url: "/coin/coinNews",
       },
