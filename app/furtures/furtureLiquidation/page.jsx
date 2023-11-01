@@ -14,10 +14,11 @@ const page = () => {
               청산비율
             </h3>
           </div>
+
           <div>
-            <TradingViewCoinLongShot />
-          </div>
-          <div>
+            <div>
+              <TradingViewCoinLongShot />
+            </div>
             <div className="xl:col-span-6">
               <CurrencyLiquidation />
             </div>
