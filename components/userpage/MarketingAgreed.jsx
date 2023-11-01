@@ -4,7 +4,7 @@ import React from "react";
 const MarketingAgreed = () => {
   return (
     <div className="isolate bg-white ">
-      <div className="mx-auto  sm:mt-20">
+      <div className="mx-auto px-8 sm:mt-5">
         <h3 className="text-2xl font-semibold ">알람설정하기</h3>
         <div className="grid grid-cols-2 bg-white gap-5">
           {alaramSetting.map((category, index) => (
