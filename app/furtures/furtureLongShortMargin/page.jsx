@@ -1,3 +1,4 @@
+import TradingViewCoinLongShot from "@/components/TradingView/TradingViewCoinLongShot";
 import RangeBoxTypeA from "@/components/rangebox/RangeBoxTypeA";
 import SearchBoxTypeB from "@/components/searchbox/SearchBoxTypeB";
 import { rangeCoin, rangeTime, rangeTrading } from "@/constant";
@@ -8,7 +9,9 @@ const page = () => {
     <div>
       <div className="flex justify-between items-center">
         <div>
-          <h3 className="text-lg tracking-tighter font-medium py-2.5 px-2">롱/숏 비율</h3>
+          <h3 className="text-lg tracking-tighter font-medium py-2.5 px-2">
+            롱/숏 비율
+          </h3>
         </div>
         <div className="flex items-center gap-2">
           <SearchBoxTypeB title={"코인"} valueData={rangeCoin} />
@@ -16,11 +19,15 @@ const page = () => {
         </div>
       </div>
       <div className="mt-5">
-        <div className="h-96 w-full bg-red-500">a</div>
+        <div className="h-[548px] w-full ">
+          <TradingViewCoinLongShot />
+        </div>
       </div>
       <div className="mt-10">
         <div className="flex justify-between items-center">
-          <h3 className="text-lg tracking-tighter font-medium">거래소 BTC 매수 및 매도</h3>
+          <h3 className="text-lg tracking-tighter font-medium">
+            거래소 BTC 매수 및 매도
+          </h3>
           <div className="flex items-center ">
             <SearchBoxTypeB title={"코인"} valueData={rangeCoin} />
             <SearchBoxTypeB title={"기간"} valueData={rangeTime} />
@@ -39,7 +46,10 @@ const page = () => {
               <table class="w-full text-sm text-left text-gray-500 ">
                 <tbody>
                   <tr class="bg-white border-b  ">
-                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap ">
+                    <th
+                      scope="row"
+                      class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap "
+                    >
                       바이낸스 선물
                     </th>
                     <td class="px-6 py-4">$166,670</td>
@@ -47,7 +57,10 @@ const page = () => {
                     <td class="px-6 py-4">$$1.14M</td>
                   </tr>
                   <tr class="bg-white border-b  ">
-                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap ">
+                    <th
+                      scope="row"
+                      class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap "
+                    >
                       바이낸스 선물
                     </th>
                     <td class="px-6 py-4">$166,670</td>
@@ -55,7 +68,10 @@ const page = () => {
                     <td class="px-6 py-4">$$1.14M</td>
                   </tr>
                   <tr class="bg-white border-b  ">
-                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap ">
+                    <th
+                      scope="row"
+                      class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap "
+                    >
                       바이낸스 선물
                     </th>
                     <td class="px-6 py-4">$166,670</td>
@@ -63,7 +79,10 @@ const page = () => {
                     <td class="px-6 py-4">$$1.14M</td>
                   </tr>
                   <tr class="bg-white border-b  ">
-                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap ">
+                    <th
+                      scope="row"
+                      class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap "
+                    >
                       바이낸스 선물
                     </th>
                     <td class="px-6 py-4">$166,670</td>
@@ -71,7 +90,10 @@ const page = () => {
                     <td class="px-6 py-4">$$1.14M</td>
                   </tr>
                   <tr class="bg-white border-b  ">
-                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap ">
+                    <th
+                      scope="row"
+                      class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap "
+                    >
                       바이낸스 선물
                     </th>
                     <td class="px-6 py-4">$166,670</td>
@@ -79,7 +101,10 @@ const page = () => {
                     <td class="px-6 py-4">$$1.14M</td>
                   </tr>
                   <tr class="bg-white border-b  ">
-                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap ">
+                    <th
+                      scope="row"
+                      class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap "
+                    >
                       바이낸스 선물
                     </th>
                     <td class="px-6 py-4">$166,670</td>
@@ -88,7 +113,10 @@ const page = () => {
                   </tr>
 
                   <tr class="bg-white border-b  ">
-                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap ">
+                    <th
+                      scope="row"
+                      class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap "
+                    >
                       바이낸스 선물
                     </th>
                     <td class="px-6 py-4">$166,670</td>
@@ -107,7 +135,10 @@ const page = () => {
               <table class="w-full text-sm text-left text-gray-500 ">
                 <tbody>
                   <tr class="bg-white border-b  ">
-                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap ">
+                    <th
+                      scope="row"
+                      class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap "
+                    >
                       <div>특정 지갑에서 Binance로 입금</div>
                       <div>2022-12-17 15:34:15</div>
                     </th>
@@ -117,7 +148,10 @@ const page = () => {
                     </td>
                   </tr>
                   <tr class="bg-white border-b  ">
-                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap ">
+                    <th
+                      scope="row"
+                      class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap "
+                    >
                       <div>특정 지갑에서 Binance로 입금</div>
                       <div>2022-12-17 15:34:15</div>
                     </th>
@@ -127,7 +161,10 @@ const page = () => {
                     </td>
                   </tr>
                   <tr class="bg-white border-b  ">
-                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap ">
+                    <th
+                      scope="row"
+                      class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap "
+                    >
                       <div>특정 지갑에서 Binance로 입금</div>
                       <div>2022-12-17 15:34:15</div>
                     </th>
@@ -137,7 +174,10 @@ const page = () => {
                     </td>
                   </tr>
                   <tr class="bg-white border-b  ">
-                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap ">
+                    <th
+                      scope="row"
+                      class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap "
+                    >
                       <div>특정 지갑에서 Binance로 입금</div>
                       <div>2022-12-17 15:34:15</div>
                     </th>
@@ -147,7 +187,10 @@ const page = () => {
                     </td>
                   </tr>
                   <tr class="bg-white border-b  ">
-                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap ">
+                    <th
+                      scope="row"
+                      class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap "
+                    >
                       <div>특정 지갑에서 Binance로 입금</div>
                       <div>2022-12-17 15:34:15</div>
                     </th>
@@ -157,7 +200,10 @@ const page = () => {
                     </td>
                   </tr>
                   <tr class="bg-white border-b  ">
-                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap ">
+                    <th
+                      scope="row"
+                      class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap "
+                    >
                       <div>특정 지갑에서 Binance로 입금</div>
                       <div>2022-12-17 15:34:15</div>
                     </th>
@@ -167,7 +213,10 @@ const page = () => {
                     </td>
                   </tr>
                   <tr class="bg-white border-b  ">
-                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap ">
+                    <th
+                      scope="row"
+                      class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap "
+                    >
                       <div>특정 지갑에서 Binance로 입금</div>
                       <div>2022-12-17 15:34:15</div>
                     </th>
@@ -177,7 +226,10 @@ const page = () => {
                     </td>
                   </tr>
                   <tr class="bg-white border-b  ">
-                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap ">
+                    <th
+                      scope="row"
+                      class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap "
+                    >
                       <div>특정 지갑에서 Binance로 입금</div>
                       <div>2022-12-17 15:34:15</div>
                     </th>
@@ -187,7 +239,10 @@ const page = () => {
                     </td>
                   </tr>
                   <tr class="bg-white border-b  ">
-                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap ">
+                    <th
+                      scope="row"
+                      class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap "
+                    >
                       <div>특정 지갑에서 Binance로 입금</div>
                       <div>2022-12-17 15:34:15</div>
                     </th>
@@ -197,7 +252,10 @@ const page = () => {
                     </td>
                   </tr>
                   <tr class="bg-white border-b  ">
-                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap ">
+                    <th
+                      scope="row"
+                      class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap "
+                    >
                       <div>특정 지갑에서 Binance로 입금</div>
                       <div>2022-12-17 15:34:15</div>
                     </th>
@@ -207,7 +265,10 @@ const page = () => {
                     </td>
                   </tr>
                   <tr class="bg-white border-b  ">
-                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap ">
+                    <th
+                      scope="row"
+                      class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap "
+                    >
                       <div>특정 지갑에서 Binance로 입금</div>
                       <div>2022-12-17 15:34:15</div>
                     </th>

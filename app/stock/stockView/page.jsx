@@ -1,3 +1,5 @@
+import TradingViewWidget from "@/components/TradingView/TradingViewWidget";
+import TradingViewWidgetUSA from "@/components/TradingView/TradingViewWidgetUSA";
 import CardHorizonalTypeB from "@/components/card/CardHorizonalTypeB";
 import FreeBoardSearchBar from "@/components/searchbox/FreeBoardSearchBar";
 import React from "react";
@@ -13,10 +15,14 @@ const StockViewPage = () => {
 
           <div className="grid grid-cols-1 gap-3">
             <div className="h-[520px]">
-              <div className="h-full bg-red-400"></div>
+              <div className="h-full py-5">
+                <TradingViewWidget />
+              </div>
             </div>
             <div className="h-[520px]">
-              <div className="h-full bg-red-400"></div>
+              <div className="h-full py-5">
+                <TradingViewWidgetUSA />
+              </div>
             </div>
           </div>
         </div>

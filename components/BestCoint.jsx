@@ -21,7 +21,7 @@ const BestCoint = () => {
           <div className="main__bestcoin__table--tbody--cell ">
             <Image
               className=" inline-block"
-              src="./ico-abbc.svg"
+              src="/ico-abbc.svg"
               width={30}
               height={30}
             />
@@ -36,7 +36,7 @@ const BestCoint = () => {
           <div className="main__bestcoin__table--tbody--cell ">
             <Image
               className=" inline-block"
-              src="./ico-abbc.svg"
+              src="/ico-abbc.svg"
               width={30}
               height={30}
             />
@@ -51,7 +51,7 @@ const BestCoint = () => {
           <div className="main__bestcoin__table--tbody--cell ">
             <Image
               className=" inline-block"
-              src="./ico-abbc.svg"
+              src="/ico-abbc.svg"
               width={30}
               height={30}
             />
@@ -66,7 +66,7 @@ const BestCoint = () => {
           <div className="main__bestcoin__table--tbody--cell ">
             <Image
               className=" inline-block"
-              src="./ico-abbc.svg"
+              src="/ico-abbc.svg"
               width={30}
               height={30}
             />
@@ -81,7 +81,7 @@ const BestCoint = () => {
           <div className="main__bestcoin__table--tbody--cell ">
             <Image
               className=" inline-block"
-              src="./ico-abbc.svg"
+              src="/ico-abbc.svg"
               width={30}
               height={30}
             />
@@ -96,7 +96,7 @@ const BestCoint = () => {
           <div className="main__bestcoin__table--tbody--cell ">
             <Image
               className=" inline-block"
-              src="./ico-abbc.svg"
+              src="/ico-abbc.svg"
               width={30}
               height={30}
             />
@@ -111,7 +111,7 @@ const BestCoint = () => {
           <div className="main__bestcoin__table--tbody--cell ">
             <Image
               className=" inline-block"
-              src="./ico-abbc.svg"
+              src="/ico-abbc.svg"
               width={30}
               height={30}
             />
@@ -126,7 +126,7 @@ const BestCoint = () => {
           <div className="main__bestcoin__table--tbody--cell ">
             <Image
               className=" inline-block"
-              src="./ico-abbc.svg"
+              src="/ico-abbc.svg"
               width={30}
               height={30}
             />
@@ -141,7 +141,7 @@ const BestCoint = () => {
           <div className="main__bestcoin__table--tbody--cell ">
             <Image
               className=" inline-block"
-              src="./ico-abbc.svg"
+              src="/ico-abbc.svg"
               width={30}
               height={30}
             />

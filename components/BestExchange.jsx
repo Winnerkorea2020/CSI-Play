@@ -17,7 +17,7 @@ const BestExchange = () => {
           <div className="main__bestcoin__table--tbody--cell ">
             <Image
               className=" inline-block"
-              src="./ico-binance-lg.svg"
+              src="/ico-binance-lg.svg"
               width={30}
               height={30}
             />
@@ -38,7 +38,7 @@ const BestExchange = () => {
           <div className="main__bestcoin__table--tbody--cell ">
             <Image
               className=" inline-block"
-              src="./ico-binance-lg.svg"
+              src="/ico-binance-lg.svg"
               width={30}
               height={30}
             />
@@ -59,7 +59,7 @@ const BestExchange = () => {
           <div className="main__bestcoin__table--tbody--cell ">
             <Image
               className=" inline-block"
-              src="./ico-binance-lg.svg"
+              src="/ico-binance-lg.svg"
               width={30}
               height={30}
             />
@@ -80,7 +80,7 @@ const BestExchange = () => {
           <div className="main__bestcoin__table--tbody--cell ">
             <Image
               className=" inline-block"
-              src="./ico-binance-lg.svg"
+              src="/ico-binance-lg.svg"
               width={30}
               height={30}
             />
@@ -101,7 +101,7 @@ const BestExchange = () => {
           <div className="main__bestcoin__table--tbody--cell ">
             <Image
               className=" inline-block"
-              src="./ico-binance-lg.svg"
+              src="/ico-binance-lg.svg"
               width={30}
               height={30}
             />
@@ -122,7 +122,7 @@ const BestExchange = () => {
           <div className="main__bestcoin__table--tbody--cell ">
             <Image
               className=" inline-block"
-              src="./ico-binance-lg.svg"
+              src="/ico-binance-lg.svg"
               width={30}
               height={30}
             />
@@ -144,7 +144,7 @@ const BestExchange = () => {
           <div className="main__bestcoin__table--tbody--cell ">
             <Image
               className=" inline-block"
-              src="./ico-binance-lg.svg"
+              src="/ico-binance-lg.svg"
               width={30}
               height={30}
             />
@@ -165,7 +165,7 @@ const BestExchange = () => {
           <div className="main__bestcoin__table--tbody--cell ">
             <Image
               className=" inline-block"
-              src="./ico-binance-lg.svg"
+              src="/ico-binance-lg.svg"
               width={30}
               height={30}
             />
@@ -186,7 +186,7 @@ const BestExchange = () => {
           <div className="main__bestcoin__table--tbody--cell ">
             <Image
               className=" inline-block"
-              src="./ico-binance-lg.svg"
+              src="/ico-binance-lg.svg"
               width={30}
               height={30}
             />
