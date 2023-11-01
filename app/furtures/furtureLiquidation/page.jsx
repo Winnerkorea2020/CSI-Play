@@ -1,3 +1,4 @@
+"use client";
 import BestCoinCurrency from "@/components/BestCoinCurrency";
 import CurrencyLiquidation from "@/components/CurrencyLiquidation";
 import Liquidation from "@/components/Liquidation";
