@@ -215,8 +215,7 @@ export const footerLinks = [
 export const tickerItems = [
   {
     url: "/coin",
-    title:
-      "커뮤니티 기반 빌더 육성 프로그램 릴레이어 인큐베이터 2023(Relayers Incubator 2023) 진행  ",
+    title: "커뮤니티 기반 빌더 육성 프로그램 릴레이어 인큐베이터 2023(Relayers Incubator 2023) 진행  ",
     contenst: "",
     tag: "BIT",
   },
@@ -246,8 +245,7 @@ export const tickerItems = [
   },
   {
     url: "/",
-    title:
-      "Bitwise와 ProShares, 비트코인 및 이더리움 선물 ETF 신청서 추가 제출 ",
+    title: "Bitwise와 ProShares, 비트코인 및 이더리움 선물 ETF 신청서 추가 제출 ",
     contenst: "",
     tag: "BIT",
   },
@@ -271,8 +269,7 @@ export const tickerItems = [
   },
   {
     url: "/",
-    title:
-      "Bitwise와 ProShares, 비트코인 및 이더리움 선물 ETF 신청서 추가 제출 ",
+    title: "Bitwise와 ProShares, 비트코인 및 이더리움 선물 ETF 신청서 추가 제출 ",
     contenst: "",
     tag: "BIT",
   },
@@ -296,8 +293,7 @@ export const tickerItems = [
   },
   {
     url: "/",
-    title:
-      "Bitwise와 ProShares, 비트코인 및 이더리움 선물 ETF 신청서 추가 제출 ",
+    title: "Bitwise와 ProShares, 비트코인 및 이더리움 선물 ETF 신청서 추가 제출 ",
     contenst: "",
     tag: "BIT",
   },
@@ -847,5 +843,197 @@ export const alaramSetting = [
         url: "/coin/coinNews",
       },
     ],
+  },
+];
+export const rangeTime = [
+  {
+    id: "1",
+    valueData: "30 sec",
+  },
+  {
+    id: "2",
+    valueData: "1 min",
+  },
+  {
+    id: "3",
+    valueData: "5 mins",
+  },
+  {
+    id: "4",
+    valueData: "10 mins",
+  },
+  {
+    id: "5",
+    valueData: "30 mins",
+  },
+  {
+    id: "6",
+    valueData: "1 hour",
+  },
+];
+
+export const rangeCoin = [
+  {
+    id: "1",
+    valueData: "테라코인",
+    coinName: "TRR",
+    coinValue: "+15.54%",
+    status: "minus",
+    img: "/ico-trr.svg",
+  },
+  {
+    id: "2",
+    valueData: "슈퍼팜",
+    coinName: "SUPER",
+    coinValue: "+15.54%",
+    status: "minus",
+    img: "/ico-super.svg",
+  },
+  {
+    id: "3",
+    valueData: "파렉스",
+    coinName: "PRX",
+    coinValue: "+15.54%",
+    status: "minus",
+    img: "/ico-prx.svg",
+  },
+  {
+    id: "4",
+    valueData: "알라바바코인",
+    coinName: "ABBC",
+    coinValue: "+15.54%",
+    status: "minus",
+    img: "/ico-abbc.svg",
+  },
+  {
+    id: "5",
+    valueData: "마이크로체인",
+    coinName: "MCG",
+    coinValue: "+15.54%",
+    status: "plus",
+    img: "/ico-mcg.svg",
+  },
+  {
+    id: "6",
+    valueData: "밴드 프로토콜",
+    coinName: "BAND",
+    coinValue: "+15.54%",
+    status: "minus",
+    img: "/ico-band.svg",
+  },
+  {
+    id: "7",
+    valueData: "슈퍼팜",
+    coinName: "MCG",
+    coinValue: "+15.54%",
+    status: "minus",
+    img: "/ico-super.svg",
+  },
+  {
+    id: "8",
+    valueData: "슈퍼팜",
+    coinName: "MCG",
+    coinValue: "+15.54%",
+    status: "minus",
+    img: "/ico-super.svg",
+  },
+  {
+    id: "9",
+    valueData: "슈퍼팜",
+    coinName: "MCG",
+    coinValue: "+15.54%",
+    status: "minus",
+    img: "/ico-super.svg",
+  },
+  {
+    id: "10",
+    valueData: "슈퍼팜",
+    coinName: "MCG",
+    coinValue: "+15.54%",
+    status: "minus",
+    img: "/ico-super.svg",
+  },
+];
+
+export const rangeTrading = [
+  {
+    id: "1",
+    valueData: "테라코인",
+    coinName: "TRR",
+    coinValue: 62,
+    status: "minus",
+    img: "/ico-trr.svg",
+  },
+  {
+    id: "2",
+    valueData: "슈퍼팜",
+    coinName: "SUPER",
+    coinValue: 58,
+    status: "minus",
+    img: "/ico-super.svg",
+  },
+  {
+    id: "3",
+    valueData: "파렉스",
+    coinName: "PRX",
+    coinValue: 45,
+    status: "minus",
+    img: "/ico-prx.svg",
+  },
+  {
+    id: "4",
+    valueData: "알라바바코인",
+    coinName: "ABBC",
+    coinValue: 32,
+    status: "minus",
+    img: "/ico-abbc.svg",
+  },
+  {
+    id: "5",
+    valueData: "마이크로체인",
+    coinName: "MCG",
+    coinValue: 58,
+    status: "plus",
+    img: "/ico-mcg.svg",
+  },
+  {
+    id: "6",
+    valueData: "밴드 프로토콜",
+    coinName: "BAND",
+    coinValue: 40,
+    status: "minus",
+    img: "/ico-band.svg",
+  },
+  {
+    id: "7",
+    valueData: "슈퍼팜",
+    coinName: "MCG",
+    coinValue: 64,
+    status: "minus",
+    img: "/ico-super.svg",
+  },
+  {
+    id: "8",
+    valueData: "슈퍼팜",
+    coinName: "MCG",
+    coinValue: 77,
+    status: "minus",
+    img: "/ico-super.svg",
+  },
+  {
+    id: "9",
+    valueData: "슈퍼팜",
+    coinName: "MCG",
+    coinValue: 45,
+    status: "minus",
+    img: "/ico-super.svg",
+  },
+  {
+    id: "10",
+    valueData: "슈퍼팜",
+    coinName: "MCG",
+    coinValue: 89,
+    status: "minus",
+    img: "/ico-super.svg",
   },
 ];

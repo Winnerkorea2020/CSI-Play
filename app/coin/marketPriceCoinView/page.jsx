@@ -14,11 +14,7 @@ const MarketPriceCoinView = () => {
         <h6 className="py-4 font-semibold underline text-lg">시세/김프</h6>
         <div className="h-96 p-4 border rounded-lg  mb-5">
           <div className="relative bg-red-400 h-full">
-            <img
-              src="/kimchart.png"
-              alt=""
-              className="absolute top-0 left-0 h-full w-full"
-            />
+            <img src="/kimchart.png" alt="" className="absolute top-0 left-0 h-full w-full" />
           </div>
         </div>
       </div>
@@ -34,31 +30,19 @@ const MarketPriceCoinView = () => {
             <Tab as={Fragment}>
               {({ selected }) => (
                 /* Use the `selected` state to conditionally style the selected tab. */
-                <button
-                  className={selected ? "tab tab__black" : "tab__outline"}
-                >
-                  코인
-                </button>
+                <button className={selected ? "tab tab__black" : "tab__outline"}>코인</button>
               )}
             </Tab>
             <Tab as={Fragment}>
               {({ selected }) => (
                 /* Use the `selected` state to conditionally style the selected tab. */
-                <button
-                  className={selected ? "tab tab__black" : "tab__outline"}
-                >
-                  거래소
-                </button>
+                <button className={selected ? "tab tab__black" : "tab__outline"}>거래소</button>
               )}
             </Tab>
             <Tab as={Fragment}>
               {({ selected }) => (
                 /* Use the `selected` state to conditionally style the selected tab. */
-                <button
-                  className={selected ? "tab tab__black" : "tab__outline"}
-                >
-                  선물
-                </button>
+                <button className={selected ? "tab tab__black" : "tab__outline"}>선물</button>
               )}
             </Tab>
           </Tab.List>
@@ -70,8 +54,6 @@ const MarketPriceCoinView = () => {
                 <div className="mt-3">
                   <TableSoritng />
                 </div>
-                {/* Pagination */}
-                <Pagination />
               </div>
             </Tab.Panel>
             <Tab.Panel>
@@ -82,8 +64,6 @@ const MarketPriceCoinView = () => {
                 <div className="mt-3">
                   <TableSoritng />
                 </div>
-                {/* Pagination */}
-                <Pagination />
               </div>
             </Tab.Panel>
             <Tab.Panel>
@@ -92,8 +72,6 @@ const MarketPriceCoinView = () => {
                 <div className="mt-3">
                   <TableSoritng />
                 </div>
-                {/* Pagination */}
-                <Pagination />
               </div>
             </Tab.Panel>
           </Tab.Panels>

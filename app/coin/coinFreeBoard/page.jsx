@@ -1,7 +1,7 @@
 import BoardTable from "@/components/board/BoardTable";
 
 const CoinFreeBoard = () => {
-  const title = "자유게시판";
+  const title = "코인 자유게시판";
   return (
     <div className="h-full bg-white">
       <BoardTable title={title} />

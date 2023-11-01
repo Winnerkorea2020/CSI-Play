@@ -1,3 +1,4 @@
+import BoardTableHeader from "@/components/board/BoardTableHeader";
 import CardHorizonalTypeD from "@/components/card/CardHorizonalTypeD";
 
 import SearchBar from "@/components/searchbox/SearchBar";
@@ -7,12 +8,7 @@ const page = () => {
   return (
     <div>
       <div className="mt-10">
-        <div className="w-full flex justify-between items-center">
-          <h3 className="ml-2 py-4 font-semibold text-lg">시황분석</h3>
-        </div>
-        <div className="mb-4">
-          <SearchBar />
-        </div>
+        <BoardTableHeader title={"시황분석"} />
         <div className="grid grid-cols-1 gap-3">
           <CardHorizonalTypeD title={"분석"} />
           <CardHorizonalTypeD title={"분석"} />
