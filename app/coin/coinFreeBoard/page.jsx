@@ -1,10 +1,11 @@
 import BoardTable from "@/components/board/BoardTable";
+import TableList from "@/components/table/TableList";
 
 const CoinFreeBoard = () => {
   const title = "코인 자유게시판";
   return (
     <div className="h-full bg-white">
-      <BoardTable title={title} />
+      <TableList title={title} />
     </div>
   );
 };

@@ -1,10 +1,10 @@
-import BoardGrid from "@/components/board/BoardGrid";
+import TableAnalyze from "@/components/table/TableAnalyze";
 
 const CoinAnalyzeCoinPage = () => {
-  const title = "title";
+  const title = "코인분석";
   return (
-    <div>
-      <BoardGrid titie={title} />
+    <div className="border px-5">
+      <TableAnalyze title={title} />
     </div>
   );
 };

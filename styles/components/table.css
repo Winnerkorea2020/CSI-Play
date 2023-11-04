@@ -1,3 +1,62 @@
 .table__activity {
   @apply bg-gray-500 text-white border-gray-600;
 }
+
+.table__theme-1 {
+  @apply outline-none;
+}
+
+/* Table Theme-1 */
+
+.table__theme-1 {
+  @apply border border-gray-300  shadow w-full;
+}
+
+.table__theme-1 thead tr {
+  @apply truncate whitespace-nowrap bg-gray-300 tracking-tighter text-center;
+}
+
+.table__theme-1 tbody tr {
+  @apply truncate whitespace-nowrap border-b tracking-tighter text-center;
+}
+
+.table__theme-1 thead tr th,
+.table__theme-1 tbody tr td {
+  @apply border-gray-300;
+}
+.table__theme-1 thead tr th:first-child,
+.table__theme-1 tbody tr td:first-child {
+  @apply text-center border-l-0 w-12;
+}
+
+.table__theme-1 thead tr th:nth-child(2),
+.table__theme-1 thead tr th:nth-child(3),
+.table__theme-1 tbody tr td:nth-child(2),
+.table__theme-1 tbody tr td:nth-child(3) {
+  @apply text-left;
+}
+
+.table__theme-1 thead tr th:nth-child(3),
+.table__theme-1 tbody tr td:nth-child(3) {
+  @apply text-left;
+}
+
+.table__theme-1 thead tr th:nth-child(4),
+.table__theme-1 tbody tr td:nth-child(4) {
+  @apply text-center;
+}
+
+.table__theme-1 thead tr th:nth-child(5),
+.table__theme-1 tbody tr td:nth-child(5) {
+  @apply text-center;
+}
+
+.table__theme-1 thead tr th:nth-child(4),
+.table__theme-1 tbody tr td:nth-child(4) {
+  @apply border-r-0 block;
+}
+
+.table__theme-1 thead tr th:last-child,
+.table__theme-1 tbody tr td:last-child {
+  @apply border-r-0 hidden xl:block;
+}

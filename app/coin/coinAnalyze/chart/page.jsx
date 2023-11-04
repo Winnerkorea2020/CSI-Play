@@ -1,27 +1,20 @@
-import BoardTableHeader from "@/components/board/BoardTableHeader";
-import CardHorizonalTypeA from "@/components/card/CardHorizonalTypeA";
+import Pagination from "@/components/Pagination";
+import TableChart from "@/components/table/TableChart";
+import Link from "next/link";
 
 const page = () => {
+  const title = "차트분석";
   return (
-    <div>
-      <div className="mt-10">
-        <BoardTableHeader title={"차트 분석"} />
-        <div>
-          <CardHorizonalTypeA />
-          <CardHorizonalTypeA />
-          <CardHorizonalTypeA />
-          <CardHorizonalTypeA />
-          <CardHorizonalTypeA />
-          <CardHorizonalTypeA />
-          <CardHorizonalTypeA />
-          <CardHorizonalTypeA />
-          <CardHorizonalTypeA />
-          <CardHorizonalTypeA />
-          <CardHorizonalTypeA />
-          <CardHorizonalTypeA />
-          <CardHorizonalTypeA />
-          <CardHorizonalTypeA />
-        </div>
+    <div className="border px-5">
+      <TableChart title={title} />
+      <div className="flex justify-between items-center">
+        <Pagination />
+        <Link
+          href="/create"
+          className="py-2.5 px-6 w-24 text-center rounded-lg shadow bg-blue-500 text-white hover:bg-blue-600"
+        >
+          등록
+        </Link>
       </div>
     </div>
   );

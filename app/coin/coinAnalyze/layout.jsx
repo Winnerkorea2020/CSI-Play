@@ -6,25 +6,25 @@ const layout = ({ children }) => {
       <div className="mt-2">
         <div className="flex justify-start items-center gap-0.5 border-b-2 ">
           <Link
-            className="border border-gray-200 px-5 py-2.5 rounded-t bg-gray-100  text-sm font-medium hover:bg-yellow-500"
+            className="border border-gray-200 px-5 py-2.5 rounded-t bg-gray-50  text-sm font-medium hover:bg-yellow-400"
             href={`/coin/coinAnalyze/coin`}
           >
             코인분석
           </Link>
           <Link
-            className="border border-gray-200 px-5 py-2.5 rounded-t bg-gray-100  text-sm font-medium hover:bg-yellow-500"
+            className="border border-gray-200 px-5 py-2.5 rounded-t bg-gray-50  text-sm font-medium hover:bg-yellow-400"
             href={`/coin/coinAnalyze/investReport`}
           >
             시황분석
           </Link>
           <Link
-            className="border border-gray-200 px-5 py-2.5 rounded-t bg-gray-100  text-sm font-medium hover:bg-yellow-500"
+            className="border border-gray-200 px-5 py-2.5 rounded-t bg-gray-50  text-sm font-medium hover:bg-yellow-400"
             href={`/coin/coinAnalyze/chart`}
           >
             차트 관점
           </Link>
           <Link
-            className="border border-gray-200 px-5 py-2.5 rounded-t bg-gray-100  text-sm font-medium hover:bg-yellow-500"
+            className="border border-gray-200 px-5 py-2.5 rounded-t bg-gray-50  text-sm font-medium hover:bg-yellow-400"
             href={`/coin/coinAnalyze/market`}
           >
             암호화폐 투자리포트

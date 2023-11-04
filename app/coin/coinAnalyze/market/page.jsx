@@ -1,30 +1,13 @@
-import BoardTableHeader from "@/components/board/BoardTableHeader";
-import CardHorizonalTypeB from "@/components/card/CardHorizonalTypeB";
-
-import FreeBoardSearchBar from "@/components/searchbox/FreeBoardSearchBar";
-import React from "react";
+import Pagination from "@/components/Pagination";
+import TableHeader from "@/components/table/TableHeader";
+import TableReport from "@/components/table/TableReport";
+import Link from "next/link";
 
 const page = () => {
+  const title = "암호화폐 투자리포트";
   return (
-    <div>
-      <div className="mt-10">
-        <BoardTableHeader title={"암호화페 투자리포트"} />
-        <div className="grid grid-cols-1 gap-3">
-          <CardHorizonalTypeB title={"차트분석"} />
-          <CardHorizonalTypeB title={"차트분석"} />
-          <CardHorizonalTypeB title={"차트분석"} />
-          <CardHorizonalTypeB title={"차트분석"} />
-          <CardHorizonalTypeB title={"차트분석"} />
-          <CardHorizonalTypeB title={"차트분석"} />
-          <CardHorizonalTypeB title={"차트분석"} />
-          <CardHorizonalTypeB title={"차트분석"} />
-          <CardHorizonalTypeB title={"차트분석"} />
-          <CardHorizonalTypeB title={"차트분석"} />
-          <CardHorizonalTypeB title={"차트분석"} />
-          <CardHorizonalTypeB title={"차트분석"} />
-          <CardHorizonalTypeB title={"차트분석"} />
-        </div>
-      </div>
+    <div className="border px-5">
+      <TableReport title={title} />
     </div>
   );
 };

@@ -10,12 +10,12 @@
   @apply ring-2 ring-gray-700 rounded-xl border-gray-500 hover:ring-gray-200;
 }
 
-.btn-rounded {
-  @apply ring-2 ring-gray-600 border-none outline-none;
-}
-
 .btn-yellow {
   @apply bg-yellow-600 text-white;
+}
+
+.btn-dark {
+  @apply bg-gray-800 text-white;
 }
 .btn-blue {
   @apply bg-blue-600 text-white;

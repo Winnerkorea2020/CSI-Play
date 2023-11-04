@@ -37,14 +37,39 @@
   color: "#1A232E";
 }
 
-* {
-  @apply text-sm;
-}
-
 .section {
   @apply mt-2 xl:px-6 w-full mx-auto;
 }
 html,
 body {
   height: 100%;
+}
+.padding-x {
+  @apply px-0.5 md:px-1 sm:px-2;
+}
+
+.padding-y {
+  @apply py-0.5 md:py-1 sm:py-2;
+}
+
+.main__title {
+  @apply py-2.5 font-semibold text-lg md:text-xl tracking-tighter;
+}
+
+.sub__title {
+  @apply py-2.5 font-medium text-base md:text-lg tracking-tighter;
+}
+
+.table__title {
+  @apply py-2.5 font-medium text-lg tracking-tighter;
+}
+
+h1 {
+  font-size: 2rem;
+}
+h2 {
+  font-size: 1.5rem;
+}
+h3 {
+  font-size: 1.17em;
 }

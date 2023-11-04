@@ -1,17 +1,19 @@
+import TextEditor from "@/components/Write/TextEditor";
 import BoardTableHeader from "@/components/board/BoardTableHeader";
 import CardHorizonalTypeD from "@/components/card/CardHorizonalTypeD";
-
-import SearchBar from "@/components/searchbox/SearchBar";
 import TableCard from "@/components/table/TableCard";
+import TableList from "@/components/table/TableList";
+import Link from "next/link";
 import React from "react";
 
-const page = () => {
+export default function page() {
   const title = "시황분석";
   return (
-    <div className="border px-5">
-      <TableCard title={title} />
+    <div>
+      게시판 만들기 연습
+      <div>
+        <TableCard title={title} />
+      </div>
     </div>
   );
-};
-
-export default page;
+}
