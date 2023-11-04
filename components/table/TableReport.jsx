@@ -12,7 +12,7 @@ const TableReport = async ({ title }) => {
   const topics = await res.json();
   return (
     <div className="relative overflow-x-auto">
-      <TableHeader title={title} />
+      <TableHeader title={title} nosearch={true} />
       <TableReportBody topics={topics} />
       <div className="flex justify-between items-center">
         <Pagination />

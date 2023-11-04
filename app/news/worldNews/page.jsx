@@ -1,13 +1,12 @@
 import BoardTable from "@/components/board/BoardTable";
+import TableReport from "@/components/table/TableReport";
 import React from "react";
 
 const page = () => {
   const title = "News";
   return (
-    <div>
-      <div className="h-full bg-white">
-        <BoardTable title={title} />
-      </div>
+    <div className="h-full bg-white">
+      <TableReport title={title} />
     </div>
   );
 };

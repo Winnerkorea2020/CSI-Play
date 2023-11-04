@@ -1,13 +1,12 @@
 import BoardTable from "@/components/board/BoardTable";
+import TableList from "@/components/table/TableList";
 import React from "react";
 
 const page = () => {
   const title = "알람게시판";
   return (
-    <div>
-      <div className="h-full bg-white">
-        <BoardTable title={title} />
-      </div>
+    <div className="h-full bg-white">
+      <TableList title={title} />
     </div>
   );
 };
