@@ -30,9 +30,8 @@ export default function Home() {
                     height="100%"
                     src="https://www.youtube.com/embed/qJMdthxnDlY?si=NXgVXMsPcOfEGFyE"
                     title="YouTube video player"
-                    frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen
+                    allowFullscreen
                   ></iframe>
                 </div>
                 {/* <div className="w-full h-full"><BannerYoutube /></div>
