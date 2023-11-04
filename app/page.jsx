@@ -14,10 +14,10 @@ import TopCoins from "@/components/topcoin/TopCoins";
 export default function Home() {
   return (
     <div className="grid grid-cols-1 xl:grid-cols-12 w-full xl:gap-2 h-full">
-      <div className="xl:col-span-10">
-        <div className="grid grid-cols-1 xl:grid-cols-12 gap-2 w-full">
+      <div className="xl:col-span-10 h-full">
+        <div className="grid grid-cols-1 xl:grid-cols-12 gap-2 w-full ">
           {/* 선물계산기&현물계산기 */}
-          <div className="xl:col-span-8">
+          <div className="xl:col-span-8 h-full ">
             <StockfuturesSpot />
           </div>
           {/* 배너 및 위젯 */}
@@ -25,7 +25,15 @@ export default function Home() {
             <div className="card w-full h-full">
               <div className="grid grid-cols-1 gap-2 h-full">
                 <div>
-                  <img src="https://img.freepik.com/free-psd/real-estate-house-property-web-banner-template_120329-1947.jpg?w=1380&t=st=1697721596~exp=1697722196~hmac=5884d4868196b8bdad8815c40e11760075c4ab85c978358124a3b44273fa3e2b"></img>
+                  <iframe
+                    width="100%"
+                    height="100%"
+                    src="https://www.youtube.com/embed/qJMdthxnDlY?si=NXgVXMsPcOfEGFyE"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
                 </div>
                 {/* <div className="w-full h-full"><BannerYoutube /></div>
                 <div className="w-full h-full"><BannerYoutube /></div> */}

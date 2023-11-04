@@ -8,7 +8,7 @@ import SpotStock from "./SpotStock";
 const StockfuturesSpot = () => {
   return (
     <div className="card card-shadow  relative">
-      <div className=" h-[657px] xl:h-[680px] 2xl:h-[470px]  relative">
+      <div className=" h-[657px] xl:h-[680px] 2xl:h-[490px]  relative">
         <Tab.Group>
           <Tab.List className="grid grid-cols-2 gap-1">
             <Tab as={Fragment}>
