@@ -1,5 +1,12 @@
-import WriteForm from "@/components/Write/WriteForm";
+import TextEditor from "@/components/Write/TextEditor";
+import React from "react";
 
-export default function page() {
-  return <div className="h-full">Create</div>;
-}
+const page = () => {
+  return (
+    <div className="">
+      <TextEditor></TextEditor>
+    </div>
+  );
+};
+
+export default page;

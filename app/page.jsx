@@ -31,7 +31,6 @@ export default function Home() {
                     src="https://www.youtube.com/embed/qJMdthxnDlY?si=NXgVXMsPcOfEGFyE"
                     title="YouTube video player"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowFullscreen
                   ></iframe>
                 </div>
                 {/* <div className="w-full h-full"><BannerYoutube /></div>
