@@ -3,6 +3,7 @@ import { useState } from "react";
 
 import { Switch } from "@headlessui/react";
 import { BiSolidChevronDown } from "react-icons/bi";
+import TableHeader from "../table/TableHeader";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -10,11 +11,10 @@ function classNames(...classes) {
 
 const Mypage = () => {
   const [agreed, setAgreed] = useState(false);
-  return (
-    <div className="isolate bg-white ">
-      <form action="#" method="POST" className="mx-auto   sm:mt-20">
-        <h3 className="text-2xl font-semibold mb-10">회원정보</h3>
 
+  return (
+    <div className=" bg-white ">
+      <form action="#" method="POST" className="mx-auto   sm:mt-20">
         <div className="grid grid-cols-1 gap-x-8 gap-y-3 sm:grid-cols-2">
           <div>
             <label
