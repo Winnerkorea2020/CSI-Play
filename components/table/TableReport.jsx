@@ -3,13 +3,11 @@ import TableHeader from "./TableHeader";
 import TableReportBody from "./TableReportBody";
 import Pagination from "../Pagination";
 import Link from "next/link";
+import { tableMarket } from "@/constant/table";
 
-const TableReport = async ({ title }) => {
-  const res = await fetch(" http://localhost:9999/tableMarket", {
-    cache: "no-store",
-  });
+const TableReport = ({ title }) => {
+  const topics = tableMarket;
 
-  const topics = await res.json();
   return (
     <div className="relative overflow-x-auto">
       <TableHeader title={title} nosearch={true} />

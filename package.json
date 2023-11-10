@@ -8,8 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "deploy": "echo out/.nojekyll && gh-pages -d out --dotfiles",
-    "export": "next export",
-    "server": "json-server --watch db.json --port 9999"
+    "export": "next export"
   },
   "dependencies": {
     "@headlessui/react": "^1.7.16",

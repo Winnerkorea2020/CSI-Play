@@ -44,6 +44,11 @@ html,
 body {
   height: 100%;
 }
+
+.main-body {
+  @apply flex flex-col justify-between min-h-screen pt-16 bg-gray-300/70 text-xs;
+}
+
 .padding-x {
   @apply px-0.5 md:px-1 sm:px-2;
 }

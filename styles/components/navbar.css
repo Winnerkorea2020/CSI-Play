@@ -30,15 +30,14 @@
   @apply text-slate-800 font-medium hover:text-slate-500 duration-300 transition-all;
 }
 .nav__link-button {
-  @apply w-full inline-flex justify-between items-center duration-300 transition-all;
+  @apply w-full inline-flex justify-between gap-2 items-center duration-300 transition-all relative;
 }
 
 .nav__list--submenu {
-  @apply xl:absolute hidden w-full text-gray-700 pt-1 tracking-tighter
-  group-hover:block 
-  xl:bg-white xl:group-hover:border xl:group-hover:shadow-gray-300 
-  xl:group-hover:shadow-sm xl:group-hover:rounded-xl xl:w-40
-  xl:px-3 py-2;
+  @apply xl:absolute w-full text-gray-700 pt-1 tracking-tighter 
+    xl:bg-white xl:border xl:shadow-gray-300 
+  xl:shadow-sm xl:rounded-xl xl:w-40
+  xl:px-3 py-2 px-2;
 }
 
 .nav__item--submenu {
@@ -60,6 +59,14 @@
 
 .nav__toggle {
   @apply px-2 inline-block xl:hidden cursor-pointer;
+}
+
+.dropdown {
+  display: none;
+}
+
+.dropdown.show {
+  display: block;
 }
 
 /* Show menu */

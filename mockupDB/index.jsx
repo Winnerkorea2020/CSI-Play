@@ -143,7 +143,7 @@ export const alaramSetting = [
 
 export const tabledataColumns = [
   { label: "Full Name", accessor: "full_name" },
-  { label: "rank", accessor: "rank" },
+  { label: "Rank", accessor: "rank" },
   { label: "가격", accessor: "conin_value" },
   { label: "24 시간변화%", accessor: "rate_full" },
   { label: "시가총액", accessor: "full_value" },

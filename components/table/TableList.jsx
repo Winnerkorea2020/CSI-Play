@@ -1,15 +1,13 @@
 import TableHeader from "./TableHeader";
 import TableListHead from "./TableListHead";
 import TableListBody from "./TableListBody";
-import Pagination from "../Pagination";
-import { tableListHeadColumns } from "@/constant/table";
-import Link from "next/link";
 
-const TableList = async ({ title }) => {
-  const res = await fetch("http://localhost:9999/tableList", {
-    cache: "no-store",
-  });
-  const topics = await res.json();
+import { tableListHeadColumns, tableList } from "@/constant/table";
+
+import TableBottom from "./TableBottom";
+
+const TableList = ({ title }) => {
+  const topics = tableList;
 
   return (
     <div className="relative overflow-x-auto">
@@ -27,15 +25,7 @@ const TableList = async ({ title }) => {
         <TableListHead columns={tableListHeadColumns} />
         <TableListBody columns={tableListHeadColumns} tableData={topics} />
       </table>
-      <div className="flex justify-between items-center">
-        <Pagination />
-        <Link
-          href="/create"
-          className="py-2.5 px-6 w-24 text-center rounded-lg shadow bg-blue-500 text-white hover:bg-blue-600"
-        >
-          등록
-        </Link>
-      </div>
+      <TableBottom />
     </div>
   );
 };

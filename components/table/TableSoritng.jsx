@@ -10,8 +10,8 @@ const TableSoritng = () => {
   const [tableData, setTableData] = useState(tabledataCoin);
   return (
     <div>
-      <div className="border">
-        <table className="table-auto w-full text-lg ">
+      <div className="border overflow-auto overscroll-x-auto">
+        <table className="table-auto w-full  xl:text-lg text-xs">
           <TableHead columns={tabledataColumns} />
           <TableBody columns={tabledataColumns} tableData={tableData} />
         </table>

@@ -1,5 +1,5 @@
 import "../styles/globals.css";
-import Header from "@/components/Header";
+import Header from "@/components/navigation/Header";
 import Footer from "@/components/footer/Footer";
 import Ticker from "@/components/Ticker";
 
@@ -11,21 +11,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="flex flex-col justify-between min-h-screen pt-16 bg-gray-300/70 text-xs ">
-        <Header />
-
-        <main className="flex-1 mb-2">
-          <div className="mt-2">
-            <Ticker />
-          </div>
-          <section className="section h-full">
-            {/* Left Side Section Level 1*/}
-            {children}
-            {/* Right Side Section */}
-          </section>
-        </main>
-        <Footer />
-      </body>
+      <body className="bg-gray-300 text-sm">{children}</body>
     </html>
   );
 }

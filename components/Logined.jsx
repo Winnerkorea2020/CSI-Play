@@ -17,16 +17,16 @@ const Logined = () => {
           </Link>
         </div>
         <div className="h-full">
-          <div className="flex justify-start items-center gap-2">
+          <div className="flex justify-start items-center">
             {/* Level Area */}
-            <div className="rounded-full h-6 w-6 bg-gray-200 text-gray-500 text-center font-semibold">
-              3
+            <div className=" rounded-full flex justify-center items-center h-6 w-6 bg-gray-200 text-gray-500 text-center font-semibold">
+              10
             </div>
             {/* ID Area */}
-            <div className="font-medium tracking-tighter">ABCEDSD</div>
+            <div className="font-medium tracking-tighter px-2">ABCEDSD</div>
           </div>
           {/* Write List and Reply Area */}
-          <div className="flex justify-between items-center gap-2 w-full h-full">
+          <div className="flex flex-col justify-between items-center  w-full h-full">
             <div className="text-gray-500 tracking-tight inline-flex ">
               <div className="mr-2">게시글</div>
               <Link
@@ -49,9 +49,12 @@ const Logined = () => {
         </div>
       </div>
 
-      <button className="mt-5 rounded-lg w-full p-4 cursor-pointer bg-blue-600 hover:bg-blue-700 text-white border-none">
-        LOG OUT
-      </button>
+      <Link
+        href={`/login`}
+        className="block text-center mt-5 rounded-lg w-full p-4 cursor-pointer bg-blue-600 hover:bg-blue-700 text-white border-none"
+      >
+        로그인 하러 가기
+      </Link>
     </div>
   );
 };
