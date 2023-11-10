@@ -1,10 +1,20 @@
 "use client";
 import Link from "next/link";
 import React, { useState, useEffect, useRef } from "react";
-import { LiaAngleDownSolid, LiaAngleRightSolid, LiaDotCircle } from "react-icons/lia";
+import {
+  LiaAngleDownSolid,
+  LiaAngleRightSolid,
+  LiaDotCircle,
+} from "react-icons/lia";
 import DropdownMenu from "./DropdownMenu";
 
-const MenuItems = ({ items, isAuthenticated, depthLevel, isMenuOpen, setIsMenuOpen }) => {
+const MenuItems = ({
+  items,
+  isAuthenticated,
+  depthLevel,
+  isMenuOpen,
+  setIsMenuOpen,
+}) => {
   const [dropdown, setDropdown] = useState(false);
 
   const onClickToggleHandler = () => {
@@ -51,19 +61,25 @@ const MenuItems = ({ items, isAuthenticated, depthLevel, isMenuOpen, setIsMenuOp
       >
         {items.submenu ? (
           <>
-            <button className="nav__link-button" onClick={() => setDropdown((prev) => !prev)}>
+            <button
+              className="nav__link-button"
+              onClick={() => setDropdown((prev) => !prev)}
+            >
               {window.innerWidth < 960 && depthLevel === 0 ? (
                 items.title
               ) : (
                 <Link className="nav__link--submenu" href={`${items.url}`}>
-                  <div className={`nav__link-icon btn-rounded btn-${items.color}`}>
+                  <div
+                    className={`nav__link-icon btn-rounded btn-${items.color}`}
+                  >
                     {depthLevel > 0 ? <LiaDotCircle size={15} /> : ""}
                   </div>
-                  <div>{items.title}</div>
+                  <div onClick={onClickToggleHandler}>{items.title}</div>
                 </Link>
               )}
 
-              {depthLevel > 0 && window.innerWidth < 960 ? null : depthLevel > 0 && window.innerWidth > 960 ? (
+              {depthLevel > 0 && window.innerWidth < 960 ? null : depthLevel >
+                  0 && window.innerWidth > 960 ? (
                 <LiaAngleRightSolid size={15} />
               ) : (
                 <LiaAngleDownSolid size={15} />
@@ -79,7 +95,11 @@ const MenuItems = ({ items, isAuthenticated, depthLevel, isMenuOpen, setIsMenuOp
           </>
         ) : (
           <>
-            <Link className="nav__link--submenu" href={`${items.url}`} onClick={onClickToggleHandler}>
+            <Link
+              className="nav__link--submenu"
+              href={`${items.url}`}
+              onClick={onClickToggleHandler}
+            >
               <div className={`nav__link-icon btn-rounded btn-${items.color}`}>
                 <LiaDotCircle size={15} />
               </div>
