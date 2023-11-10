@@ -45,7 +45,7 @@
 }
 
 .futureSpotStock__input--item--wrap {
-  @apply grid grid-cols-1 gap-3;
+  @apply grid grid-cols-1 gap-1 xl:gap-3 sm:gap-1.5;
 }
 
 .futureSpotStock__input--item {
@@ -90,7 +90,7 @@
 }
 
 .futureSpotStock__result-title {
-  @apply text-xl font-semibold;
+  @apply text-lg xl:text-xl font-semibold;
 }
 
 .futureSpotStock__result--card {
@@ -98,7 +98,7 @@
 }
 
 .futureSpotStock__result--list {
-  @apply grid grid-cols-1 gap-3;
+  @apply grid grid-cols-1 gap-1 xl:gap-3 sm:gap-1.5;
 }
 
 .futureSpotStock__result--item {

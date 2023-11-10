@@ -158,7 +158,7 @@ const Mypage = () => {
           <Switch.Group as="div" className="flex gap-x-4 sm:col-span-2">
             <div className="flex h-6 items-center">
               <Switch
-                checked={agreed}
+                defaultChecked={agreed}
                 onChange={setAgreed}
                 className={classNames(
                   agreed ? "bg-indigo-600" : "bg-gray-200",

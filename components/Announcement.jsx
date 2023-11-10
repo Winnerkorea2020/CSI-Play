@@ -12,8 +12,8 @@ const Announcement = () => {
         </Link>
       </div>
 
-      <div className="main__board--card">
-        <div className="w-full truncate">
+      <div className="main__board--card overflow-auto">
+        <div className="w-full overscroll-auto ">
           <div className="main__table">
             <div className="main__table--thread">
               <div className="main__table--thread--cell">Tag</div>

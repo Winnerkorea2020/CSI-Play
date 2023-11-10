@@ -4,7 +4,7 @@ input::-webkit-inner-spin-button {
 }
 
 input {
-  @apply focus:border-none outline-none focus:outline-none;
+  @apply text-xs xl:text-sm focus:border-none outline-none focus:outline-none;
 }
 
 input[type="number"] {

@@ -10,11 +10,11 @@ import FutureOpenPrice from "./FutureOpenPrice";
 const FutureStock = () => {
   return (
     <Tab.Group>
-      <Tab.List className={`grid grid-cols-5 gap-0.5`}>
+      <Tab.List className={`grid grid-cols-5 gap-0.5 `}>
         <Tab as={Fragment}>
           {({ selected }) => (
             /* Use the `selected` state to conditionally style the selected tab. */
-            <button className={selected ? "tab tab__black" : "tab__outline"}>
+            <button className={selected ? "tab tab__black" : "tab__outline "}>
               PNL(수익)
             </button>
           )}

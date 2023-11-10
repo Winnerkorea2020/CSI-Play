@@ -1,30 +1,23 @@
+"use client";
+import JoinStep from "@/components/SignInUp/JoinStep";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 
 const JoinPage = () => {
+  const router = useRouter();
+  const pathname = usePathname();
   return (
-    <div>
-      {/* Step */}
-      <div className="mt-8 mb-16">
-        <ol className="flex items-center w-full text-sm font-medium text-center text-gray-800 sm:text-base">
-          <li className="flex md:w-full items-center text-blue-600  sm:after:content-[''] after:w-full after:h-1 after:border-b after:border-gray-200 after:border-1 after:hidden sm:after:inline-block after:mx-6 ">
-            <span className="flex items-center w-32">1. 약관동의</span>
-          </li>
-          <li className="flex md:w-full items-center after:content-[''] after:w-full after:h-1 after:border-b after:border-gray-200 after:border-1 after:hidden sm:after:inline-block after:mx-6 xl:after:mx-10 ">
-            <span className="flex items-center w-32">2. 기본정보</span>
-          </li>
-          <li className="flex items-center w-32">
-            <span className="flex items-center w-32">3. 기본정보</span>
-          </li>
-        </ol>
-      </div>
-      {/* Form */}
-      <div>
-        <fieldset>
+    <div className="h-full">
+      <div className="px-5 my-5">
+        {/* Step */}
+        <JoinStep activiy1={false} activiy2={false} />
+        {/* Form */}
+        <div className="">
           <legend className="sr-only">Checkbox variants</legend>
-
-          <div className="flex items-center mb-4">
+          <div className="flex  items-start xl:items-center mb-4">
             <input
-              checked
+              defaultChecked
               id="checkbox-1"
               type="checkbox"
               className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500  focus:ring-2 "
@@ -38,9 +31,9 @@ const JoinPage = () => {
             </label>
           </div>
 
-          <div className="flex items-center mb-4">
+          <div className="flex  items-center mb-4">
             <input
-              checked
+              defaultChecked
               id="checkbox-1"
               type="checkbox"
               className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500  focus:ring-2 "
@@ -52,9 +45,9 @@ const JoinPage = () => {
               14세 이상(필수)
             </label>
           </div>
-          <div className="flex items-center mb-4">
+          <div className="flex  items-center mb-4">
             <input
-              checked
+              defaultChecked
               id="checkbox-1"
               type="checkbox"
               className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500  focus:ring-2 "
@@ -594,9 +587,9 @@ const JoinPage = () => {
               1. 본 약관은 2023년 07월 01일부터 적용됩니다.
             </div>
           </div>
-          <div className="flex items-center mb-4">
+          <div className="flex  items-center mb-4">
             <input
-              checked
+              defaultChecked
               id="checkbox-1"
               type="checkbox"
               className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500  focus:ring-2 "
@@ -814,9 +807,9 @@ const JoinPage = () => {
               경찰청 사이버안전국 (cyberbureau.police.go.kr / 국번없이 182)
             </div>
           </div>
-          <div className="flex items-center mb-4">
+          <div className="flex  items-center mb-4">
             <input
-              checked
+              defaultChecked
               id="checkbox-1"
               type="checkbox"
               className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500  focus:ring-2 "
@@ -871,9 +864,9 @@ const JoinPage = () => {
               <br />
             </div>
           </div>
-          <div className="flex items-center mb-4">
+          <div className="flex  items-center mb-4">
             <input
-              checked
+              defaultChecked
               id="checkbox-1"
               type="checkbox"
               className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500  focus:ring-2 "
@@ -885,11 +878,16 @@ const JoinPage = () => {
               전체동의하기
             </label>
           </div>
-        </fieldset>
+        </div>
         {/* Button */}
-        <div className="flex justify-between items-center gap-3">
+        <div className="flex justify-between  items-center gap-3">
           <button className="btn btn-red w-full rounded-lg">취소</button>
-          <button className="btn btn-blue w-full rounded-lg">동의</button>
+          <button
+            className="btn btn-blue w-full rounded-lg"
+            onClick={() => router.push(`/join/accountinfo`)}
+          >
+            동의
+          </button>
         </div>
       </div>
     </div>
