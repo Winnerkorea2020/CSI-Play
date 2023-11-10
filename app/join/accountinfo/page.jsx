@@ -13,6 +13,7 @@ const JoinPage = ({ step1, step2, step3 }) => {
       <div className="px-5 my-5">
         {/* Step */}
         <JoinStep activiy1={false} activiy2={false} />
+
         {/* Form */}
         <div>
           <div className="mb-3">
@@ -155,12 +156,13 @@ const JoinPage = ({ step1, step2, step3 }) => {
             </div>
           </div>
         </div>
+
         {/* Button */}
-        <div className="flex justify-between items-center gap-3">
+        <div className="flex justify-between  items-center gap-3">
           <button className="btn btn-red w-full rounded-lg">취소</button>
           <button
-            onClick={() => router.push(`/join/joinconfirm`)}
             className="btn btn-blue w-full rounded-lg"
+            onClick={() => router.push(`/join/joinconfirm`)}
           >
             동의
           </button>

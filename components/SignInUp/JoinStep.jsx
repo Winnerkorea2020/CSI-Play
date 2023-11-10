@@ -7,7 +7,7 @@ const JoinStep = (activiy1, activiy2) => {
   console.log(activiy2);
   return (
     <div className="mt-8 mb-16">
-      <ol className="flex flex-col xl:items-center w-full text-sm font-medium text-center text-gray-800  sm:text-base">
+      <ol className="flex flex-col xl:flex-row xl:items-center w-full text-sm font-medium text-center text-gray-800  sm:text-base">
         <li
           className={`flex md:w-full items-center ${
             activiy1 === true ? "" : "text-blue-600"

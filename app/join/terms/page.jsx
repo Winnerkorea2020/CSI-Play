@@ -8,7 +8,7 @@ const JoinPage = () => {
   const router = useRouter();
   const pathname = usePathname();
   return (
-    <div className="h-full">
+    <div className="h-full ">
       <div className="px-5 my-5">
         {/* Step */}
         <JoinStep activiy1={false} activiy2={false} />

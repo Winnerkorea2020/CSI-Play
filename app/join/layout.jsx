@@ -2,24 +2,26 @@ import Image from "next/image";
 
 const layout = ({ children }) => {
   return (
-    <section className="flex flex-col justify-between bg-white w-full min-h-screen -mt-16">
-      <div className="flex justify-center pt-16 items-center h-full px-1 xl:px-8 max-w-3xl mx-auto w-full">
-        <div className="h-full flex items-center">
-          {/* Logo */}
+    <section className="mx-auto container bg-white py-2.5">
+      <div className="h-full xl:px-5 flex flex-col justify-between min-h-screen ">
+        <div className="">
+          <div className="flex items-center">
+            {/* Logo */}
 
-          <Image
-            className="inline-block"
-            src={`../ico-abbc.svg`}
-            width={50}
-            height={50}
-          />
-          <span className="text-2xl px-2 font-semibold tracking-tighter">
-            CSI-Play
-          </span>
+            <Image
+              className="inline-block"
+              src={`../ico-abbc.svg`}
+              width={50}
+              height={50}
+            />
+            <span className="text-2xl px-2 font-semibold tracking-tighter">
+              CSI-Play
+            </span>
+          </div>
         </div>
-      </div>
-      <div className="flex-1 h-full ">
-        <div>{children}</div>
+        <div className="flex-1  w-full h-full">
+          <div className="h-full ">{children}</div>
+        </div>
       </div>
     </section>
   );
