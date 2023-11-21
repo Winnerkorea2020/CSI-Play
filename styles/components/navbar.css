@@ -1,7 +1,7 @@
 /* Header CSS */
 /* Nav */
 .header {
-  @apply fixed top-0 left-0 w-full;
+  @apply fixed top-0 left-0 w-full text-base;
   z-index: 100;
 }
 .nav {
@@ -36,7 +36,7 @@
 .nav__list--submenu {
   @apply xl:absolute w-full text-gray-700 pt-1 tracking-tighter 
     xl:bg-white xl:border xl:shadow-gray-300 
-  xl:shadow-sm xl:rounded-xl xl:w-40
+  xl:shadow-sm xl:rounded-xl xl:w-48
   xl:px-3 py-2 px-2;
 }
 
