@@ -1,14 +1,14 @@
 import React from "react";
 
-const Checkbox = ({ disabled, checked, onChange }) => {
+const Checkbox = ({ title, checked, onChange }) => {
   return (
     <label htmlFor="">
       <input
         type="checkbox"
-        disabled={disabled}
         checked={checked}
         onChange={({ target: { checked } }) => onChange(checked)}
       />
+      {title}
     </label>
   );
 };

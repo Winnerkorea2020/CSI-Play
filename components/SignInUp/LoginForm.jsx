@@ -2,12 +2,13 @@
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 
-import React from "react";
+import { useState } from "react";
 import Button from "../button/Button";
 import Checkbox from "../Checkbox/Checkbox";
 
 const LoginForm = () => {
   const router = useRouter();
+  const [checkbox, setCheckbox] = useState(false);
 
   return (
     <form className="space-y-4 md:space-y-6" action="#">
@@ -46,12 +47,11 @@ const LoginForm = () => {
       <div className="flex items-center justify-between">
         <div className="flex items-start">
           <div className="flex items-center h-5">
-            <Checkbox disabled={false} checked={false} />
-          </div>
-          <div className="ml-3 text-sm">
-            <label for="remember" className="text-gray-500 ">
-              아이디 저장
-            </label>
+            <Checkbox
+              title={"아이디 저장"}
+              checked={checkbox}
+              onChange={setCheckbox}
+            />
           </div>
         </div>
         <Link
@@ -62,7 +62,11 @@ const LoginForm = () => {
         </Link>
       </div>
 
-      <Button title={"로그인 하기"} style={"btn btn-blue btn-rounded"} />
+      <Button
+        title={"로그인 하기"}
+        style={"btn btn-blue btn-rounded"}
+        onChange={setCheckbox}
+      />
       <Link href="/" className="btn btn-red btn-rounded">
         홈으로 이동하기
       </Link>
