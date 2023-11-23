@@ -2,13 +2,13 @@ import React from "react";
 
 const Checkbox = ({ title, checked, onChange }) => {
   return (
-    <label htmlFor="">
+    <label>
       <input
         type="checkbox"
         checked={checked}
         onChange={({ target: { checked } }) => onChange(checked)}
       />
-      {title}
+      <span className="px-0.5">{title}</span>
     </label>
   );
 };

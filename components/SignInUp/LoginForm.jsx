@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import { useState } from "react";
 import Button from "../button/Button";
 import Checkbox from "../Checkbox/Checkbox";
+import Inputbox from "../Inputbox/Inputbox";
 
 const LoginForm = () => {
   const router = useRouter();
@@ -12,38 +13,20 @@ const LoginForm = () => {
 
   return (
     <form className="space-y-4 md:space-y-6" action="#">
-      <div>
-        <label
-          htmlFor="text"
-          className="block mb-2 text-sm font-medium text-gray-900 "
-        >
-          ID
-        </label>
-        <input
-          type="text"
-          name="text"
-          id="text"
-          className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-gray-600 focus:border-gray-600 block w-full p-2.5 "
-          placeholder="name@company.com"
-          required
-        />
-      </div>
-      <div>
-        <label
-          htmlFor="password"
-          className="block mb-2 text-sm font-medium text-gray-900 "
-        >
-          Password
-        </label>
-        <input
-          type="password"
-          name="password"
-          id="password"
-          placeholder="••••••••"
-          className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-gray-600 focus:border-gray-600 block w-full p-2.5 "
-          required
-        />
-      </div>
+      <Inputbox
+        label={true}
+        title={"ID"}
+        type={"text"}
+        placeholder={"E-Mail"}
+        required={true}
+      />
+      <Inputbox
+        label={true}
+        title={"패스워드"}
+        type={"password"}
+        placeholder={"***************"}
+        required={true}
+      />
       <div className="flex items-center justify-between">
         <div className="flex items-start">
           <div className="flex items-center h-5">
