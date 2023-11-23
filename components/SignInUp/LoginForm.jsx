@@ -3,6 +3,8 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 
 import React from "react";
+import Button from "../button/Button";
+import Checkbox from "../Checkbox/Checkbox";
 
 const LoginForm = () => {
   const router = useRouter();
@@ -44,13 +46,7 @@ const LoginForm = () => {
       <div className="flex items-center justify-between">
         <div className="flex items-start">
           <div className="flex items-center h-5">
-            <input
-              id="remember"
-              aria-describedby="remember"
-              type="checkbox"
-              className="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-gray-300 "
-              required=""
-            />
+            <Checkbox disabled={false} checked={false} />
           </div>
           <div className="ml-3 text-sm">
             <label for="remember" className="text-gray-500 ">
@@ -65,13 +61,9 @@ const LoginForm = () => {
           패스워드 찾기?
         </Link>
       </div>
-      <button className="w-full text-white bg-gray-600 hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
-        로그인 하기
-      </button>
-      <Link
-        href="/"
-        className="block w-full text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
-      >
+
+      <Button title={"로그인 하기"} style={"btn btn-blue btn-rounded"} />
+      <Link href="/" className="btn btn-red btn-rounded">
         홈으로 이동하기
       </Link>
       <p className="text-sm font-light text-gray-500 ">
