@@ -42,8 +42,8 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="basis-1/2 ">
-            <ul className="flex flex-col xl:flex-row xl:justify-end xl:items-start px-4 py-5 xl:px-0 xl:pt-0 gap-2 xl:gap-0">
+          <div className="basis-1/2">
+            <ul className="footer__menu">
               {footerLinks.map((foot, index) => (
                 <li key={index}>
                   <Link href={foot.link} className="footer__item">

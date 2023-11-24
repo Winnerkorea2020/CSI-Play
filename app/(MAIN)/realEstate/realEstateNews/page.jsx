@@ -1,4 +1,4 @@
-import CardHorizonalTypeA from "@/components/card/CardHorizonalTypeA";
+import CardHorizonalTypeA from "@/components/Card/CardHorizonalTypeA";
 import FreeBoardSearchBar from "@/components/Searchbox/FreeBoardSearchBar";
 import SearchBar from "@/components/Searchbox/SearchBar";
 import TableAnalyze from "@/components/table/TableAnalyze";

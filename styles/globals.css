@@ -67,10 +67,6 @@ body {
   @apply py-2.5 font-medium text-base md:text-lg tracking-tighter;
 }
 
-.table__title {
-  @apply py-2.5 font-medium text-lg tracking-tighter;
-}
-
 h1 {
   font-size: 2rem;
 }

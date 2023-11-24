@@ -1,5 +1,5 @@
-import BoardGrid from "@/components/board/BoardGrid";
-import BoardTable from "@/components/board/BoardTable";
+import BoardGrid from "@/components/Board/BoardGrid";
+import BoardTable from "@/components/Board/BoardTable";
 import TableList from "@/components/table/TableList";
 
 const CoinNewsPage = () => {

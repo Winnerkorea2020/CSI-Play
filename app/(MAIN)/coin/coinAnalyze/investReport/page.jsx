@@ -1,5 +1,5 @@
-import BoardTableHeader from "@/components/board/BoardTableHeader";
-import CardHorizonalTypeD from "@/components/card/CardHorizonalTypeD";
+import BoardTableHeader from "@/components/Board/BoardTableHeader";
+import CardHorizonalTypeD from "@/components/Card/CardHorizonalTypeD";
 
 import SearchBar from "@/components/Searchbox/SearchBar";
 import TableCard from "@/components/table/TableCard";
