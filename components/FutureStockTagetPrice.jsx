@@ -56,7 +56,7 @@ const FutureStockTagetPrice = () => {
             </div>
           </div>
           {/* 결과 */}
-          <div className="cols-span-2 h-full">
+          <div className="futureSpotStock__card--content">
             <div className="futureSpotStock__result--card">
               <h3 className="futureSpotStock__result-title">결과</h3>
               <div className="futureSpotStock__result--card">

@@ -3,9 +3,16 @@
 }
 
 .futureSpotStock__card {
-  @apply grid grid-cols-1 gap-2 2xl:grid-cols-2;
+  @apply grid grid-cols-1 gap-2  2xl:grid-cols-2;
 }
 
+.futureSpotStock__card--content:first-child {
+  @apply border-r xl:pr-5;
+}
+
+.futureSpotStock__card--content:last-child {
+  @apply xl:pl-5;
+}
 .futureSpotStock__card--content {
   @apply col-span-1 h-full w-full;
 }
@@ -18,9 +25,6 @@
 
 .futureSpotStock__button {
   @apply focus:bg-blue-600 focus:text-white focus:outline-none text-center;
-}
-
-.futureSpotStock--range {
 }
 
 .futureSpotStock__select {

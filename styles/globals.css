@@ -59,10 +59,6 @@ body {
   @apply py-0.5 md:py-1 sm:py-2;
 }
 
-.main__title {
-  @apply py-2.5 font-semibold text-lg md:text-xl tracking-tighter;
-}
-
 .sub__title {
   @apply py-2.5 font-medium text-base md:text-lg tracking-tighter;
 }
