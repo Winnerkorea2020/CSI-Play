@@ -32,6 +32,8 @@
 
 @import "./components/toggle.css";
 
+@import "./components/footer.css";
+
 * {
   font-family: "Noto Sans KR", sans-serif;
   color: "#1A232E";
