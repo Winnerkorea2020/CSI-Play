@@ -3,6 +3,7 @@ import { Fragment } from "react";
 import { Tab } from "@headlessui/react";
 
 import CoinSearchBar from "@/components/CoinSearchBar";
+import TableSoritng from "@/components/table/TableSoritng";
 
 const MarketPriceCoinView = () => {
   return (
