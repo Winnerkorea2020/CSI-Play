@@ -4,9 +4,9 @@ import { useRouter } from "next/navigation";
 
 import { useState } from "react";
 
-import Checkbox from "../Checkbox/Checkbox";
+import Checkbox from "../checkbox/Checkbox";
 import Inputbox from "../Inputbox/Inputbox";
-import ButtonDefault from "../Button/ButtonDefault";
+import ButtonDefault from "../button/ButtonDefault";
 
 const LoginForm = () => {
   const router = useRouter();

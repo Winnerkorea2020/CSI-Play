@@ -1,6 +1,6 @@
-import CardHorizonalTypeA from "@/components/Card/CardHorizonalTypeA";
-import FreeBoardSearchBar from "@/components/Searchbox/FreeBoardSearchBar";
-import SearchBar from "@/components/Searchbox/SearchBar";
+import CardHorizonalTypeA from "@/components/card/CardHorizonalTypeA";
+import FreeBoardSearchBar from "@/components/searchbox/FreeBoardSearchBar";
+import SearchBar from "@/components/searchbox/SearchBar";
 import TableAnalyze from "@/components/table/TableAnalyze";
 import React from "react";
 

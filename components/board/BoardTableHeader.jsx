@@ -1,5 +1,5 @@
 import React from "react";
-import SearchBar from "../Searchbox/SearchBar";
+import SearchBar from "../searchbox/SearchBar";
 
 const BoardTableHeader = ({ title }) => {
   return (

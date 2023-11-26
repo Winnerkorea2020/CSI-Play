@@ -1,5 +1,5 @@
 import React from "react";
-import SearchbarTypeA from "../Searchbox/SearchbarTypeA";
+import SearchbarTypeA from "../searchbox/SearchbarTypeA";
 
 const TableHeader = ({ title, nosearch }) => {
   return (

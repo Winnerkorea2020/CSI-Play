@@ -1,9 +1,9 @@
 "use client";
 
-import Checkbox from "@/components/Checkbox/Checkbox";
+import Checkbox from "@/components/checkbox/Checkbox";
 import Inputbox from "@/components/Inputbox/Inputbox";
-import JoinStep from "@/components/SignInUp/JoinStep";
-import ButtonDefault from "@/components/Button/ButtonDefault";
+import JoinStep from "@/components/signInUp/JoinStep";
+import ButtonDefault from "@/components/button/ButtonDefault";
 
 import { useRouter } from "next/navigation";
 import { usePathname } from "next/navigation";
