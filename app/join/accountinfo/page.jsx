@@ -1,6 +1,5 @@
 "use client";
 
-import Checkbox from "@/components/checkbox/Checkbox";
 import Inputbox from "@/components/Inputbox/Inputbox";
 import JoinStep from "@/components/signInUp/JoinStep";
 import ButtonDefault from "@/components/button/ButtonDefault";
@@ -8,6 +7,7 @@ import ButtonDefault from "@/components/button/ButtonDefault";
 import { useRouter } from "next/navigation";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
+import Checkbox from "@/components/Checkbox/Checkbox";
 
 const JoinPage = ({ step1, step2, step3 }) => {
   const [agreeSms, setAgreeSms] = useState(false);

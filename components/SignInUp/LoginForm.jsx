@@ -4,7 +4,7 @@ import { useRouter } from "next/navigation";
 
 import { useState } from "react";
 
-import Checkbox from "../checkbox/Checkbox";
+import Checkbox from "../Checkbox/Checkbox";
 import Inputbox from "../Inputbox/Inputbox";
 import ButtonDefault from "../button/ButtonDefault";
 
