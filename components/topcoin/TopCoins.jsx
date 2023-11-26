@@ -3,6 +3,9 @@ import { Fragment } from "react";
 import { Tab } from "@headlessui/react";
 import Image from "next/image";
 import TopCoinWeekendData from "./TopCoinWeekendData";
+import TopCoinMonthData from "./TopCoinMonthData";
+import TopCoinSixMonthData from "./TopCoinSixMonthData";
+import TopCoinYearData from "./TopCoinYearData";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -83,13 +86,13 @@ export default function TopCoins() {
                 <TopCoinWeekendData />
               </Tab.Panel>
               <Tab.Panel>
-                <TopCoinMonth />
+                <TopCoinMonthData />
               </Tab.Panel>
               <Tab.Panel>
-                <TopCoinSixMonth />
+                <TopCoinSixMonthData />
               </Tab.Panel>
               <Tab.Panel>
-                <TopCoinYear />
+                <TopCoinYearData />
               </Tab.Panel>
             </Tab.Panels>
           </Tab.Group>
