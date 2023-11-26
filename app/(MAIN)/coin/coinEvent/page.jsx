@@ -1,10 +1,10 @@
-import BoardTable from "@/components/board/BoardTable";
+import Board from "@/components/board/BoardTable";
 
 const CoinFreeBoard = () => {
   const title = "코인공시&이벤트";
   return (
     <div>
-      <BoardTable title={title} />
+      <Board title={title} />
     </div>
   );
 };

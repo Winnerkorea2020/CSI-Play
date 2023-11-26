@@ -3,9 +3,9 @@ import { Fragment } from "react";
 import { Tab } from "@headlessui/react";
 import Image from "next/image";
 import TopCoinWeekendData from "./TopCoinWeekendData";
-import TopCoinMonthData from "./TopCoinMonthData";
-import TopCoinSixMonthData from "./TopCoinSixMonthData";
-import TopCoinYearData from "./TopCoinYearData";
+import TopCoinMonth from "./TopCoinMonthData";
+import TopCoinSixMonth from "./TopCoinSixMonthData";
+import TopCoinYear from "./TopCoinYearData";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -17,8 +17,8 @@ export default function TopCoins() {
       <div className="bg-white px-4 py-3 rounded-lg">
         <div className="flex flex-col items-center justify-center">
           <Image src="/ico-upbit.svg" width={50} height={50} />
-          <h2 className=" tracking-tighter font-medium text-sm mt-2">
-            기간별 상승 코인
+          <h2 className=" tracking-tighter font-medium text-xl mt-2">
+            급상승 10 코인
           </h2>
         </div>
         <div className="mt-5">
@@ -30,8 +30,8 @@ export default function TopCoins() {
                   <button
                     className={
                       selected
-                        ? "py-1 rounded outline-0 bg-gray-500 text-white border-gray-500 text-center w-full hover:border-none"
-                        : "py-1 rounded outline-0 bg-white text-black border border-gray-500 text-center w-full"
+                        ? "py-1 rounded outline-0 bg-yellow-500 text-white border-yellow-500 text-center w-full hover:border-none"
+                        : "py-1 rounded outline-0 bg-white text-black border border-yellow-500 text-center w-full"
                     }
                   >
                     1주일
@@ -44,11 +44,11 @@ export default function TopCoins() {
                   <button
                     className={
                       selected
-                        ? "py-1 rounded outline-0 bg-gray-500 text-white border-gray-500 text-center w-full hover:border-none"
-                        : "py-1 rounded outline-0 bg-white text-black border border-gray-500 text-center w-full"
+                        ? "py-1 rounded outline-0 bg-yellow-500 text-white border-yellow-500 text-center w-full hover:border-none"
+                        : "py-1 rounded outline-0 bg-white text-black border border-yellow-500 text-center w-full"
                     }
                   >
-                    1개월
+                    1달
                   </button>
                 )}
               </Tab>
@@ -58,8 +58,8 @@ export default function TopCoins() {
                   <button
                     className={
                       selected
-                        ? "py-1 rounded outline-0 bg-gray-500 text-white border-gray-500 text-center w-full hover:border-none"
-                        : "py-1 rounded outline-0 bg-white text-black border border-gray-500 text-center w-full"
+                        ? "py-1 rounded outline-0 bg-yellow-500 text-white border-yellow-500 text-center w-full hover:border-none"
+                        : "py-1 rounded outline-0 bg-white text-black border border-yellow-500 text-center w-full"
                     }
                   >
                     6개월
@@ -72,8 +72,8 @@ export default function TopCoins() {
                   <button
                     className={
                       selected
-                        ? "py-1 rounded outline-0 bg-gray-500 text-white border-gray-500 text-center w-full hover:border-none"
-                        : "py-1 rounded outline-0 bg-white text-black border border-gray-500 text-center w-full"
+                        ? "py-1 rounded outline-0 bg-yellow-500 text-white border-yellow-500 text-center w-full hover:border-none"
+                        : "py-1 rounded outline-0 bg-white text-black border border-yellow-500 text-center w-full"
                     }
                   >
                     1년
@@ -86,13 +86,13 @@ export default function TopCoins() {
                 <TopCoinWeekendData />
               </Tab.Panel>
               <Tab.Panel>
-                <TopCoinMonthData />
+                <TopCoinMonth />
               </Tab.Panel>
               <Tab.Panel>
-                <TopCoinSixMonthData />
+                <TopCoinSixMonth />
               </Tab.Panel>
               <Tab.Panel>
-                <TopCoinYearData />
+                <TopCoinYear />
               </Tab.Panel>
             </Tab.Panels>
           </Tab.Group>

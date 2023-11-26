@@ -1,5 +1,6 @@
-import SideNavi from "@/components/navigation/SideNavi";
+import SideNavi from "@/components/SideNavi";
 import TopCoins from "@/components/topcoin/TopCoins";
+import React from "react";
 
 const layout = ({ children }) => {
   return (

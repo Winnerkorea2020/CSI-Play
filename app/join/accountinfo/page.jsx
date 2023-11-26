@@ -1,16 +1,11 @@
 "use client";
 
-import Inputbox from "@/components/Inputbox/Inputbox";
-import ButtonDefault from "@/components/button/ButtonDefault";
-import Checkbox from "@/components/checkbox/Checkbox";
-import JoinStep from "@/components/signInUp/JoinStep";
+import JoinStep from "@/components/SignInUp/JoinStep";
+import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
 
 const JoinPage = ({ step1, step2, step3 }) => {
-  const [agreeSms, setAgreeSms] = useState(false);
-  const [agreeEmail, setagreeEmail] = useState(false);
   const router = useRouter();
   const pathname = usePathname();
   return (
@@ -20,61 +15,105 @@ const JoinPage = ({ step1, step2, step3 }) => {
         <JoinStep activiy1={false} activiy2={false} />
 
         {/* Form */}
-        <div className="grid grid-cols-1 gap-y-3">
-          <div className="flex justify-between gap-2 items-end">
-            <div className="w-full ">
-              <Inputbox
-                label={true}
-                title={"ID"}
-                type={"text"}
-                placeholder={"E-Mail"}
-                required={true}
+        <div>
+          <div className="mb-3">
+            <label htmlFor="email" className="text-sm text-navy-700  font-bold">
+              ID
+            </label>
+            <div className="flex justify-between items-center gap-2 mt-2">
+              <input
+                type="text"
+                id="email"
+                placeholder="@horizon.ui"
+                className="flex h-12 w-full items-center justify-center rounded-xl border bg-white/0 p-3 text-sm outline-none border-gray-400"
               />
+              <button className="flex h-12 w-28 xl:w-24 items-center justify-center rounded-xl border bg-red-500 text-white p-3 text-sm outline-none border-gray-400 ">
+                중복확인
+              </button>
             </div>
-            <div className="w-40 ">
-              <ButtonDefault
-                title={"아이디 중복확인"}
-                style={"btn btn-red btn-rounded"}
+          </div>
+          <div className="mb-3">
+            <label
+              htmlFor="email2"
+              className="text-sm text-navy-700  font-bold"
+            >
+              패스워드
+            </label>
+            <div className="mt-2">
+              <input
+                type="password"
+                id="email2"
+                placeholder="Password"
+                className="flex h-12 w-full items-center justify-center rounded-xl border bg-white/0 p-3 text-sm outline-none border-gray-400"
               />
             </div>
           </div>
-          <Inputbox
-            label={true}
-            title={"패스워드"}
-            type={"password"}
-            placeholder={"***************"}
-            required={true}
-          />
-          <Inputbox
-            label={true}
-            title={"패스워드 확인"}
-            type={"password"}
-            placeholder={"***************"}
-            required={true}
-          />
-          <Inputbox
-            label={true}
-            title={"이름"}
-            type={"text"}
-            placeholder={"이름을 입력하세요."}
-            required={true}
-          />
-          <Inputbox
-            label={true}
-            title={"이메일 주소"}
-            type={"mail"}
-            placeholder={"E-Mail"}
-            required={true}
-          />
-          <Inputbox
-            label={true}
-            title={"전화번호"}
-            type={"tel"}
-            placeholder={"전화번호를 입력하세요."}
-            required={true}
-          />
+          <div className="mb-3">
+            <label
+              htmlFor="email2"
+              className="text-sm text-navy-700  font-bold"
+            >
+              패스워드 확인
+            </label>
+            <div className="mt-2">
+              <input
+                type="password"
+                id="email2"
+                placeholder="Comfirm Password"
+                className="flex h-12 w-full items-center justify-center rounded-xl border bg-white/0 p-3 text-sm outline-none border-gray-400"
+              />
+            </div>
+          </div>
+          <div className="mb-3">
+            <label
+              htmlFor="email2"
+              className="text-sm text-navy-700  font-bold"
+            >
+              이름
+            </label>
+            <div className="mt-2">
+              <input
+                type="text"
+                id="email2"
+                placeholder="Name"
+                className="flex h-12 w-full items-center justify-center rounded-xl border bg-white/0 p-3 text-sm outline-none border-gray-400"
+              />
+            </div>
+          </div>
+          <div className="mb-3">
+            <label
+              htmlFor="email2"
+              className="text-sm text-navy-700  font-bold"
+            >
+              이메일 주소
+            </label>
+            <div className="mt-2">
+              <input
+                type="email"
+                id="email2"
+                placeholder="email address"
+                className="flex h-12 w-full items-center justify-center rounded-xl border bg-white/0 p-3 text-sm outline-none border-gray-400"
+              />
+            </div>
+          </div>
+          <div className="mb-3">
+            <label
+              htmlFor="email2"
+              className="text-sm text-navy-700  font-bold"
+            >
+              전화번호
+            </label>
+            <div className="mt-2">
+              <input
+                type="tel"
+                id="email2"
+                placeholder="전화번호"
+                className="flex h-12 w-full items-center justify-center rounded-xl border bg-white/0 p-3 text-sm outline-none border-gray-400"
+              />
+            </div>
+          </div>
 
-          <div className="">
+          <div className="py-5">
             <ul className=" list-disc px-2">
               <li>
                 비밀번호는 8~14자의 영문 대/소문자,숫자,특수문자 등 3종류
@@ -87,12 +126,34 @@ const JoinPage = ({ step1, step2, step3 }) => {
             </div>
           </div>
           <div className="flex justify-start items-center gap-2">
-            <Checkbox title={"SMS"} checked={agreeSms} onChange={setAgreeSms} />
-            <Checkbox
-              title={"이메일"}
-              checked={agreeEmail}
-              onChange={setagreeEmail}
-            />
+            <div className="flex items-center mb-4">
+              <input
+                defaultChecked
+                id="checkbox-1"
+                type="checkbox"
+                className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600  focus:ring-2 "
+              />
+              <label
+                htmlFor="checkbox-1"
+                className="ml-2 text-sm font-medium text-gray-900 "
+              >
+                SMS
+              </label>
+            </div>
+            <div className="flex items-center mb-4">
+              <input
+                defaultChecked
+                id="checkbox-1"
+                type="checkbox"
+                className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600  focus:ring-2 "
+              />
+              <label
+                htmlFor="checkbox-1"
+                className="ml-2 text-sm font-medium text-gray-900 "
+              >
+                이메일
+              </label>
+            </div>
           </div>
         </div>
 

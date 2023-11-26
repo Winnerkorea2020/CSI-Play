@@ -1,3 +1,4 @@
+import React from "react";
 import TableHeader from "../table/TableHeader";
 import TableSoritng from "../table/TableSoritng";
 import CoinChartViewBody from "./CoinChartViewBody";

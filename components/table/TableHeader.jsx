@@ -1,11 +1,11 @@
 import React from "react";
-import SearchbarTypeA from "../searchbox/SearchbarTypeA";
+import SearchBar from "../searchbox/SearchBar";
 
 const TableHeader = ({ title, nosearch }) => {
   return (
     <div className="flex flex-col xl:flex-row xl:justify-between xl:items-center py-2.5">
       <h3 className="table__title">{title}</h3>
-      {nosearch ? <SearchbarTypeA /> : null}
+      {nosearch ? <SearchBar /> : null}
     </div>
   );
 };

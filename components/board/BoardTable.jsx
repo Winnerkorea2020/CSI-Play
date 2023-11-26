@@ -1,8 +1,14 @@
 "use client";
 import { usePathname } from "next/navigation";
-import TableHeader from "../table/TableHeader";
-import TableMain from "./TableMain";
+import Link from "next/link";
+
+import { alaramSetting } from "@/mockupDB";
+
 import Pagination from "../Pagination";
+
+import BoardTableHeader from "./BoardTableHeader";
+import TableMain from "./TableMain";
+import TableHeader from "../table/TableHeader";
 
 const BoardTable = ({ title }) => {
   const pathnamne = usePathname();

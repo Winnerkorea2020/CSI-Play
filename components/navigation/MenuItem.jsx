@@ -77,13 +77,13 @@ const MenuItems = ({
                   <div onClick={onClickToggleHandler}>{items.title}</div>
                 </Link>
               )}
-              {/* Drop Down 화살표 */}
+
               {depthLevel > 0 && window.innerWidth < 960 ? null : depthLevel >
                   0 && window.innerWidth > 960 ? (
                 <LiaAngleRightSolid size={15} />
-              ) : null
-              // <LiaAngleDownSolid size={15} />
-              }
+              ) : (
+                <LiaAngleDownSolid size={15} />
+              )}
             </button>
             <DropdownMenu
               submenus={items.submenu}

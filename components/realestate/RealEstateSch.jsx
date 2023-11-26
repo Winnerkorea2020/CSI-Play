@@ -1,8 +1,8 @@
 "use client";
 import { Tab } from "@headlessui/react";
-import CalandarTypeBHeader from "../calandar/CalandarTypeBHeader";
-import CalandarTypeB from "../calandar/CalandarTypeB";
-import CalandarTypeBB from "../calandar/CalandarTypeBB";
+import CalandarTypeBHeader from "../Calandar/CalandarTypeBHeader";
+import CalandarTypeB from "../Calandar/CalandarTypeB";
+import CalandarTypeBB from "../Calandar/CalandarTypeBB";
 
 const RealEstateSch = () => {
   return (

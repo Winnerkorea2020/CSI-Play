@@ -1,5 +1,6 @@
-import CalandarTypeA from "@/components/calandar/CalandarTypeA";
+import CalandarTypeA from "@/components/Calandar/CalandarTypeA";
 import TableHeader from "@/components/table/TableHeader";
+import React from "react";
 
 const page = () => {
   const title = "증시캘린더";

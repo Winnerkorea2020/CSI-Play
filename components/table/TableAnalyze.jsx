@@ -1,6 +1,7 @@
-import { tableAnalyze } from "@/constant/table";
-import TableHeader from "./TableHeader";
 import TableAnalyzeBody from "./TableAnalyzeBody";
+import TableHeader from "./TableHeader";
+
+import { tableAnalyze } from "@/constant/table";
 import TableBottom from "./TableBottom";
 
 const TableAnalyze = ({ title }) => {

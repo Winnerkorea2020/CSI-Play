@@ -1,5 +1,6 @@
-import CalandarTypeBBodyB from "./CalandarTypeBBodyB";
+import React from "react";
 import CalandarTypeBsearchB from "./CalandarTypeBsearchB";
+import CalandarTypeBBodyB from "./CalandarTypeBBodyB";
 
 const CalandarTypeBB = () => {
   return (

@@ -1,14 +1,14 @@
 import Link from "next/link";
 import Image from "next/image";
 import { coinNamesImg } from "@/constant";
-import Logined from "./signInUp/Logined";
 import SignUpSignIn from "./SignUpSignIn";
+import Logined from "./SignInUp/Logined";
 
 const CoinList = () => {
   const isAuthenticated = true;
   return (
     <div className="card">
-      <div className="xl:mb-10">
+      <div>
         <div className="grid grid-cols-4 gap-3 tracking-tighter text-gray-600 font-medium">
           {coinNamesImg.map((coin, index) => (
             <Link href="" key={index}>

@@ -1,10 +1,10 @@
 "use client";
 import { useState } from "react";
+import BoardReply from "./BoardReply";
 import { BiChevronLeft, BiChevronRight, BiLike, BiShare } from "react-icons/bi";
 import ShareModal from "../ShareModal";
-import WarningMessage from "../message/WarningMessage";
-import BoardReply from "./BoardReply";
 import BoardReplayWrite from "./BoardReplayWrite";
+import WarningMessage from "../message/WarningMessage";
 
 const BoardDetail = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);

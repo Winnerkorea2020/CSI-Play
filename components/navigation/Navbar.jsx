@@ -7,9 +7,14 @@ import dynamic from "next/dynamic";
 // Constant Menu Items
 import { menuItem } from "@/constant/menuItem";
 import { countryFlag } from "@/constant/countryFlag";
+
+// Components
+import SignUpSignIn from "../SignUpSignIn";
+import NotificationBadge from "../Alarm/NotificationBadge";
+
+// ICONS
 import { LiaAlignJustifySolid, LiaSearchSolid } from "react-icons/lia";
-import SearchbarTypeA from "../searchbox/SearchbarTypeA";
-import NotificationBadge from "../alarm/NotificationBadge";
+import MenuItems from "./MenuItem";
 
 // SSR None
 const DynamicMenuItem = dynamic(() => import("./MenuItem"), {
@@ -67,7 +72,14 @@ const Navbar = () => {
           )}
         </ul>
         {/* Search Bar */}
-        <SearchbarTypeA />
+        <div className="search__bar">
+          <div className="relative xl:max-w-lg mx-auto">
+            <input className="search__bar--input" type="search" placeholder="Search" />
+            <button className="search__bar--button">
+              <LiaSearchSolid size={20} />
+            </button>
+          </div>
+        </div>
       </div>
 
       {/* National Flag Setting & Toggle Button */}

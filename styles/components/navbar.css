@@ -1,7 +1,7 @@
 /* Header CSS */
 /* Nav */
 .header {
-  @apply fixed top-0 left-0 w-full text-sm;
+  @apply fixed top-0 left-0 w-full text-base;
   z-index: 100;
 }
 .nav {
@@ -36,7 +36,7 @@
 .nav__list--submenu {
   @apply xl:absolute w-full text-gray-700 pt-1 tracking-tighter 
     xl:bg-white xl:border xl:shadow-gray-300 
-  xl:shadow-sm xl:rounded-xl xl:w-40
+  xl:shadow-sm xl:rounded-xl xl:w-48
   xl:px-3 py-2 px-2;
 }
 
@@ -49,7 +49,8 @@
 }
 
 .nav__link-icon {
-  @apply mr-1 border border-gray-300 inline-flex items-center justify-center text-white rounded-full;
+  @apply mr-1 border border-gray-300 inline-flex items-center justify-center text-white rounded-full
+  xl:mr-3;
 }
 
 .nav__close {
@@ -77,7 +78,7 @@
 }
 /* Serach--bar */
 .search__bar {
-  @apply absolute top-5 left-0 w-full px-10 xl:static xl:max-w-sm xl:px-0;
+  @apply absolute top-5 left-0 w-full px-10 xl:static xl:max-w-lg xl:px-4;
 }
 
 .search__bar--input {

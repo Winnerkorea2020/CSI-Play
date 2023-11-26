@@ -1,6 +1,6 @@
 import Link from "next/link";
-import { alaramSetting } from "@/mockupDB";
 import Pagination from "../Pagination";
+import { alaramSetting } from "@/mockupDB";
 
 const BoardList = ({ params }) => {
   return (

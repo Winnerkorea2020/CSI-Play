@@ -1,14 +1,19 @@
 "use client";
 import { Fragment } from "react";
 import { Tab } from "@headlessui/react";
+import Image from "next/image";
 
 import CoinSearchBar from "@/components/CoinSearchBar";
+import Pagination from "@/components/Pagination";
 import TableSoritng from "@/components/table/TableSoritng";
+import { CoinChartView } from "@/components/Coin/CoinChartView";
 
 const MarketPriceCoinView = () => {
   return (
     <div className="border rounded-lg shadow-sm h-full bg-white p-4">
-      <div></div>
+      <div>
+        <CoinChartView />
+      </div>
 
       <div className="overflow-hidden border border-gray-200  md:rounded-lg w-full p-4">
         <Tab.Group>
@@ -16,31 +21,19 @@ const MarketPriceCoinView = () => {
             <Tab as={Fragment}>
               {({ selected }) => (
                 /* Use the `selected` state to conditionally style the selected tab. */
-                <button
-                  className={selected ? "tab tab__black" : "tab__outline"}
-                >
-                  코인
-                </button>
+                <button className={selected ? "tab tab__black" : "tab__outline"}>코인</button>
               )}
             </Tab>
             <Tab as={Fragment}>
               {({ selected }) => (
                 /* Use the `selected` state to conditionally style the selected tab. */
-                <button
-                  className={selected ? "tab tab__black" : "tab__outline"}
-                >
-                  거래소
-                </button>
+                <button className={selected ? "tab tab__black" : "tab__outline"}>거래소</button>
               )}
             </Tab>
             <Tab as={Fragment}>
               {({ selected }) => (
                 /* Use the `selected` state to conditionally style the selected tab. */
-                <button
-                  className={selected ? "tab tab__black" : "tab__outline"}
-                >
-                  선물
-                </button>
+                <button className={selected ? "tab tab__black" : "tab__outline"}>선물</button>
               )}
             </Tab>
           </Tab.List>

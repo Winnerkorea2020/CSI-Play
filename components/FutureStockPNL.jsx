@@ -1,5 +1,6 @@
 "use client";
-
+import { Fragment } from "react";
+import { Tab } from "@headlessui/react";
 import InputBoxRange from "./InputBoxRange";
 
 const FutureStockPNL = () => {

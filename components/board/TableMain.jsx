@@ -1,6 +1,6 @@
 import React from "react";
-import TableMainHeader from "./TableMainHeader";
 import TableMainBody from "./TableMainBody";
+import TableMainHeader from "./TableMainHeader";
 
 const TableMain = () => {
   return (

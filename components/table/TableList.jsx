@@ -1,9 +1,10 @@
-import { tableListHeadColumns, tableList } from "@/constant/table";
-
-import TableBottom from "./TableBottom";
 import TableHeader from "./TableHeader";
 import TableListHead from "./TableListHead";
 import TableListBody from "./TableListBody";
+
+import { tableListHeadColumns, tableList } from "@/constant/table";
+
+import TableBottom from "./TableBottom";
 
 const TableList = ({ title }) => {
   const topics = tableList;
@@ -12,7 +13,7 @@ const TableList = ({ title }) => {
     <div className="relative overflow-x-auto">
       <TableHeader title={title} nosearch={true} />
 
-      <table className="table__theme-1 w-full">
+      <table className="table__theme-1 w-full text-xs uppercase bg-gray-50">
         <colgroup>
           <col width="3%" />
           <col width="50%" />

@@ -1,4 +1,7 @@
 import "../styles/globals.css";
+import Header from "@/components/navigation/Header";
+import Footer from "@/components/footer/Footer";
+import Ticker from "@/components/Ticker";
 
 export const metadata = {
   title: `CSI-Play `,
