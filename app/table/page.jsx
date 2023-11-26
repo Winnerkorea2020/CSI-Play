@@ -1,5 +1,5 @@
 import TextEditor from "@/components/Write/TextEditor";
-import BoardTableHeader from "@/components/Board/BoardTableHeader";
+import BoardTableHeader from "@/components/board/BoardTableHeader";
 import CardHorizonalTypeD from "@/components/Card/CardHorizonalTypeD";
 import TableCard from "@/components/table/TableCard";
 import TableList from "@/components/table/TableList";
