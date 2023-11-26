@@ -3,7 +3,7 @@
 import Checkbox from "@/components/Checkbox/Checkbox";
 import Inputbox from "@/components/Inputbox/Inputbox";
 import JoinStep from "@/components/SignInUp/JoinStep";
-import Button from "@/components/Button/Button";
+import ButtonDefault from "@/components/Button/ButtonDefault";
 
 import { useRouter } from "next/navigation";
 import { usePathname } from "next/navigation";
@@ -33,7 +33,7 @@ const JoinPage = ({ step1, step2, step3 }) => {
               />
             </div>
             <div className="w-40 ">
-              <Button
+              <ButtonDefault
                 title={"아이디 중복확인"}
                 style={"btn btn-red btn-rounded"}
               />

@@ -3,7 +3,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 
 import { useState } from "react";
-import Button from "../Button/Button";
+import Button from "../Button/ButtonDefault";
 import Checkbox from "../Checkbox/Checkbox";
 import Inputbox from "../Inputbox/Inputbox";
 
