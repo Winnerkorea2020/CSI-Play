@@ -1,6 +1,6 @@
 import TradingViewCoinLongShot from "@/components/TradingView/TradingViewCoinLongShot";
 import RangeBoxTypeA from "@/components/rangebox/RangeBoxTypeA";
-import SearchBoxTypeB from "@/components/searchbox/SearchBoxTypeB";
+import SearchBoxTypeB from "@/components/Searchbox/SearchBoxTypeB";
 import { rangeCoin, rangeTime, rangeTrading } from "@/constant";
 import React from "react";
 

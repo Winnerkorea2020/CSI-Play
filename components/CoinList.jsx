@@ -8,7 +8,7 @@ const CoinList = () => {
   const isAuthenticated = true;
   return (
     <div className="card">
-      <div>
+      <div className="xl:mb-10">
         <div className="grid grid-cols-4 gap-3 tracking-tighter text-gray-600 font-medium">
           {coinNamesImg.map((coin, index) => (
             <Link href="" key={index}>

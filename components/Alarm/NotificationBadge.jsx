@@ -17,7 +17,7 @@ const NotificationBadge = ({ notifications }) => {
         className="relative inline-flex items-center p-2 text-center focus:outline-none focus:ring-blue-300 "
         onClick={handleClick}
       >
-        <LiaBellSolid size={20} />
+        <LiaBellSolid size={25} />
         <div className="absolute inline-flex items-center justify-center w-6 h-6 text-xs font-bold text-white bg-red-500 border-2 border-white rounded-full -top-1 -right-1">
           {notifications.length}
         </div>

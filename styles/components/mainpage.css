@@ -2,7 +2,7 @@
   @apply flex items-center justify-start gap-1;
 }
 .main__title {
-  @apply font-semibold text-xl py-2.5;
+  @apply font-medium text-xl py-2.5;
 }
 
 .main__calc--card {

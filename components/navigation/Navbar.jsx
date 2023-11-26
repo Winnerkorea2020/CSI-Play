@@ -15,6 +15,7 @@ import NotificationBadge from "../Alarm/NotificationBadge";
 // ICONS
 import { LiaAlignJustifySolid, LiaSearchSolid } from "react-icons/lia";
 import MenuItems from "./MenuItem";
+import SearchbarTypeA from "../Searchbox/SearchbarTypeA";
 
 // SSR None
 const DynamicMenuItem = dynamic(() => import("./MenuItem"), {
@@ -72,14 +73,7 @@ const Navbar = () => {
           )}
         </ul>
         {/* Search Bar */}
-        <div className="search__bar">
-          <div className="relative xl:max-w-lg mx-auto">
-            <input className="search__bar--input" type="search" placeholder="Search" />
-            <button className="search__bar--button">
-              <LiaSearchSolid size={20} />
-            </button>
-          </div>
-        </div>
+        <SearchbarTypeA />
       </div>
 
       {/* National Flag Setting & Toggle Button */}

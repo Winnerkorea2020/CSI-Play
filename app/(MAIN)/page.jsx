@@ -68,7 +68,7 @@ export default function Home() {
         <div className="hidden xl:block">
           <CoinList />
         </div>
-        <Banner />
+
         <TopCoins />
       </div>
     </div>

@@ -3,7 +3,11 @@
 }
 
 .btn {
-  @apply p-3 cursor-pointer block;
+  @apply p-3 cursor-pointer block w-full text-center;
+}
+
+.btn-rounded {
+  @apply rounded-lg;
 }
 
 .btn-outline-primary {

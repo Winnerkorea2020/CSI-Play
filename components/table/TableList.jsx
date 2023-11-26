@@ -13,7 +13,7 @@ const TableList = ({ title }) => {
     <div className="relative overflow-x-auto">
       <TableHeader title={title} nosearch={true} />
 
-      <table className="table__theme-1 w-full text-xs uppercase bg-gray-50">
+      <table className="table__theme-1 w-full">
         <colgroup>
           <col width="3%" />
           <col width="50%" />

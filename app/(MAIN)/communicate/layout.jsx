@@ -1,4 +1,4 @@
-import SideNavi from "@/components/SideNavi";
+import SideNavi from "@/components/Navigation/SideNavi";
 import TopCoins from "@/components/topcoin/TopCoins";
 import React from "react";
 

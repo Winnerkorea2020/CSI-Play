@@ -32,6 +32,8 @@
 
 @import "./components/toggle.css";
 
+@import "./components/footer.css";
+
 * {
   font-family: "Noto Sans KR", sans-serif;
   color: "#1A232E";
@@ -57,16 +59,8 @@ body {
   @apply py-0.5 md:py-1 sm:py-2;
 }
 
-.main__title {
-  @apply py-2.5 font-semibold text-lg md:text-xl tracking-tighter;
-}
-
 .sub__title {
   @apply py-2.5 font-medium text-base md:text-lg tracking-tighter;
-}
-
-.table__title {
-  @apply py-2.5 font-medium text-lg tracking-tighter;
 }
 
 h1 {
