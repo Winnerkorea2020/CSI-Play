@@ -3,10 +3,9 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 
 import { useState } from "react";
-
+import Button from "../Button/Button";
 import Checkbox from "../Checkbox/Checkbox";
 import Inputbox from "../Inputbox/Inputbox";
-import ButtonDefault from "../button/ButtonDefault";
 
 const LoginForm = () => {
   const router = useRouter();
@@ -46,7 +45,7 @@ const LoginForm = () => {
         </Link>
       </div>
 
-      <ButtonDefault
+      <Button
         title={"로그인 하기"}
         style={"btn btn-blue btn-rounded"}
         onChange={setCheckbox}

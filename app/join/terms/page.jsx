@@ -1,5 +1,5 @@
 "use client";
-import JoinStep from "@/components/signInUp/JoinStep";
+import JoinStep from "@/components/SignInUp/JoinStep";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { usePathname } from "next/navigation";

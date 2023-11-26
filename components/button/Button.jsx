@@ -1,6 +1,6 @@
 import React from "react";
 
-const ButtonDefault = ({ title, style, onSubmit }) => {
+const Button = ({ title, style, onSubmit }) => {
   return (
     <button type="submit" className={style} onSubmit={onSubmit}>
       {title}
@@ -8,4 +8,4 @@ const ButtonDefault = ({ title, style, onSubmit }) => {
   );
 };
 
-export default ButtonDefault;
+export default Button;

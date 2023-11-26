@@ -1,4 +1,4 @@
-import CalandarTypeA from "@/components/calandar/CalandarTypeA";
+import CalandarTypeA from "@/components/Calandar/CalandarTypeA";
 import TableHeader from "@/components/table/TableHeader";
 import React from "react";
 

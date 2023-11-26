@@ -1,4 +1,4 @@
-import CalandarTypeB from "@/components/calandar/CalandarTypeB";
+import CalandarTypeB from "@/components/Calandar/CalandarTypeB";
 import RealEstateSch from "@/components/realestate/RealEstateSch";
 import React from "react";
 

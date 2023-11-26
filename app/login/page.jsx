@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import SnsLogin from "@/components/SnsLogin";
 import Link from "next/link";
-import LoginForm from "@/components/signInUp/LoginForm";
+import LoginForm from "@/components/SignInUp/LoginForm";
 
 const page = () => {
   return (

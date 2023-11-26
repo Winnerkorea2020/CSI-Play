@@ -1,8 +1,10 @@
 "use client";
 import { useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 
 const JoinPage = () => {
   const router = useRouter();
+  const pathname = usePathname();
 
   return (
     <div className=" absolute left-0 bottom-0 h-full bg-white  w-full">

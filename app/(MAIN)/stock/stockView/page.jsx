@@ -1,7 +1,7 @@
 import TradingViewWidget from "@/components/TradingView/TradingViewWidget";
 import TradingViewWidgetUSA from "@/components/TradingView/TradingViewWidgetUSA";
-import CardHorizonalTypeB from "@/components/card/CardHorizonalTypeB";
-import FreeBoardSearchBar from "@/components/searchbox/FreeBoardSearchBar";
+import CardHorizonalTypeB from "@/components/Card/CardHorizonalTypeB";
+import FreeBoardSearchBar from "@/components/Searchbox/FreeBoardSearchBar";
 import TableHeader from "@/components/table/TableHeader";
 import React from "react";
 

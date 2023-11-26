@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { coinNamesImg } from "@/constant";
 import SignUpSignIn from "./SignUpSignIn";
-import Logined from "./signInUp/Logined";
+import Logined from "./SignInUp/Logined";
 
 const CoinList = () => {
   const isAuthenticated = true;
