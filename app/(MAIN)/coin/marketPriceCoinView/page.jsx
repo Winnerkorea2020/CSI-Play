@@ -1,16 +1,13 @@
 "use client";
 import { Fragment } from "react";
 import { Tab } from "@headlessui/react";
-import { CoinChartView } from "@/components/coin/CoinChartView";
+
 import CoinSearchBar from "@/components/CoinSearchBar";
-import TableSoritng from "@/components/table/TableSoritng";
 
 const MarketPriceCoinView = () => {
   return (
     <div className="border rounded-lg shadow-sm h-full bg-white p-4">
-      <div>
-        <CoinChartView />
-      </div>
+      <div></div>
 
       <div className="overflow-hidden border border-gray-200  md:rounded-lg w-full p-4">
         <Tab.Group>
