@@ -79,10 +79,11 @@ const MenuItems = ({
               )}
 
               {depthLevel > 0 && window.innerWidth < 960 ? null : depthLevel >
-                  0 && window.innerWidth > 960 ? null : (
-                // <LiaAngleRightSolid size={15} />
-                <LiaAngleDownSolid size={15} />
-              )}
+                  0 && window.innerWidth > 960 ? (
+                <LiaAngleRightSolid size={15} />
+              ) : null
+              // <LiaAngleDownSolid size={15} />
+              }
             </button>
             <DropdownMenu
               submenus={items.submenu}
