@@ -1,4 +1,4 @@
-import BoardTable from "@/components/Board/BoardTable";
+import BoardTable from "@/components/board/BoardTable";
 import TableList from "@/components/table/TableList";
 import React from "react";
 

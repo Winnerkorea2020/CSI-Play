@@ -10,12 +10,12 @@ import { countryFlag } from "@/constant/countryFlag";
 
 // Components
 import SignUpSignIn from "../SignUpSignIn";
-import NotificationBadge from "../Alarm/NotificationBadge";
+import NotificationBadge from "../alarm/NotificationBadge";
 
 // ICONS
 import { LiaAlignJustifySolid, LiaSearchSolid } from "react-icons/lia";
 import MenuItems from "./MenuItem";
-import SearchbarTypeA from "../Searchbox/SearchbarTypeA";
+import SearchbarTypeA from "../searchbox/SearchbarTypeA";
 
 // SSR None
 const DynamicMenuItem = dynamic(() => import("./MenuItem"), {

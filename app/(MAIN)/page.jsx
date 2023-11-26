@@ -7,7 +7,6 @@ import Liquidation from "@/components/Liquidation";
 import BestCoinCurrency from "@/components/BestCoinCurrency";
 
 import CoinList from "@/components/CoinList";
-import Banner from "@/components/Banner";
 import TopCoins from "@/components/topcoin/TopCoins";
 
 export default function Home() {
@@ -68,7 +67,6 @@ export default function Home() {
         <div className="hidden xl:block">
           <CoinList />
         </div>
-
         <TopCoins />
       </div>
     </div>

@@ -1,5 +1,5 @@
-import Footer from "@/components/Footer/Footer";
-import Header from "@/components/Navigation/Header";
+import Footer from "@/components/footer/Footer";
+import Header from "@/components/navigation/Header";
 import React from "react";
 
 const layout = ({ children }) => {

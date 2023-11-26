@@ -1,4 +1,4 @@
-import BoardDetail from "@/components/Board/BoardDetail";
+import BoardDetail from "@/components/board/BoardDetail";
 import React from "react";
 
 const page = () => {

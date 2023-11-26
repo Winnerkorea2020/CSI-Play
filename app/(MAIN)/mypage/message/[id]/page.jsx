@@ -1,4 +1,4 @@
-import BoardDetail from "@/components/Board/BoardDetail";
+import BoardDetail from "@/components/board/BoardDetail";
 
 const page = () => {
   const title = "알람게시판";
