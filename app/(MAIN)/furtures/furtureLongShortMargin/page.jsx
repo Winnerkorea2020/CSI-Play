@@ -5,7 +5,7 @@ import { rangeCoin, rangeTime, rangeTrading } from "@/constant";
 
 const page = () => {
   return (
-    <div>
+    <div className="bg-white">
       <div className="flex justify-between items-center">
         <div>
           <h3 className="text-lg tracking-tighter font-medium py-2.5 px-2">
