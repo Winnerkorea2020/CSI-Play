@@ -1,4 +1,5 @@
 import React from "react";
+import { RiDeleteBin5Line, RiErrorWarningLine } from "react-icons/ri";
 
 const Comment = () => {
   return (
@@ -15,7 +16,10 @@ const Comment = () => {
         </div>
 
         <div>
-          <p>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</p>
+          <p>
+            "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
+            consectetur, adipisci velit..."
+          </p>
         </div>
 
         <div className="flex justify-end items-center gap-1 mt-5 ">

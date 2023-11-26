@@ -1,8 +1,7 @@
 "use client";
 import React, { useState } from "react";
-import NotificationDropdown from "./NotificationDropdown";
-
 import { LiaBellSolid } from "react-icons/lia";
+import NotificationDropdown from "./NotificationDropdown";
 
 const NotificationBadge = ({ notifications }) => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);

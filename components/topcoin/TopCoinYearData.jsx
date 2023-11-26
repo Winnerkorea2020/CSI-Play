@@ -14,16 +14,25 @@ const TopCoinYearData = () => {
               <Link href="#none" className="w-full">
                 <div className="flex justify-start items-start">
                   <div className="w-fit">
-                    <Image src={`${tenCoins.img}`} alt="" width={50} height={50} />
+                    <Image
+                      src={`${tenCoins.img}`}
+                      alt=""
+                      width={50}
+                      height={50}
+                    />
                   </div>
 
                   <div className="w-full ml-3">
-                    <p className="text-start font-medium text-sm tracking-tighter">{tenCoins.coinTitle}</p>
+                    <p className="text-start font-medium text-sm tracking-tighter">
+                      {tenCoins.coinTitle}
+                    </p>
 
                     <div className="text-sm">{`${tenCoins.coinName}/KRW`}</div>
                   </div>
                   <div className="w-fit">
-                    <div className="font-medium text-red-500 text-sm w-full text-end">+15.54%</div>
+                    <div className="font-medium text-red-500 text-sm w-full text-end">
+                      +15.54%
+                    </div>
                   </div>
                 </div>
               </Link>

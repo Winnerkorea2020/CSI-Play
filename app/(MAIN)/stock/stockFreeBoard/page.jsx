@@ -1,6 +1,4 @@
-import BoardTable from "@/components/board/BoardTable";
 import TableList from "@/components/table/TableList";
-import React from "react";
 
 const StockFreeBoardPage = () => {
   const title = "주식 자유게시판";

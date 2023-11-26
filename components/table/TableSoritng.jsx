@@ -1,9 +1,9 @@
 "use client";
 
 import { tabledataCoin, tabledataColumns } from "@/mockupDB";
-import TableBody from "./TableBody";
-import TableHead from "./TableHead";
 import { useState } from "react";
+import TableHead from "./TableHead";
+import TableBody from "./TableBody";
 import Pagination from "../Pagination";
 
 const TableSoritng = () => {

@@ -1,5 +1,5 @@
-import TableHeader from "./TableHeader";
 import { tableNews } from "@/constant/table";
+import TableHeader from "./TableHeader";
 import TableCardBody from "./TableCardBody";
 import TableBottom from "./TableBottom";
 

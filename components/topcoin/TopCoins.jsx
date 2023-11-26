@@ -3,9 +3,6 @@ import { Fragment } from "react";
 import { Tab } from "@headlessui/react";
 import Image from "next/image";
 import TopCoinWeekendData from "./TopCoinWeekendData";
-import TopCoinMonth from "./TopCoinMonthData";
-import TopCoinSixMonth from "./TopCoinSixMonthData";
-import TopCoinYear from "./TopCoinYearData";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");

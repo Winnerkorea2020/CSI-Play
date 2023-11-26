@@ -1,12 +1,9 @@
 "use client";
 import { Fragment } from "react";
 import { Tab } from "@headlessui/react";
-import Image from "next/image";
-
-import CoinSearchBar from "@/components/CoinSearchBar";
-import Pagination from "@/components/Pagination";
-import TableSoritng from "@/components/table/TableSoritng";
 import { CoinChartView } from "@/components/coin/CoinChartView";
+import CoinSearchBar from "@/components/CoinSearchBar";
+import TableSoritng from "@/components/table/TableSoritng";
 
 const MarketPriceCoinView = () => {
   return (

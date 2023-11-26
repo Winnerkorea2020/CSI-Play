@@ -1,9 +1,8 @@
-import React from "react";
+import { tableMarket } from "@/constant/table";
 import TableHeader from "./TableHeader";
 import TableReportBody from "./TableReportBody";
 import Pagination from "../Pagination";
 import Link from "next/link";
-import { tableMarket } from "@/constant/table";
 
 const TableReport = ({ title }) => {
   const topics = tableMarket;

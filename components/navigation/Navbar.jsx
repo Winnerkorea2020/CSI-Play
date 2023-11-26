@@ -7,15 +7,9 @@ import dynamic from "next/dynamic";
 // Constant Menu Items
 import { menuItem } from "@/constant/menuItem";
 import { countryFlag } from "@/constant/countryFlag";
-
-// Components
-import SignUpSignIn from "../SignUpSignIn";
-import NotificationBadge from "../alarm/NotificationBadge";
-
-// ICONS
 import { LiaAlignJustifySolid, LiaSearchSolid } from "react-icons/lia";
-import MenuItems from "./MenuItem";
 import SearchbarTypeA from "../searchbox/SearchbarTypeA";
+import NotificationBadge from "../alarm/NotificationBadge";
 
 // SSR None
 const DynamicMenuItem = dynamic(() => import("./MenuItem"), {

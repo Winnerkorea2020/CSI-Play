@@ -1,7 +1,6 @@
-import React from "react";
+import { tableChart } from "@/constant/table";
 import TableHeader from "./TableHeader";
 import TableChartBody from "./TableChartBody";
-import { tableChart } from "@/constant/table";
 
 const TableChart = ({ title }) => {
   const topics = tableChart;
