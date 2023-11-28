@@ -1,7 +1,7 @@
 // TradingViewCoinLongShot.jsx
 "use client";
 
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useCallback } from "react";
 
 const SCRIPT_SOURCE =
   "https://s3.tradingview.com/external-embedding/embed-widget-screener.js";
@@ -19,7 +19,7 @@ const widgetConfig = {
 export default function TradingViewCoinLongShot() {
   const containerRef = useRef();
 
-  useEffect(() => {
+  const addScriptToContainer = useCallback(() => {
     const script = document.createElement("script");
     script.src = SCRIPT_SOURCE;
     script.async = true;
@@ -31,6 +31,14 @@ export default function TradingViewCoinLongShot() {
       containerRef.current.removeChild(script);
     };
   }, []);
+
+  useEffect(() => {
+    const cleanup = addScriptToContainer();
+
+    return () => {
+      cleanup();
+    };
+  }, [addScriptToContainer]);
 
   return (
     <div className="tradingview-widget-container" ref={containerRef}>
