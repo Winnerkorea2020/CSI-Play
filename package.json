@@ -1,5 +1,5 @@
 {
-  "name": "modify-csi-play",
+  "name": "csi-play",
   "version": "0.1.0",
   "private": true,
   "scripts": {
