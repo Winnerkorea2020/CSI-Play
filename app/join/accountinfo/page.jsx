@@ -3,7 +3,6 @@
 import Button from "@/components/button/Button";
 import Checkbox from "@/components/checkbox/Checkbox";
 import InputBox from "@/components/inputbox/InputBox";
-import JoinStep from "@/components/signInSignUp/JoinStep";
 import { useRouter } from "next/navigation";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
@@ -17,7 +16,6 @@ const JoinPage = ({ step1, step2, step3 }) => {
     <div className="h-full w-full">
       <div className="px-5 my-5">
         {/* Step */}
-        <JoinStep activiy1={false} activiy2={false} />
 
         {/* Form */}
         <div className="grid grid-cols-1 gap-y-3">

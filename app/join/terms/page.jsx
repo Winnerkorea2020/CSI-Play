@@ -10,7 +10,6 @@ const JoinPage = () => {
     <div className="h-full ">
       <div className="px-5 my-5">
         {/* Step */}
-        <JoinStepinStep activiy1={false} activiy2={false} />
         {/* Form */}
         <div className="">
           <legend className="sr-only">Checkbox variants</legend>
