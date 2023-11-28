@@ -2,8 +2,6 @@
 import { useState } from "react";
 
 import { Switch } from "@headlessui/react";
-import { BiSolidChevronDown } from "react-icons/bi";
-import TableHeader from "../table/TableHeader";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");

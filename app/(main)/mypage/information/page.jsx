@@ -1,3 +1,4 @@
+"use client";
 import TableHeader from "@/components/table/TableHeader";
 import Mypage from "@/components/userpage/Mypage";
 import SocialAccount from "@/components/userpage/SocialAccount";
