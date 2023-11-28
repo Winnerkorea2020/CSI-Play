@@ -3,7 +3,7 @@
 import Button from "@/components/button/Button";
 import Checkbox from "@/components/checkbox/Checkbox";
 import InputBox from "@/components/inputbox/InputBox";
-import Image from "next/image";
+import JoinStep from "@/components/signInSignUp/JoinStep";
 import { useRouter } from "next/navigation";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
