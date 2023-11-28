@@ -1,0 +1,14 @@
+.description-1 {
+  @apply text-xl lg:text-2xl xl:text-3xl tracking-tighter font-extralight;
+}
+.description-2 {
+  @apply text-lg xl:text-2xl tracking-tighter font-thin;
+}
+
+.description-3 {
+  @apply text-base lg:text-lg xl:text-xl tracking-tighter font-thin;
+}
+
+.description-4 {
+  @apply text-sm lg:text-base xl:text-lg tracking-tighter font-thin;
+}

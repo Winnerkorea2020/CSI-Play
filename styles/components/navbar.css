@@ -1,0 +1,112 @@
+/* Header CSS */
+/* Nav */
+.header {
+  @apply fixed top-0 left-0 w-full text-sm;
+  z-index: 100;
+}
+.nav {
+  @apply flex justify-between items-center h-16 px-2 bg-white;
+}
+
+.nav__logo {
+  @apply tracking-tighter inline-flex items-center gap-2 xl:w-36;
+  transition: 0.3s;
+}
+
+.nav__logo--title {
+  @apply font-medium;
+}
+
+.nav__menu {
+  @apply fixed xl:static mt-16 border-t shadow-gray-100 bg-white w-full h-full top-0 shadow-xl rounded-l z-50 
+  pt-24 px-12 duration-300 transition-all xl:mt-0 xl:border-none xl:flex justify-between items-center xl:p-0 xl:shadow-none xl:rounded-none;
+}
+
+.nav__list {
+  @apply flex flex-col gap-y-6 xl:flex-row xl:items-center xl:justify-between xl:gap-10;
+}
+
+.nav__item {
+  @apply text-slate-800 font-medium hover:text-slate-500 duration-300 transition-all;
+}
+.nav__link-button {
+  @apply w-full inline-flex justify-between gap-2 items-center duration-300 transition-all relative;
+}
+
+.nav__list--submenu {
+  @apply xl:absolute w-full text-gray-700 pt-1 tracking-tighter cursor-pointer
+    xl:bg-white xl:border xl:shadow-gray-300 
+  xl:shadow-sm xl:rounded-xl xl:w-40
+  xl:px-3 py-2 px-2;
+}
+
+.nav__item--submenu {
+  @apply text-slate-800 font-medium hover:text-slate-500 duration-300 transition-all;
+}
+
+.nav__link--submenu {
+  @apply flex justify-start py-2 items-center hover:text-gray-400;
+}
+
+.nav__link-icon {
+  @apply mr-1 border border-gray-300 inline-flex items-center justify-center text-white rounded-full;
+}
+
+.nav__close {
+  @apply absolute top-4 right-5 cursor-pointer xl:hidden;
+}
+
+.nav__toggle {
+  @apply px-2 inline-block xl:hidden cursor-pointer;
+}
+
+.dropdown {
+  display: none;
+}
+
+.dropdown.show {
+  display: block;
+}
+
+/* Show menu */
+.show-menu {
+  @apply -right-full;
+}
+.nav__open {
+  @apply right-0;
+}
+/* Serach--bar */
+.search__bar {
+  @apply absolute top-5 left-0 w-full px-10 xl:static xl:max-w-sm xl:px-0;
+}
+
+.search__bar--input {
+  @apply w-full py-2 px-4 border border-gray-300 rounded-md shadow-sm;
+}
+
+.search__bar--button {
+  @apply absolute inset-y-0 right-0 flex items-center px-4 text-gray-700 bg-gray-100 border border-gray-300 rounded-r-md hover:bg-gray-200;
+}
+
+/* DropDown Menu */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+/* National Setting */
+.national {
+}
+
+.national__dropdown {
+  @apply inline-block relative;
+}
+.national__dropdwon--buuton {
+  @apply font-medium py-2 px-4 w-max rounded inline-flex items-center;
+}
+
+.national__dropdown--menu {
+  @apply absolute hidden text-gray-700  w-full;
+}
+
+.national__dropdown--item {
+  @apply bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap;
+}

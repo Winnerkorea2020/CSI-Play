@@ -1,0 +1,28 @@
+.tab {
+  @apply text-xs tracking-tighter xl:text-sm py-2.5 xl:py-2 rounded text-center w-full focus:border-none outline-none;
+}
+
+.tab__rounded-none {
+  @apply text-xs tracking-tighter xl:text-sm py-1.5 text-center w-full focus:border-none outline-none;
+}
+
+.tab__black {
+  @apply bg-gray-800 text-white border-gray-800;
+}
+
+.tab__white {
+  @apply bg-white text-black border border-gray-800;
+}
+
+.tab__red {
+  @apply bg-red-500 text-white;
+}
+.tab__gray--light {
+  @apply bg-gray-200  border-gray-200;
+}
+.tab__blue {
+  @apply bg-blue-400 text-white border border-blue-500;
+}
+.tab__outline {
+  @apply outline-none border-gray-300 border;
+}

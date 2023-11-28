@@ -1,0 +1,28 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  appearance: none;
+}
+
+.input {
+  @apply text-xs xl:text-sm focus:border-none outline-none focus:outline-none;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.input__login {
+  @apply border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5;
+}
+
+.input__default {
+  @apply py-2.5 px-2 w-full focus:border-none outline-none focus:outline-none;
+}
+
+.input__title--box {
+  @apply w-60 py-2.5 px-2 bg-gray-300 text-center rounded-l-lg;
+}
+
+select {
+  @apply focus:outline-none hover:border-gray-300 selection:border-gray-300;
+}

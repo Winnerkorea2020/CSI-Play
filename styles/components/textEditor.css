@@ -1,0 +1,12 @@
+.wrapper-class {
+  padding: 1rem;
+  border: 1px solid white;
+}
+.editor-class {
+  background-color: white;
+  padding: 1rem;
+  border: 1px solid white;
+}
+.toolbar-class {
+  border: 1px solid white;
+}

@@ -1,0 +1,15 @@
+.card {
+  @apply bg-white px-4 py-4 rounded-lg;
+}
+
+.card__board {
+  @apply bg-white px-4 py-4;
+}
+
+.tab-card {
+  @apply bg-white w-full;
+}
+
+.card-shadow {
+  @apply shadow shadow-gray-300;
+}

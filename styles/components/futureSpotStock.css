@@ -1,0 +1,118 @@
+.futureSpotStock {
+  @apply mt-4 border w-full;
+}
+
+.futureSpotStock__card {
+  @apply grid grid-cols-1 gap-2  2xl:grid-cols-2;
+}
+
+.futureSpotStock__card--content:first-child {
+  @apply border-r xl:pr-5;
+}
+
+.futureSpotStock__card--content:last-child {
+  @apply xl:pl-5;
+}
+.futureSpotStock__card--content {
+  @apply col-span-1 h-full w-full;
+}
+
+/* button */
+
+.futureSpotStock__button--wrap {
+  @apply flex justify-between xl:justify-start items-center gap-2 w-full xl:w-44;
+}
+
+.futureSpotStock__button {
+  @apply focus:bg-blue-600 focus:text-white focus:outline-none text-center;
+}
+
+.futureSpotStock__select {
+  @apply flex justify-start items-center gap-2;
+}
+
+.futureSpotStock__select--wrap {
+  @apply w-full gap-2 flex flex-col items-center justify-between xl:flex-row xl:justify-start mb-2;
+}
+
+.futureSpotStock__select--item {
+  @apply border bg-gray-500 text-white xl:w-fit xl:px-5;
+}
+
+/* Input Item */
+.futureSpotStock__input--card {
+  @apply mt-3;
+}
+
+.futureSpotStock__input--title {
+  @apply font-medium tracking-tighter mt-3;
+}
+
+.futureSpotStock__input--item--wrap {
+  @apply grid grid-cols-1 gap-1 xl:gap-3 sm:gap-1.5;
+}
+
+.futureSpotStock__input--item {
+  @apply flex justify-between items-center border rounded-lg;
+}
+
+/* Table */
+.futureSpotStock__table--wrap {
+  @apply overflow-x-auto overscroll-y-auto overscroll-x-contain;
+}
+
+.futureSpotStock__table {
+  @apply table w-full min-w-max border border-gray-400;
+}
+
+.futureSpotStock__table--row {
+  @apply table-row  divide-x divide-gray-400 text-center;
+}
+
+.futureSpotStock__table--row:first-child {
+  @apply bg-gray-500 text-white border-gray-400 border;
+}
+
+.futureSpotStock__table--cell {
+  @apply table-cell py-1.5 px-1;
+}
+
+.futureSpotStock__table--cell--input--wrap {
+  @apply flex justify-end items-center;
+}
+
+.futureSpotStock__table--cell--input--box {
+  @apply text-end w-full mr-3;
+}
+
+.futureSpotStock__button--card {
+  @apply mt-3;
+}
+
+.futureSpotStock__button {
+  @apply w-full outline-none rounded-lg;
+}
+
+.futureSpotStock__result-title {
+  @apply text-lg xl:text-xl font-semibold;
+}
+
+.futureSpotStock__result--card {
+  @apply mt-3;
+}
+
+.futureSpotStock__result--list {
+  @apply grid grid-cols-1 gap-1 xl:gap-3 sm:gap-1.5;
+}
+
+.futureSpotStock__result--item {
+  @apply flex justify-between items-center border rounded-lg;
+}
+
+.futureSpotStock__result--item--unit {
+  @apply py-2.5 px-2 w-20 text-center;
+}
+
+.futureSpotStock__spot--input--card {
+  @apply mt-0;
+}

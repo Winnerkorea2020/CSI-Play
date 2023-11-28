@@ -1,0 +1,31 @@
+.footer {
+  @apply bg-white py-5  text-sm;
+}
+
+.footer__title {
+  @apply xl:text-base text-gray-700  tracking-tighter;
+}
+
+.footer__description {
+  @apply text-ellipsis;
+}
+
+.footer__list--title {
+  @apply mb-6 text-xl  uppercase mt-6;
+}
+
+.footer__list {
+  @apply py-1.5;
+}
+
+.footer__link {
+  @apply hover:underline;
+}
+
+.footer__menu {
+  @apply flex flex-col xl:flex-row xl:justify-end xl:items-start px-4 py-5 xl:px-0 xl:pt-0 gap-2 xl:gap-0;
+}
+
+.footer__item {
+  @apply text-sm xl:text-base text-gray-700  tracking-tighter xl:ml-10 hover:underline;
+}

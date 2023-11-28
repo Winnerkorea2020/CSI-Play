@@ -1,0 +1,67 @@
+.table__title {
+  @apply py-2.5 font-medium text-base tracking-tighter;
+}
+
+.table__theme-1 {
+  @apply outline-none;
+}
+
+/* Table Theme-1 */
+
+.table__theme-1 {
+  @apply w-full text-sm;
+}
+
+.table__theme-1 thead {
+  @apply border-b-2 border-gray-200;
+}
+
+.table__theme-1 thead th {
+  @apply font-semibold text-gray-600;
+}
+
+.table__theme-1 thead tr,
+.table__theme-1 tbody tr {
+  @apply truncate whitespace-nowrap tracking-tighter text-center;
+}
+
+.table__theme-1 thead tr th:first-child,
+.table__theme-1 tbody tr td:first-child {
+  @apply text-center  w-12;
+}
+
+.table__theme-1 thead tr th:nth-child(2),
+.table__theme-1 thead tr th:nth-child(3),
+.table__theme-1 tbody tr td:nth-child(2),
+.table__theme-1 tbody tr td:nth-child(3) {
+  @apply text-left;
+}
+
+.table__theme-1 tbody tr td:nth-child(2) {
+  @apply font-medium;
+}
+
+.table__theme-1 thead tr th:nth-child(3),
+.table__theme-1 tbody tr td:nth-child(3) {
+  @apply text-left;
+}
+
+.table__theme-1 thead tr th:nth-child(4),
+.table__theme-1 tbody tr td:nth-child(4) {
+  @apply text-center;
+}
+
+.table__theme-1 thead tr th:nth-child(5),
+.table__theme-1 tbody tr td:nth-child(5) {
+  @apply text-center;
+}
+
+.table__theme-1 thead tr th:nth-child(4),
+.table__theme-1 tbody tr td:nth-child(4) {
+  @apply block;
+}
+
+.table__theme-1 thead tr th:last-child,
+.table__theme-1 tbody tr td:last-child {
+  @apply hidden xl:block;
+}

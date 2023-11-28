@@ -1,0 +1,139 @@
+.main__box--title {
+  @apply flex items-center justify-start gap-1;
+}
+.main__title {
+  @apply font-medium text-base py-2;
+}
+
+.main__calc--card {
+  @apply mt-3;
+}
+
+.main__calc--top--wrap {
+  @apply grid grid-cols-1 gap-4 xl:grid-cols-2 items-center xl:gap-10;
+}
+.main__calc--top--value {
+  @apply inline-flex items-center gap-3;
+}
+
+.main__calc--top--list {
+  @apply flex justify-start xl:justify-end items-center gap-3;
+}
+
+.main__calc--top--list--title {
+  @apply font-medium text-sm tracking-tighter;
+}
+
+.main__board--card {
+  @apply mt-3;
+}
+
+.main__table {
+  @apply table w-full xl:table-fixed;
+}
+.main__table--thread {
+  @apply xl:table-row bg-gray-300 text-gray-950 font-medium hidden;
+}
+.main__table--thread--cell {
+  @apply table-cell px-2 py-2.5 truncate whitespace-nowrap text-center;
+}
+
+.main__table--tbody--cell {
+  @apply table-cell px-2 py-2.5 truncate whitespace-nowrap border-b border-gray-300;
+}
+
+.main__table--thread--cell:first-child,
+.main__table--tbody--cell:first-child {
+  @apply w-20 text-center;
+}
+.main__table--thread--cell:nth-child(2),
+.main__table--tbody--cell:nth-child(2) {
+  @apply w-full;
+}
+
+.main__table--thread--cell:nth-child(3),
+.main__table--thread--cell:last-child,
+.main__table--tbody--cell:nth-child(3),
+.main__table--tbody--cell:last-child {
+  @apply w-16 text-center hidden 2xl:table-cell;
+}
+
+.main__table--tbody {
+  @apply table-row;
+}
+
+/* Trading Table  */
+
+.main__trading__table {
+  @apply table w-full xl:table-fixed text-center;
+}
+.main__trading__table--thread {
+  @apply table-row bg-gray-300 text-gray-950 font-medium;
+}
+.main__trading__table--thread--cell {
+  @apply table-cell px-2 py-2.5 truncate whitespace-nowrap;
+}
+
+.main__trading__table--tbody--cell {
+  @apply table-cell px-2 py-2.5 truncate whitespace-nowrap border-b border-gray-300;
+}
+
+.main__trading__table--thread--cell:first-child,
+.main__trading__table--tbody--cell:first-child {
+  @apply w-20;
+}
+
+.main__trading__table--tbody {
+  @apply table-row;
+}
+
+/* Best Coin */
+.main__bestcoin__table {
+  @apply table w-full xl:table-fixed text-center;
+}
+
+.main__bestcoin__table--thread {
+  @apply table-row bg-gray-800 text-white text-center;
+}
+
+.main__bestcoin__table--thread--cell {
+  @apply table-cell px-2 py-2.5 truncate whitespace-nowrap;
+}
+
+.main__bestcoin__table--tbody--cell {
+  @apply table-cell px-2 py-2.5 truncate whitespace-nowrap border-b border-gray-300;
+}
+
+.main__bestcoin__table--tbody--cell:first-child {
+  @apply text-left;
+}
+
+/* Best  Coin  선물*/
+.main__bestcoinfuture__table {
+  @apply table w-full xl:table-fixed truncate text-center;
+}
+
+.main__bestcoinfuture__table--thread {
+  @apply table-row bg-gray-800 text-white text-center;
+}
+
+.main__bestcoinfuture__table--thread--cell {
+  @apply table-cell px-2 py-2.5 truncate whitespace-nowrap;
+}
+
+.main__bestcoinfuture__table--tbody--cell {
+  @apply table-cell px-2 py-2.5 truncate whitespace-nowrap border-b border-gray-300;
+}
+
+.main__bestcoinfuture__table--tbody--cell:first-child {
+  @apply text-center;
+}
+
+.main__bestcoinfuture__table--thread--cell:first-child,
+.main__bestcoinfuture__table--tbody--cell:first-child {
+  @apply w-48;
+}
+
+.main__bestcoinfuture__table--thread--cell--item {
+  @apply flex items-center justify-center w-full gap-2;
+}

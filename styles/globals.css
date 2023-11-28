@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Noto+Sans+KR:wght@400;500;700&display=swap");
+
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+
+@import "./components/navbar.css";
+
+@import "./components/mainpage.css";
+
+@import "./components/button.css";
+
+@import "./components/section.css";
+
+@import "./components/card.css";
+
+@import "./components/tab.css";
+
+@import "./components/slider.css";
+
+@import "./components/input.css";
+
+@import "./components/futureSpotStock.css";
+
+@import "./components/table.css";
+
+@import "./components/title.css";
+
+@import "./components/sns.css";
+
+@import "./components/toggle.css";
+
+@import "./components/footer.css";
+
+* {
+  font-family: "Noto Sans KR", sans-serif;
+  color: "#1A232E";
+}
+
+.section {
+  @apply mt-2 xl:px-6 w-full mx-auto;
+}
+html,
+body {
+  height: 100%;
+}
+
+.main-body {
+  @apply flex flex-col justify-between min-h-screen pt-16 bg-gray-300/70 text-xs;
+}
+
+.padding-x {
+  @apply px-0.5 md:px-1 sm:px-2;
+}
+
+.padding-y {
+  @apply py-0.5 md:py-1 sm:py-2;
+}
+
+.sub__title {
+  @apply py-2.5 font-medium text-base md:text-lg tracking-tighter;
+}
+
+h1 {
+  font-size: 2rem;
+}
+h2 {
+  font-size: 1.5rem;
+}
+h3 {
+  font-size: 1.17em;
+}

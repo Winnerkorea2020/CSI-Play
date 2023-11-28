@@ -1,0 +1,60 @@
+.range-slider__body {
+  @apply relative flex items-center justify-between flex-col w-full;
+}
+
+.range-slider {
+  @apply flex justify-center items-center flex-col w-full mt-2 gap-[1em];
+}
+
+.slider-values {
+  @apply m-0 w-full flex justify-between items-center;
+}
+
+.slider-container {
+  @apply relative flex justify-center items-center min-w-full;
+}
+
+.slider {
+  -webkit-appearance: none;
+  appearance: none;
+  @apply w-full h-2 outline-none rounded bg-gray-400 cursor-pointer;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  z-index: 10;
+  @apply relative w-0;
+}
+
+.slider::-moz-range-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  z-index: 10;
+  @apply relative w-0;
+}
+
+.progress {
+  transform: translateY(-50%);
+  @apply w-0 h-[0.4em] absolute top-[50%] left-0 rounded bg-gradient-to-r from-indigo-500 from-10%  to-indigo-500 
+  duration-75 pointer-events-none;
+}
+
+.timeline {
+  @apply flex justify-center items-center;
+}
+
+.slider-thumb {
+  transform: translateY(-50%);
+  z-index: 20;
+
+  @apply absolute w-[1.2em] h-[1.2em] bg-gray-500 rounded-full top-[50%] -left-[0.5em] pointer-events-none;
+}
+
+.number-input {
+  @apply bg-gray-300 text-gray-800 w-[4em] border border-gray-300 rounded text-center;
+}
+
+.range-slider:hover .progress {
+  @apply shadow shadow-gray-200;
+}
