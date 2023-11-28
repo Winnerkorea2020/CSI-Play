@@ -1,6 +1,4 @@
-import BoardTable from "@/components/Board/BoardTable";
 import TableReport from "@/components/table/TableReport";
-import React from "react";
 
 const page = () => {
   const title = "News";

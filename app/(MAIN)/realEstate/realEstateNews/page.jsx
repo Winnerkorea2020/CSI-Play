@@ -1,8 +1,4 @@
-import CardHorizonalTypeA from "@/components/Card/CardHorizonalTypeA";
-import FreeBoardSearchBar from "@/components/Searchbox/FreeBoardSearchBar";
-import SearchBar from "@/components/Searchbox/SearchBar";
 import TableAnalyze from "@/components/table/TableAnalyze";
-import React from "react";
 
 const page = () => {
   const title = "부동산 뉴스";

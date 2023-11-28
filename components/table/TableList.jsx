@@ -1,10 +1,9 @@
 import TableHeader from "./TableHeader";
 import TableListHead from "./TableListHead";
 import TableListBody from "./TableListBody";
-
-import { tableListHeadColumns, tableList } from "@/constant/table";
-
 import TableBottom from "./TableBottom";
+
+import { tableList, tableListHeadColumns } from "@/constant/table";
 
 const TableList = ({ title }) => {
   const topics = tableList;

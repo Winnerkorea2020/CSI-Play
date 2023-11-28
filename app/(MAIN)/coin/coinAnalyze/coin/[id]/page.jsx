@@ -1,10 +1,10 @@
-import BoardDetail from "@/components/Board/BoardDetail";
+import PostViewTypeB from "@/components/postview/PostViewTypeB";
 import React from "react";
 
 const page = () => {
   return (
     <div>
-      <BoardDetail />
+      <PostViewTypeB />
     </div>
   );
 };

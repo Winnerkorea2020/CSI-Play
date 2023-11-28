@@ -1,14 +1,12 @@
-import StockfuturesSpot from "@/components/StockfuturesSpot ";
-import KpremiumStockQuotesRealTime from "@/components/KpremiumStockQuotesRealTime";
-import FearGreedIndex from "@/components/FearGreedIndex";
-import CurrencyLiquidation from "@/components/CurrencyLiquidation";
-import Announcement from "@/components/Announcement";
-import Liquidation from "@/components/Liquidation";
-import BestCoinCurrency from "@/components/BestCoinCurrency";
-
-import CoinList from "@/components/CoinList";
-import Banner from "@/components/Banner";
-import TopCoins from "@/components/topcoin/TopCoins";
+import TopCoins from "@/components/coins/topcoins/TopCoins";
+import BestCoinCurrency from "@/components/mainPage/coins/BestCoinCurrency";
+import CoinList from "@/components/mainPage/coins/CoinList";
+import CurrencyLiquidation from "@/components/mainPage/currency/CurrencyLiquidation";
+import FearGreedIndex from "@/components/mainPage/greedindex/FearGreedIndex";
+import KpremiumStockQuotesRealTime from "@/components/mainPage/premium/KpremiumStockQuotesRealTime";
+import StockfuturesSpot from "@/components/mainPage/stock/StockfuturesSpot ";
+import NoticeTable from "@/components/mainPage/table/NoticeTable";
+import Liquidation from "@/components/mainPage/table/Liquidation";
 
 export default function Home() {
   return (
@@ -47,11 +45,13 @@ export default function Home() {
           <div className="xl:block xl:col-span-4">
             <FearGreedIndex />
           </div>
+          {/* 통화청산 */}
           <div className="xl:col-span-6">
             <CurrencyLiquidation />
           </div>
+          {/* 공지사항 */}
           <div className="xl:col-span-6">
-            <Announcement />
+            <NoticeTable />
           </div>
           <div className="xl:col-span-6">
             {/* 거래서 청산 */}

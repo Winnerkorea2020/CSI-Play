@@ -1,10 +1,10 @@
 "use client";
 
-import { tabledataCoin, tabledataColumns } from "@/mockupDB";
+import { tabledataCoin, tabledataColumns } from "@/constant/db";
+import { useState } from "react";
+import Pagination from "../pagination/Pagination";
 import TableBody from "./TableBody";
 import TableHead from "./TableHead";
-import { useState } from "react";
-import Pagination from "../Pagination";
 
 const TableSoritng = () => {
   const [tableData, setTableData] = useState(tabledataCoin);

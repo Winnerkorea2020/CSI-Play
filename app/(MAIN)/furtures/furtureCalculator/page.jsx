@@ -1,7 +1,5 @@
-import StockfuturesSpot from "@/components/StockfuturesSpot ";
-import TradingViewCalculate from "@/components/TradingView/TradingViewCalculate";
-import TradingViewCoinLongShot from "@/components/TradingView/TradingViewCoinLongShot";
-import React from "react";
+import StockfuturesSpot from "@/components/mainPage/stock/StockfuturesSpot ";
+import TradingViewCoinLongShot from "@/components/tradingView/TradingViewCoinLongShot";
 
 const page = () => {
   return (

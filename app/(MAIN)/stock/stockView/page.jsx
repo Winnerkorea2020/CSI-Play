@@ -1,9 +1,6 @@
-import TradingViewWidget from "@/components/TradingView/TradingViewWidget";
-import TradingViewWidgetUSA from "@/components/TradingView/TradingViewWidgetUSA";
-import CardHorizonalTypeB from "@/components/Card/CardHorizonalTypeB";
-import FreeBoardSearchBar from "@/components/Searchbox/FreeBoardSearchBar";
 import TableHeader from "@/components/table/TableHeader";
-import React from "react";
+import TradingViewWidget from "@/components/tradingView/TradingViewWidget";
+import TradingViewWidgetUSA from "@/components/tradingView/TradingViewWidgetUSA";
 
 const StockViewPage = () => {
   const title = "국내/해외증시";

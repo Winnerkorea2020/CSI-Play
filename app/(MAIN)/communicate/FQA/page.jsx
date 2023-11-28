@@ -1,6 +1,5 @@
-import FreeBoardSearchBar from "@/components/Searchbox/FreeBoardSearchBar";
-import CardHorizonalTypeD from "@/components/Card/CardHorizonalTypeD";
-import React from "react";
+import CardHorizonalTypeD from "@/components/card/CardHorizonalTypeD";
+import FreeBoardSearchBar from "@/components/search/FreeBoardSearchBar";
 
 const page = () => {
   return (

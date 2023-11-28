@@ -1,11 +1,10 @@
-import BoardDetail from "@/components/Board/BoardDetail";
+import PostViewTypeA from "@/components/postview/PostViewTypeA";
+import { postData } from "@/constant/post";
 
 const page = () => {
-  return (
-    <div>
-      <BoardDetail />
-    </div>
-  );
+  const post = postData[0];
+
+  return <PostViewTypeA postData={post} />;
 };
 
 export default page;

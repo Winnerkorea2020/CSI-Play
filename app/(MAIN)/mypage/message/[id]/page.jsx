@@ -1,10 +1,9 @@
-import BoardDetail from "@/components/Board/BoardDetail";
+import PostViewTypeB from "@/components/postview/PostViewTypeB";
 
 const page = () => {
-  const title = "알람게시판";
   return (
-    <div className="h-full bg-white">
-      <TableList title={title} />
+    <div>
+      <PostViewTypeB />
     </div>
   );
 };

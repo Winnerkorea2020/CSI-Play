@@ -1,7 +1,4 @@
 import "../styles/globals.css";
-import Header from "@/components/Navigation/Header";
-import Footer from "@/components/Footer/Footer";
-import Ticker from "@/components/Ticker";
 
 export const metadata = {
   title: `CSI-Play `,
@@ -11,7 +8,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="bg-gray-300 text-sm">{children}</body>
+      <body className="bg-gray-300 text-sm   mx-auto">{children}</body>
     </html>
   );
 }

@@ -3,36 +3,37 @@
 
 import React, { useEffect, useRef } from "react";
 
-let tvScriptLoadingPromise;
+const SCRIPT_SOURCE =
+  "https://s3.tradingview.com/external-embedding/embed-widget-screener.js";
+
+const widgetConfig = {
+  width: "100%",
+  height: "490",
+  defaultColumn: "overview",
+  screener_type: "crypto_mkt",
+  displayCurrency: "USD",
+  colorTheme: "light",
+  locale: "kr",
+};
 
 export default function TradingViewCoinLongShot() {
+  const containerRef = useRef();
+
   useEffect(() => {
     const script = document.createElement("script");
-    script.src =
-      "https://s3.tradingview.com/external-embedding/embed-widget-screener.js";
+    script.src = SCRIPT_SOURCE;
     script.async = true;
-    script.innerHTML = JSON.stringify({
-      width: "100%",
-      height: "490",
-      defaultColumn: "overview",
-      screener_type: "crypto_mkt",
-      displayCurrency: "USD",
-      colorTheme: "light",
-      locale: "kr",
-    });
-    document
-      .getElementsByClassName("tradingview-widget-container__widget")[0]
-      .appendChild(script);
+    script.innerHTML = JSON.stringify(widgetConfig);
+
+    containerRef.current.appendChild(script);
 
     return () => {
-      document
-        .getElementsByClassName("tradingview-widget-container__widget")[0]
-        .removeChild(script);
+      containerRef.current.removeChild(script);
     };
   }, []);
 
   return (
-    <div className="tradingview-widget-container">
+    <div className="tradingview-widget-container" ref={containerRef}>
       <div className="tradingview-widget-container__widget"></div>
       <div className="tradingview-widget-copyright">
         <a

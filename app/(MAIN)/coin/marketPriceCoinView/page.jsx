@@ -1,12 +1,9 @@
 "use client";
 import { Fragment } from "react";
 import { Tab } from "@headlessui/react";
-import Image from "next/image";
-
-import CoinSearchBar from "@/components/CoinSearchBar";
-import Pagination from "@/components/Pagination";
+import CoinChartView from "@/components/coins/chart/CoinChartView";
+import CoinSearchBar from "@/components/coins/search/CoinSearchBar";
 import TableSoritng from "@/components/table/TableSoritng";
-import { CoinChartView } from "@/components/Coin/CoinChartView";
 
 const MarketPriceCoinView = () => {
   return (
@@ -21,19 +18,31 @@ const MarketPriceCoinView = () => {
             <Tab as={Fragment}>
               {({ selected }) => (
                 /* Use the `selected` state to conditionally style the selected tab. */
-                <button className={selected ? "tab tab__black" : "tab__outline"}>코인</button>
+                <button
+                  className={selected ? "tab tab__black" : "tab__outline"}
+                >
+                  코인
+                </button>
               )}
             </Tab>
             <Tab as={Fragment}>
               {({ selected }) => (
                 /* Use the `selected` state to conditionally style the selected tab. */
-                <button className={selected ? "tab tab__black" : "tab__outline"}>거래소</button>
+                <button
+                  className={selected ? "tab tab__black" : "tab__outline"}
+                >
+                  거래소
+                </button>
               )}
             </Tab>
             <Tab as={Fragment}>
               {({ selected }) => (
                 /* Use the `selected` state to conditionally style the selected tab. */
-                <button className={selected ? "tab tab__black" : "tab__outline"}>선물</button>
+                <button
+                  className={selected ? "tab tab__black" : "tab__outline"}
+                >
+                  선물
+                </button>
               )}
             </Tab>
           </Tab.List>

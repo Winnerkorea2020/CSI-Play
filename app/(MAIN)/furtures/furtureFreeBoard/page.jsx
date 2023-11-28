@@ -1,6 +1,4 @@
-import BoardTable from "@/components/Board/BoardTable";
 import TableList from "@/components/table/TableList";
-import React from "react";
 
 const page = () => {
   const title = "선물/마진 자유게시판";

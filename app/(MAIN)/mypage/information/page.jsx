@@ -1,7 +1,6 @@
 import TableHeader from "@/components/table/TableHeader";
 import Mypage from "@/components/userpage/Mypage";
 import SocialAccount from "@/components/userpage/SocialAccount";
-import React from "react";
 
 const page = () => {
   const title = "개인정보설정하기";

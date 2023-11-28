@@ -1,5 +1,4 @@
-import CalandarTypeA from "@/components/Calandar/CalandarTypeA";
-import React from "react";
+import CalandarTypeA from "@/components/calandar/CalandarTypeA";
 
 const page = () => {
   return (

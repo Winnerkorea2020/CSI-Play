@@ -1,8 +1,7 @@
-import TableAnalyzeBody from "./TableAnalyzeBody";
-import TableHeader from "./TableHeader";
-
 import { tableAnalyze } from "@/constant/table";
+import TableAnalyzeBody from "./TableAnalyzeBody";
 import TableBottom from "./TableBottom";
+import TableHeader from "./TableHeader";
 
 const TableAnalyze = ({ title }) => {
   const topics = tableAnalyze;

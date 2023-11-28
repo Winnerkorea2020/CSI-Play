@@ -1,11 +1,9 @@
-import CalandarTypeB from "@/components/Calandar/CalandarTypeB";
-import RealEstateSch from "@/components/realestate/RealEstateSch";
-import React from "react";
+import RealEstateSearch from "@/components/realestate/RealEstateSearch";
 
 const page = () => {
   return (
     <div>
-      <RealEstateSch />
+      <RealEstateSearch />
     </div>
   );
 };

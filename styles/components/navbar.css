@@ -34,7 +34,7 @@
 }
 
 .nav__list--submenu {
-  @apply xl:absolute w-full text-gray-700 pt-1 tracking-tighter 
+  @apply xl:absolute w-full text-gray-700 pt-1 tracking-tighter cursor-pointer
     xl:bg-white xl:border xl:shadow-gray-300 
   xl:shadow-sm xl:rounded-xl xl:w-40
   xl:px-3 py-2 px-2;
