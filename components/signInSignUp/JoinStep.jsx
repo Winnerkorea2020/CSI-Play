@@ -3,8 +3,6 @@ import React from "react";
 const JoinStep = (activiy1, activiy2) => {
   const step1 = activiy1;
   const step2 = activiy2;
-  console.log(activiy1);
-  console.log(activiy2);
   return (
     <div className="mt-8 mb-16">
       <ol className="flex flex-col xl:flex-row xl:items-center w-full text-sm font-medium text-center text-gray-800  sm:text-base">

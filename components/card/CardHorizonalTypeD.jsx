@@ -7,7 +7,6 @@ import Image from "next/image";
 const CardHorizonalTypeD = ({ title }) => {
   const pathname = usePathname();
   const id = "1";
-  console.log(pathname);
   return (
     <div>
       <Link
@@ -20,7 +19,9 @@ const CardHorizonalTypeD = ({ title }) => {
             Noteworthy technology acquisitions 2021
           </h5>
         </div>
-        <div className="text-center font-normal text-gray-700 w-fit">2022-12-12 00:00:00</div>
+        <div className="text-center font-normal text-gray-700 w-fit">
+          2022-12-12 00:00:00
+        </div>
       </Link>
     </div>
   );

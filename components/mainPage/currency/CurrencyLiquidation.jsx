@@ -9,7 +9,6 @@ const CurrencyLiquidation = () => {
   const linkUrl = "/";
   const itemData = currencyCoinData;
   const selectData = selectTime;
-  console.log(itemData);
   return (
     <div className="card h-full">
       <div className="flex justify-between items-center w-full">

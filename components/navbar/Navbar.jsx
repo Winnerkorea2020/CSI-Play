@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-import { useState, useRef, useEffect } from "react";
+import { useState } from "react";
 import dynamic from "next/dynamic";
 
 // Constant Menu Items
@@ -11,9 +11,7 @@ import { countryFlag } from "@/constant/countryFlag";
 // Components
 
 // ICONS
-import { LiaAlignJustifySolid, LiaSearchSolid } from "react-icons/lia";
-import NotificationBadge from "../alarm/NotificationBadge";
-import SearchbarTypeA from "../search/SearchbarTypeA";
+import { LiaAlignJustifySolid } from "react-icons/lia";
 
 // SSR None
 const DynamicMenuItem = dynamic(() => import("./MenuItem"), {
