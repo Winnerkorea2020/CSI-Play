@@ -1,26 +1,23 @@
 "use client";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
-
 import { useState } from "react";
-import Button from "../Button/Button";
-import Checkbox from "../Checkbox/Checkbox";
-import Inputbox from "../Inputbox/Inputbox";
+import Checkbox from "../checkbox/Checkbox";
+import InputBox from "../inputbox/InputBox";
+import Button from "../button/Button";
 
 const LoginForm = () => {
-  const router = useRouter();
   const [checkbox, setCheckbox] = useState(false);
 
   return (
     <form className="space-y-4 md:space-y-6" action="#">
-      <Inputbox
+      <InputBox
         label={true}
         title={"ID"}
         type={"text"}
         placeholder={"E-Mail"}
         required={true}
       />
-      <Inputbox
+      <InputBox
         label={true}
         title={"패스워드"}
         type={"password"}
