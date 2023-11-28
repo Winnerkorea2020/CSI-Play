@@ -1,4 +1,3 @@
-import BoardTable from "@/components/Board/BoardTable";
 import TableList from "@/components/table/TableList";
 
 const CoinFreeBoard = () => {

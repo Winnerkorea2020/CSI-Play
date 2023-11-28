@@ -1,11 +1,7 @@
-import PostViewTypeB from "@/components/postview/PostViewTypeB";
+import React from "react";
 
 const page = () => {
-  return (
-    <div>
-      <PostViewTypeB />
-    </div>
-  );
+  return <div>page</div>;
 };
 
 export default page;

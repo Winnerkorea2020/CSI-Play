@@ -12,8 +12,8 @@ import { countryFlag } from "@/constant/countryFlag";
 
 // ICONS
 import { LiaAlignJustifySolid, LiaSearchSolid } from "react-icons/lia";
-import SearchbarTypeA from "../search/SearchbarTypeA";
 import NotificationBadge from "../alarm/NotificationBadge";
+import SearchbarTypeA from "../search/SearchbarTypeA";
 
 // SSR None
 const DynamicMenuItem = dynamic(() => import("./MenuItem"), {
