@@ -7,6 +7,7 @@ import KpremiumStockQuotesRealTime from "@/components/mainPage/premium/KpremiumS
 import StockfuturesSpot from "@/components/mainPage/stock/StockfuturesSpot ";
 import NoticeTable from "@/components/mainPage/table/NoticeTable";
 import Liquidation from "@/components/mainPage/table/Liquidation";
+import BannerTypeA from "@/components/banner/BannerTypeA";
 
 export default function Home() {
   return (
@@ -21,17 +22,17 @@ export default function Home() {
           <div className="hidden xl:block xl:col-span-4">
             <div className="card w-full h-full">
               <div className="grid grid-cols-1 gap-2 h-full">
-                <div>
-                  <iframe
-                    width="100%"
-                    height="100%"
-                    src="https://www.youtube.com/embed/qJMdthxnDlY?si=NXgVXMsPcOfEGFyE"
-                    title="YouTube video player"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  ></iframe>
+                <iframe
+                  width="100%"
+                  height="100%"
+                  src="https://www.youtube.com/embed/qJMdthxnDlY?si=NXgVXMsPcOfEGFyE"
+                  title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                ></iframe>
+
+                <div className="w-full h-full hidden xl:block">
+                  <BannerTypeA />
                 </div>
-                {/* <div className="w-full h-full"><BannerYoutube /></div>
-                <div className="w-full h-full"><BannerYoutube /></div> */}
               </div>
             </div>
           </div>
@@ -46,18 +47,18 @@ export default function Home() {
             <FearGreedIndex />
           </div>
           {/* 통화청산 */}
-          <div className="xl:col-span-6">
+          <div className="xl:col-span-6 h-full">
             <CurrencyLiquidation />
           </div>
           {/* 공지사항 */}
-          <div className="xl:col-span-6">
+          <div className="xl:col-span-6 h-full">
             <NoticeTable />
           </div>
-          <div className="xl:col-span-6">
+          <div className="xl:col-span-6 h-full">
             {/* 거래서 청산 */}
             <Liquidation />
           </div>
-          <div className="xl:col-span-6">
+          <div className="xl:col-span-6 h-full">
             {/* Best 코인 시세 */}
             <BestCoinCurrency />
           </div>

@@ -11,20 +11,22 @@ const CurrencyLiquidation = () => {
   const selectData = selectTime;
   return (
     <div className="card h-full">
-      <div className="flex justify-between items-center w-full">
-        <div className="basis-1/2">
-          <MainTitle title={title} url={linkUrl} />
-        </div>
-        <div className="basis-1/2">
-          <div className="flex justify-end items-center gap-3">
-            <SelectTypeA selectData={selectData} />
+      <div className="h-full">
+        <div className="flex justify-between items-center w-full">
+          <div className="basis-1/2">
+            <MainTitle title={title} url={linkUrl} />
+          </div>
+          <div className="basis-1/2">
+            <div className="flex justify-end items-center gap-3">
+              <SelectTypeA selectData={selectData} />
+            </div>
           </div>
         </div>
-      </div>
 
-      <div className="main__board--card">
-        <div className="grid grid-cols-3 xl:grid-cols-4 gap-x-5 gap-y-3">
-          <CardTypeA itemData={itemData} />
+        <div className="main__board--card h-full">
+          <div className="grid grid-cols-1 xl:grid-cols-2 gap-x-5 gap-y-3 h-[90%]">
+            <CardTypeA itemData={itemData} />
+          </div>
         </div>
       </div>
     </div>

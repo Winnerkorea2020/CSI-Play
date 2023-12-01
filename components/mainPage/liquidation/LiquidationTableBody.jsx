@@ -19,20 +19,13 @@ const LiquidationTableBody = ({ columns, tableData }) => {
               {data.liquidation}
             </div>
             <div className="main__trading__table--tbody--cell">
-              {data.margin_buying}
+              {data.long_rate}
             </div>
             <div className="main__trading__table--tbody--cell">
               {data.short_selling}
             </div>
             <div className="main__trading__table--tbody--cell">
-              <div className="shadow w-full bg-gray-300 rounded">
-                <div
-                  className="bg-blue-400 text-xs leading-none py-1 text-center rounded text-white"
-                  style={{ width: `${data.percentage}` }}
-                >
-                  {data.percentage}
-                </div>
-              </div>
+              {data.percentage}
             </div>
             <div className="main__trading__table--tbody--cell">
               <span className="hidden xl:inline-block">

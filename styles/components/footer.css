@@ -1,9 +1,9 @@
 .footer {
-  @apply bg-white py-5  text-sm;
+  @apply bg-white py-5 text-sm;
 }
 
 .footer__title {
-  @apply xl:text-base text-gray-700  tracking-tighter;
+  @apply text-gray-700  tracking-tighter;
 }
 
 .footer__description {
@@ -27,5 +27,5 @@
 }
 
 .footer__item {
-  @apply text-sm xl:text-base text-gray-700  tracking-tighter xl:ml-10 hover:underline;
+  @apply text-sm text-gray-700  tracking-tighter xl:ml-10 hover:underline;
 }

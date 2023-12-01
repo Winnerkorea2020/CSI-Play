@@ -7,24 +7,34 @@ const CardTypeA = ({ itemData }) => {
         return (
           <div
             key={data.id}
-            className="text-center border border-gray-300 rounded-lg px-2 py-4 shadow-sm"
+            className="text-center border border-gray-300 rounded-lg px-2 py-4 shadow-sm flex flex-col justify-center items-center h-full gap-y-5"
           >
-            <div className="inline-flex">
-              <Image
-                src={`../${data.icon}`}
-                width={40}
-                height={40}
-                className="rounded-full"
-                alt=""
-              />
+            <div className="flex flex-col xl:flex-row xl:justify-between xl:items-center ">
+              <div className=" w-44">
+                <span>1시간 Rekt</span>
+              </div>
+              <div className=" w-44">
+                <span>$</span>
+                <span>{data.value}</span>
+              </div>
             </div>
-            <div>
-              <span>$</span>
-              <span>{data.value}</span>
+            <div className="flex flex-col xl:flex-row xl:justify-between xl:items-center ">
+              <div className=" w-44">
+                <span>Long</span>
+              </div>
+              <div className=" w-44">
+                <span>$</span>
+                <span>{data.value}</span>
+              </div>
             </div>
-            <div>
-              <span>≈</span>
-              <span>{data.value_k}</span> <span>{data.coin}</span>
+            <div className="flex flex-col xl:flex-row xl:justify-between xl:items-center ">
+              <div className=" w-44">
+                <span>Short</span>
+              </div>
+              <div className=" w-44">
+                <span>$</span>
+                <span>{data.value}</span>
+              </div>
             </div>
           </div>
         );

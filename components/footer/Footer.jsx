@@ -33,7 +33,7 @@ const Footer = () => {
                 </span>
                 <span className="px-3 ">사업자등록번호 : 357-86-00725</span>
               </div>
-              <div className="footer__title">
+              <div className="footer__title mt-5">
                 Copyright
                 <Link href="#" className="hover:underline">
                   &copy; CSI-PLAY Pte.Ltd.
