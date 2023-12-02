@@ -1,0 +1,3 @@
+.main__wrap {
+  @apply mx-auto w-full h-full;
+}

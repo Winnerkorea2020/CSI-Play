@@ -1,7 +1,7 @@
 /* Header CSS */
 /* Nav */
 .header {
-  @apply fixed top-0 left-0 w-full text-sm;
+  @apply fixed top-0 left-0 right-0 w-full text-sm max-w-[1920px] mx-auto border-b;
   z-index: 100;
 }
 .nav {

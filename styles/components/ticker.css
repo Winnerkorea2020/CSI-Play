@@ -1,0 +1,19 @@
+.ticker {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.tickerContainer {
+  display: flex;
+  animation: tickerAnimation 60s linear infinite;
+}
+
+@keyframes tickerAnimation {
+  0% {
+    transform: translateX(5%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

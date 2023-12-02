@@ -1,14 +1,33 @@
-import React from "react";
+"use client";
+import { useState } from "react";
+const TableHead = ({ columns, handleSorting }) => {
+  const [sortField, setSortField] = useState("");
+  const [order, setOrder] = useState("asc");
 
-const TableHead = ({ columns }) => {
+  const handleSortingChange = (accessor) => {
+    const sortOrder =
+      accessor === sortField && order === "asc" ? "desc" : "asc";
+    setSortField(accessor);
+    setOrder(sortOrder);
+    handleSorting(accessor, sortOrder);
+  };
+
   return (
     <thead>
-      <tr className="text-sm xl:text-lg py-2.5 bg-gray-100">
-        {columns.map(({ label, accessor }) => {
+      <tr>
+        {columns.map(({ label, accessor, sortable }) => {
+          const cl = sortable
+            ? sortField === accessor && order === "asc"
+              ? "up"
+              : sortField === accessor && order === "desc"
+              ? "down"
+              : "default"
+            : "";
           return (
             <th
               key={accessor}
-              className="font-light text-xs px-2 xl:px-2.5 xl:font-medium xl:text-sm tracking-tighter truncate whitespace-nowrap py-2.5 "
+              onClick={sortable ? () => handleSortingChange(accessor) : null}
+              className={cl}
             >
               {label}
             </th>

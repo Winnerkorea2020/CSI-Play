@@ -14,7 +14,7 @@ function classNames(...classes) {
 export default function TopCoins() {
   return (
     <div className="mt-2">
-      <div className="bg-white px-4 py-3 rounded-lg">
+      <div className="bg-white px-4 py-3 ">
         <div className="flex flex-col items-center justify-center">
           <Image src="/ico-upbit.svg" width={50} height={50} />
           <h2 className=" tracking-tighter font-medium text-sm mt-2">

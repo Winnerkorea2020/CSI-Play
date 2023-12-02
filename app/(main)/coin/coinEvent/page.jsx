@@ -1,10 +1,10 @@
-import TableList from "@/components/table/TableList";
+import TableTypeD from "@/components/table/TableTypeD";
 
 const CoinFreeBoard = () => {
   const title = "코인공시&이벤트";
   return (
     <div className="h-full bg-white">
-      <TableList title={title} />
+      <TableTypeD title={title} />
     </div>
   );
 };
