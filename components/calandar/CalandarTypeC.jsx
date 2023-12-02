@@ -2,7 +2,7 @@ import React from "react";
 
 const CalandarTypeC = () => {
   return (
-    <table>
+    <table className="table-auto w-full">
       <colgroup>
         <col width="5%" />
         <col width="18%" />

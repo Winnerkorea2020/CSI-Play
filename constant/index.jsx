@@ -963,6 +963,7 @@ export const rangeTrading = [
   {
     id: "1",
     valueData: "테라코인",
+    value: "5,214억",
     coinName: "TRR",
     coinValue: 62,
     status: "minus",
@@ -971,6 +972,7 @@ export const rangeTrading = [
   {
     id: "2",
     valueData: "슈퍼팜",
+    value: "5,214억",
     coinName: "SUPER",
     coinValue: 58,
     status: "minus",
@@ -979,6 +981,7 @@ export const rangeTrading = [
   {
     id: "3",
     valueData: "파렉스",
+    value: "5,214억",
     coinName: "PRX",
     coinValue: 45,
     status: "minus",
@@ -987,6 +990,7 @@ export const rangeTrading = [
   {
     id: "4",
     valueData: "알라바바코인",
+    value: "5,214억",
     coinName: "ABBC",
     coinValue: 32,
     status: "minus",
@@ -995,6 +999,7 @@ export const rangeTrading = [
   {
     id: "5",
     valueData: "마이크로체인",
+    value: "5,214억",
     coinName: "MCG",
     coinValue: 58,
     status: "plus",
@@ -1003,6 +1008,7 @@ export const rangeTrading = [
   {
     id: "6",
     valueData: "밴드 프로토콜",
+    value: "5,214억",
     coinName: "BAND",
     coinValue: 40,
     status: "minus",
@@ -1011,6 +1017,7 @@ export const rangeTrading = [
   {
     id: "7",
     valueData: "슈퍼팜",
+    value: "5,214억",
     coinName: "MCG",
     coinValue: 64,
     status: "minus",
@@ -1019,6 +1026,7 @@ export const rangeTrading = [
   {
     id: "8",
     valueData: "슈퍼팜",
+    value: "5,214억",
     coinName: "MCG",
     coinValue: 77,
     status: "minus",
@@ -1027,6 +1035,7 @@ export const rangeTrading = [
   {
     id: "9",
     valueData: "슈퍼팜",
+    value: "5,214억",
     coinName: "MCG",
     coinValue: 45,
     status: "minus",
@@ -1035,6 +1044,7 @@ export const rangeTrading = [
   {
     id: "10",
     valueData: "슈퍼팜",
+    value: "5,214억",
     coinName: "MCG",
     coinValue: 89,
     status: "minus",
