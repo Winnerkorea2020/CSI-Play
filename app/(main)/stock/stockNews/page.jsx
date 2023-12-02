@@ -1,10 +1,10 @@
-import TableCard from "@/components/table/TableCard";
+import StockTab from "@/components/mainPage/stock/StockTab";
 
 const StockNewsPage = () => {
   const title = "주식뉴스";
   return (
     <div className="border px-5">
-      <TableCard title={title} />
+      <StockTab title={title} />
     </div>
   );
 };

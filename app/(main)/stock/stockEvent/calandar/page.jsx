@@ -1,4 +1,4 @@
-import CalandarTypeA from "@/components/calandar/CalandarTypeA";
+import CalandarTypeC from "@/components/calandar/CalandarTypeC";
 import TableHeader from "@/components/table/TableHeader";
 
 const page = () => {
@@ -7,8 +7,8 @@ const page = () => {
     <div className="border px-5">
       <TableHeader title={"증시캘린더"} nosearch={false} />
 
-      <div className="grid grid-cols-1 gap-3 w-full border">
-        <CalandarTypeA />
+      <div className="relative overflow-x-auto">
+        <CalandarTypeC />
       </div>
     </div>
   );
