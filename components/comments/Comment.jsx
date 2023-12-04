@@ -6,7 +6,7 @@ const Comment = ({ commentData }) => {
   return (
     <div className="">
       <div>
-        <div className="w-full mt-2 bg-orange-100 p-5">
+        <div className="w-full mt-2 bg-gray-100 p-5">
           <div className="flex justify-between items-center">
             <div className="flex justify-items-start items-center gap-2">
               <div className="py-2 font-semibold">{commentData.write}</div>

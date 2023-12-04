@@ -14,7 +14,7 @@ const CommentInput = () => {
             <input
               type="submit"
               name="button"
-              className="py-1.5 px-2.5 border bg-yellow-500 hover:bg-yellow-600 rounded-xl  tracking-tighter text-xs w-20 cursor-pointer shadow text-white"
+              className="py-1.5 px-2.5 border bg-gray-500 hover:bg-gray-600 rounded-xl  tracking-tighter text-xs w-20 cursor-pointer shadow text-white"
               value="등록하기"
             />
           </div>

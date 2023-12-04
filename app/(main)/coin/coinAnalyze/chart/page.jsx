@@ -8,15 +8,6 @@ const page = () => {
   return (
     <div className="border px-5">
       <TableAnalyze title={title} />
-      <div className="flex justify-between items-center">
-        <Pagination />
-        <Link
-          href="/create"
-          className="py-2.5 px-6 w-24 text-center rounded-lg shadow bg-blue-500 text-white hover:bg-blue-600"
-        >
-          등록
-        </Link>
-      </div>
     </div>
   );
 };

@@ -18,8 +18,6 @@ const TableList = ({ title }) => {
           <col width="50%" />
           <col width="5%" />
           <col width="5%" />
-          <col width="5%" />
-          <col width="5%" />
         </colgroup>
         <TableListHead columns={tableListHeadColumns} />
         <TableListBody columns={tableListHeadColumns} tableData={topics} />
