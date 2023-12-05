@@ -60,7 +60,7 @@ const Post = () => {
           </div>
           <ReactQuill
             className="xl:h-[844px]"
-            style={{ height: "844px" }}
+            theme="snow"
             modules={modules}
             formats={formats}
             value={quillValue || ""}
