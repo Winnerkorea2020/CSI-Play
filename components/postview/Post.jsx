@@ -47,8 +47,8 @@ const Post = () => {
   ];
 
   return (
-    <div className="h-full ">
-      <div className="grid grid-cols-12 gap-4">
+    <div className="h-[820px] relative ">
+      <div className="grid grid-cols-12 gap-4 ">
         <div className=" col-span-9">
           <div className="pb-2">
             <input
@@ -59,15 +59,15 @@ const Post = () => {
             />
           </div>
           <ReactQuill
-            style={{ height: "820px" }}
-            theme="snow"
+            className="xl:h-[844px]"
+            style={{ height: "844px" }}
             modules={modules}
             formats={formats}
             value={quillValue || ""}
             onChange={handleQuillChange}
           />
         </div>
-        <div className="col-span-3 h-full ">
+        <div className="col-span-3 h-[820px]">
           <TableSideWarnning />
         </div>
       </div>

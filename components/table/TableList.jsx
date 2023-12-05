@@ -5,7 +5,7 @@ import TableBottom from "./TableBottom";
 
 import { tableList, tableListHeadColumns } from "@/constant/table";
 
-const TableList = ({ title }) => {
+const TableList = ({ title, post }) => {
   const topics = tableList;
 
   return (
@@ -22,7 +22,7 @@ const TableList = ({ title }) => {
         <TableListHead columns={tableListHeadColumns} />
         <TableListBody columns={tableListHeadColumns} tableData={topics} />
       </table>
-      <TableBottom />
+      <TableBottom post={post} />
     </div>
   );
 };
