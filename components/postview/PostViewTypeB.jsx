@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { BiChevronLeft, BiChevronRight, BiLike, BiShare } from "react-icons/bi";
+import ShareModal from "../modal/ShareModal";
 
 const PostViewTypeB = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -122,7 +123,6 @@ const PostViewTypeB = () => {
             </div>
           </div>
         </div>
-        <WarningMessage />
         <div className="mt-3 border-t pt-3"></div>
       </div>
     </div>

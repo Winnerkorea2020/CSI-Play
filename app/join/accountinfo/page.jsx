@@ -14,18 +14,18 @@ const JoinPage = ({ step1, step2, step3 }) => {
   const pathname = usePathname();
   return (
     <div className="h-full w-full">
-      <div className="px-5 my-5">
+      <div className="my-5 px-64 mx-32">
         {/* Step */}
 
         {/* Form */}
-        <div className="grid grid-cols-1 gap-y-3">
+        <div className="grid grid-cols-1 gap-y-3 ">
           <div className="flex justify-between gap-2 items-end">
             <div className="w-full ">
               <InputBox
                 label={true}
                 title={"ID"}
                 type={"text"}
-                placeholder={"E-Mail"}
+                placeholder={"아이디를 입력하세요."}
                 required={true}
               />
             </div>
@@ -40,14 +40,14 @@ const JoinPage = ({ step1, step2, step3 }) => {
             label={true}
             title={"패스워드"}
             type={"password"}
-            placeholder={"***************"}
+            placeholder={"패스워드를 입력하세요."}
             required={true}
           />
           <InputBox
             label={true}
             title={"패스워드 확인"}
             type={"password"}
-            placeholder={"***************"}
+            placeholder={"다시한번 패스워드를 입력하세요."}
             required={true}
           />
           <InputBox
@@ -95,13 +95,15 @@ const JoinPage = ({ step1, step2, step3 }) => {
         </div>
 
         {/* Button */}
-        <div className="flex justify-between  items-center gap-3">
-          <button className="btn btn-red w-full rounded-lg">취소</button>
+        <div className="flex justify-center  items-center gap-3  mt-10">
+          <button className="bg-blue-500 py-2 text-white w-24 rounded-lg">
+            취소
+          </button>
           <button
-            className="btn btn-blue w-full rounded-lg"
+            className=" bg-red-500 py-2 text-white w-24 rounded-lg"
             onClick={() => router.push(`/join/joinconfirm`)}
           >
-            동의
+            가입하기
           </button>
         </div>
       </div>

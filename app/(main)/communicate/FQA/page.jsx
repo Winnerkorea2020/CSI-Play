@@ -1,33 +1,10 @@
-import CardHorizonalTypeD from "@/components/card/CardHorizonalTypeD";
-import FreeBoardSearchBar from "@/components/search/FreeBoardSearchBar";
+import TableList from "@/components/table/TableList";
 
 const page = () => {
+  const title = "질문/답변"
   return (
     <div>
-      <div className="mt-10">
-        <div className="w-full flex justify-between items-center">
-          <h3 className="ml-2 py-4 font-semibold text-lg">FQA</h3>
-        </div>
-        <div className="mb-4">
-          <FreeBoardSearchBar />
-        </div>
-        <div>
-          <CardHorizonalTypeD />
-          <CardHorizonalTypeD />
-          <CardHorizonalTypeD />
-          <CardHorizonalTypeD />
-          <CardHorizonalTypeD />
-          <CardHorizonalTypeD />
-          <CardHorizonalTypeD />
-          <CardHorizonalTypeD />
-          <CardHorizonalTypeD />
-          <CardHorizonalTypeD />
-          <CardHorizonalTypeD />
-          <CardHorizonalTypeD />
-          <CardHorizonalTypeD />
-          <CardHorizonalTypeD />
-        </div>
-      </div>
+      <TableList title={title} />
     </div>
   );
 };

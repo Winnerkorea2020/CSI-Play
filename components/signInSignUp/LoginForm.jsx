@@ -14,14 +14,14 @@ const LoginForm = () => {
         label={true}
         title={"ID"}
         type={"text"}
-        placeholder={"E-Mail"}
+        placeholder={"아이디를 입력해주세요."}
         required={true}
       />
       <InputBox
         label={true}
         title={"패스워드"}
         type={"password"}
-        placeholder={"***************"}
+        placeholder={"패스워드를 입력해주세요."}
         required={true}
       />
       <div className="flex items-center justify-between">
@@ -38,7 +38,7 @@ const LoginForm = () => {
           href="#"
           className="text-sm font-medium text-gray-600 hover:underline "
         >
-          패스워드 찾기?
+          비밀번호 초기화
         </Link>
       </div>
 
@@ -47,14 +47,14 @@ const LoginForm = () => {
         style={"btn btn-blue btn-rounded"}
         onChange={setCheckbox}
       />
-      <Link href="/" className="btn btn-red btn-rounded">
+      <Link href="/" className="btn bg-gray-800 text-white btn-rounded">
         홈으로 이동하기
       </Link>
       <p className="text-sm font-light text-gray-500 ">
         아직 계정을 가지고 있지 않으신가요?
         <Link
           href="/join/terms"
-          className="font-medium text-gray-600 hover:underline "
+          className="font-medium text-gray-600 hover:underline px-3"
         >
           회원가입
         </Link>

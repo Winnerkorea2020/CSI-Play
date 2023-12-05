@@ -15,19 +15,19 @@ const BannerSide = () => {
     arrows: false,
   };
   return (
-    <div className="border bg-white shadow h-28">
+    <div className="border bg-white shadow h-40 ">
       {/* Pass the settings prop to the Slider component */}
       <Slider
         {...settings}
-        className="flex justify-center items-center h-28 bg-red-300"
+        className="flex justify-center items-center h-40 bg-red-300"
       >
-        <div className="flex justify-center items-center bg-emerald-400 h-28">
-          <div className="flex justify-center items-center h-full bg-red-800">
+        <div className="flex justify-center items-center bg-emerald-400 h-40 ">
+          <div className="flex justify-center items-center h-full bg-red-800 rounded">
             aaaa
           </div>
         </div>
-        <div className="flex justify-center items-center bg-emerald-400 h-28">
-          <div className="flex justify-center items-center h-full bg-blue-800">
+        <div className="flex justify-center items-center bg-emerald-400 h-40 ">
+          <div className="flex justify-center items-center h-full bg-blue-800 rounded">
             cccc
           </div>
         </div>

@@ -1,3 +1,4 @@
+import BannerSide from "@/components/banner/BannerSide";
 import TopCoins from "@/components/coins/topcoins/TopCoins";
 import SideNavi from "@/components/navbar/SideNavi";
 
@@ -13,7 +14,7 @@ const layout = ({ children }) => {
           </div>
           <div className="hidden xl:block xl:col-span-2 ">
             <div className="">
-              <SideNavi index={1} />
+              <BannerSide />
             </div>
             <div className="mt-2">
               <TopCoins />
