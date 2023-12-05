@@ -8,7 +8,7 @@ const TableAnalyzeBody = ({ topics }) => {
     <div className="">
       <Link
         href={`${pathname}/${topics.id}`}
-        className="inline-block grid xl:grid-cols-1 gap-3"
+        className=" grid xl:grid-cols-1 gap-3"
       >
         {topics.map((topics) => (
           <div

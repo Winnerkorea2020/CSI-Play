@@ -1,32 +1,36 @@
-import MainTitle from "@/components/title/MainTitle";
-import CardTypeA from "@/components/card/CardTypeA";
 import { currencyCoinData } from "@/constant/main";
-import SelectTypeA from "@/components/select/SelectTypeA";
 import { selectTime } from "@/constant/Select";
+import CardTypeB from "@/components/card/CardTypeB";
+import TableHeader from "@/components/table/TableHeader";
 
 const CurrencyLiquidation = () => {
-  const title = "통화청산";
+  const title = "총 청산";
   const linkUrl = "/";
   const itemData = currencyCoinData;
   const selectData = selectTime;
   return (
     <div className="card h-full">
       <div className="h-full">
-        <div className="flex justify-between items-center w-full">
-          <div className="basis-1/2">
-            <MainTitle title={title} url={linkUrl} />
-          </div>
-          <div className="basis-1/2">
-            <div className="flex justify-end items-center gap-3">
-              <SelectTypeA selectData={selectData} />
-            </div>
-          </div>
-        </div>
+        <TableHeader title={title} />
 
         <div className="main__board--card h-full">
-          <div className="grid grid-cols-1 xl:grid-cols-2 gap-x-5 gap-y-3 h-[90%]">
-            <CardTypeA itemData={itemData} />
-          </div>
+          <CardTypeB itemData={itemData} />
+        </div>
+        <div className="mt-3">
+          <ul className="border py-2 px-6 bg-gray-200 rounded text-sm">
+            <li>
+              지난 24시간 동안 47,205명의 트레이더가 청산되었으며, 총 청산액은
+              <span className="font-semibold px-1 text-blue-500">
+                $135.77
+              </span>{" "}
+              million.
+            </li>
+            <li>
+              가장 큰 단일 청산 주문은 OKX - BTC-USDT-SWAP 에서
+              <span className="font-semibold px-1 text-red-500">$7.95</span>
+              M.
+            </li>
+          </ul>
         </div>
       </div>
     </div>

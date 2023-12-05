@@ -4,6 +4,17 @@ export const tableListHeadColumns = [
   { label: "등록일", accessor: "dateTime" },
   { label: "출처", accessor: "recommand" },
 ];
+export const tableListHeadColumnsLiqu = [
+  { label: "순위", accessor: "id" },
+  { label: "가격", accessor: "title" },
+  { label: "가격(24시간%)", accessor: "dateTime" },
+  { label: "1h롱", accessor: "recommand" },
+  { label: "1시간 숏", accessor: "recommand" },
+  { label: "4h 롱", accessor: "recommand" },
+  { label: "4h시간 숏", accessor: "recommand" },
+  { label: "24h 롱", accessor: "recommand" },
+  { label: "24시간 숏", accessor: "recommand" },
+];
 
 export const tableListHeadColumnsA = [
   { label: "비고", accessor: "remark" },

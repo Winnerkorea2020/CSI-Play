@@ -5,9 +5,9 @@ import { Tab } from "@headlessui/react";
 import SpotStock from "./SpotStock";
 import FutureStock from "../future/FutureStock";
 
-const StockfuturesSpot = () => {
+const StockfuturesSpot = ({ card }) => {
   return (
-    <div className="card  text-xs xl:text-sm relative">
+    <div className={`${card ? "card" : null}  text-xs xl:text-sm relative`}>
       <div className="h-[657px] xl:h-[680px] 2xl:h-[520px] relative">
         <Tab.Group>
           <Tab.List className="grid grid-cols-2 gap-1">
