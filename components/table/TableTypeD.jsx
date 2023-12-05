@@ -13,6 +13,13 @@ const TableTypeD = ({ title }) => {
       <TableHeader title={title} nosearch={true} />
 
       <table className="table__theme-2 w-full">
+        <colgroup>
+          <col width={`5%`} />
+          <col width={``} />
+          <col width={`10%`} />
+          <col width={`10%`} />
+          <col width={`10%`} />
+        </colgroup>
         <TableListHead columns={tableListHeadColumnsA} />
         <TableListBody columns={tableListHeadColumnsA} tableData={tableListA} />
       </table>

@@ -82,3 +82,7 @@
 .table__theme-2 tbody tr:nth-child(even) {
   @apply bg-gray-100;
 }
+
+.table__theme-2 tbody tr td:nth-child(2) {
+  @apply text-left px-5 whitespace-break-spaces;
+}
