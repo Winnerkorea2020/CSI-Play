@@ -1,10 +1,13 @@
 "use client";
 import { useState } from "react";
-import ReactQuill from "react-quill";
+
 import "react-quill/dist/quill.snow.css";
 import TableHead from "../table/TableHead";
 import TableHeader from "../table/TableHeader";
 import TableSideWarnning from "../table/TableSideWarnning";
+import dynamic from "next/dynamic";
+
+const ReactQuill = dynamic(() => import("react-quill"), { ssr: false });
 
 const Post = () => {
   const [quillValue, setQuillValue] = useState("");
@@ -54,7 +57,7 @@ const Post = () => {
             <input
               type="text"
               className="border w-full py-3 mt-2 px-5 border-gray-400"
-              value={""}
+              defaultValue={""}
               placeholder="제목을 입력하세요."
             />
           </div>
